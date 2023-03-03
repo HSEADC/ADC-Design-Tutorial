@@ -7,9 +7,12 @@ body {
   height: 100%;
 }
 
-body {
+body.basic {
   margin: 0;
-  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  background-color: var(--middle);
+  font-family: 'Proxima Nova';
   font-size: 14px;
   font-weight: 400;
+  padding-left: 220px;
+  padding-right: 220px;
 }

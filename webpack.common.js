@@ -90,10 +90,10 @@ module.exports = {
     }),
 
     // Article
-    // new HtmlWebpackPlugin({
-    //   template: './src/articles/superorganisms/S_Popup.html',
-    //   filename: './superorganisms/S_Popup.html'
-    // }),
+    new HtmlWebpackPlugin({
+      template: './src/basics/composition.html',
+      filename: './basics/composition.html'
+    }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([
