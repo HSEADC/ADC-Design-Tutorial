@@ -3,6 +3,27 @@
   margin: 0;
 }
 
+nav {
+  height: 100px;
+  background-color: var(--dark);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  position: fixed;
+  z-index: 100;
+  a {
+    color: var(--light);
+    text-decoration: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
 .button1 {
   display: flex;
   flex-direction: row;
@@ -112,13 +133,33 @@ li {
 .greeting,
 .release {
   position: relative;
-  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 85px 0 85px;
   height: 100vh;
   justify-content: center;
+
+  img {
+    position: absolute;
+  }
+  .multi1 {
+    width: 300px;
+    transform: rotate(30deg);
+    left: -10%;
+    bottom: 5%;
+  }
+  .multi2 {
+    width: 600px;
+    // display: none;
+    transform: rotate(-30deg);
+    right: -25%;
+    top: -5%;
+  }
+
+  h4 {
+    text-align: center;
+  }
 
   span {
     white-space: nowrap;
@@ -157,9 +198,7 @@ li {
   .row1 {
     .left {
       // align-items: flex-end;
-
-      padding-right: 100px;
-      padding-left: 222px;
+      padding: 100px 100px 100px 222px;
     }
     .right {
       padding: 50px;
@@ -172,14 +211,12 @@ li {
       background: var(--halflight);
     }
     .right {
-      padding-left: 100px;
-      padding-right: 222px;
+      padding: 100px 222px 100px 100px;
     }
   }
   .row3 {
     .left {
-      padding-right: 100px;
-      padding-left: 222px;
+      padding: 100px 100px 100px 222px;
     }
     .right {
       padding: 50px;
@@ -192,8 +229,7 @@ li {
       background: var(--halflight);
     }
     .right {
-      padding-left: 100px;
-      padding-right: 222px;
+      padding: 100px 222px 100px 100px;
     }
   }
 }
@@ -208,7 +244,6 @@ li {
   .row1,
   .row2 {
     margin-bottom: 80px;
-
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -235,5 +270,125 @@ li {
   }
   .release {
     padding-bottom: 80px;
+  }
+}
+footer {
+  background-color: var(--dark);
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  a {
+    text-decoration: none;
+    color: var(--light);
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media all and (min-width: 1001px) and (max-width: 1400px) {
+  .basic,
+  .color,
+  .typo,
+  .grid {
+    .row1 {
+      .left {
+        // align-items: flex-end;
+        padding: 50px 50px 50px 150px;
+      }
+    }
+    .row2 {
+      .right {
+        padding: 50px 150px 50px 50px;
+      }
+    }
+    .row3 {
+      .left {
+        padding: 50px 50px 50px 150px;
+      }
+    }
+    .row4 {
+      .right {
+        padding: 50px 150px 50px 50px;
+      }
+    }
+  }
+}
+
+@media only all and (min-width: 300px) and (max-width: 1000px) {
+  .basic,
+  .color,
+  .typo,
+  .grid {
+    .row1,
+    .row2,
+    .row3,
+    .row4 {
+      width: 100vw;
+      display: flex;
+
+      .left,
+      .right {
+        width: 100%;
+      }
+    }
+    h3 {
+      max-width: 100%;
+    }
+    .row1,
+    .row3 {
+      flex-direction: column-reverse;
+    }
+    .row2,
+    .row4 {
+      flex-direction: column;
+    }
+    .row1 {
+      .left {
+        // align-items: flex-end;
+        padding: 25px 50px 50px 50px;
+        gap: 10px;
+      }
+    }
+    .row2 {
+      .right {
+        padding: 25px 50px 50px 50px;
+        gap: 10px;
+      }
+    }
+    .row3 {
+      .left {
+        padding: 25px 50px 50px 50px;
+        gap: 10px;
+      }
+    }
+    .row4 {
+      .right {
+        padding: 25px 50px 50px 50px;
+        gap: 10px;
+      }
+    }
+  }
+  .navigator {
+    width: 100vw;
+    background-color: var(--halflight);
+    img {
+      width: 100%;
+      padding-bottom: 80px;
+    }
+
+    .row1,
+    .row2 {
+      flex-direction: column;
+      padding-left: 50px;
+      padding-right: 50px;
+      gap: 80px;
+    }
   }
 }

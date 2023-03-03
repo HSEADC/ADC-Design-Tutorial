@@ -95,6 +95,11 @@ module.exports = {
       filename: './basics/composition.html'
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/basics/construction.html',
+      filename: './basics/construction.html'
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
