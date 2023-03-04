@@ -2,15 +2,46 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>ADC Design Tutorial</title>
   </head>
-  <body>
-    <nav>
-      <a href="#greeting">О нас</a>
-      <a href="#basic">Основы дизайна</a>
-      <a href="#color">Основы цвета</a>
-      <a href="#typo">Типографика</a>
-      <a href="#grid">Сетки</a>
+  <body class="welcome">
+    <nav class="mobile">
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="logo">
+            <h1>Navbar</h1>
+          </div>
+          <div class="menu-items">
+            <a href="#greeting">О нас</a>
+            <a href="#basic">Основы дизайна</a>
+            <a href="#color">Основы цвета</a>
+            <a href="#typo">Типографика</a>
+            <a href="#grid">Сетки</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="desktop">
+      <a href="../index.html">
+        <img src="images/logo.png" alt="" />
+      </a>
+
+      <div class="main">
+        <a href="#basic">Основы дизайна</a>
+        <a href="#color">Основы цвета</a>
+        <a href="#typo">Типографика</a>
+        <a href="#grid">Сетки</a>
+      </div>
+      <a href="#about">О проекте</a>
     </nav>
     <section class="greeting" id="greeting">
       <h2>
@@ -249,19 +280,23 @@
 
     <section class="navigator" id="navigator">
       <img src="images/welcome/headernavigator.png" alt="" />
-      <div class="row1">
-        <div class="column1">
+      <div class="row">
+        <div class="column">
           <h3>Основы дизайна</h3>
           <h4>
-            <a href="basics/construction.html">Как построить композицию?</a>
+            <a href="basics/composition.html">Как построить композицию?</a>
           </h4>
           <ul>
             <li>
-              <a href="basics/construction.html">Что такое композиция?</a>
+              <a href="basics/composition.html#defenition"
+                >Что такое композиция?</a
+              >
             </li>
-            <li><a href="basics/construction.html">Якорные точки</a></li>
             <li>
-              <a href="basics/construction.html">Визуальная иерархия</a>
+              <a href="basics/composition.html#ancor-text">Якорные точки</a>
+            </li>
+            <li>
+              <a href="basics/composition.html">Визуальная иерархия</a>
             </li>
           </ul>
 
@@ -310,7 +345,7 @@
 
           <h4><a href="basics/construction.html">Итог</a></h4>
         </div>
-        <div class="column2">
+        <div class="column">
           <h3>Основы цвета</h3>
           <h4><a href="basics/construction.html">О цветовом круге</a></h4>
           <ul>
@@ -371,9 +406,7 @@
             <h4><a href="basics/construction.html">Итог</a></h4>
           </ul>
         </div>
-      </div>
-      <div class="row2">
-        <div class="column1">
+        <div class="column">
           <h3>Типографика</h3>
           <h4>
             <a href="basics/construction.html">Какие бывают шрифты?</a>
@@ -429,7 +462,7 @@
 
           <h4><a href="basics/construction.html">Итог</a></h4>
         </div>
-        <div class="column2">
+        <div class="column">
           <h3>Сетка</h3>
           <h4><a href="basics/construction.html">Что такое сетка?</a></h4>
           <ul>
@@ -477,6 +510,24 @@
       <a class="button1" href="basics/construction.html"
         >Хочу знать о запуске</a
       >
+    </section>
+
+    <section class="about" id="about">
+      <h1>О нас</h1>
+      <h4>
+        <span>ADC Design Tutorial</span> &mdash;&nbsp;это полностью бесплатный
+        интерактивный курс по&nbsp;основам графического дизайна. Главная
+        особенность&nbsp;&mdash; наличие интерактивных модулей, которые позволят
+        лучше усвоить материал в&nbsp;игровой форме.
+      </h4>
+
+      <h4 style="margin-top: 40px;">
+        Проект является частью зонтичного бренда ADC кафедры &laquo;Дизайн
+        и&nbsp;программирование&raquo; и&nbsp;разрабатывается как дипломный
+        проект студента Бычина Арсения. Создание проекта курирует руководитель
+        направления Захар День.
+      </h4>
+      <a class="button1" href="https://adc.ac/brand.html">О бренде ADC</a>
     </section>
     <footer>
       <a href="basics/construction.html">ADC Design Tutorial 2023</a>
