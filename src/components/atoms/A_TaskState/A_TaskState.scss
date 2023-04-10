@@ -1,0 +1,12 @@
+.A_TaskState {
+  font-weight: 400;
+
+  &.sliderDescription {
+    font-family: 'Proxima Nova';
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    color: var(--dark);
+  }
+}
