@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .Slider-wrap {
@@ -19,11 +20,12 @@
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    background-color: var(--dark);
+    background-color: var(--border);
     height: 40px;
     width: 40px;
     border-radius: 1000px;
     top: -18px;
+    border: solid var(--dark) 4px;
 
     label {
       display: flex;
@@ -42,6 +44,15 @@
       font-size: 20px;
       height: 40px;
     }
+  }
+}
+
+.Thumb:hover {
+  border: solid var(--dark) 6px;
+
+  label {
+    color: var(--light);
+    top: -52px;
   }
 }
 
