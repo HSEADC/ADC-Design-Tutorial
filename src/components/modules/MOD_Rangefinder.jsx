@@ -1,43 +1,39 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import ReactDOM from 'react-dom'
 
-import M_SliderIndicated from '../moleculas/M_SliderIndicated/M_SliderIndicated.jsx'
+import M_ExerciseBox from '../moleculas/M_ExerciseBox/M_ExerciseBox.jsx'
+import A_SliderSpecial from '../atoms/A_SliderSpecial/A_SliderSpecial.jsx'
 
-export default class MOD_Rangefinder extends Component {
+export default class MOD_Rangefinder extends PureComponent {
   constructor(props) {
     super(props)
-
-    this.state = {
-      range: 0
-    }
   }
 
-  handleInput = (e) => {
-    const { isOn } = this.state
-    const { value } = e.target
+  generateFrameHeader = () => {
+    return <h3>Упражнение на&nbsp;поиск промежутка </h3>
+  }
+  generateFrameText = () => {
+    return (
+      <p>
+        {' '}
+        Перед вами 5&nbsp;кругов, 4&nbsp;из&nbsp;которых находятся
+        на&nbsp;одинаковом расстоянии. С&nbsp;помощью ползунка расположите пятый
+        круг на&nbsp;такое же&nbsp;расстояние.{' '}
+      </p>
+    )
+  }
 
-    this.setState({
-      range: value
-    })
+  generateExercise = () => {
+    return <A_SliderSpecial></A_SliderSpecial>
   }
 
   render() {
-    const { range } = this.state
-    const min = 0
-    const max = 240
-    const step = 1
-
     return (
-      <div className="MOD_Rangefinder">
-        <M_SliderIndicated
-          description={`расстояние: ${range}`}
-          min={min}
-          max={max}
-          step={step}
-          value={range}
-          handleInput={this.handleInput}
-        />
-      </div>
+      <M_ExerciseBox
+        header={this.generateFrameHeader()}
+        text={this.generateFrameText()}
+        exercise={this.generateExercise()}
+      />
     )
   }
 }
