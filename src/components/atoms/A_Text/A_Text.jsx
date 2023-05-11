@@ -13,8 +13,8 @@ export default class A_Text extends PureComponent {
 
     return (
       <div className="text">
-        {header}
-        {text}
+        <h3> {header}</h3>
+        <p> {text} </p>
       </div>
     )
   }

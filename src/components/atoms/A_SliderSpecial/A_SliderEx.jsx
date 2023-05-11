@@ -1,15 +1,15 @@
+import './A_SliderSpecial.scss'
+
 import React, { PureComponent } from 'react'
 import ReactDOM from 'react-dom'
+import Range from '../../../images/rangefinder.svg'
+import Arrows from '../../../images/arrows.svg'
 
-import M_ExerciseBox from '../moleculas/M_ExerciseBox/M_ExerciseBox.jsx'
-import A_SliderSpecial from '../atoms/A_SliderSpecial/A_SliderSpecial.jsx'
-
-export default class MOD_Rangefinder extends PureComponent {
+export default class A_SliderSpecial extends PureComponent {
   constructor(props) {
     super(props)
 
     this.state = {
-      size: 220,
       mouseDown: false,
       coord: 0,
       cursorX: 0,
@@ -21,19 +21,9 @@ export default class MOD_Rangefinder extends PureComponent {
     }
   }
 
-  generateExercise = () => {
-    const { coord, signature, display, id } = this.state
-    return (
-      <A_SliderSpecial
-        coord={coord}
-        handleMouseMove={this.handleMouseMove}
-        handleMouseDown={this.handleMouseDown}
-        handleMouseUp={this.handleMouseUp}
-        signature={signature}
-        display={display}
-        id={id}
-      ></A_SliderSpecial>
-    )
+  componentDidMount() {
+    window.addEventListener('mouseup', this.handleMouseUp)
+    window.addEventListener('mousemove', this.handleMouseMove)
   }
 
   handleMouseDown = (e) => {
@@ -117,17 +107,33 @@ export default class MOD_Rangefinder extends PureComponent {
       })
     }
   }
+
   render() {
-    const { size } = this.state
-    const { info } = this.props
+    const { coord, id, signature, display } = this.state
+
+    const styles = {
+      transform: `translateX(${coord}px)`
+    }
+
+    const imageStyles = {
+      display: `${display}`
+    }
 
     return (
-      <M_ExerciseBox
-        header={info[0].header}
-        text={info[0].text}
-        exercise={this.generateExercise()}
-        size={size}
-      />
+      <div className="Slider-wrap">
+        <img src={Range} />
+        <div className="Slider-body">
+          <div
+            className="Thumb"
+            onMouseDown={this.handleMouseDown}
+            style={styles}
+          >
+            <label id={id}>
+              <img src={Arrows} style={imageStyles} /> {signature}
+            </label>
+          </div>
+        </div>
+      </div>
     )
   }
 }
