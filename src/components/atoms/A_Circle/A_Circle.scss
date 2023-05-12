@@ -1,6 +1,11 @@
 .A_Circle {
+  position: inherit;
   border-radius: 1000px;
-  background-color: black;
+  border: solid 2px var(--dark);
+  background-color: var(--border);
   width: 100px;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -15,7 +15,7 @@ export default class A_Frame extends PureComponent {
     }
 
     return (
-      <div className="frame" style={style}>
+      <div className="A_Frame" style={style}>
         {exercise}
       </div>
     )

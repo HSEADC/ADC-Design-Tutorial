@@ -15,7 +15,7 @@ export default class M_ExerciseBox extends PureComponent {
     const { header, text, size, exercise } = this.props
 
     return (
-      <div className="box">
+      <div className="M_ExerciseBox">
         <A_Text header={header} text={text} />
         <A_Frame exercise={exercise} size={size}></A_Frame>
       </div>

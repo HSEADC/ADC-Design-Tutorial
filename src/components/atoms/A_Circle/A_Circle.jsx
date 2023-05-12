@@ -9,6 +9,12 @@ export default class A_Circle extends PureComponent {
   }
 
   render() {
-    return <div className="A_Circle"></div>
+    const { number } = this.props
+
+    return (
+      <div className="A_Circle">
+        <h1>{number}</h1>
+      </div>
+    )
   }
 }

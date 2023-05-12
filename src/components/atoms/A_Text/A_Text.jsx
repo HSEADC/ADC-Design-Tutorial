@@ -12,7 +12,7 @@ export default class A_Text extends PureComponent {
     const { header, text } = this.props
 
     return (
-      <div className="text">
+      <div className="A_Text">
         <h3> {header}</h3>
         <p> {text} </p>
       </div>

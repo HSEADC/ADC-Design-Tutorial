@@ -37,6 +37,7 @@ export default class MOD_Rangefinder extends PureComponent {
   }
 
   handleMouseDown = (e) => {
+    console.log('Down!')
     e.preventDefault()
     const { cursorStart } = this.state
 
@@ -47,6 +48,7 @@ export default class MOD_Rangefinder extends PureComponent {
   }
 
   handleMouseMove = (e) => {
+    console.log('Move!')
     const { cursorX, coord, cursorStart, coordNext } = this.state
 
     if (this.state.mouseDown) {
@@ -57,19 +59,21 @@ export default class MOD_Rangefinder extends PureComponent {
       })
     }
 
-    // if (cursorX < cursorStart) {
-    //   // если положение курсора меньше стартового
-    //   this.setState({
-    //     coord: 0
-    //   })
-    // }
-    //
-    // if (cursorX > cursorStart + 200) {
-    //   // если положение курсора больше стартового на 200
-    //   this.setState({
-    //     coord: 200
-    //   })
-    // }
+    // ЗДЕСЬ НУЖНО БУДЕТ ИЗМЕНИТЬ УСЛОВИЯ ОГРАНИЧЕНИЙ!
+
+    if (cursorX < cursorStart - coord) {
+      // если положение курсора меньше стартового
+      this.setState({
+        coord: 0
+      })
+    }
+
+    if (cursorX > cursorStart + 200) {
+      // если положение курсора больше стартового на 200
+      this.setState({
+        coord: 200
+      })
+    }
 
     if (coord < 0) {
       // если положение курсора меньше стартового
@@ -87,6 +91,7 @@ export default class MOD_Rangefinder extends PureComponent {
   }
 
   handleMouseUp = (e) => {
+    console.log('Up!')
     e.preventDefault()
 
     const { mouseDown, coord, coordNext } = this.state
