@@ -10,25 +10,96 @@ export default class MOD_CircleGame extends PureComponent {
 
     this.state = {
       circleCount: 1,
-      circleNumber: []
+      objects: [],
+      cursorXStart: 0,
+      cursorYStart: 0,
+      mouseDown: false,
+      width: 0,
+      height: 0,
+      size: 0
     }
   }
 
-  handleMouseUp = () => {
-    const { circleNumber, circleCount } = this.state
+  handleMouseDown = (e) => {
+    e.preventDefault()
+    const {
+      objects,
+      circleCount,
+      cursorXStart,
+      cursorYStart,
+      width,
+      height
+    } = this.state
 
-    this.setState({ circleCount: circleCount + 1 })
+    objects.push({
+      number: circleCount,
+      cursorXStart: cursorXStart,
+      cursorYStart: cursorYStart,
+      width: width,
+      height: height
+    }),
+      this.setState({
+        circleCount: circleCount + 1,
+        mouseDown: true,
+        cursorXStart: e.screenX,
+        cursorYStart: e.screenY
+      })
 
-    circleNumber.push({ number: circleCount })
+    console.log(objects)
+  }
 
-    console.log(circleNumber)
+  handleMouseMove = (e) => {
+    const { mouseDown, cursorXStart, cursorYStart, width, height } = this.state
+
+    if (this.state.mouseDown) {
+      this.setState({
+        width: e.screenX - cursorXStart,
+        height: e.screenY - cursorYStart
+      })
+
+      if (width < height) {
+        this.setState({
+          size: height
+        })
+      }
+
+      if (width > height) {
+        this.setState({
+          size: width
+        })
+      }
+    }
+  }
+
+  handleMouseUp = (e) => {
+    console.log('Up!')
+
+    e.preventDefault()
+
+    const { mouseDown } = this.state
+
+    if (mouseDown) {
+      this.setState({
+        mouseDown: false
+      })
+    }
   }
 
   render() {
     const { info } = this.props
-    const { circleNumber } = this.state
-    const circles = circleNumber.map((circleNumber, i) => {
-      return <A_Circle number={circleNumber.number} key={i}></A_Circle>
+    const { objects, cursorXStart, size } = this.state
+
+    const circles = objects.map((object) => {
+      return (
+        <A_Circle
+          number={object.number}
+          x={object.cursorXStart}
+          y={object.cursorYStart}
+          key={object.number}
+          id={object.number}
+          size={size}
+        ></A_Circle>
+      )
     })
 
     return (
@@ -36,6 +107,8 @@ export default class MOD_CircleGame extends PureComponent {
         header={info[1].header}
         text={info[1].text}
         handleMouseUp={this.handleMouseUp}
+        handleMouseDown={this.handleMouseDown}
+        handleMouseMove={this.handleMouseMove}
         circles={circles}
       ></M_CanvasBox>
     )

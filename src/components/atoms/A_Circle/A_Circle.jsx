@@ -8,12 +8,23 @@ export default class A_Circle extends PureComponent {
     super(props)
   }
 
+  componentDidMount() {
+    window.addEventListener('mouseup', this.handleMouseUp)
+    window.addEventListener('mousemove', this.handleMouseMove)
+  }
+
   render() {
-    const { number } = this.props
+    const { number, x, y, size } = this.props
+    const styles = {
+      width: `${size}px`,
+      height: `${size}px`
+    }
 
     return (
-      <div className="A_Circle">
-        <h1>{number}</h1>
+      <div style={styles} className="A_Circle">
+        <p>{number}</p>
+        <p>{x}</p>
+        <p>{y}</p>
       </div>
     )
   }

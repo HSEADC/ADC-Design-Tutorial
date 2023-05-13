@@ -12,13 +12,24 @@ export default class M_CanvasBox extends PureComponent {
   }
 
   render() {
-    const { header, text, exercise, handleMouseUp, circles } = this.props
+    const {
+      header,
+      text,
+      exercise,
+      handleMouseUp,
+      handleMouseDown,
+      handleMouseMove,
+      circles,
+      size
+    } = this.props
 
     return (
       <div className="M_CanvasBox">
         <A_Text header={header} text={text} />
         <A_Canvas
           handleMouseUp={handleMouseUp}
+          handleMouseDown={handleMouseDown}
+          handleMouseMove={handleMouseMove}
           exercise={exercise}
           circles={circles}
         ></A_Canvas>
