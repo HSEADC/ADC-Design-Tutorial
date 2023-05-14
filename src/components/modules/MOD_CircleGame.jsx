@@ -16,7 +16,11 @@ export default class MOD_CircleGameEx extends PureComponent {
       mouseDown: false,
       width: 0,
       height: 0,
-      size: 0
+      size: 0,
+      top: 0,
+      bottom: 0,
+      right: 0,
+      left: 0
     }
   }
 
@@ -43,7 +47,8 @@ export default class MOD_CircleGameEx extends PureComponent {
       circleCount: circleCount + 1,
       mouseDown: true,
       cursorXStart: e.screenX,
-      cursorYStart: e.screenY
+      cursorYStart: e.screenY,
+      size: 1
     })
   }
 
@@ -71,8 +76,6 @@ export default class MOD_CircleGameEx extends PureComponent {
   }
 
   handleMouseUp = (e) => {
-    console.log('Up!')
-
     e.preventDefault()
 
     const {
@@ -90,6 +93,16 @@ export default class MOD_CircleGameEx extends PureComponent {
         mouseDown: false
       })
     }
+  }
+
+  receiveCoord = (result) => {
+    console.log(result)
+    this.setState({
+      top: result.top,
+      bottom: result.bottom,
+      right: result.right,
+      left: result.left
+    })
   }
 
   render() {
@@ -118,7 +131,8 @@ export default class MOD_CircleGameEx extends PureComponent {
         handleMouseDown={this.handleMouseDown}
         handleMouseMove={this.handleMouseMove}
         circles={circles}
-      ></M_CanvasBox>
+        receiveCoord={this.receiveCoord}
+      />
     )
   }
 }

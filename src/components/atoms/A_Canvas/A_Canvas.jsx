@@ -1,11 +1,12 @@
 import './A_Canvas.scss'
 
-import React, { PureComponent } from 'react'
+import React, { PureComponent, useRef } from 'react'
 import ReactDOM from 'react-dom'
 
 export default class A_Canvas extends PureComponent {
   constructor(props) {
     super(props)
+    this.position = React.createRef()
   }
 
   handleMouseDown = (e) => {
@@ -26,6 +27,11 @@ export default class A_Canvas extends PureComponent {
     handleMouseUp(e)
   }
 
+  receiveCoord = () => {
+    const { receiveCoord } = this.props
+    receiveCoord(this.position.current.getBoundingClientRect())
+  }
+
   render() {
     const {
       exercise,
@@ -33,7 +39,8 @@ export default class A_Canvas extends PureComponent {
       circles,
       handleMouseUp,
       handleMouseDown,
-      handleMouseMove
+      handleMouseMove,
+      receiveCoord
     } = this.props
 
     return (
@@ -42,6 +49,8 @@ export default class A_Canvas extends PureComponent {
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         className="A_Canvas"
+        ref={this.position}
+        onClick={this.receiveCoord}
       >
         {circles}
       </div>

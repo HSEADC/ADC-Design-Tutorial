@@ -20,7 +20,8 @@ export default class M_CanvasBox extends PureComponent {
       handleMouseDown,
       handleMouseMove,
       circles,
-      size
+      size,
+      receiveCoord
     } = this.props
 
     return (
@@ -32,6 +33,7 @@ export default class M_CanvasBox extends PureComponent {
           handleMouseMove={handleMouseMove}
           exercise={exercise}
           circles={circles}
+          receiveCoord={receiveCoord}
         ></A_Canvas>
       </div>
     )
