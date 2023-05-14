@@ -6,25 +6,28 @@ import ReactDOM from 'react-dom'
 export default class A_Circle extends PureComponent {
   constructor(props) {
     super(props)
-  }
-
-  componentDidMount() {
-    window.addEventListener('mouseup', this.handleMouseUp)
-    window.addEventListener('mousemove', this.handleMouseMove)
+    this.state = {
+      curSize: 0
+    }
   }
 
   render() {
-    const { number, x, y, size } = this.props
+    const { size, number, id, circleCount } = this.props
+
+    if (id == circleCount) {
+      this.setState({
+        curSize: size
+      })
+    }
+
     const styles = {
-      width: `${size}px`,
-      height: `${size}px`
+      width: `${this.state.curSize}px`,
+      height: `${this.state.curSize}px`
     }
 
     return (
       <div style={styles} className="A_Circle">
         <p>{number}</p>
-        <p>{x}</p>
-        <p>{y}</p>
       </div>
     )
   }

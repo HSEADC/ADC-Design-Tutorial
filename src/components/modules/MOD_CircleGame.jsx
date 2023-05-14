@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import M_CanvasBox from '../moleculas/M_CanvasBox/M_CanvasBox.jsx'
 import A_Circle from '../atoms/A_Circle/A_Circle.jsx'
 
-export default class MOD_CircleGame extends PureComponent {
+export default class MOD_CircleGameEx extends PureComponent {
   constructor(props) {
     super(props)
 
@@ -37,15 +37,14 @@ export default class MOD_CircleGame extends PureComponent {
       cursorYStart: cursorYStart,
       width: width,
       height: height
-    }),
-      this.setState({
-        circleCount: circleCount + 1,
-        mouseDown: true,
-        cursorXStart: e.screenX,
-        cursorYStart: e.screenY
-      })
+    })
 
-    console.log(objects)
+    this.setState({
+      circleCount: circleCount + 1,
+      mouseDown: true,
+      cursorXStart: e.screenX,
+      cursorYStart: e.screenY
+    })
   }
 
   handleMouseMove = (e) => {
@@ -76,7 +75,15 @@ export default class MOD_CircleGame extends PureComponent {
 
     e.preventDefault()
 
-    const { mouseDown } = this.state
+    const {
+      mouseDown,
+      objects,
+      circleCount,
+      cursorXStart,
+      cursorYStart,
+      width,
+      height
+    } = this.state
 
     if (mouseDown) {
       this.setState({
@@ -87,7 +94,7 @@ export default class MOD_CircleGame extends PureComponent {
 
   render() {
     const { info } = this.props
-    const { objects, cursorXStart, size } = this.state
+    const { objects, cursorXStart, size, circleCount } = this.state
 
     const circles = objects.map((object) => {
       return (
@@ -96,8 +103,9 @@ export default class MOD_CircleGame extends PureComponent {
           x={object.cursorXStart}
           y={object.cursorYStart}
           key={object.number}
-          id={object.number}
+          id={object.number + 1}
           size={size}
+          circleCount={circleCount}
         ></A_Circle>
       )
     })
