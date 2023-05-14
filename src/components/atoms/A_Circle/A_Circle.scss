@@ -2,10 +2,7 @@
   border-radius: 1000px;
   border: solid 2px var(--dark);
   background-color: var(--border);
-  width: 100px;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  width: 1px;
+  height: 1px;
+  position: absolute;
 }

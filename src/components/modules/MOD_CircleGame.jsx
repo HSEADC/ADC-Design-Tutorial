@@ -17,10 +17,10 @@ export default class MOD_CircleGameEx extends PureComponent {
       width: 0,
       height: 0,
       size: 0,
-      top: 0,
-      bottom: 0,
-      right: 0,
-      left: 0
+      x: 0,
+      y: 0,
+      xPosition: 0,
+      yPosition: 0
     }
   }
 
@@ -32,7 +32,9 @@ export default class MOD_CircleGameEx extends PureComponent {
       cursorXStart,
       cursorYStart,
       width,
-      height
+      height,
+      x,
+      y
     } = this.state
 
     objects.push({
@@ -48,12 +50,21 @@ export default class MOD_CircleGameEx extends PureComponent {
       mouseDown: true,
       cursorXStart: e.screenX,
       cursorYStart: e.screenY,
-      size: 1
+      size: 1,
+      xPosition: e.clientX - x,
+      yPosition: e.clientY - y
     })
   }
 
   handleMouseMove = (e) => {
-    const { mouseDown, cursorXStart, cursorYStart, width, height } = this.state
+    const {
+      mouseDown,
+      cursorXStart,
+      cursorYStart,
+      width,
+      height,
+      x
+    } = this.state
 
     if (this.state.mouseDown) {
       this.setState({
@@ -98,16 +109,21 @@ export default class MOD_CircleGameEx extends PureComponent {
   receiveCoord = (result) => {
     console.log(result)
     this.setState({
-      top: result.top,
-      bottom: result.bottom,
-      right: result.right,
-      left: result.left
+      x: result.x,
+      y: result.y
     })
   }
 
   render() {
     const { info } = this.props
-    const { objects, cursorXStart, size, circleCount } = this.state
+    const {
+      objects,
+      cursorXStart,
+      size,
+      circleCount,
+      xPosition,
+      yPosition
+    } = this.state
 
     const circles = objects.map((object) => {
       return (
@@ -118,21 +134,25 @@ export default class MOD_CircleGameEx extends PureComponent {
           key={object.number}
           id={object.number + 1}
           size={size}
+          xPosition={xPosition}
+          yPosition={yPosition}
           circleCount={circleCount}
         ></A_Circle>
       )
     })
 
     return (
-      <M_CanvasBox
-        header={info[1].header}
-        text={info[1].text}
-        handleMouseUp={this.handleMouseUp}
-        handleMouseDown={this.handleMouseDown}
-        handleMouseMove={this.handleMouseMove}
-        circles={circles}
-        receiveCoord={this.receiveCoord}
-      />
+      <>
+        <M_CanvasBox
+          header={info[1].header}
+          text={info[1].text}
+          handleMouseUp={this.handleMouseUp}
+          handleMouseDown={this.handleMouseDown}
+          handleMouseMove={this.handleMouseMove}
+          circles={circles}
+          receiveCoord={this.receiveCoord}
+        />
+      </>
     )
   }
 }
