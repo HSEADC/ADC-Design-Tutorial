@@ -34,25 +34,27 @@ export default class MOD_CircleGameEx extends PureComponent {
       width,
       height,
       x,
-      y
+      y,
+      size
     } = this.state
-
-    objects.push({
-      number: circleCount,
-      cursorXStart: cursorXStart,
-      cursorYStart: cursorYStart,
-      width: width,
-      height: height
-    })
 
     this.setState({
       circleCount: circleCount + 1,
       mouseDown: true,
-      cursorXStart: e.screenX,
-      cursorYStart: e.screenY,
+      cursorXStart: e.clientX,
+      cursorYStart: e.clientY,
       size: 1,
       xPosition: e.clientX - x,
-      yPosition: e.clientY - y
+      yPosition: e.clientY - y,
+      objects: [
+        ...objects,
+        {
+          number: circleCount,
+          cursorXStart: cursorXStart,
+          cursorYStart: cursorYStart,
+          size: size
+        }
+      ]
     })
   }
 
@@ -68,8 +70,8 @@ export default class MOD_CircleGameEx extends PureComponent {
 
     if (this.state.mouseDown) {
       this.setState({
-        width: e.screenX - cursorXStart,
-        height: e.screenY - cursorYStart
+        width: e.clientX - cursorXStart,
+        height: e.clientY - cursorYStart
       })
 
       if (width < height) {
@@ -106,7 +108,8 @@ export default class MOD_CircleGameEx extends PureComponent {
       cursorXStart,
       cursorYStart,
       width,
-      height
+      height,
+      size
     } = this.state
 
     if (mouseDown) {
@@ -121,12 +124,6 @@ export default class MOD_CircleGameEx extends PureComponent {
       x: result.x,
       y: result.y
     })
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.size < this.state.size) {
-      console.log('Ошибка')
-    }
   }
 
   render() {
