@@ -83,6 +83,16 @@ export default class MOD_CircleGameEx extends PureComponent {
           size: width
         })
       }
+      if (width < 0) {
+        this.setState({
+          width: width * -1
+        })
+      }
+      if (height < 0) {
+        this.setState({
+          height: height * -1
+        })
+      }
     }
   }
 
@@ -107,11 +117,16 @@ export default class MOD_CircleGameEx extends PureComponent {
   }
 
   receiveCoord = (result) => {
-    console.log(result)
     this.setState({
       x: result.x,
       y: result.y
     })
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.size < this.state.size) {
+      console.log('Ошибка')
+    }
   }
 
   render() {

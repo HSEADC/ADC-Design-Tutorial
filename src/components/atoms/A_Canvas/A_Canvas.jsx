@@ -32,6 +32,10 @@ export default class A_Canvas extends PureComponent {
     receiveCoord(this.position.current.getBoundingClientRect())
   }
 
+  componentDidMount() {
+    window.addEventListener('load', this.receiveCoord)
+  }
+
   render() {
     const {
       exercise,
@@ -50,7 +54,6 @@ export default class A_Canvas extends PureComponent {
         onMouseMove={handleMouseMove}
         className="A_Canvas"
         ref={this.position}
-        onClick={this.receiveCoord}
       >
         {circles}
       </div>
