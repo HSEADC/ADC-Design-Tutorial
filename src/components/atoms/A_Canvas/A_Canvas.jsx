@@ -44,7 +44,8 @@ export default class A_Canvas extends PureComponent {
       handleMouseUp,
       handleMouseDown,
       handleMouseMove,
-      receiveCoord
+      receiveCoord,
+      handleChange
     } = this.props
 
     return (

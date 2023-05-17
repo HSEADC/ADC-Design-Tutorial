@@ -9,7 +9,7 @@ export default class MOD_CircleGameEx extends PureComponent {
     super(props)
 
     this.state = {
-      circleCount: 1,
+      circleCount: 0,
       objects: [],
       cursorXStart: 0,
       cursorYStart: 0,
@@ -35,7 +35,9 @@ export default class MOD_CircleGameEx extends PureComponent {
       height,
       x,
       y,
-      size
+      size,
+      xPosition,
+      yPosition
     } = this.state
 
     this.setState({
@@ -43,16 +45,18 @@ export default class MOD_CircleGameEx extends PureComponent {
       mouseDown: true,
       cursorXStart: e.clientX,
       cursorYStart: e.clientY,
-      size: 1,
+      size: 0,
       xPosition: e.clientX - x,
       yPosition: e.clientY - y,
       objects: [
         ...objects,
         {
-          number: circleCount,
+          number: circleCount + 1,
           cursorXStart: cursorXStart,
           cursorYStart: cursorYStart,
-          size: size
+          size: size,
+          xCoord: xPosition,
+          yCoord: yPosition
         }
       ]
     })
@@ -65,13 +69,34 @@ export default class MOD_CircleGameEx extends PureComponent {
       cursorYStart,
       width,
       height,
-      x
+      x,
+      size,
+      objects,
+      circleCount,
+      xPosition,
+      yPosition
     } = this.state
 
+    const newCircle = objects.map((object) => {
+      if (object.number === circleCount) {
+        return {
+          ...object,
+          cursorXStart: cursorXStart,
+          cursorYStart: cursorYStart,
+          size: size,
+          xCoord: xPosition,
+          yCoord: yPosition
+        }
+      } else {
+        return object
+      }
+    })
+    // Re-render with the new array
     if (this.state.mouseDown) {
       this.setState({
         width: e.clientX - cursorXStart,
-        height: e.clientY - cursorYStart
+        height: e.clientY - cursorYStart,
+        objects: newCircle
       })
 
       if (width < height) {
@@ -137,7 +162,7 @@ export default class MOD_CircleGameEx extends PureComponent {
       yPosition
     } = this.state
 
-    const circles = objects.map((object) => {
+    const circles = objects.map((object, i) => {
       return (
         <A_Circle
           number={object.number}
@@ -145,9 +170,9 @@ export default class MOD_CircleGameEx extends PureComponent {
           y={object.cursorYStart}
           key={object.number}
           id={object.number + 1}
-          size={size}
-          xPosition={xPosition}
-          yPosition={yPosition}
+          size={object.size}
+          xPosition={object.xCoord}
+          yPosition={object.yCoord}
           circleCount={circleCount}
         ></A_Circle>
       )

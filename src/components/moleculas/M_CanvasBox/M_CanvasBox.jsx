@@ -19,6 +19,7 @@ export default class M_CanvasBox extends PureComponent {
       handleMouseUp,
       handleMouseDown,
       handleMouseMove,
+      handleChange,
       circles,
       size,
       receiveCoord
@@ -31,6 +32,7 @@ export default class M_CanvasBox extends PureComponent {
           handleMouseUp={handleMouseUp}
           handleMouseDown={handleMouseDown}
           handleMouseMove={handleMouseMove}
+          handleChange={handleChange}
           exercise={exercise}
           circles={circles}
           receiveCoord={receiveCoord}
