@@ -20,7 +20,9 @@ export default class MOD_CircleGameEx extends PureComponent {
       x: 0,
       y: 0,
       xPosition: 0,
-      yPosition: 0
+      yPosition: 0,
+      maxSize: 10000,
+      failed: false
     }
   }
 
@@ -52,8 +54,6 @@ export default class MOD_CircleGameEx extends PureComponent {
         ...objects,
         {
           number: circleCount + 1,
-          cursorXStart: cursorXStart,
-          cursorYStart: cursorYStart,
           size: size,
           xCoord: xPosition,
           yCoord: yPosition
@@ -74,25 +74,24 @@ export default class MOD_CircleGameEx extends PureComponent {
       objects,
       circleCount,
       xPosition,
-      yPosition
+      yPosition,
+      maxSize
     } = this.state
 
-    const newCircle = objects.map((object) => {
-      if (object.number === circleCount) {
-        return {
-          ...object,
-          cursorXStart: cursorXStart,
-          cursorYStart: cursorYStart,
-          size: size,
-          xCoord: xPosition,
-          yCoord: yPosition
-        }
-      } else {
-        return object
-      }
-    })
-    // Re-render with the new array
     if (this.state.mouseDown) {
+      const newCircle = objects.map((object) => {
+        if (object.number === circleCount) {
+          return {
+            ...object,
+            size: size,
+            xCoord: xPosition,
+            yCoord: yPosition
+          }
+        } else {
+          return object
+        }
+      })
+
       this.setState({
         width: e.clientX - cursorXStart,
         height: e.clientY - cursorYStart,
@@ -120,6 +119,14 @@ export default class MOD_CircleGameEx extends PureComponent {
           height: height * -1
         })
       }
+
+      // тут костыль, так быть не должно ;(
+      if (size > maxSize + 2) {
+        this.setState({
+          failed: true
+        })
+        console.log('fail!')
+      }
     }
   }
 
@@ -139,7 +146,8 @@ export default class MOD_CircleGameEx extends PureComponent {
 
     if (mouseDown) {
       this.setState({
-        mouseDown: false
+        mouseDown: false,
+        maxSize: size
       })
     }
   }
@@ -162,18 +170,14 @@ export default class MOD_CircleGameEx extends PureComponent {
       yPosition
     } = this.state
 
-    const circles = objects.map((object, i) => {
+    const circles = objects.map((object) => {
       return (
         <A_Circle
           number={object.number}
-          x={object.cursorXStart}
-          y={object.cursorYStart}
           key={object.number}
-          id={object.number + 1}
           size={object.size}
           xPosition={object.xCoord}
           yPosition={object.yCoord}
-          circleCount={circleCount}
         ></A_Circle>
       )
     })
@@ -188,6 +192,7 @@ export default class MOD_CircleGameEx extends PureComponent {
           handleMouseMove={this.handleMouseMove}
           circles={circles}
           receiveCoord={this.receiveCoord}
+          compareCircles={this.compareCircles}
         />
       </>
     )
