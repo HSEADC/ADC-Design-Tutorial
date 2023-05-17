@@ -19,10 +19,13 @@ export default class MOD_CircleGameEx extends PureComponent {
       size: 0,
       x: 0,
       y: 0,
+      canvasWidth: 0,
+      canvasHeight: 0,
       xPosition: 0,
       yPosition: 0,
       maxSize: 10000,
-      failed: false
+      sizeFailed: false,
+      borderFailed: false
     }
   }
 
@@ -123,9 +126,12 @@ export default class MOD_CircleGameEx extends PureComponent {
       // тут костыль, так быть не должно ;(
       if (size > maxSize + 2) {
         this.setState({
-          failed: true
+          sizeFailed: true
         })
         console.log('fail!')
+      }
+
+      if (true) {
       }
     }
   }
@@ -155,7 +161,23 @@ export default class MOD_CircleGameEx extends PureComponent {
   receiveCoord = (result) => {
     this.setState({
       x: result.x,
-      y: result.y
+      y: result.y,
+      canvasWidth: result.width,
+      canvasHeight: result.height
+    })
+  }
+
+  componentDidUpdate() {
+    const newCircle = this.state.objects.map((object) => {
+      if (object.size > this.state.canvasHeight - object.yCoord) {
+        this.setState({
+          borderFailed: true
+        })
+      } else if (object.size > this.state.canvasWidth - object.xCoord) {
+        this.setState({
+          borderFailed: true
+        })
+      }
     })
   }
 
