@@ -22,7 +22,9 @@ export default class M_CanvasBox extends PureComponent {
       handleChange,
       circles,
       size,
-      receiveCoord
+      receiveCoord,
+      alert,
+      missionFailed
     } = this.props
 
     return (
@@ -35,7 +37,9 @@ export default class M_CanvasBox extends PureComponent {
           handleChange={handleChange}
           exercise={exercise}
           circles={circles}
+          alert={alert}
           receiveCoord={receiveCoord}
+          missionFailed={missionFailed}
         ></A_Canvas>
       </div>
     )

@@ -34,6 +34,19 @@ export default class A_Canvas extends PureComponent {
 
   componentDidMount() {
     window.addEventListener('load', this.receiveCoord)
+    window.addEventListener('mousedown', this.props.handleMouseDown)
+    window.addEventListener('mouseup', this.props.handleMouseUp)
+    window.addEventListener('mousemove', this.props.handleMouseMove)
+  }
+
+  componentDidUpdate() {
+    const { missionFailed } = this.props
+
+    if (missionFailed) {
+      window.removeEventListener('mousedown', this.props.handleMouseDown)
+      window.removeEventListener('mouseup', this.props.handleMouseUp)
+      window.removeEventListener('mousemove', this.props.handleMouseMove)
+    }
   }
 
   render() {
@@ -45,18 +58,14 @@ export default class A_Canvas extends PureComponent {
       handleMouseDown,
       handleMouseMove,
       receiveCoord,
-      handleChange
+      handleChange,
+      alert
     } = this.props
 
     return (
-      <div
-        onMouseUp={handleMouseUp}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        className="A_Canvas"
-        ref={this.position}
-      >
+      <div className="A_Canvas" ref={this.position}>
         {circles}
+        {alert}
       </div>
     )
   }

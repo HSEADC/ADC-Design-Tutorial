@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import ReactDOM from 'react-dom'
 
 import M_CanvasBox from '../moleculas/M_CanvasBox/M_CanvasBox.jsx'
+import M_AlertBox from '../moleculas/M_AlertBox/M_AlertBox.jsx'
 import A_Circle from '../atoms/A_Circle/A_Circle.jsx'
 
 export default class MOD_CircleGameEx extends PureComponent {
@@ -24,8 +25,12 @@ export default class MOD_CircleGameEx extends PureComponent {
       xPosition: 0,
       yPosition: 0,
       maxSize: 10000,
+      missionFailed: false,
       sizeFailed: false,
-      borderFailed: false
+      borderFailed: false,
+      collisionFailed: false,
+      errorHeader: '',
+      errorText: ''
     }
   }
 
@@ -57,9 +62,11 @@ export default class MOD_CircleGameEx extends PureComponent {
         ...objects,
         {
           number: circleCount + 1,
-          size: size,
-          xCoord: xPosition,
-          yCoord: yPosition
+          size: this.state.size,
+          xCoord: e.clientX - x,
+          yCoord: e.clientY - y,
+          cursorXStart: e.clientX,
+          cursorYStart: e.clientY
         }
       ]
     })
@@ -126,12 +133,9 @@ export default class MOD_CircleGameEx extends PureComponent {
       // тут костыль, так быть не должно ;(
       if (size > maxSize + 2) {
         this.setState({
-          sizeFailed: true
+          sizeFailed: true,
+          missionFailed: true
         })
-        console.log('fail!')
-      }
-
-      if (true) {
       }
     }
   }
@@ -171,11 +175,69 @@ export default class MOD_CircleGameEx extends PureComponent {
     const newCircle = this.state.objects.map((object) => {
       if (object.size > this.state.canvasHeight - object.yCoord) {
         this.setState({
-          borderFailed: true
+          borderFailed: true,
+          missionFailed: true
         })
-      } else if (object.size > this.state.canvasWidth - object.xCoord) {
+      }
+      if (object.size > this.state.canvasWidth - object.xCoord) {
         this.setState({
-          borderFailed: true
+          borderFailed: true,
+          missionFailed: true
+        })
+      }
+      if (
+        object.number != this.state.circleCount &&
+        object.size + object.cursorXStart > this.state.cursorXStart &&
+        object.cursorXStart < this.state.cursorXStart &&
+        object.size + object.cursorYStart > this.state.cursorYStart &&
+        object.cursorYStart < this.state.cursorYStart
+      ) {
+        this.setState({
+          collisionFailed: true,
+          missionFailed: true
+        })
+      }
+
+      if (
+        object.number != this.state.circleCount &&
+        object.cursorXStart < this.state.cursorXStart + this.state.size &&
+        object.cursorXStart > this.state.cursorXStart &&
+        object.cursorYStart < this.state.cursorYStart + this.state.size &&
+        object.cursorYStart > this.state.cursorYStart
+      ) {
+        this.setState({
+          collisionFailed: true,
+          missionFailed: true
+        })
+      }
+
+      if (
+        object.number != this.state.circleCount &&
+        object.cursorXStart + object.size > this.state.cursorXStart &&
+        this.state.cursorYStart + this.state.size > object.cursorYStart &&
+        this.state.cursorXStart + this.state.size > object.cursorXStart
+      ) {
+        this.setState({
+          collisionFailed: true,
+          missionFailed: true
+        })
+      }
+      if (this.state.sizeFailed == true) {
+        this.setState({
+          errorHeader: `Вы уместили ${this.state.circleCount} кругов`,
+          errorText: 'Ваш последний круг оказался больше предыдущего'
+        })
+      }
+      if (this.state.borderFailed == true) {
+        this.setState({
+          errorHeader: `Вы уместили ${this.state.circleCount} кругов`,
+          errorText: 'Ваш последний круг вышел за пределы холста'
+        })
+      }
+      if (this.state.collisionFailed == true) {
+        this.setState({
+          errorHeader: `Вы уместили ${this.state.circleCount} кругов`,
+          errorText: 'Ваш последний круг задел другой'
         })
       }
     })
@@ -189,7 +251,8 @@ export default class MOD_CircleGameEx extends PureComponent {
       size,
       circleCount,
       xPosition,
-      yPosition
+      yPosition,
+      missionFailed
     } = this.state
 
     const circles = objects.map((object) => {
@@ -200,9 +263,21 @@ export default class MOD_CircleGameEx extends PureComponent {
           size={object.size}
           xPosition={object.xCoord}
           yPosition={object.yCoord}
-        ></A_Circle>
+        />
       )
     })
+
+    const failCheck = this.state.missionFailed
+    let alert
+    if (failCheck) {
+      alert = (
+        <M_AlertBox
+          errorHeader={this.state.errorHeader}
+          errorText={this.state.errorText}
+        />
+      )
+    } else {
+    }
 
     return (
       <>
@@ -213,8 +288,10 @@ export default class MOD_CircleGameEx extends PureComponent {
           handleMouseDown={this.handleMouseDown}
           handleMouseMove={this.handleMouseMove}
           circles={circles}
+          alert={alert}
           receiveCoord={this.receiveCoord}
           compareCircles={this.compareCircles}
+          missionFailed={missionFailed}
         />
       </>
     )
