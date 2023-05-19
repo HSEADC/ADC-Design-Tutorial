@@ -15,8 +15,7 @@ export default class MOD_CircleGameEx extends PureComponent {
       cursorXStart: 0,
       cursorYStart: 0,
       mouseDown: false,
-      width: 0,
-      height: 0,
+
       size: 0,
       x: 0,
       y: 0,
@@ -41,8 +40,7 @@ export default class MOD_CircleGameEx extends PureComponent {
       circleCount,
       cursorXStart,
       cursorYStart,
-      width,
-      height,
+
       x,
       y,
       size,
@@ -62,7 +60,7 @@ export default class MOD_CircleGameEx extends PureComponent {
         ...objects,
         {
           number: circleCount + 1,
-          size: this.state.size,
+          size: 0,
           xCoord: e.clientX - x,
           yCoord: e.clientY - y,
           cursorXStart: e.clientX,
@@ -77,8 +75,7 @@ export default class MOD_CircleGameEx extends PureComponent {
       mouseDown,
       cursorXStart,
       cursorYStart,
-      width,
-      height,
+
       x,
       size,
       objects,
@@ -90,48 +87,36 @@ export default class MOD_CircleGameEx extends PureComponent {
 
     if (this.state.mouseDown) {
       const newCircle = objects.map((object) => {
-        if (object.number === circleCount) {
+        if (object.number === this.state.circleCount) {
+          // проблема здесь
           return {
             ...object,
-            size: size,
-            xCoord: xPosition,
-            yCoord: yPosition
+            size:
+              object.size * 0 +
+              Math.max(
+                e.clientX - cursorXStart,
+                e.clientY - cursorYStart,
+                (e.clientY - cursorYStart) * -1,
+                (e.clientX - cursorXStart) * -1
+              )
           }
+          console.log(this.state.size)
         } else {
           return object
         }
       })
 
       this.setState({
-        width: e.clientX - cursorXStart,
-        height: e.clientY - cursorYStart,
-        objects: newCircle
+        objects: newCircle,
+        size: Math.max(
+          e.clientX - cursorXStart,
+          e.clientY - cursorYStart,
+          (e.clientY - cursorYStart) * -1,
+          (e.clientX - cursorXStart) * -1
+        )
       })
 
-      if (width < height) {
-        this.setState({
-          size: height
-        })
-      }
-
-      if (width > height) {
-        this.setState({
-          size: width
-        })
-      }
-      if (width < 0) {
-        this.setState({
-          width: width * -1
-        })
-      }
-      if (height < 0) {
-        this.setState({
-          height: height * -1
-        })
-      }
-
-      // тут костыль, так быть не должно ;(
-      if (size > maxSize + 2) {
+      if (size > maxSize) {
         this.setState({
           sizeFailed: true,
           missionFailed: true
@@ -149,15 +134,15 @@ export default class MOD_CircleGameEx extends PureComponent {
       circleCount,
       cursorXStart,
       cursorYStart,
-      width,
-      height,
+
       size
     } = this.state
 
     if (mouseDown) {
       this.setState({
         mouseDown: false,
-        maxSize: size
+        maxSize: size,
+        size: 0
       })
     }
   }
@@ -185,12 +170,13 @@ export default class MOD_CircleGameEx extends PureComponent {
           missionFailed: true
         })
       }
+
       if (
         object.number != this.state.circleCount &&
-        object.size + object.cursorXStart > this.state.cursorXStart &&
-        object.cursorXStart < this.state.cursorXStart &&
-        object.size + object.cursorYStart > this.state.cursorYStart &&
-        object.cursorYStart < this.state.cursorYStart
+        this.state.cursorXStart + this.state.size > object.cursorXStart &&
+        this.state.cursorYStart + this.state.size > object.cursorYStart &&
+        this.state.cursorXStart < object.cursorXStart &&
+        this.state.cursorYStart < object.cursorYStart
       ) {
         this.setState({
           collisionFailed: true,
@@ -200,10 +186,10 @@ export default class MOD_CircleGameEx extends PureComponent {
 
       if (
         object.number != this.state.circleCount &&
-        object.cursorXStart < this.state.cursorXStart + this.state.size &&
-        object.cursorXStart > this.state.cursorXStart &&
-        object.cursorYStart < this.state.cursorYStart + this.state.size &&
-        object.cursorYStart > this.state.cursorYStart
+        this.state.cursorXStart + this.state.size > object.cursorXStart &&
+        this.state.cursorYStart + this.state.size > object.cursorYStart &&
+        this.state.cursorXStart < object.cursorXStart &&
+        this.state.cursorYStart < object.cursorYStart
       ) {
         this.setState({
           collisionFailed: true,
@@ -215,13 +201,40 @@ export default class MOD_CircleGameEx extends PureComponent {
         object.number != this.state.circleCount &&
         object.cursorXStart + object.size > this.state.cursorXStart &&
         this.state.cursorYStart + this.state.size > object.cursorYStart &&
-        this.state.cursorXStart + this.state.size > object.cursorXStart
+        this.state.cursorXStart > object.cursorXStart &&
+        this.state.cursorYStart < object.cursorYStart
       ) {
         this.setState({
           collisionFailed: true,
           missionFailed: true
         })
       }
+
+      if (
+        object.number != this.state.circleCount &&
+        this.state.cursorYStart < object.cursorYStart + object.size &&
+        object.cursorXStart + object.size > this.state.cursorXStart &&
+        this.state.cursorXStart > object.cursorXStart &&
+        this.state.cursorYStart > object.cursorYStart
+      ) {
+        this.setState({
+          collisionFailed: true,
+          missionFailed: true
+        })
+      }
+      if (
+        object.number != this.state.circleCount &&
+        object.cursorYStart + object.size > this.state.cursorYStart &&
+        object.cursorXStart < this.state.cursorXStart + this.state.size &&
+        this.state.cursorXStart < object.cursorXStart &&
+        this.state.cursorYStart > object.cursorYStart
+      ) {
+        this.setState({
+          collisionFailed: true,
+          missionFailed: true
+        })
+      }
+
       if (this.state.sizeFailed == true) {
         this.setState({
           errorHeader: `Вы уместили ${this.state.circleCount} кругов`,
