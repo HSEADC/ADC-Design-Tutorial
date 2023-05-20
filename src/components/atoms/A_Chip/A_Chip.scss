@@ -1,0 +1,18 @@
+.A_Chip {
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark);
+  background-color: var(--light);
+  cursor: default;
+  user-select: none;
+}
+
+.A_Chip.selected {
+  color: var(--light);
+  background-color: var(--dark);
+}
