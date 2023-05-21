@@ -4,10 +4,15 @@ import React, { PureComponent } from 'react'
 import ReactDOM from 'react-dom'
 
 import A_Chip from '../../atoms/A_Chip/A_Chip.jsx'
+import A_Button from '../../atoms/A_Button/A_Button.jsx'
 
 export default class M_GridBox extends PureComponent {
   constructor(props) {
     super(props)
+  }
+
+  handleClick = () => {
+    window.location.reload()
   }
 
   render() {
@@ -35,6 +40,8 @@ export default class M_GridBox extends PureComponent {
         </div>
 
         <div className="M_GridBox">{rounds}</div>
+
+        <A_Button handleClick={this.handleClick} text="Удалить всё" />
       </>
     )
   }

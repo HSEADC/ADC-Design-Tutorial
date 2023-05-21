@@ -27,26 +27,206 @@ const info = [
 ]
 
 const figures = [
-  { column: 1, row: 1, number: 1, color: '#313131', border: '100', clip: '0' },
-  { column: 1, row: 2, number: 2, color: '#313131', border: '100', clip: '0' },
-  { column: 1, row: 3, number: 3, color: '#313131', border: '100', clip: '0' },
-  { column: 1, row: 4, number: 4, color: '#313131', border: '100', clip: '0' },
-  { column: 2, row: 1, number: 5, color: '#313131', border: '100', clip: '0' },
-  { column: 2, row: 2, number: 6, color: '#313131', border: '100', clip: '0' },
-  { column: 2, row: 3, number: 7, color: '#313131', border: '100', clip: '0' },
-  { column: 2, row: 4, number: 8, color: '#313131', border: '100', clip: '0' },
-  { column: 3, row: 1, number: 9, color: '#313131', border: '100', clip: '0' },
-  { column: 3, row: 2, number: 10, color: '#313131', border: '100', clip: '0' },
-  { column: 3, row: 3, number: 11, color: '#313131', border: '100', clip: '0' },
-  { column: 3, row: 4, number: 12, color: '#313131', border: '100', clip: '0' },
-  { column: 4, row: 1, number: 13, color: '#313131', border: '100', clip: '0' },
-  { column: 4, row: 2, number: 14, color: '#313131', border: '100', clip: '0' },
-  { column: 4, row: 3, number: 15, color: '#313131', border: '100', clip: '0' },
-  { column: 4, row: 4, number: 16, color: '#313131', border: '100', clip: '0' }
+  {
+    column: 1,
+    row: 1,
+    cEnd: '',
+    rEnd: '',
+    number: 1,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 1,
+    row: 2,
+    cEnd: '',
+    rEnd: '',
+    number: 2,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 1,
+    row: 3,
+    cEnd: '',
+    rEnd: '',
+    number: 3,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 1,
+    row: 4,
+    cEnd: '',
+    rEnd: '',
+    number: 4,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 2,
+    row: 1,
+    cEnd: '',
+    rEnd: '',
+    number: 5,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 2,
+    row: 2,
+    cEnd: '',
+    rEnd: '',
+    number: 6,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 2,
+    row: 3,
+    cEnd: '',
+    rEnd: '',
+    number: 7,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 2,
+    row: 4,
+    cEnd: '',
+    rEnd: '',
+    number: 8,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 3,
+    row: 1,
+    cEnd: '',
+    rEnd: '',
+    number: 9,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 3,
+    row: 2,
+    cEnd: '',
+    rEnd: '',
+    number: 10,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 3,
+    row: 3,
+    cEnd: '',
+    rEnd: '',
+    number: 11,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 3,
+    row: 4,
+    cEnd: '',
+    rEnd: '',
+    number: 12,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 4,
+    row: 1,
+    cEnd: '',
+    rEnd: '',
+    number: 13,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 4,
+    row: 2,
+    cEnd: '',
+    rEnd: '',
+    number: 14,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 4,
+    row: 3,
+    cEnd: '',
+    rEnd: '',
+    number: 15,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  },
+  {
+    column: 4,
+    row: 4,
+    cEnd: '',
+    rEnd: '',
+    number: 16,
+    color: '#313131',
+    border: '100',
+    clip: '1',
+    size: 81,
+    display: 'inherit'
+  }
 ]
 
 const colors = ['#F6DA4B', '#4E4BF6', '#F64B4B']
-const forms = ['unset', 'polygon(50% 31.7%, 50% 31.7%, 75% 75%, 25% 75%)']
+const forms = [
+  'unset',
+  'polygon(50% 31.7%, 50% 31.7%, 75% 75%, 25% 75%)',
+  'circle(50% at 50% 50%)'
+]
 
 function sample(array) {
   return array[Math.floor(Math.random() * array.length)]
@@ -62,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // const container2 = document.getElementById('container2')
   // const root2 = createRoot(container2)
   // root2.render(<MOD_CircleGame info={info} />)
-  //
+
   const container3 = document.getElementById('container3')
   const root3 = createRoot(container3)
   root3.render(

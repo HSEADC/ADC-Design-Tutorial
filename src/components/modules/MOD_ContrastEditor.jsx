@@ -12,7 +12,7 @@ export default class MOD_ContrastEditor extends PureComponent {
     super(props)
 
     this.state = {
-      size: 544,
+      size: 614,
       figures: [],
       colorSelected: false,
       formSelected: false,
@@ -56,6 +56,136 @@ export default class MOD_ContrastEditor extends PureComponent {
     const { colorSelected, formSelected, sizeSelected, figures } = this.state
     const { colors, forms } = this.props
 
+    if (sizeSelected) {
+      const newCircle = figures.map((figure) => {
+        // начало сектора ЛВ
+        if (
+          number === figure.number &&
+          (number == 1 || number == 2 || number == 5 || number == 6)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 1 ||figure.row === 2)
+          ) {
+            return {
+              ...figure,
+              column: 1,
+              row: 1,
+              cEnd: 3,
+              rEnd: 3,
+              size: 184
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ЛВ
+
+        // начало сектора ЛН
+        if (
+          number === figure.number &&
+          (number == 3 || number == 4 || number == 7 || number == 8)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 3 ||figure.row === 4)
+          ) {
+            return {
+              ...figure,
+              column: 1,
+              row: 3,
+              cEnd: 3,
+              rEnd: 5,
+              size: 184
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ЛН
+
+        // начало сектора ПВ
+        if (
+          number === figure.number &&
+          (number == 9 || number == 10 || number == 13 || number == 14)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 1 ||figure.row === 2)
+          ) {
+            return {
+              ...figure,
+              column: 3,
+              row: 1,
+              cEnd: 5,
+              rEnd: 3,
+              size: 184
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ПВ
+
+        // начало сектора ПН
+        if (
+          number === figure.number &&
+          (number == 11 || number == 12 || number == 15 || number == 16)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 3 ||figure.row === 4)
+          ) {
+            return {
+              ...figure,
+              column: 3,
+              row: 3,
+              cEnd: 5,
+              rEnd: 5,
+              size: 184
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ПН
+        else {
+          return figure
+        }
+      })
+      this.setState({
+        figures: newCircle
+      })
+    }
+
     if (colorSelected) {
       const newCircle = figures.map((figure) => {
         if (number === figure.number) {
@@ -98,8 +228,419 @@ export default class MOD_ContrastEditor extends PureComponent {
             clip: sample(forms),
             color: sample(colors)
           }
-          console.log(sample(colors))
         } else {
+          return figure
+        }
+      })
+      this.setState({
+        figures: newCircle
+      })
+    }
+
+    if (colorSelected && sizeSelected) {
+      const newCircle = figures.map((figure) => {
+        // начало сектора ЛВ
+        if (
+          number === figure.number &&
+          (number == 1 || number == 2 || number == 5 || number == 6)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 1 ||figure.row === 2)
+          ) {
+            return {
+              ...figure,
+              column: 1,
+              row: 1,
+              cEnd: 3,
+              rEnd: 3,
+              size: 184,
+              color: sample(colors)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ЛВ
+
+        // начало сектора ЛН
+        if (
+          number === figure.number &&
+          (number == 3 || number == 4 || number == 7 || number == 8)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 3 ||figure.row === 4)
+          ) {
+            return {
+              ...figure,
+              column: 1,
+              row: 3,
+              cEnd: 3,
+              rEnd: 5,
+              size: 184,
+              color: sample(colors)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ЛН
+
+        // начало сектора ПВ
+        if (
+          number === figure.number &&
+          (number == 9 || number == 10 || number == 13 || number == 14)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 1 ||figure.row === 2)
+          ) {
+            return {
+              ...figure,
+              column: 3,
+              row: 1,
+              cEnd: 5,
+              rEnd: 3,
+              size: 184,
+              color: sample(colors)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ПВ
+
+        // начало сектора ПН
+        if (
+          number === figure.number &&
+          (number == 11 || number == 12 || number == 15 || number == 16)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 3 ||figure.row === 4)
+          ) {
+            return {
+              ...figure,
+              column: 3,
+              row: 3,
+              cEnd: 5,
+              rEnd: 5,
+              size: 184,
+              color: sample(colors)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ПН
+        else {
+          return figure
+        }
+      })
+      this.setState({
+        figures: newCircle
+      })
+    }
+    if (formSelected && sizeSelected) {
+      const newCircle = figures.map((figure) => {
+        // начало сектора ЛВ
+        if (
+          number === figure.number &&
+          (number == 1 || number == 2 || number == 5 || number == 6)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 1 ||figure.row === 2)
+          ) {
+            return {
+              ...figure,
+              column: 1,
+              row: 1,
+              cEnd: 3,
+              rEnd: 3,
+              size: 184,
+              border: '0',
+              clip: sample(forms)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ЛВ
+
+        // начало сектора ЛН
+        if (
+          number === figure.number &&
+          (number == 3 || number == 4 || number == 7 || number == 8)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 3 ||figure.row === 4)
+          ) {
+            return {
+              ...figure,
+              column: 1,
+              row: 3,
+              cEnd: 3,
+              rEnd: 5,
+              size: 184,
+              border: '0',
+              clip: sample(forms)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ЛН
+
+        // начало сектора ПВ
+        if (
+          number === figure.number &&
+          (number == 9 || number == 10 || number == 13 || number == 14)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 1 ||figure.row === 2)
+          ) {
+            return {
+              ...figure,
+              column: 3,
+              row: 1,
+              cEnd: 5,
+              rEnd: 3,
+              size: 184,
+              border: '0',
+              clip: sample(forms)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ПВ
+
+        // начало сектора ПН
+        if (
+          number === figure.number &&
+          (number == 11 || number == 12 || number == 15 || number == 16)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 3 ||figure.row === 4)
+          ) {
+            return {
+              ...figure,
+              column: 3,
+              row: 3,
+              cEnd: 5,
+              rEnd: 5,
+              size: 184,
+              border: '0',
+              clip: sample(forms)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ПН
+        else {
+          return figure
+        }
+      })
+      this.setState({
+        figures: newCircle
+      })
+    }
+    if (colorSelected && formSelected && sizeSelected) {
+      const newCircle = figures.map((figure) => {
+        // начало сектора ЛВ
+        if (
+          number === figure.number &&
+          (number == 1 || number == 2 || number == 5 || number == 6)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 1 ||figure.row === 2)
+          ) {
+            return {
+              ...figure,
+              column: 1,
+              row: 1,
+              cEnd: 3,
+              rEnd: 3,
+              size: 184,
+              border: '0',
+              clip: sample(forms),
+              color: sample(colors)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ЛВ
+
+        // начало сектора ЛН
+        if (
+          number === figure.number &&
+          (number == 3 || number == 4 || number == 7 || number == 8)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 3 ||figure.row === 4)
+          ) {
+            return {
+              ...figure,
+              column: 1,
+              row: 3,
+              cEnd: 3,
+              rEnd: 5,
+              size: 184,
+              border: '0',
+              clip: sample(forms),
+              color: sample(colors)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ЛН
+
+        // начало сектора ПВ
+        if (
+          number === figure.number &&
+          (number == 9 || number == 10 || number == 13 || number == 14)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 1 ||figure.row === 2)
+          ) {
+            return {
+              ...figure,
+              column: 3,
+              row: 1,
+              cEnd: 5,
+              rEnd: 3,
+              size: 184,
+              border: '0',
+              clip: sample(forms),
+              color: sample(colors)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ПВ
+
+        // начало сектора ПН
+        if (
+          number === figure.number &&
+          (number == 11 || number == 12 || number == 15 || number == 16)
+        ) {
+          if (
+            // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 3 ||figure.row === 4)
+          ) {
+            return {
+              ...figure,
+              column: 3,
+              row: 3,
+              cEnd: 5,
+              rEnd: 5,
+              size: 184,
+              border: '0',
+              clip: sample(forms),
+              color: sample(colors)
+            }
+          }
+        }
+        if (
+          // prettier-ignore
+          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)
+        ) {
+          return {
+            ...figure,
+            display: 'none'
+          }
+        }
+        // конец сектора ПН
+        else {
           return figure
         }
       })
@@ -117,7 +658,6 @@ export default class MOD_ContrastEditor extends PureComponent {
 
   generateExercise = () => {
     const { figures } = this.state
-    const { color } = this.state
 
     const rounds = figures.map((figure) => {
       return (
@@ -129,6 +669,10 @@ export default class MOD_ContrastEditor extends PureComponent {
           color={figure.color}
           border={figure.border}
           clip={figure.clip}
+          cEnd={figure.cEnd}
+          rEnd={figure.rEnd}
+          size={figure.size}
+          display={figure.display}
           handleBallClick={this.handleBallClick}
         />
       )
