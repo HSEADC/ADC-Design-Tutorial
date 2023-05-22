@@ -33,6 +33,8 @@ export default class A_Canvas extends PureComponent {
   }
 
   componentDidMount() {
+    window.addEventListener('scroll', this.receiveCoord)
+
     window.addEventListener('load', this.receiveCoord)
     window.addEventListener('mousedown', this.props.handleMouseDown)
     window.addEventListener('mouseup', this.props.handleMouseUp)

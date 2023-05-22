@@ -239,18 +239,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // const root1 = createRoot(container1)
   // root1.render(<MOD_Rangefinder info={info} />)
   //
-  // const container2 = document.getElementById('container2')
-  // const root2 = createRoot(container2)
-  // root2.render(<MOD_CircleGame info={info} />)
+  const container2 = document.getElementById('container2')
+  const root2 = createRoot(container2)
+  root2.render(<MOD_CircleGame info={info} />)
 
-  const container3 = document.getElementById('container3')
-  const root3 = createRoot(container3)
-  root3.render(
-    <MOD_ContrastEditor
-      info={info}
-      figures={figures}
-      colors={colors}
-      forms={forms}
-    />
-  )
+  // const container3 = document.getElementById('container3')
+  // const root3 = createRoot(container3)
+  // root3.render(
+  //   <MOD_ContrastEditor
+  //     info={info}
+  //     figures={figures}
+  //     colors={colors}
+  //     forms={forms}
+  //   />
+  // )
 })

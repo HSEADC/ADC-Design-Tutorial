@@ -29,7 +29,9 @@ export default class MOD_CircleGameEx extends PureComponent {
       borderFailed: false,
       collisionFailed: false,
       errorHeader: '',
-      errorText: ''
+      errorText: '',
+      xCoord: 0,
+      yCoord: 0
     }
   }
 
@@ -53,6 +55,8 @@ export default class MOD_CircleGameEx extends PureComponent {
       mouseDown: true,
       cursorXStart: e.clientX,
       cursorYStart: e.clientY,
+      xCoord: e.clientX - x,
+      yCoord: e.clientY - y,
       size: 0,
       xPosition: e.clientX - x,
       yPosition: e.clientY - y,
@@ -173,10 +177,10 @@ export default class MOD_CircleGameEx extends PureComponent {
 
       if (
         object.number != this.state.circleCount &&
-        this.state.cursorXStart + this.state.size > object.cursorXStart &&
-        this.state.cursorYStart + this.state.size > object.cursorYStart &&
-        this.state.cursorXStart < object.cursorXStart &&
-        this.state.cursorYStart < object.cursorYStart
+        this.state.xCoord + this.state.size > object.xCoord &&
+        this.state.yCoord + this.state.size > object.yCoord &&
+        this.state.xCoord < object.xCoord &&
+        this.state.yCoord < object.yCoord
       ) {
         this.setState({
           collisionFailed: true,
@@ -186,10 +190,10 @@ export default class MOD_CircleGameEx extends PureComponent {
 
       if (
         object.number != this.state.circleCount &&
-        this.state.cursorXStart + this.state.size > object.cursorXStart &&
-        this.state.cursorYStart + this.state.size > object.cursorYStart &&
-        this.state.cursorXStart < object.cursorXStart &&
-        this.state.cursorYStart < object.cursorYStart
+        this.state.xCoord + this.state.size > object.xCoord &&
+        this.state.yCoord + this.state.size > object.yCoord &&
+        this.state.xCoord < object.xCoord &&
+        this.state.yCoord < object.yCoord
       ) {
         this.setState({
           collisionFailed: true,
@@ -199,10 +203,10 @@ export default class MOD_CircleGameEx extends PureComponent {
 
       if (
         object.number != this.state.circleCount &&
-        object.cursorXStart + object.size > this.state.cursorXStart &&
-        this.state.cursorYStart + this.state.size > object.cursorYStart &&
-        this.state.cursorXStart > object.cursorXStart &&
-        this.state.cursorYStart < object.cursorYStart
+        object.xCoord + object.size > this.state.xCoord &&
+        this.state.yCoord + this.state.size > object.yCoord &&
+        this.state.xCoord > object.xCoord &&
+        this.state.yCoord < object.yCoord
       ) {
         this.setState({
           collisionFailed: true,
@@ -212,10 +216,10 @@ export default class MOD_CircleGameEx extends PureComponent {
 
       if (
         object.number != this.state.circleCount &&
-        this.state.cursorYStart < object.cursorYStart + object.size &&
-        object.cursorXStart + object.size > this.state.cursorXStart &&
-        this.state.cursorXStart > object.cursorXStart &&
-        this.state.cursorYStart > object.cursorYStart
+        this.state.yCoord < object.yCoord + object.size &&
+        object.xCoord + object.size > this.state.xCoord &&
+        this.state.xCoord > object.xCoord &&
+        this.state.yCoord > object.yCoord
       ) {
         this.setState({
           collisionFailed: true,
@@ -224,10 +228,10 @@ export default class MOD_CircleGameEx extends PureComponent {
       }
       if (
         object.number != this.state.circleCount &&
-        object.cursorYStart + object.size > this.state.cursorYStart &&
-        object.cursorXStart < this.state.cursorXStart + this.state.size &&
-        this.state.cursorXStart < object.cursorXStart &&
-        this.state.cursorYStart > object.cursorYStart
+        object.yCoord + object.size > this.state.yCoord &&
+        object.xCoord < this.state.xCoord + this.state.size &&
+        this.state.xCoord < object.xCoord &&
+        this.state.yCoord > object.yCoord
       ) {
         this.setState({
           collisionFailed: true,
