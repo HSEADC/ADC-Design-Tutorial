@@ -174,6 +174,19 @@ export default class MOD_CircleGameEx extends PureComponent {
           missionFailed: true
         })
       }
+      //
+      // if (this.state.xCoord < this.state.x) {
+      //   this.setState({
+      //     borderFailed: true,
+      //     missionFailed: true
+      //   })
+      // }
+      // if (this.state.yCoord > this.state.y) {
+      //   this.setState({
+      //     borderFailed: true,
+      //     missionFailed: true
+      //   })
+      // }
 
       if (
         object.number != this.state.circleCount &&

@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.A_Slider {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: var(--dark);
+  width: 150px;
+  height: 4px;
+  border-radius: 1000px;
+
+  .Thumb {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--border);
+    height: 30px;
+    width: 30px;
+    border-radius: 1000px;
+    border: solid var(--dark) 4px;
+  }
+}
+
+.Thumb:hover {
+  border: solid var(--dark) 6px;
+
+  label {
+    color: var(--light);
+    top: -52px;
+  }
+}

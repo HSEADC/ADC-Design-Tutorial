@@ -12,9 +12,8 @@ export default class MOD_Rangefinder extends PureComponent {
       size: 220,
       mouseDown: false,
       coord: 0,
-      cursorX: 0,
       cursorStart: 0,
-      coordNext: 0,
+      coordPrev: 0,
       signature: '',
       display: 'block',
       id: 'a'
@@ -37,7 +36,6 @@ export default class MOD_Rangefinder extends PureComponent {
   }
 
   handleMouseDown = (e) => {
-    console.log('Down!')
     e.preventDefault()
     const { cursorStart } = this.state
 
@@ -48,45 +46,23 @@ export default class MOD_Rangefinder extends PureComponent {
   }
 
   handleMouseMove = (e) => {
-    console.log('Move!')
-    const { cursorX, coord, cursorStart, coordNext } = this.state
+    const { coord, cursorStart, coordPrev } = this.state
 
     if (this.state.mouseDown) {
-      // this.calcResult(coord)
       this.setState({
-        cursorX: e.screenX,
-        coord: coordNext + e.screenX - cursorStart
+        coord: coordPrev + e.screenX - cursorStart
       })
-    }
 
-    // ЗДЕСЬ НУЖНО БУДЕТ ИЗМЕНИТЬ УСЛОВИЯ ОГРАНИЧЕНИЙ!
-
-    if (cursorX < cursorStart - coord) {
-      // если положение курсора меньше стартового
-      this.setState({
-        coord: 0
-      })
-    }
-
-    if (cursorX > cursorStart + 200) {
-      // если положение курсора больше стартового на 200
-      this.setState({
-        coord: 200
-      })
-    }
-
-    if (coord < 0) {
-      // если положение курсора меньше стартового
-      this.setState({
-        coord: 0
-      })
-    }
-
-    if (coord > 200) {
-      // если положение курсора больше стартового на 200
-      this.setState({
-        coord: 200
-      })
+      if (coordPrev + e.screenX - cursorStart > 200) {
+        this.setState({
+          coord: 200
+        })
+      }
+      if (coordPrev + e.screenX - cursorStart < 0) {
+        this.setState({
+          coord: 0
+        })
+      }
     }
   }
 
@@ -94,12 +70,12 @@ export default class MOD_Rangefinder extends PureComponent {
     console.log('Up!')
     e.preventDefault()
 
-    const { mouseDown, coord, coordNext } = this.state
+    const { mouseDown, coord, coordPrev } = this.state
 
     if (mouseDown) {
       this.calcResult(coord)
       this.setState({
-        coordNext: coord,
+        coordPrev: coord,
         mouseDown: false
       })
     }

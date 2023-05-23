@@ -8,6 +8,8 @@ import MOD_CircleGame from './components/modules/MOD_CircleGame.jsx'
 
 import MOD_ContrastEditor from './components/modules/MOD_ContrastEditor.jsx'
 
+import MOD_SizeBalance from './components/modules/MOD_SizeBalance.jsx'
+
 const info = [
   {
     header: `Упражнение на\u00A0поиск промежутка`,
@@ -23,6 +25,10 @@ const info = [
   {
     header: `Свободный редактор контрастов`,
     text: `Контрасты бывают разные и\u00A0их\u00A0довольно много (мы\u00A0говорили об\u00A0этом чуть ранее). Перед вами свободный мини-редактор, в\u00A0котором вы\u00A0можете выбирать типы контрастов и\u00A0применять их\u00A0к\u00A0кругам внутри кадра (можно выбрать сразу несколько). В\u00A0этом задании нет правильного ответа. Делайте всё, что захотите!`
+  },
+  {
+    header: `Упражнение на\u00A0балансировку размера `,
+    text: `Перед вами находится три квадрата. Размер квадрата посередине можно регулировать ползунком под ним. Ваша задача: отрегулировать его так, чтобы его размер был максимально усреднёным `
   }
 ]
 
@@ -235,14 +241,13 @@ function sample(array) {
 export { sample }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // const container1 = document.getElementById('container1')
-  // const root1 = createRoot(container1)
-  // root1.render(<MOD_Rangefinder info={info} />)
-  //
-  const container2 = document.getElementById('container2')
-  const root2 = createRoot(container2)
-  root2.render(<MOD_CircleGame info={info} />)
+  const container1 = document.getElementById('container1')
+  const root1 = createRoot(container1)
+  root1.render(<MOD_Rangefinder info={info} />)
 
+  // const container2 = document.getElementById('container2')
+  // const root2 = createRoot(container2)
+  // root2.render(<MOD_CircleGame info={info} />)
   // const container3 = document.getElementById('container3')
   // const root3 = createRoot(container3)
   // root3.render(
@@ -253,4 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //     forms={forms}
   //   />
   // )
+  // const container4 = document.getElementById('container4')
+  // const root4 = createRoot(container4)
+  // root4.render(<MOD_SizeBalance info={info} />)
 })
