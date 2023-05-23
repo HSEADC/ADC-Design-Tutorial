@@ -12,32 +12,80 @@ export default class MOD_SizeBalance extends PureComponent {
       size: 436,
       mouseDown: false,
       coord: 0,
-      cursorX: 0,
       cursorStart: 0,
-      coordNext: 0,
+      min: 0,
+      max: 120,
+      coordPrev: 0,
+      sliderWidth: 150,
       signature: '',
       display: 'block',
-      id: 'a'
+      text: '',
+      color: 'var(--dark)',
+      semiColor: 'var(--border)'
     }
   }
 
   generateExercise = () => {
-    const { coord, signature, display, id } = this.state
+    const { coord, sliderWidth } = this.state
     return (
       <A_Slider
         coord={coord}
         handleMouseMove={this.handleMouseMove}
         handleMouseDown={this.handleMouseDown}
         handleMouseUp={this.handleMouseUp}
-        signature={signature}
-        display={display}
-        id={id}
+        sliderWidth={sliderWidth}
       ></A_Slider>
     )
   }
 
+  squares = () => {
+    const { coord, text, color, semiColor } = this.state
+    const styleOne = {
+      width: `100px`,
+      height: `100px`,
+      backgroundColor: `var(--dark)`
+    }
+
+    const styleTwo = {
+      width: `${100 + coord}px`,
+      height: `${100 + coord}px`,
+      backgroundColor: `var(--border)`,
+      display: `flex`,
+      justifyContent: `center`,
+      alignItems: `center`,
+      fontFamily: `Proxima Nova`,
+      fontWeight: `600`,
+      fontSize: `24px`,
+      color: `${color}`,
+      border: `4px dashed ${color}`,
+      backgroundColor: `${semiColor}`
+    }
+    const styleThree = {
+      width: `300px`,
+      height: `300px`,
+      backgroundColor: `var(--dark)`
+    }
+    const boxStyle = {
+      display: `flex`,
+      justifyContent: `space-around`,
+      width: `100%`,
+      marginBottom: `25px`,
+      alignItems: `flex-end`,
+      paddingLeft: `50px`,
+      paddingRight: `50px`
+    }
+
+    return (
+      <div className="box" style={boxStyle}>
+        <div className="Square-1" style={styleOne} />
+        <div className="Square-2" style={styleTwo}>
+          {text}
+        </div>
+        <div className="Square-3" style={styleThree} />
+      </div>
+    )
+  }
   handleMouseDown = (e) => {
-    console.log('Down!')
     e.preventDefault()
     const { cursorStart } = this.state
 
@@ -48,45 +96,23 @@ export default class MOD_SizeBalance extends PureComponent {
   }
 
   handleMouseMove = (e) => {
-    console.log('Move!')
-    const { cursorX, coord, cursorStart, coordNext } = this.state
+    const { coord, cursorStart, coordPrev, min, max } = this.state
 
     if (this.state.mouseDown) {
-      // this.calcResult(coord)
       this.setState({
-        cursorX: e.screenX,
-        coord: coordNext + e.screenX - cursorStart
+        coord: coordPrev + e.screenX - cursorStart
       })
-    }
 
-    // ЗДЕСЬ НУЖНО БУДЕТ ИЗМЕНИТЬ УСЛОВИЯ ОГРАНИЧЕНИЙ!
-
-    if (cursorX < cursorStart - coord) {
-      // если положение курсора меньше стартового
-      this.setState({
-        coord: 0
-      })
-    }
-
-    if (cursorX > cursorStart + 120) {
-      // если положение курсора больше стартового на 200
-      this.setState({
-        coord: 120
-      })
-    }
-
-    if (coord < 0) {
-      // если положение курсора меньше стартового
-      this.setState({
-        coord: 0
-      })
-    }
-
-    if (coord > 120) {
-      // если положение курсора больше стартового на 200
-      this.setState({
-        coord: 120
-      })
+      if (coordPrev + e.screenX - cursorStart > max) {
+        this.setState({
+          coord: max
+        })
+      }
+      if (coordPrev + e.screenX - cursorStart < min) {
+        this.setState({
+          coord: min
+        })
+      }
     }
   }
 
@@ -94,34 +120,45 @@ export default class MOD_SizeBalance extends PureComponent {
     console.log('Up!')
     e.preventDefault()
 
-    const { mouseDown, coord, coordNext } = this.state
+    const { mouseDown, coord, coordPrev } = this.state
 
     if (mouseDown) {
-      // this.calcResult(coord)
+      this.calcResult(coord)
       this.setState({
-        coordNext: coord,
+        coordPrev: coord,
         mouseDown: false
       })
     }
   }
 
-  // calcResult = (coord) => {
-  //   const { id, signature, display } = this.state
-  //
-  //   if (this.state.coord >= 103 && this.state.coord <= 113) {
-  //     this.setState({
-  //       id: 'b',
-  //       signature: 'Правильно!',
-  //       display: 'none'
-  //     })
-  //   } else {
-  //     this.setState({
-  //       id: 'c',
-  //       signature: 'Неправильно!',
-  //       display: 'none'
-  //     })
-  //   }
-  // }
+  calcResult = (coord) => {
+    // const {} = this.state
+
+    if (this.state.coord <= 105 && this.state.coord >= 95) {
+      this.setState({
+        text: 'Супер!',
+        color: '#08661D',
+        semiColor: '#DFFDE7'
+      })
+    }
+
+    if (this.state.coord > 105) {
+      this.setState({
+        text: 'Многовато!',
+        color: '#660808',
+        semiColor: '#FDDFDF'
+      })
+    }
+
+    if (this.state.coord < 95) {
+      this.setState({
+        text: 'Маловато!',
+        color: '#660808',
+        semiColor: '#FDDFDF'
+      })
+    }
+  }
+
   render() {
     const { size } = this.state
     const { info } = this.props
@@ -132,6 +169,7 @@ export default class MOD_SizeBalance extends PureComponent {
         text={info[3].text}
         exercise={this.generateExercise()}
         size={size}
+        squares={this.squares()}
       />
     )
   }

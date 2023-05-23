@@ -9,13 +9,14 @@ export default class A_Frame extends PureComponent {
   }
 
   render() {
-    const { size, exercise } = this.props
+    const { size, exercise, content } = this.props
     const style = {
       height: `${size}px`
     }
 
     return (
       <div className="A_Frame" style={style}>
+        {content}
         {exercise}
       </div>
     )

@@ -2,7 +2,6 @@ import './A_Slider.scss'
 
 import React, { PureComponent } from 'react'
 import ReactDOM from 'react-dom'
-import Arrows from '../../../images/arrows.svg'
 
 export default class A_Slider extends PureComponent {
   constructor(props) {
@@ -34,18 +33,18 @@ export default class A_Slider extends PureComponent {
   }
 
   render() {
-    const { coord, id, signature, display } = this.props
+    const { coord, sliderWidth } = this.props
 
     const styles = {
       transform: `translateX(${coord}px)`
     }
 
-    const imageStyles = {
-      display: `${display}`
+    const sliderStyles = {
+      width: `(${sliderWidth}px)`
     }
 
     return (
-      <div className="A_Slider">
+      <div style={sliderStyles} className="A_Slider">
         <div
           className="Thumb"
           onMouseDown={this.handleMouseDown}

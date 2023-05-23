@@ -21,16 +21,11 @@
     background-color: var(--border);
     height: 30px;
     width: 30px;
-    border-radius: 1000px;
+    border-radius: 100%;
     border: solid var(--dark) 4px;
   }
-}
-
-.Thumb:hover {
-  border: solid var(--dark) 6px;
-
-  label {
-    color: var(--light);
-    top: -52px;
+  .Thumb:hover {
+    border: solid var(--dark) 6px;
+    transition: 100ms;
   }
 }

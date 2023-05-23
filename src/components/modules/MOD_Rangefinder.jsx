@@ -14,25 +14,12 @@ export default class MOD_Rangefinder extends PureComponent {
       coord: 0,
       cursorStart: 0,
       coordPrev: 0,
+      min: 0,
+      max: 200,
       signature: '',
       display: 'block',
       id: 'a'
     }
-  }
-
-  generateExercise = () => {
-    const { coord, signature, display, id } = this.state
-    return (
-      <A_SliderSpecial
-        coord={coord}
-        handleMouseMove={this.handleMouseMove}
-        handleMouseDown={this.handleMouseDown}
-        handleMouseUp={this.handleMouseUp}
-        signature={signature}
-        display={display}
-        id={id}
-      ></A_SliderSpecial>
-    )
   }
 
   handleMouseDown = (e) => {
@@ -46,21 +33,21 @@ export default class MOD_Rangefinder extends PureComponent {
   }
 
   handleMouseMove = (e) => {
-    const { coord, cursorStart, coordPrev } = this.state
+    const { coord, cursorStart, coordPrev, min, max } = this.state
 
     if (this.state.mouseDown) {
       this.setState({
         coord: coordPrev + e.screenX - cursorStart
       })
 
-      if (coordPrev + e.screenX - cursorStart > 200) {
+      if (coordPrev + e.screenX - cursorStart > max) {
         this.setState({
-          coord: 200
+          coord: max
         })
       }
-      if (coordPrev + e.screenX - cursorStart < 0) {
+      if (coordPrev + e.screenX - cursorStart < min) {
         this.setState({
-          coord: 0
+          coord: min
         })
       }
     }
@@ -98,6 +85,22 @@ export default class MOD_Rangefinder extends PureComponent {
       })
     }
   }
+
+  generateExercise = () => {
+    const { coord, signature, display, id } = this.state
+    return (
+      <A_SliderSpecial
+        coord={coord}
+        handleMouseMove={this.handleMouseMove}
+        handleMouseDown={this.handleMouseDown}
+        handleMouseUp={this.handleMouseUp}
+        signature={signature}
+        display={display}
+        id={id}
+      ></A_SliderSpecial>
+    )
+  }
+
   render() {
     const { size } = this.state
     const { info } = this.props
