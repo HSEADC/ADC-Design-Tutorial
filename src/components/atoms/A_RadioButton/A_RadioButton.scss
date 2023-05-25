@@ -1,0 +1,46 @@
+.A_RadioButton {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--dark);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .Q_Icon.greenTick {
+    display: none;
+  }
+  .Q_Icon.redCross {
+    display: none;
+  }
+}
+
+.A_RadioButton.incorrect {
+  border: 2px solid var(--darkRed);
+
+  background-color: var(--darkRed);
+  .Q_Icon.redCross {
+    display: block;
+  }
+}
+
+.A_RadioButton.correct {
+  border: 2px solid var(--darkGreen);
+
+  background-color: var(--darkGreen);
+  .Q_Icon.greenTick {
+    display: block;
+  }
+}
+
+// @keyframes grow {
+//   from {
+//     width: 40px;
+//     height: 40px;
+//   }
+//
+//   to {
+//     width: 30px;
+//     height: 30px;
+//   }
+// }

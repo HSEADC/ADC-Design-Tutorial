@@ -1,0 +1,23 @@
+.Q_Icon {
+  &.neutralTick {
+    background-image: url('../../images/neutralTick.svg');
+    width: 18px;
+    height: 12px;
+  }
+  &.greenTick {
+    background-image: url('../../images/greenTick.svg');
+    width: 18px;
+    height: 12px;
+  }
+  &.redCross {
+    background-image: url('../../images/redCross.svg');
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.Q_Icon.redCross {
+  background-image: url('../../images/redCross.svg');
+  width: 12px;
+  height: 12px;
+}

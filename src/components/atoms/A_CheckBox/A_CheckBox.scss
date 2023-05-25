@@ -1,0 +1,54 @@
+.A_CheckBox {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--dark);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .Q_Icon.neutralTick {
+    display: none;
+  }
+  .Q_Icon.greenTick {
+    display: none;
+  }
+  .Q_Icon.redCross {
+    display: none;
+  }
+}
+
+.A_CheckBox.checked {
+  background-color: var(--dark);
+  .Q_Icon.neutralTick {
+    display: block;
+  }
+}
+
+.A_CheckBox.incorrect {
+  border: 2px solid var(--darkRed);
+  background-color: var(--darkRed);
+  .Q_Icon.redCross {
+    display: block;
+  }
+}
+
+.A_CheckBox.correct {
+  border: 2px solid var(--darkGreen);
+  background-color: var(--darkGreen);
+  .Q_Icon.greenTick {
+    display: block;
+  }
+}
+
+// @keyframes grow {
+//   from {
+//     width: 40px;
+//     height: 40px;
+//   }
+//
+//   to {
+//     width: 30px;
+//     height: 30px;
+//   }
+// }

@@ -1,0 +1,34 @@
+.M_CheckOptionWide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 10px;
+  width: 700px;
+  border-radius: 10px;
+  margin: 0;
+
+  .inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+  }
+
+  &:hover {
+    background-color: var(--halflight);
+  }
+
+  &.ticked:hover {
+    background-color: var(--border);
+  }
+
+  &.incorrect:hover {
+    background-color: var(--halflight);
+  }
+  &.correct:hover {
+    background-color: var(--halflight);
+  }
+}

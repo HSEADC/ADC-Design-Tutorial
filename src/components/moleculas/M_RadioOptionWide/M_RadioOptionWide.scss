@@ -1,0 +1,26 @@
+.M_RadioOptionWide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 10px;
+  width: 700px;
+  border-radius: 10px;
+  margin: 0;
+  .inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+  }
+}
+
+.M_RadioOptionWide:hover {
+  background-color: var(--halflight);
+}
+
+.M_RadioOptionWide.correct:hover {
+  background-color: var(--light);
+}

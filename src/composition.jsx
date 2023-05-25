@@ -2,6 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { createRoot } from 'react-dom/client'
 
+import M_RadioOptionWide from './components/moleculas/M_RadioOptionWide/M_RadioOptionWide.jsx'
+
+import M_CheckOptionWide from './components/moleculas/M_CheckOptionWide/M_CheckOptionWide.jsx'
+
 import MOD_Rangefinder from './components/modules/MOD_Rangefinder.jsx'
 
 import MOD_CircleGame from './components/modules/MOD_CircleGame.jsx'
@@ -241,14 +245,14 @@ function sample(array) {
 export { sample }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const container1 = document.getElementById('container-1')
-  const root1 = createRoot(container1)
-  root1.render(<MOD_Rangefinder info={info} />)
+  // const container1 = document.getElementById('container-1')
+  // const root1 = createRoot(container1)
+  // root1.render(<MOD_Rangefinder info={info} />)
   //
   // const container2 = document.getElementById('container-2')
   // const root2 = createRoot(container2)
   // root2.render(<MOD_CircleGame info={info} />)
-
+  //
   // const container3 = document.getElementById('container-3')
   // const root3 = createRoot(container3)
   // root3.render(
@@ -259,8 +263,12 @@ document.addEventListener('DOMContentLoaded', () => {
   //     forms={forms}
   //   />
   // )
-
+  //
   // const container4 = document.getElementById('container-4')
   // const root4 = createRoot(container4)
   // root4.render(<MOD_SizeBalance info={info} />)
+
+  const container5 = document.getElementById('container-5')
+  const root5 = createRoot(container5)
+  root5.render(<M_CheckOptionWide />)
 })
