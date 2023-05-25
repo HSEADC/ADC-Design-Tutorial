@@ -241,25 +241,26 @@ function sample(array) {
 export { sample }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // const container1 = document.getElementById('container1')
-  // const root1 = createRoot(container1)
-  // root1.render(<MOD_Rangefinder info={info} />)
+  const container1 = document.getElementById('container-1')
+  const root1 = createRoot(container1)
+  root1.render(<MOD_Rangefinder info={info} />)
   //
-  // const container2 = document.getElementById('container2')
+  // const container2 = document.getElementById('container-2')
   // const root2 = createRoot(container2)
   // root2.render(<MOD_CircleGame info={info} />)
 
-  const container3 = document.getElementById('container3')
-  const root3 = createRoot(container3)
-  root3.render(
-    <MOD_ContrastEditor
-      info={info}
-      figures={figures}
-      colors={colors}
-      forms={forms}
-    />
-  )
-  // const container4 = document.getElementById('container4')
+  // const container3 = document.getElementById('container-3')
+  // const root3 = createRoot(container3)
+  // root3.render(
+  //   <MOD_ContrastEditor
+  //     info={info}
+  //     figures={figures}
+  //     colors={colors}
+  //     forms={forms}
+  //   />
+  // )
+
+  // const container4 = document.getElementById('container-4')
   // const root4 = createRoot(container4)
   // root4.render(<MOD_SizeBalance info={info} />)
 })
