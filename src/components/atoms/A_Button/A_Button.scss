@@ -5,8 +5,8 @@
   align-items: center;
   padding: 15px 30px;
   gap: 10px;
-  background: var(--medium);
-  color: var(--dark);
+  background: var(--dark);
+  color: var(--light);
   border-radius: 6px;
   font-family: 'Proxima Nova';
   font-style: normal;
@@ -18,5 +18,5 @@
 }
 
 .A_Button:hover {
-  background-color: var(--halflight);
+  background-color: var(--medium);
 }

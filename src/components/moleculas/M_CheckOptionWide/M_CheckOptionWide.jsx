@@ -9,39 +9,65 @@ export default class M_CheckOptionWide extends PureComponent {
   constructor(props) {
     super(props)
     this.state = {
+      correct: false,
+      incorrect: false,
       ticked: false
     }
   }
 
-  handleClick = () => {
-    // const { type, handleClick } = this.props
-    const { correct } = this.state
-    this.setState({
-      ticked: true
-    })
-    if (this.state.selected) {
+  componentDidUpdate() {
+    const { answered, status } = this.props
+
+    if (answered) {
+      if (status == 'correct') {
+        this.setState({
+          correct: true
+        })
+      }
+      if (status == 'incorrect') {
+        this.setState({
+          incorrect: true
+        })
+      }
+    }
+  }
+
+  handleClick = (checked) => {
+    if (checked == false) {
+      this.setState({
+        ticked: true
+      })
+    }
+    if (checked == true) {
       this.setState({
         ticked: false
       })
     }
-    // handleClick(type, selected)
   }
 
   render() {
-    const { errorHeader, errorText } = this.props
+    const { body, defenition, status } = this.props
+    const { correct, incorrect, ticked } = this.state
 
     const classes = classnames({
       M_CheckOptionWide: true,
-      ticked: this.state.ticked
+      correct: correct,
+      incorrect: incorrect,
+      ticked: ticked
     })
 
-    const optiontext = 'Привет! Вопросов нет!!!'
-
     return (
-      <div className={classes} onClick={this.handleClick}>
+      <div className={classes}>
         <div className="inner">
-          <A_CheckBox />
-          <p>{optiontext}</p>
+          <A_CheckBox
+            correct={correct}
+            incorrect={incorrect}
+            handleClick={this.handleClick}
+          />
+          <p>
+            {body}
+            <p className="hidden">{defenition}</p>
+          </p>
         </div>
       </div>
     )

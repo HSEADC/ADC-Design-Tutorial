@@ -8,31 +8,49 @@ export default class A_RadioButton extends PureComponent {
     super(props)
     this.state = {
       correct: false,
-      incorrect: false
+      incorrect: false,
+      picked: false
     }
   }
 
   handleClick = () => {
-    const { type, handleClick } = this.props
-    const { correct } = this.state
-    this.setState({
-      correct: true
-    })
-    if (this.state.correct) {
+    const { handleClick, answered } = this.props
+    const { picked } = this.state
+
+    if (answered == false) {
       this.setState({
-        correct: false
+        picked: true
       })
     }
-    // handleClick(type, selected)
+
+    handleClick(picked)
+  }
+
+  componentDidUpdate() {
+    const { status, answered } = this.props
+
+    if (answered) {
+      if (status == 'correct') {
+        this.setState({
+          correct: true
+        })
+      }
+      if (status == 'incorrect') {
+        this.setState({
+          incorrect: true
+        })
+      }
+    }
   }
 
   render() {
-    const { selected } = this.state
+    const { picked, correct, incorrect } = this.state
 
     const classes = classnames({
       A_RadioButton: true,
-      correct: this.state.correct,
-      incorrect: this.state.incorrect
+      correct: correct,
+      incorrect: incorrect,
+      picked: picked
     })
 
     return (

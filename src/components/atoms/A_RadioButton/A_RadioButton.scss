@@ -15,6 +15,24 @@
   }
 }
 
+.A_RadioButton.picked.incorrect {
+  border: 2px solid var(--darkRed);
+
+  background-color: var(--darkRed);
+  .Q_Icon.redCross {
+    display: block;
+  }
+}
+
+.A_RadioButton.picked.correct {
+  border: 2px solid var(--darkGreen);
+
+  background-color: var(--darkGreen);
+  .Q_Icon.greenTick {
+    display: block;
+  }
+}
+
 .A_RadioButton.incorrect {
   border: 2px solid var(--darkRed);
 

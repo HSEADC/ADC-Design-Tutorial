@@ -14,28 +14,45 @@ export default class A_CheckBox extends PureComponent {
   }
 
   handleClick = () => {
-    const { type, handleClick } = this.props
+    const { handleClick } = this.props
     const { checked } = this.state
+
     this.setState({
       checked: true
     })
-    if (this.state.checked) {
+
+    if (checked) {
       this.setState({
         checked: false
       })
     }
-    // handleClick(type, selected)
+    handleClick(checked)
+  }
+
+  componentDidUpdate() {
+    const { correct, incorrect } = this.props
+    if (incorrect) {
+      this.setState({
+        incorrect: true,
+        checked: false
+      })
+    }
+    if (correct) {
+      this.setState({
+        correct: true,
+        checked: false
+      })
+    }
   }
 
   render() {
-    const { img } = this.props
-    const { selected } = this.state
+    const { checked, correct, incorrect } = this.state
 
     const classes = classnames({
       A_CheckBox: true,
-      checked: this.state.checked,
-      correct: this.state.correct,
-      incorrect: this.state.incorrect
+      checked: checked,
+      correct: correct,
+      incorrect: incorrect
     })
 
     return (

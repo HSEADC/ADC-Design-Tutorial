@@ -8,19 +8,53 @@
   width: 700px;
   border-radius: 10px;
   margin: 0;
+  p {
+    width: 650px;
+  }
+
   .inner {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 8px;
+    gap: 10px;
+    .hidden {
+      display: none;
+    }
+  }
+
+  &:hover {
+    background-color: var(--halflight);
   }
 }
 
-.M_RadioOptionWide:hover {
+.M_RadioOptionWide.picked {
   background-color: var(--halflight);
+}
+
+.M_RadioOptionWide.correct {
+  .hidden {
+    display: block;
+    color: var(--darkGreen);
+  }
+}
+.M_RadioOptionWide.incorrect {
+  .hidden {
+    display: block;
+    color: var(--darkRed);
+  }
 }
 
 .M_RadioOptionWide.correct:hover {
   background-color: var(--light);
+}
+.M_RadioOptionWide.incorrect:hover {
+  background-color: var(--light);
+}
+
+.M_RadioOptionWide.ticked.correct {
+  background-color: rgba(148, 255, 139, 0.3);
+}
+.M_RadioOptionWide.ticked.incorrect {
+  background-color: rgba(255, 139, 139, 0.3);
 }

@@ -1,0 +1,14 @@
+.O_CheckboxQuestion {
+  .A_Button {
+    margin-top: 10px;
+    margin-left: 16px;
+  }
+  h4 {
+    margin-left: 16px;
+  }
+  .pack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -10,40 +10,63 @@ export default class M_RadioOptionWide extends PureComponent {
     super(props)
     this.state = {
       correct: false,
-      incorrect: false
+      incorrect: false,
+      ticked: false
     }
   }
 
-  handleClick = () => {
-    // const { type, handleClick } = this.props
-    const { correct } = this.state
-    this.setState({
-      correct: true
-    })
-    if (this.state.selected) {
+  componentDidUpdate() {
+    const { answered, status } = this.props
+
+    if (answered) {
+      if (status == 'correct') {
+        this.setState({
+          correct: true
+        })
+      }
+      if (status == 'incorrect') {
+        this.setState({
+          incorrect: true
+        })
+      }
+    }
+  }
+
+  handleClick = (picked) => {
+    const { answered } = this.props
+
+    if (answered == false) {
       this.setState({
-        correct: false
+        ticked: true
       })
     }
-    // handleClick(type, selected)
   }
 
   render() {
-    const { errorHeader, errorText } = this.props
+    const { body, defenition, status, handleClick, answered } = this.props
+    const { correct, incorrect, ticked } = this.state
 
     const classes = classnames({
       M_RadioOptionWide: true,
-      correct: this.state.correct,
-      incorrect: this.state.incorrect
+      correct: correct,
+      incorrect: incorrect,
+      ticked: ticked
     })
-
-    const optiontext = 'Привет! Вопросов нет!!!'
 
     return (
       <div className={classes} onClick={this.handleClick}>
         <div className="inner">
-          <A_RadioButton />
-          <p>{optiontext}</p>
+          <A_RadioButton
+            correct={correct}
+            incorrect={incorrect}
+            status={status}
+            handleClick={handleClick}
+            answered={answered}
+          />
+          <p>
+            {body}
+            <p className="hidden">{defenition}</p>
+          </p>
         </div>
       </div>
     )

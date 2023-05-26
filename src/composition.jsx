@@ -2,10 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { createRoot } from 'react-dom/client'
 
-import M_RadioOptionWide from './components/moleculas/M_RadioOptionWide/M_RadioOptionWide.jsx'
-
-import M_CheckOptionWide from './components/moleculas/M_CheckOptionWide/M_CheckOptionWide.jsx'
-
 import MOD_Rangefinder from './components/modules/MOD_Rangefinder.jsx'
 
 import MOD_CircleGame from './components/modules/MOD_CircleGame.jsx'
@@ -13,6 +9,8 @@ import MOD_CircleGame from './components/modules/MOD_CircleGame.jsx'
 import MOD_ContrastEditor from './components/modules/MOD_ContrastEditor.jsx'
 
 import MOD_SizeBalance from './components/modules/MOD_SizeBalance.jsx'
+
+import S_Quiz from './components/superorganisms/S_Quiz/S_Quiz.jsx'
 
 const info = [
   {
@@ -231,6 +229,96 @@ const figures = [
   }
 ]
 
+const questions = [
+  {
+    name: 'Что такое антиква?',
+    type: 'Single',
+    answerOptions: [
+      { body: 'Шрифт с засечкой', status: 'correct', defenition: 'Именно!!' },
+      {
+        body: 'Шрифт без засечек',
+        status: 'incorrect',
+        defenition: 'Нет! Шрифт без засечек называется гротеск'
+      },
+      {
+        body: 'Так называют рукописные шрифты',
+        status: 'incorrect',
+        defenition:
+          'Нет! Рукописные шрифты не имеют какого-то дополнительного названия. Просто рукописные!'
+      },
+      {
+        body: 'Шрифты, которые придумали и использовали в античные времена',
+        status: 'incorrect',
+        defenition:
+          'Вот вы и попались! Хоть слова антиква и античность созвучны, ничего общего между ними нет'
+      }
+    ]
+  },
+  {
+    name: 'Что такое рубленный шрифт?',
+    type: 'Single',
+    answerOptions: [
+      {
+        body: 'Так иногда называют антикву — шрифты с засечками',
+        status: 'incorrect',
+        defenition:
+          'Не-а! Антиква — это антиква. А рубленными иногда называют гротески'
+      },
+      {
+        body: 'Это шрифт, в котором все знаки имеют одинаковую ширину',
+        status: 'incorrect',
+        defenition: 'Нет! Такие знаки называются моноширинными'
+      },
+      {
+        body: 'Так иногда называют гротески — шрифты без засечек',
+        status: 'correct',
+        defenition: 'Совершенно верно!'
+      },
+      {
+        body: 'Это всё выдумка! Рубленных шрифтов не существует!',
+        status: 'incorrect',
+        defenition:
+          'А вот и нет! Понятие «Рубленные шрифты» действительно существует. Так иногда называют гротески — шрифты в которых отсутствуют засечки'
+      }
+    ]
+  },
+  {
+    name:
+      'Ниже приведены разные виды шрифтов. Однако, не все из них реально существуют. Выберите те виды, которые не выдуманны',
+    type: 'Multiple',
+    answerOptions: [
+      {
+        body: 'Антиква',
+        status: 'correct',
+        defenition: 'Так называют шрифты с засечками'
+      },
+      {
+        body: 'Italic',
+        status: 'incorrect',
+        defenition:
+          'А вот и уловка! Да, понятие italic действительно встречается в типографике. Вот только это не отдельный вид шрифта, а лишь одно из начертаний '
+      },
+      {
+        body: 'Фрактура',
+        status: 'correct',
+        defenition:
+          'Так называют позднюю разновидность готического письма. Понятие фрактура используется для шрифтов, которые стилизованы под эту разновидность письма'
+      },
+      {
+        body: 'Гротеск',
+        status: 'correct',
+        defenition: 'Гротески — шрифты в которых отсутствуют засечки'
+      },
+      {
+        body: 'Романика',
+        status: 'incorrect',
+        defenition:
+          'Романика — название стиля в искусстве доготических времён, но никак не разновидности шрифта '
+      }
+    ]
+  }
+]
+
 const colors = ['#F6DA4B', '#4E4BF6', '#F64B4B']
 const forms = [
   'unset',
@@ -270,5 +358,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const container5 = document.getElementById('container-5')
   const root5 = createRoot(container5)
-  root5.render(<M_CheckOptionWide />)
+  root5.render(<S_Quiz questions={questions} />)
 })

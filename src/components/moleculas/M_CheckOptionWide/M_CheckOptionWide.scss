@@ -9,26 +9,53 @@
   border-radius: 10px;
   margin: 0;
 
+  p {
+    width: 650px;
+  }
+
   .inner {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 8px;
+    gap: 10px;
+    .hidden {
+      display: none;
+    }
   }
 
   &:hover {
     background-color: var(--halflight);
   }
+}
 
-  &.ticked:hover {
-    background-color: var(--border);
-  }
+.M_CheckOptionWide.ticked {
+  background-color: var(--halflight);
+}
 
-  &.incorrect:hover {
-    background-color: var(--halflight);
+.M_CheckOptionWide.correct {
+  .hidden {
+    display: block;
+    color: var(--darkGreen);
   }
-  &.correct:hover {
-    background-color: var(--halflight);
+}
+.M_CheckOptionWide.incorrect {
+  .hidden {
+    display: block;
+    color: var(--darkRed);
   }
+}
+
+.M_CheckOptionWide.correct:hover {
+  background-color: var(--light);
+}
+.M_CheckOptionWide.incorrect:hover {
+  background-color: var(--light);
+}
+
+.M_CheckOptionWide.ticked.correct {
+  background-color: rgba(148, 255, 139, 0.3);
+}
+.M_CheckOptionWide.ticked.incorrect {
+  background-color: rgba(255, 139, 139, 0.3);
 }
