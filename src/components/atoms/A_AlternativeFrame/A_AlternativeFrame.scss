@@ -1,0 +1,27 @@
+.A_AlternativeFrame {
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--border);
+
+  .upper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 0 25px;
+    justify-content: center;
+  }
+
+  .lower {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px 0 50px;
+    justify-content: center;
+  }
+}

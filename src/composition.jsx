@@ -12,6 +12,10 @@ import MOD_SizeBalance from './components/modules/MOD_SizeBalance.jsx'
 
 import S_Quiz from './components/superorganisms/S_Quiz/S_Quiz.jsx'
 
+import MOD_ColorPick from './components/modules/MOD_ColorPick.jsx'
+
+import O_FontGame from './components/organisms/O_FontGame/O_FontGame.jsx'
+
 const info = [
   {
     header: `Упражнение на\u00A0поиск промежутка`,
@@ -31,7 +35,98 @@ const info = [
   {
     header: `Упражнение на\u00A0балансировку размера `,
     text: `Перед вами находится три квадрата. Размер квадрата посередине можно регулировать ползунком под ним. Ваша задача: отрегулировать его так, чтобы его размер был максимально усреднёным `
+  },
+  {
+    header: `Цветовые ассоциации `,
+    text: `Существуют общепринятые ассоциации цветов с характерами. Попробуйте их угадать \u2014 перетащите слова к цветам, которые,
+по-вашему, соответствуют собщепринятыми ассоциациями `
   }
+]
+
+const bubbles = [
+  {
+    number: 1,
+    font: '',
+    transformX: 160,
+    transformY: 0,
+    rotate: 0,
+    innerRotate: 0,
+    font: 'Bodoni-Moda'
+  },
+  {
+    number: 2,
+    font: '',
+    transformX: 314,
+    transformY: 0,
+    rotate: 0,
+    innerRotate: 0,
+    font: 'EB-Garamond'
+  },
+  {
+    number: 3,
+    font: '',
+    transformX: 467,
+    transformY: 0,
+    rotate: 0,
+    innerRotate: 0,
+    font: 'Merriweather'
+  },
+  {
+    number: 4,
+    font: '',
+    transformX: -160,
+    transformY: -280,
+    rotate: 180,
+    innerRotate: -180,
+    font: 'Noto-Serif'
+  },
+  {
+    number: 5,
+    font: '',
+    transformX: -314,
+    transformY: -280,
+    rotate: 180,
+    innerRotate: -180,
+    font: 'Old-Standart-TT'
+  },
+  {
+    number: 6,
+    font: '',
+    transformX: -467,
+    transformY: -280,
+    rotate: 180,
+    innerRotate: -180,
+    font: 'PT-Serif'
+  },
+  {
+    number: 7,
+    font: '',
+    transformX: -140,
+    transformY: 20,
+    rotate: -90,
+    innerRotate: 90,
+    font: 'Roboto-Slab'
+  },
+  {
+    number: 8,
+    font: '',
+    transformX: 140,
+    transformY: -606,
+    rotate: 90,
+    innerRotate: -90,
+    font: 'Vollkorn'
+  }
+]
+
+const fonts = [
+  'Bodoni-Moda',
+  'EB-Garamond',
+  'Merriweather',
+  'Noto-Serif',
+  'Old-Standart-TT',
+  'PT-Serif',
+  'Roboto-Slab',
+  'Vollkorn'
 ]
 
 const figures = [
@@ -229,6 +324,72 @@ const figures = [
   }
 ]
 
+const colorBricks = [
+  {
+    digital: '#CD3838',
+    oral: 'red',
+    number: '1',
+    x: 0,
+    y: 0
+  },
+  {
+    digital: '#CD7738',
+    oral: 'orange',
+    number: '2',
+    x: 0,
+    y: 0
+  },
+  {
+    digital: '#EAED44',
+    oral: 'yellow',
+    number: '3',
+    x: 0,
+    y: 0
+  },
+  {
+    digital: '#7ACD38',
+    oral: 'green',
+    number: '4',
+    x: 0,
+    y: 0
+  },
+  {
+    digital: '#449CED',
+    oral: 'blue',
+    number: '5',
+    x: 0,
+    y: 0
+  },
+  {
+    digital: '#9844ED',
+    oral: 'purple',
+    number: '6',
+    x: 0,
+    y: 0
+  }
+]
+
+const words = [
+  {
+    text: 'Дружелюбие'
+  },
+  {
+    text: 'Опасность'
+  },
+  {
+    text: 'Надёжность'
+  },
+  {
+    text: 'Оптимизм'
+  },
+  {
+    text: 'Творчество'
+  },
+  {
+    text: 'Спокойствие'
+  }
+]
+
 const questions = [
   {
     name: 'Что такое антиква?',
@@ -336,11 +497,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // const container1 = document.getElementById('container-1')
   // const root1 = createRoot(container1)
   // root1.render(<MOD_Rangefinder info={info} />)
-  //
   // const container2 = document.getElementById('container-2')
   // const root2 = createRoot(container2)
   // root2.render(<MOD_CircleGame info={info} />)
-  //
   // const container3 = document.getElementById('container-3')
   // const root3 = createRoot(container3)
   // root3.render(
@@ -351,12 +510,13 @@ document.addEventListener('DOMContentLoaded', () => {
   //     forms={forms}
   //   />
   // )
-  //
   // const container4 = document.getElementById('container-4')
   // const root4 = createRoot(container4)
   // root4.render(<MOD_SizeBalance info={info} />)
-
-  const container5 = document.getElementById('container-5')
-  const root5 = createRoot(container5)
-  root5.render(<S_Quiz questions={questions} />)
+  // const container5 = document.getElementById('container-5')
+  // const root5 = createRoot(container5)
+  // root5.render(<S_Quiz questions={questions} />)
+  const container6 = document.getElementById('container-6')
+  const root6 = createRoot(container6)
+  root6.render(<O_FontGame bubbles={bubbles} fonts={fonts} />)
 })

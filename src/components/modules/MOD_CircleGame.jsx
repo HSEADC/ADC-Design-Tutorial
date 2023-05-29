@@ -15,7 +15,6 @@ export default class MOD_CircleGameEx extends PureComponent {
       cursorXStart: 0,
       cursorYStart: 0,
       mouseDown: false,
-
       size: 0,
       x: 0,
       y: 0,
@@ -42,7 +41,6 @@ export default class MOD_CircleGameEx extends PureComponent {
       circleCount,
       cursorXStart,
       cursorYStart,
-
       x,
       y,
       size,
@@ -79,7 +77,6 @@ export default class MOD_CircleGameEx extends PureComponent {
       mouseDown,
       cursorXStart,
       cursorYStart,
-
       x,
       size,
       objects,
@@ -92,7 +89,6 @@ export default class MOD_CircleGameEx extends PureComponent {
     if (this.state.mouseDown) {
       const newCircle = objects.map((object) => {
         if (object.number === this.state.circleCount) {
-          // проблема здесь
           return {
             ...object,
             size:
@@ -104,7 +100,6 @@ export default class MOD_CircleGameEx extends PureComponent {
                 (e.clientX - cursorXStart) * -1
               )
           }
-          console.log(this.state.size)
         } else {
           return object
         }

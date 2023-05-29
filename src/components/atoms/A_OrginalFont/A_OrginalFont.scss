@@ -1,0 +1,19 @@
+.A_OrginalFont {
+  background: #d9d9d9;
+  border: 6px solid #d9d9d9;
+  border-radius: 20px;
+  text-align: center;
+  width: 427px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(160px, 160px);
+  margin: 0;
+  user-select: none;
+  p {
+    margin: 0;
+    color: #2d2d2d;
+    font-size: 48px;
+  }
+}

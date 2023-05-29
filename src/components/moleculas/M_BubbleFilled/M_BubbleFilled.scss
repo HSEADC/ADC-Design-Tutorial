@@ -1,0 +1,36 @@
+.M_BubbleFilled {
+  width: 120px;
+  height: 160px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.M_BubbleFilled.incorrect {
+  .A_Bubble {
+    .head {
+      border: solid 6px var(--darkRed);
+      background-color: var(--lightRed);
+      p {
+        color: var(--darkRed);
+      }
+    }
+    .leg {
+      background-color: var(--darkRed);
+    }
+  }
+}
+
+.M_BubbleFilled.correct {
+  .A_Bubble {
+    .head {
+      border: solid 6px var(--darkGreen);
+      background-color: var(--lightGreen);
+      p {
+        color: var(--darkGreen);
+      }
+    }
+    .leg {
+      background-color: var(--darkGreen);
+    }
+  }
+}
