@@ -13,7 +13,16 @@
   user-select: none;
   p {
     margin: 0;
-    color: #2d2d2d;
+    color: #7b7b7b;
     font-size: 48px;
+    line-height: 0;
+  }
+}
+
+.A_OrginalFont.correct {
+  border: solid 6.41px var(--darkGreen);
+  background-color: var(--lightGreen);
+  p {
+    color: var(--darkGreen);
   }
 }

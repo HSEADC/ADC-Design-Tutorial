@@ -14,6 +14,8 @@ import S_Quiz from './components/superorganisms/S_Quiz/S_Quiz.jsx'
 
 import MOD_ColorPick from './components/modules/MOD_ColorPick.jsx'
 
+import MOD_GuessTheFont from './components/modules/MOD_GuessTheFont.jsx'
+
 import O_FontGame from './components/organisms/O_FontGame/O_FontGame.jsx'
 
 const info = [
@@ -40,6 +42,10 @@ const info = [
     header: `Цветовые ассоциации `,
     text: `Существуют общепринятые ассоциации цветов с характерами. Попробуйте их угадать \u2014 перетащите слова к цветам, которые,
 по-вашему, соответствуют собщепринятыми ассоциациями `
+  },
+  {
+    header: `Упражнение на\u00A0узнавание шрифта`,
+    text: `Перед вами \u2014 объект, в\u00A0центре которого, находится название одного из\u00A0популярных шрифтов. В\u00A0каждом ответвлении \u2014 набор букв, набранных случайным шрифтом. Ваша задача \u2014 выбрать ответвление, в\u00A0котором буквы набраны тем\u00A0же шрифтом, что и\u00A0по центру `
   }
 ]
 
@@ -494,29 +500,34 @@ function sample(array) {
 export { sample }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // const container1 = document.getElementById('container-1')
-  // const root1 = createRoot(container1)
-  // root1.render(<MOD_Rangefinder info={info} />)
-  // const container2 = document.getElementById('container-2')
-  // const root2 = createRoot(container2)
-  // root2.render(<MOD_CircleGame info={info} />)
-  // const container3 = document.getElementById('container-3')
-  // const root3 = createRoot(container3)
-  // root3.render(
-  //   <MOD_ContrastEditor
-  //     info={info}
-  //     figures={figures}
-  //     colors={colors}
-  //     forms={forms}
-  //   />
-  // )
-  // const container4 = document.getElementById('container-4')
-  // const root4 = createRoot(container4)
-  // root4.render(<MOD_SizeBalance info={info} />)
-  // const container5 = document.getElementById('container-5')
-  // const root5 = createRoot(container5)
-  // root5.render(<S_Quiz questions={questions} />)
+  const container1 = document.getElementById('container-1')
+  const root1 = createRoot(container1)
+  root1.render(<MOD_Rangefinder info={info} />)
+
+  const container2 = document.getElementById('container-2')
+  const root2 = createRoot(container2)
+  root2.render(<MOD_CircleGame info={info} />)
+
+  const container3 = document.getElementById('container-3')
+  const root3 = createRoot(container3)
+  // prettier-ignore
+  root3.render(<MOD_ContrastEditor info={info} figures={figures} colors={colors}forms={forms}/>)
+
+  const container4 = document.getElementById('container-4')
+  const root4 = createRoot(container4)
+  root4.render(<MOD_SizeBalance info={info} />)
+
+  const container5 = document.getElementById('container-5')
+  const root5 = createRoot(container5)
+  root5.render(<S_Quiz questions={questions} />)
+
   const container6 = document.getElementById('container-6')
   const root6 = createRoot(container6)
-  root6.render(<O_FontGame bubbles={bubbles} fonts={fonts} />)
+  root6.render(<MOD_GuessTheFont bubbles={bubbles} fonts={fonts} info={info} />)
+
+  const container7 = document.getElementById('container-7')
+  const root7 = createRoot(container7)
+  // prettier-ignore
+
+  root7.render(<MOD_ColorPick info={info} colorBricks={colorBricks} words={words} />)
 })

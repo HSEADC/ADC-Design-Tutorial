@@ -245,71 +245,71 @@ body.welcome {
     align-items: center;
     padding: 0 444px 0 444px;
     height: auto;
-  }
 
-  .greeting,
-  .release {
-    padding: 0 170px 0 170px;
-    height: 80vh;
-  }
-
-  .basic,
-  .color,
-  .typo,
-  .grid {
-    width: 100vw;
-
-    img {
-      width: 100%;
+    .greeting,
+    .release {
+      padding: 0 170px 0 170px;
+      height: 80vh;
     }
 
-    .left,
-    .right {
-      gap: 25px;
-      width: 50%;
-    }
+    .basic,
+    .color,
+    .typo,
+    .grid {
+      width: 100vw;
 
-    .row1 {
-      .left {
-        // align-items: flex-end;
-        padding: 200px 200px 200px 444px;
+      img {
+        width: 100%;
       }
 
+      .left,
       .right {
-        padding: 150px;
-        background: var(--halflight);
-      }
-    }
-
-    .row2 {
-      .left {
-        padding: 150px;
-        background: var(--halflight);
-      }
-      .right {
-        padding: 200px 444px 200px 100px;
-      }
-    }
-
-    .row3 {
-      .left {
-        padding: 200px 200px 200px 444px;
+        gap: 25px;
+        width: 50%;
       }
 
-      .right {
-        padding: 150px;
-        background: var(--halflight);
-      }
-    }
+      .row1 {
+        .left {
+          // align-items: flex-end;
+          padding: 200px 200px 200px 444px;
+        }
 
-    .row4 {
-      .left {
-        padding: 150px;
-        background: var(--halflight);
+        .right {
+          padding: 150px;
+          background: var(--halflight);
+        }
       }
 
-      .right {
-        padding: 200px 444px 1200x 200px;
+      .row2 {
+        .left {
+          padding: 150px;
+          background: var(--halflight);
+        }
+        .right {
+          padding: 200px 444px 200px 100px;
+        }
+      }
+
+      .row3 {
+        .left {
+          padding: 200px 200px 200px 444px;
+        }
+
+        .right {
+          padding: 150px;
+          background: var(--halflight);
+        }
+      }
+
+      .row4 {
+        .left {
+          padding: 150px;
+          background: var(--halflight);
+        }
+
+        .right {
+          padding: 200px 444px 1200x 200px;
+        }
       }
     }
   }

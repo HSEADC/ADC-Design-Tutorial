@@ -58,7 +58,7 @@ export default class O_FontGame extends PureComponent {
     return (
       <div className="O_FontGame">
         {newBubbles}
-        <A_OrginalFont originalFont={originalFont} />
+        <A_OrginalFont answered={answered} originalFont={originalFont} />
       </div>
     )
   }
