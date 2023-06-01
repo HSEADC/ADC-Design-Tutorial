@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ADC Design Tutorial</title>
+  </head>
+  <body class="basic">
+    <img class="alert" src="../images/alert.png" alt="" />
+
+    <h2 class="alert">Ошибка</h2>
+
+    <h4 class="alert">
+      Интерактивные модули не&nbsp;поддерживаются на&nbsp;мобильных устройствах.
+      Пожалуйста, используйте&nbsp;ПК
+    </h4>
+
+    <nav>
+      <a class="logo" href="../index.html">
+        <img src="../images/logo.png" alt="" />
+      </a>
+
+      <div class="central">
+        <a href="#basic" id="active">Основы дизайна</a>
+        <a href="../index.html#color">Основы цвета</a>
+        <a href="../index.html#typo">Типографика</a>
+        <a href="../index.html#grid">Сетки</a>
+      </div>
+
+      <a href="../index.html#navigator">Структура курса</a>
+    </nav>
+    <aside>
+      <a href="#"><h4 class="first">Построение композиции</h4></a>
+      <a href="#defenition">Что такое композиция?</a>
+      <a href="#ancor-text">Якорные точки</a>
+      <a href="#color">Другие способы</a>
+
+      <a href="construction.html"><h4>Балансировка композиции</h4></a>
+      <a href="construction.html">Балансировка «по весу»</a>
+      <a href="construction.html">Ритм</a>
+      <a href="construction.html">Правило близости</a>
+
+      <a href="construction.html"><h4>Работа с&nbsp;контрастами</h4></a>
+      <a href="construction.html">Зачем нужны контрасты?</a>
+      <a href="construction.html">Какие бывают контрасты?</a>
+      <a href="construction.html">Сочетание контрастов</a>
+
+      <a href="#"><h4>Управление вниманием</h4></a>
+      <a href="construction.html">Паттерны чтения</a>
+      <a href="construction.html">Управление контрастом</a>
+      <a href="construction.html">Управление размером</a>
+
+      <a href="#"><h4>Итог</h4></a>
+    </aside>
+
+    <div class="wrapper">
+      <article>
+        <section>
+          <div class="block">
+            <h1>Балансировка композиции</h1>
+            <p>
+              Сбалансированная композиция возникает тогда, когда все
+              задействованные элементы компенсируют друг-друга. Достичь этого
+              можно самыми разными способами, где-то необходимо заполнять пустое
+              пространство, где-то менять размеры элементов относительно
+              друг-друга, а&nbsp;где-то напротив, ломать структуру для
+              привлечения внимания или передачи определённого замысла.
+            </p>
+          </div>
+
+          <div class="block new">
+            <h2>Балансировка &laquo;по&nbsp;весу&raquo;</h2>
+            <p>
+              Одним из&nbsp;параметров балансировки композиции является
+              балансировка по&nbsp;&laquo;весу&raquo;. Это выражение можно
+              воспринимать буквально. У&nbsp;каждого объекта в&nbsp;композиции
+              есть свой &laquo;вес&raquo; и&nbsp;первым его критерием является,
+              конечно&nbsp;же, размер объекта. Поскольку&nbsp;мы,
+              в&nbsp;основном, работаем в&nbsp;цифровой среде, логичным будет
+              взять за&nbsp;условную единицу &laquo;веса&raquo; пиксели.
+            </p>
+          </div>
+          <div class="picture">
+            <img src="../images/basic/balance/Balance1.png" alt="" />
+          </div>
+          <figcaption id="last">
+            Вот первый пример: перед нами три квадрата разного размера. Даже
+            не&nbsp;зная веса фигур, можно увидеть, что композиция
+            не&nbsp;сбалансирована.
+          </figcaption>
+
+          <div class="picture">
+            <img src="../images/basic/balance/Balance2.png" alt="" />
+          </div>
+          <figcaption id="last">
+            А&nbsp;вот тот&nbsp;же пример, но&nbsp;с&nbsp;указанием реального
+            размера квадратов в&nbsp;пикселях. Большой квадрат занимает большую
+            площадь, чем два вместе взятых правых квадрата.
+          </figcaption>
+
+          <div class="block extra">
+            <p>
+              Чем &laquo;тяжелее&raquo; объект, тем больше внимания
+              он&nbsp;к&nbsp;себе привлекает. Однако, иногда использование
+              слишком тяжёлого объекта может вызвать несбалансированность
+              композиции. Чтобы этого избежать, нужно добавить объекты,
+              которые&nbsp;бы сбалансировали композицию.
+            </p>
+          </div>
+
+          <div class="picture">
+            <img src="../images/basic/balance/Balance3.png" alt="" />
+          </div>
+          <figcaption id="last">
+            Приравняв размер двух правых квадратов к&nbsp;левому,
+            мы&nbsp;визуально сбалансировали композицию
+          </figcaption>
+
+          <div class="block">
+            <p>
+              Размер&nbsp;&mdash; не&nbsp;единственный критерий визуального
+              веса. Есть ещё три: тон, цвет и &nbsp; положение в пространстве.
+            </p>
+          </div>
+
+          <h3 class="extra-top">Тон</h3>
+          <div class="picture">
+            <img src="../images/basic/balance/ToneContrast.png" alt="" />
+          </div>
+          <figcaption>
+            Вес по тону &mdash; это когда объекты различаются между собой
+            по&nbsp;насыщенности цвета. Чем объект светлее, тем он&nbsp;легче,
+            и, соответственно, привлекает меньше внимания на&nbsp;фоне более
+            насыщенного объекта. Такие манипуляции, иногда, могут даже привести
+            к&nbsp;оптической иллюзии, когда один более тёмный объект кажется
+            больше светлого, при том, что их&nbsp;размер идентичен.
+          </figcaption>
+
+          <h3>Цвет</h3>
+          <div class="picture">
+            <img src="../images/basic/balance/ColorContrast.png" alt="" />
+          </div>
+          <figcaption>
+            Та же история, что и с цветом, разница лишь в&nbsp;том, что объекты
+            могут быть разные не&nbsp;по&nbsp;оттенку, а&nbsp;по&nbsp;цвету.
+          </figcaption>
+
+          <h3>Расположение в&nbsp;пространстве</h3>
+          <div class="picture">
+            <img src="../images/basic/balance/SpaceContrast.png" alt="" />
+          </div>
+          <figcaption>
+            Наш мозг на&nbsp;подсознательном уровне воспринимает объекты
+            в&nbsp;композиции, как объекты, на&nbsp;которые действуют законы
+            физики. Если два схожих по&nbsp;виду объекта находятся
+            на&nbsp;разной высоте, то&nbsp;нижний будет восприниматься как более
+            тяжёлы
+          </figcaption>
+
+          <div class="block new">
+            <h2>Ритм</h2>
+            <p>
+              Это когда мы&nbsp;располагаем предметы, учитывая расстояние между
+              ними. То&nbsp;есть в&nbsp;промежутках, на&nbsp;которых
+              мы&nbsp;располагаем предметы, есть какая-то закономерность.
+              Использование такого приёма позволяет задать тон повествованию
+              и&nbsp;создать эффективный инструмент управления вниманием.
+            </p>
+            <div class="picture extra">
+              <img src="../images/basic/balance/Rhythm1.png" alt="" />
+            </div>
+
+            <p>
+              Повторение элементов в&nbsp;определённом порядке создает правила
+              поведения. Это позволит облегчить усвоение информации. Также
+              мы&nbsp;можем создать динамику, придать повествованию драматургии.
+            </p>
+
+            <div class="picture extra">
+              <img src="../images/basic/balance/Rhytm2.png" alt="" />
+            </div>
+
+            <div class="picture extra">
+              <img src="../images/basic/balance/Rhythm3.png" alt="" />
+            </div>
+
+            <p>
+              А&nbsp;нарушение ритма&nbsp;&mdash; привлекает внимание. Когда
+              человек потребляет структурированную информацию&nbsp;&mdash;
+              в&nbsp;его голове создается шаблон, то&nbsp;есть увидев какую-то
+              закономерность в&nbsp;расположении элементов&mdash;
+              мы&nbsp;ожидаем повторения этой закономерности. Нарушив
+              собственные принципы мы&nbsp;ломаем шаблон, и, таким образом,
+              создаём акцент и&nbsp;привлекаем внимание зрителя.
+            </p>
+
+            <div class="picture extra">
+              <img src="../images/basic/balance/Rhytm4.png" alt="" />
+            </div>
+
+            <p>
+              Ритм&nbsp;&mdash; очень важный компонент в&nbsp;композиции. Помимо
+              всех вышеперечисленных качеств, ритмичность делает работу более
+              эстетичной и&nbsp;оставляет приятное впечатление. Это справедливо
+              и&nbsp;для плакатов, и&nbsp;для больших веб-сайтов, на&nbsp;любом
+              носителе этот приём работает одинаково хорошо, если грамотно
+              выстроить ритм.
+            </p>
+          </div>
+        </section>
+
+        <div id="container-1"></div>
+
+        <section>
+          <div class="block new">
+            <h2>Правило близости</h2>
+
+            <p>
+              Это ещё один из&nbsp;важнейших принципов графического дизайна.
+              Когда, у&nbsp;нас, например, есть два элемента, расстояние между
+              ними может быть не&nbsp;так важно. Но&nbsp;когда элементов много
+              и&nbsp;они зависимы друг от&nbsp;друга, очень важно правильно
+              выстроить связь между ними.
+            </p>
+
+            <div class="picture extra">
+              <img src="../images/basic/balance/Gap1.png" alt="" />
+            </div>
+
+            <p>
+              Простыми словами, правило близости можно описать примерно так:
+              когда несколько объектов находятся близко друг к&nbsp;другу, они
+              образуют группу. При наличии большого количества контента очень
+              важно правильно группировать элементы и&nbsp;соблюдать отступы.
+            </p>
+            <p>
+              Стандартом в&nbsp;этом принципе является соотношение внутреннего
+              и&nbsp;внешнего, как 1&nbsp;к 2&nbsp;или 1&nbsp;к 3. Например,
+              если элементы в&nbsp;группе расположены друг от&nbsp;друга
+              на&nbsp;расстоянии 20&nbsp;пикселей, то&nbsp;группа этих объектов
+              должна находится на&nbsp;расстоянии в&nbsp;40-60 пикселей
+              от&nbsp;другой группы. Иначе контент будет слипаться друг
+              с&nbsp;другом и&nbsp;возникнет хаос.
+            </p>
+            <div class="picture">
+              <img src="../images/basic/balance/Gap2.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <div id="container-4"></div>
+
+        <div class="teaser-img" id="contrast"></div>
+
+        <div class="teaser-right">
+          <h4>Работа с&nbsp;контрастами</h4>
+
+          <p class="teaser-text">
+            Помимо эстетического удовольствия и&nbsp;визуального разнообразия,
+            контрасты позволяют нам помочь зрителю изучить наш контент
+            в&nbsp;том порядке, который мы&nbsp;задумали.
+          </p>
+          <a class="button2" href="contrast.html">Читать главу</a>
+        </div>
+      </article>
+
+      <footer>
+        <a href="construction.html">ADC Design Tutorial 2023</a>
+        <a href="construction.html">
+          <img src="../images/welcome/vk.png" alt="" />
+        </a>
+        <a href="construction.html">
+          <img src="../images/welcome/tg.png" alt="" />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

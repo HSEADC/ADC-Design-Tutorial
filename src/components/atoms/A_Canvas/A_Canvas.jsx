@@ -36,9 +36,9 @@ export default class A_Canvas extends PureComponent {
     window.addEventListener('scroll', this.receiveCoord)
 
     window.addEventListener('load', this.receiveCoord)
-    window.addEventListener('mousedown', this.props.handleMouseDown)
-    window.addEventListener('mouseup', this.props.handleMouseUp)
-    window.addEventListener('mousemove', this.props.handleMouseMove)
+    // window.addEventListener('mousedown', this.props.handleMouseDown)
+    // window.addEventListener('mouseup', this.props.handleMouseUp)
+    // window.addEventListener('mousemove', this.props.handleMouseMove)
   }
 
   componentDidUpdate() {
@@ -65,7 +65,13 @@ export default class A_Canvas extends PureComponent {
     } = this.props
 
     return (
-      <div className="A_Canvas" ref={this.position}>
+      <div
+        className="A_Canvas"
+        ref={this.position}
+        onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
+        onMouseMove={handleMouseMove}
+      >
         {circles}
         {alert}
       </div>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ADC Design Tutorial</title>
+  </head>
+  <body class="basic">
+    <img class="alert" src="../images/alert.png" alt="" />
+
+    <h2 class="alert">Ошибка</h2>
+
+    <h4 class="alert">
+      Интерактивные модули не&nbsp;поддерживаются на&nbsp;мобильных устройствах.
+      Пожалуйста, используйте&nbsp;ПК
+    </h4>
+
+    <nav>
+      <a class="logo" href="../index.html">
+        <img src="../images/logo.png" alt="" />
+      </a>
+
+      <div class="central">
+        <a href="#basic" id="active">Основы дизайна</a>
+        <a href="../index.html#color">Основы цвета</a>
+        <a href="../index.html#typo">Типографика</a>
+        <a href="../index.html#grid">Сетки</a>
+      </div>
+
+      <a href="../index.html#navigator">Структура курса</a>
+    </nav>
+    <aside>
+      <a href="#"><h4 class="first">Построение композиции</h4></a>
+      <a href="#defenition">Что такое композиция?</a>
+      <a href="#ancor-text">Якорные точки</a>
+      <a href="#color">Другие способы</a>
+
+      <a href="construction.html"><h4>Балансировка композиции</h4></a>
+      <a href="construction.html">Балансировка «по весу»</a>
+      <a href="construction.html">Ритм</a>
+      <a href="construction.html">Правило близости</a>
+
+      <a href="construction.html"><h4>Работа с&nbsp;контрастами</h4></a>
+      <a href="construction.html">Зачем нужны контрасты?</a>
+      <a href="construction.html">Какие бывают контрасты?</a>
+      <a href="construction.html">Сочетание контрастов</a>
+
+      <a href="#"><h4>Управление вниманием</h4></a>
+      <a href="construction.html">Паттерны чтения</a>
+      <a href="construction.html">Управление контрастом</a>
+      <a href="construction.html">Управление размером</a>
+
+      <a href="#"><h4>Итог</h4></a>
+    </aside>
+
+    <div class="wrapper">
+      <article>
+        <section>
+          <div class="block">
+            <h1>Управление вниманием</h1>
+            <p>
+              Для того, чтобы ваш замысел дошёл до&nbsp;зрителя в&nbsp;том виде,
+              в&nbsp;котором вы&nbsp;его задумали, очень важно правильно
+              управлять вниманием зрителя, направляя его взгляд от&nbsp;одного
+              элемента к&nbsp;другому. Благодаря этому мы&nbsp;облегчим
+              восприятие нашей работы и&nbsp;лишим пользователя необходимости
+              самостоятельно упорядочивать в&nbsp;голове блоки информации.
+            </p>
+            <div class="picture" id="less"></div>
+          </div>
+          <div class="block new">
+            <h2>Паттерны чтения</h2>
+            <p>
+              Сталкиваясь с&nbsp;большим блоком информации, пользователь имеет
+              в&nbsp;голове определённый шаблон чтения. Точнее, не&nbsp;чтения,
+              а&nbsp;беглого прохождения текста глазами.
+            </p>
+            <p>
+              Зная этот шаблон, мы&nbsp;можем расположить самые важные вещи там,
+              где они не&nbsp;останутся без внимания, и&nbsp;в&nbsp;том порядке,
+              в&nbsp;котором это необходимо. Существует два основных паттерна
+              чтения.
+            </p>
+          </div>
+
+          <div class="block new">
+            <h3>Z-паттерн</h3>
+            <p>
+              Такой рисунок образуется в&nbsp;результате перемещения внимания
+              пользователя слева-направо, сверху-вниз, справа-налево.
+              Получившиеся линии образуют букву&nbsp;Z, отсюда и&nbsp;название.
+            </p>
+            <p>
+              Этот паттерн скорее справедлив для страниц с&nbsp;небольшим
+              количеством текста внутри. Плакаты, лендинги, небольшие страницы,
+              рекламные носители&nbsp;&mdash; вот лучшие места для применения
+              паттерна
+            </p>
+          </div>
+
+          <div class="block new">
+            <h3>F-паттерн</h3>
+            <p>
+              Мнения на&nbsp;счёт этого паттерна рознятся. Кто-то считает его
+              устаревшим, потому что такой паттерн не&nbsp;учитывает поведение
+              пользователей на&nbsp;мобильных устройствах. Однако, для страниц
+              с&nbsp;большим количеством текста, этот паттерн до&nbsp;сих пор
+              актуален.
+            </p>
+            <p>
+              Если в&nbsp;вашем проекте много длинных блоков текста
+              с&nbsp;большим объёмом информации&nbsp;&mdash; обязательно
+              учитывайте F-паттерн. Это позволит вам располагать важную часть
+              контента именно там, где он&nbsp;с&nbsp;наибольшей вероятностью
+              будет прочитан
+            </p>
+          </div>
+
+          <div class="block new">
+            <h3>Диаграмма Гутенберга</h3>
+            <p>
+              Этот принцип описывает маршрут и&nbsp;последовательность взгляда
+              пользователя при поиске информации на&nbsp;странице. Диаграмма
+              описывает 4&nbsp;основных зоны, которые находятся внутри
+              пользовательского маршрута.
+            </p>
+            <div class="picture extra">
+              <img src="../images/basic/Gutenberg.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <div class="teaser-img" id="baseSum"></div>
+
+        <div class="teaser-right">
+          <h4>Итог</h4>
+
+          <p class="teaser-text">
+            Повторяем&nbsp;то, что усвоили в&nbsp;этом разделе
+          </p>
+          <a class="button2" href="base-summary.html">Читать главу</a>
+        </div>
+      </article>
+
+      <footer>
+        <a href="construction.html">ADC Design Tutorial 2023</a>
+        <a href="construction.html">
+          <img src="../images/welcome/vk.png" alt="" />
+        </a>
+        <a href="construction.html">
+          <img src="../images/welcome/tg.png" alt="" />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

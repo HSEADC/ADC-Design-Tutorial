@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { createRoot } from 'react-dom/client'
+import './index.scss'
 
 import MOD_Rangefinder from './components/modules/MOD_Rangefinder.jsx'
 
@@ -500,34 +501,32 @@ function sample(array) {
 export { sample }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const container1 = document.getElementById('container-1')
-  const root1 = createRoot(container1)
-  root1.render(<MOD_Rangefinder info={info} />)
+  // const container1 = document.getElementById('container-1')
+  // const root1 = createRoot(container1)
+  // root1.render(<MOD_Rangefinder info={info} />)
+  //
+  const circleGame = document.getElementById('circleGame')
+  const root1 = createRoot(circleGame)
+  root1.render(<MOD_CircleGame info={info} />)
 
-  const container2 = document.getElementById('container-2')
-  const root2 = createRoot(container2)
-  root2.render(<MOD_CircleGame info={info} />)
+  // const container3 = document.getElementById('container-3')
+  // const root3 = createRoot(container3)
+  // // prettier-ignore
+  // root3.render(<MOD_ContrastEditor info={info} figures={figures} colors={colors}forms={forms}/>)
 
-  const container3 = document.getElementById('container-3')
-  const root3 = createRoot(container3)
-  // prettier-ignore
-  root3.render(<MOD_ContrastEditor info={info} figures={figures} colors={colors}forms={forms}/>)
-
-  const container4 = document.getElementById('container-4')
-  const root4 = createRoot(container4)
-  root4.render(<MOD_SizeBalance info={info} />)
-
-  const container5 = document.getElementById('container-5')
-  const root5 = createRoot(container5)
-  root5.render(<S_Quiz questions={questions} />)
-
-  const container6 = document.getElementById('container-6')
-  const root6 = createRoot(container6)
-  root6.render(<MOD_GuessTheFont bubbles={bubbles} fonts={fonts} info={info} />)
-
-  const container7 = document.getElementById('container-7')
-  const root7 = createRoot(container7)
-  // prettier-ignore
-
-  root7.render(<MOD_ColorPick info={info} colorBricks={colorBricks} words={words} />)
+  // const container4 = document.getElementById('container-4')
+  // const root4 = createRoot(container4)
+  // root4.render(<MOD_SizeBalance info={info} />)
+  //
+  // const container5 = document.getElementById('container-5')
+  // const root5 = createRoot(container5)
+  // root5.render(<S_Quiz questions={questions} />)
+  // const container6 = document.getElementById('container-6')
+  // const root6 = createRoot(container6)
+  // root6.render(<MOD_GuessTheFont bubbles={bubbles} fonts={fonts} info={info} />)
+  // const container7 = document.getElementById('container-7')
+  // const root7 = createRoot(container7)
+  // // prettier-ignore
+  //
+  // root7.render(<MOD_ColorPick info={info} colorBricks={colorBricks} words={words} />)
 })

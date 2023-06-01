@@ -33,8 +33,10 @@ export default class MOD_ColorPick extends PureComponent {
   receiveCoord = (x, number) => {
     const { colors } = this.state
 
+    console.log(x, number)
+
     const updatedColors = colors.map((color) => {
-      if (number == 2) {
+      if (number == color.number) {
         return {
           ...color,
           x: x

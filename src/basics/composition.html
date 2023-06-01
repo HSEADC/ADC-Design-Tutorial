@@ -20,7 +20,7 @@
       </a>
 
       <div class="central">
-        <a href="#basic">Основы дизайна</a>
+        <a href="#basic" id="active">Основы дизайна</a>
         <a href="../index.html#color">Основы цвета</a>
         <a href="../index.html#typo">Типографика</a>
         <a href="../index.html#grid">Сетки</a>
@@ -32,7 +32,7 @@
       <a href="#"><h4 class="first">Построение композиции</h4></a>
       <a href="#defenition">Что такое композиция?</a>
       <a href="#ancor-text">Якорные точки</a>
-      <a href="#color">Визуальная иерархия</a>
+      <a href="#color">Другие способы</a>
 
       <a href="construction.html"><h4>Балансировка композиции</h4></a>
       <a href="construction.html">Балансировка «по весу»</a>
@@ -55,17 +55,8 @@
     <div class="wrapper">
       <article>
         <section>
-          <h1>Построение композиции</h1>
-
-          <div id="container-1"></div>
-          <div id="container-2"></div>
-          <div id="container-3"></div>
-          <div id="container-4"></div>
-          <div id="container-5"></div>
-          <div id="container-6"></div>
-          <div id="container-7"></div>
-
-          <div class="text-block" id="last">
+          <div class="block" id="last">
+            <h1>Построение композиции</h1>
             <p>
               Графический дизайн&nbsp;&mdash; очень сложная
               и&nbsp;многокомпонентная штука. Здесь есть много правил
@@ -85,19 +76,15 @@
               её&nbsp;строить и&nbsp;уравнивать. С&nbsp;этого и&nbsp;начнём.
             </p>
           </div>
-        </section>
 
-        <section>
-          <h2 id="defenition">Что такое композиция</h2>
+          <div class="block new">
+            <h2 id="defenition">Что такое композиция?</h2>
 
-          <div class="text-block">
             <p>
               По&nbsp;простому: композиция&nbsp;&mdash; это совмещение отдельных
-              элементов в&nbsp;единое целое.
-            </p>
-            <p>
-              Чуть подробнее: композиция&nbsp;&mdash; это структурное сочетание
-              элементов на&nbsp;плоскости или в&nbsp;пространстве.
+              элементов в&nbsp;единое целое. Чуть точнее:
+              композиция&nbsp;&mdash; это структурное сочетание элементов
+              на&nbsp;плоскости или в&nbsp;пространстве.
             </p>
             <p>
               Важно понимать, что первое, что считает наш мозг&nbsp;&mdash;
@@ -136,12 +123,10 @@
               уйти не&nbsp;прочитав наше &laquo;послание&raquo;.
             </strong>
           </div>
-        </section>
 
-        <section>
-          <h2 id="ancor-text">Якорные точки</h2>
+          <div class="block new">
+            <h2 id="ancor-text">Якорные точки</h2>
 
-          <div class="text-block">
             <p>
               Для того, чтобы построить хорошую композицию, нужно помнить
                и&nbsp;соблюдать свод правил и&nbsp;законов.
@@ -158,14 +143,16 @@
             </p>
           </div>
 
-          <div class="picture" id="anchor"></div>
+          <div class="picture">
+            <img src="../images/basic/composition/anchor.png" alt="" />
+          </div>
           <figcaption>
             В&nbsp;прямоугольнике пять якорных точек. Центр пространства
             и&nbsp;четыре угла. Это именно те&nbsp;зоны, которые бросаются
             в&nbsp;глаза в&nbsp;первую очередь.
           </figcaption>
 
-          <div class="text-block">
+          <div class="block">
             <p>
               Эти точки&nbsp;&mdash; фундамент, на&nbsp;которой основывается
               композиция. Стоит отметить, что это не&nbsp;единственный способ
@@ -186,27 +173,27 @@
 
             <span>Артемий Горбунов</span>
           </blockquote>
-        </section>
-        <section>
-          <h3>Какие ещё есть способы построить композицию?</h3>
-          <h4>Правило третей</h4>
 
-          <div class="text-block">
+          <div class="block new">
+            <h2 class="extra-header">Другие способы</h2>
+            <h4>Правило третей</h4>
             <p>
               Этот способ расположения контента в&nbsp;точках внимания,
               в&nbsp;дизайне, используется реже, чем якорный способ.
             </p>
           </div>
 
-          <div class="picture" id="thirds"></div>
+          <div class="picture">
+            <img src="../images/basic/composition/thirds.png" alt="" />
+          </div>
           <figcaption>
             Точки внимания находятся на&nbsp;пересечении линий, делящих
             прямоугольник. Такой метод более привычен для фотографии или
             плакатного дизайна.
           </figcaption>
-          <h4>Золотое сечение</h4>
 
-          <div class="text-block">
+          <div class="block">
+            <h4>Золотое сечение</h4>
             <p>
               Это старый метод пропорционирования контента. Раньше его
               относительно часто использовали для создания логотипов и&nbsp;даже
@@ -222,6 +209,20 @@
             от&nbsp;предыдущего.
           </figcaption>
         </section>
+        <div id="circleGame"></div>
+
+        <div class="teaser-img" id="balance"></div>
+
+        <div class="teaser-right">
+          <h4>Балансировка композиции</h4>
+
+          <p class="teaser-text">
+            Мало построить грамотную композицию, её&nbsp;ещё нужно
+            сбалансировать, чтобы контент был чётко сгруппирован
+            и&nbsp;не&nbsp;&laquo;слипался&raquo; друг с&nbsp;другом.
+          </p>
+          <a class="button2" href="balance.html">Читать главу</a>
+        </div>
       </article>
 
       <footer>

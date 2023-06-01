@@ -29,7 +29,7 @@ export default class A_ColorBrick extends PureComponent {
 
   componentDidMount() {
     window.addEventListener('load', this.receiveCoord)
-    window.addEventListener('scroll', this.receiveCoord)
+    // window.addEventListener('scroll', this.receiveCoord)
   }
 
   render() {
