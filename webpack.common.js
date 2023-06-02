@@ -19,7 +19,12 @@ module.exports = {
     colorSelection: './src/colorSelection.jsx',
     colorChoice: './src/colorChoice.jsx',
     circle: './src/circle.jsx',
-    attention: './src/attention.jsx'
+    attention: './src/attention.jsx',
+    rules: './src/rules.jsx',
+    harmony: './src/harmony.jsx',
+    gridBase: './src/gridBase.jsx',
+    gridUse: './src/gridUse.jsx',
+    gridSummary: './src/gridSummary.jsx'
   },
 
   output: {
@@ -166,13 +171,16 @@ module.exports = {
       filename: './typography/base.html',
       chunks: ['typography']
     }),
+
     new HtmlWebpackPlugin({
       template: './src/typography/harmony.html',
-      filename: './typography/harmony.html'
+      filename: './typography/harmony.html',
+      chunks: ['harmony']
     }),
     new HtmlWebpackPlugin({
       template: './src/typography/rules.html',
-      filename: './typography/rules.html'
+      filename: './typography/rules.html',
+      chunks: ['rules']
     }),
     new HtmlWebpackPlugin({
       template: './src/typography/typography-summary.html',
@@ -182,20 +190,20 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: './src/grid/base.html',
-      filename: './grid/base.html'
-      // chunks: ['typographySummary']
+      filename: './grid/base.html',
+      chunks: ['gridBase']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/grid/usage.html',
-      filename: './grid/usage.html'
-      // chunks: ['typographySummary']
+      filename: './grid/usage.html',
+      chunks: ['gridUse']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/grid/gridSummary.html',
-      filename: './grid/gridSummary.html'
-      // chunks: ['typographySummary']
+      filename: './grid/gridSummary.html',
+      chunks: ['gridSummary']
     }),
 
     // Partials

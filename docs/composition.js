@@ -1,6 +1,4820 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 564:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ A_Button)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(294);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var A_Button = /*#__PURE__*/function (_PureComponent) {
+  _inherits(A_Button, _PureComponent);
+
+  var _super = _createSuper(A_Button);
+
+  function A_Button(props) {
+    _classCallCheck(this, A_Button);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(A_Button, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          text = _this$props.text,
+          handleClick = _this$props.handleClick;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "A_Button",
+        onClick: handleClick
+      }, text);
+    }
+  }]);
+
+  return A_Button;
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent);
+
+
+
+/***/ }),
+
+/***/ 574:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ A_Frame)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(294);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var A_Frame = /*#__PURE__*/function (_PureComponent) {
+  _inherits(A_Frame, _PureComponent);
+
+  var _super = _createSuper(A_Frame);
+
+  function A_Frame(props) {
+    _classCallCheck(this, A_Frame);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(A_Frame, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          size = _this$props.size,
+          exercise = _this$props.exercise,
+          content = _this$props.content;
+      var style = {
+        height: "".concat(size, "px")
+      };
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "A_Frame",
+        style: style
+      }, content, exercise);
+    }
+  }]);
+
+  return A_Frame;
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent);
+
+
+
+/***/ }),
+
+/***/ 823:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ A_MenuItem)
+/* harmony export */ });
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(184);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(294);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(935);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+
+var A_MenuItem = /*#__PURE__*/function (_PureComponent) {
+  _inherits(A_MenuItem, _PureComponent);
+
+  var _super = _createSuper(A_MenuItem);
+
+  function A_MenuItem(props) {
+    var _this;
+
+    _classCallCheck(this, A_MenuItem);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      selected: false
+    };
+    return _this;
+  }
+
+  _createClass(A_MenuItem, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var active = this.props.active;
+
+      if (active == 'true') {
+        this.setState({
+          selected: true
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          name = _this$props.name,
+          url = _this$props.url;
+      var selected = this.state.selected;
+      var classes = classnames__WEBPACK_IMPORTED_MODULE_0___default()({
+        A_MenuItem: true,
+        selected: selected
+      });
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+        href: url
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+        className: classes
+      }, name));
+    }
+  }]);
+
+  return A_MenuItem;
+}(react__WEBPACK_IMPORTED_MODULE_1__.PureComponent);
+
+
+
+/***/ }),
+
+/***/ 697:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ A_MenuSubItem)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(294);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var A_MenuSubItem = /*#__PURE__*/function (_PureComponent) {
+  _inherits(A_MenuSubItem, _PureComponent);
+
+  var _super = _createSuper(A_MenuSubItem);
+
+  function A_MenuSubItem(props) {
+    _classCallCheck(this, A_MenuSubItem);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(A_MenuSubItem, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          name = _this$props.name,
+          url = _this$props.url;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        href: url
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "A_MenuSubItem"
+      }, name));
+    }
+  }]);
+
+  return A_MenuSubItem;
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent);
+
+
+
+/***/ }),
+
+/***/ 608:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ A_Text)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(294);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var A_Text = /*#__PURE__*/function (_PureComponent) {
+  _inherits(A_Text, _PureComponent);
+
+  var _super = _createSuper(A_Text);
+
+  function A_Text(props) {
+    _classCallCheck(this, A_Text);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(A_Text, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          header = _this$props.header,
+          text = _this$props.text;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "A_Text"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, " ", header), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " ", text, " "));
+    }
+  }]);
+
+  return A_Text;
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent);
+
+
+
+/***/ }),
+
+/***/ 954:
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// UNUSED EXPORTS: default
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(294);
+// EXTERNAL MODULE: ./node_modules/react-dom/index.js
+var react_dom = __webpack_require__(935);
+// EXTERNAL MODULE: ./src/components/moleculas/M_ExerciseBox/M_ExerciseBox.jsx
+var M_ExerciseBox = __webpack_require__(398);
+// EXTERNAL MODULE: ./node_modules/classnames/index.js
+var classnames = __webpack_require__(184);
+var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
+;// CONCATENATED MODULE: ./src/components/atoms/A_Chip/A_Chip.jsx
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+var A_Chip = /*#__PURE__*/function (_PureComponent) {
+  _inherits(A_Chip, _PureComponent);
+
+  var _super = _createSuper(A_Chip);
+
+  function A_Chip(props) {
+    var _this;
+
+    _classCallCheck(this, A_Chip);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "handleClick", function () {
+      var _this$props = _this.props,
+          type = _this$props.type,
+          handleClick = _this$props.handleClick;
+      var selected = _this.state.selected;
+
+      _this.setState({
+        selected: true
+      });
+
+      if (_this.state.selected) {
+        _this.setState({
+          selected: false
+        });
+      }
+
+      handleClick(type, selected);
+    });
+
+    _this.state = {
+      selected: false
+    };
+    return _this;
+  }
+
+  _createClass(A_Chip, [{
+    key: "render",
+    value: function render() {
+      var text = this.props.text;
+      var selected = this.state.selected;
+      var classes = classnames_default()({
+        A_Chip: true,
+        selected: selected
+      });
+      return /*#__PURE__*/react.createElement("div", {
+        className: classes,
+        selected: selected,
+        onClick: this.handleClick
+      }, text);
+    }
+  }]);
+
+  return A_Chip;
+}(react.PureComponent);
+
+
+// EXTERNAL MODULE: ./src/components/atoms/A_Button/A_Button.jsx
+var A_Button = __webpack_require__(564);
+;// CONCATENATED MODULE: ./src/components/moleculas/M_GridBox/M_GridBox.jsx
+function M_GridBox_typeof(obj) { "@babel/helpers - typeof"; return M_GridBox_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_GridBox_typeof(obj); }
+
+function M_GridBox_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function M_GridBox_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function M_GridBox_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_GridBox_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_GridBox_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function M_GridBox_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_GridBox_setPrototypeOf(subClass, superClass); }
+
+function M_GridBox_setPrototypeOf(o, p) { M_GridBox_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_GridBox_setPrototypeOf(o, p); }
+
+function M_GridBox_createSuper(Derived) { var hasNativeReflectConstruct = M_GridBox_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_GridBox_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_GridBox_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_GridBox_possibleConstructorReturn(this, result); }; }
+
+function M_GridBox_possibleConstructorReturn(self, call) { if (call && (M_GridBox_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_GridBox_assertThisInitialized(self); }
+
+function M_GridBox_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function M_GridBox_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function M_GridBox_getPrototypeOf(o) { M_GridBox_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_GridBox_getPrototypeOf(o); }
+
+function M_GridBox_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+var M_GridBox = /*#__PURE__*/function (_PureComponent) {
+  M_GridBox_inherits(M_GridBox, _PureComponent);
+
+  var _super = M_GridBox_createSuper(M_GridBox);
+
+  function M_GridBox(props) {
+    var _this;
+
+    M_GridBox_classCallCheck(this, M_GridBox);
+
+    _this = _super.call(this, props);
+
+    M_GridBox_defineProperty(M_GridBox_assertThisInitialized(_this), "handleClick", function () {
+      window.location.reload();
+    });
+
+    return _this;
+  }
+
+  M_GridBox_createClass(M_GridBox, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          rounds = _this$props.rounds,
+          handleClick = _this$props.handleClick;
+      var type = ['color', 'form', 'size'];
+      return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+        className: "M_ChipBar"
+      }, /*#__PURE__*/react.createElement(A_Chip, {
+        handleClick: handleClick,
+        type: type[0],
+        text: "\u041A\u043E\u043D\u0442\u0440\u0430\u0441\u0442 \u043F\u043E \u0446\u0432\u0435\u0442\u0443"
+      }), /*#__PURE__*/react.createElement(A_Chip, {
+        handleClick: handleClick,
+        type: type[1],
+        text: "\u041A\u043E\u043D\u0442\u0440\u0430\u0441\u0442 \u043F\u043E \u0444\u043E\u0440\u043C\u0435"
+      }), /*#__PURE__*/react.createElement(A_Chip, {
+        handleClick: handleClick,
+        type: type[2],
+        text: "\u041A\u043E\u043D\u0442\u0440\u0430\u0441\u0442 \u043F\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0443"
+      })), /*#__PURE__*/react.createElement("div", {
+        className: "M_GridBox"
+      }, rounds), /*#__PURE__*/react.createElement(A_Button/* default */.Z, {
+        handleClick: this.handleClick,
+        text: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0432\u0441\u0451"
+      }));
+    }
+  }]);
+
+  return M_GridBox;
+}(react.PureComponent);
+
+
+// EXTERNAL MODULE: ./src/composition.jsx + 21 modules
+var composition = __webpack_require__(180);
+;// CONCATENATED MODULE: ./src/components/atoms/A_Figure/A_Figure.jsx
+function A_Figure_typeof(obj) { "@babel/helpers - typeof"; return A_Figure_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Figure_typeof(obj); }
+
+function A_Figure_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function A_Figure_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function A_Figure_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Figure_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Figure_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function A_Figure_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Figure_setPrototypeOf(subClass, superClass); }
+
+function A_Figure_setPrototypeOf(o, p) { A_Figure_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Figure_setPrototypeOf(o, p); }
+
+function A_Figure_createSuper(Derived) { var hasNativeReflectConstruct = A_Figure_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Figure_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Figure_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Figure_possibleConstructorReturn(this, result); }; }
+
+function A_Figure_possibleConstructorReturn(self, call) { if (call && (A_Figure_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Figure_assertThisInitialized(self); }
+
+function A_Figure_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function A_Figure_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function A_Figure_getPrototypeOf(o) { A_Figure_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Figure_getPrototypeOf(o); }
+
+function A_Figure_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+var A_Figure = /*#__PURE__*/function (_PureComponent) {
+  A_Figure_inherits(A_Figure, _PureComponent);
+
+  var _super = A_Figure_createSuper(A_Figure);
+
+  function A_Figure(props) {
+    var _this;
+
+    A_Figure_classCallCheck(this, A_Figure);
+
+    _this = _super.call(this, props);
+
+    A_Figure_defineProperty(A_Figure_assertThisInitialized(_this), "handleBallClick", function () {
+      var _this$props = _this.props,
+          number = _this$props.number,
+          handleBallClick = _this$props.handleBallClick;
+      handleBallClick(number);
+    });
+
+    _this.state = {
+      scale: 1,
+      degrees: [0, 90, -90, 180, -180],
+      rotate: 0
+    };
+    return _this;
+  }
+
+  A_Figure_createClass(A_Figure, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var clip = this.props.clip;
+      var degrees = this.state.degrees;
+
+      if (clip == 'polygon(50% 31.7%, 50% 31.7%, 75% 75%, 25% 75%)') {
+        this.setState({
+          scale: 2,
+          rotate: (0,composition/* sample */.U)(degrees)
+        });
+      }
+
+      if (clip == 'unset') {
+        this.setState({
+          scale: 1,
+          rotate: 0
+        });
+      }
+
+      if (clip == 'circle(50% at 50% 50%)') {
+        this.setState({
+          scale: 1,
+          rotate: 0
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          row = _this$props2.row,
+          column = _this$props2.column,
+          number = _this$props2.number,
+          color = _this$props2.color,
+          handleBallClick = _this$props2.handleBallClick,
+          border = _this$props2.border,
+          clip = _this$props2.clip,
+          rEnd = _this$props2.rEnd,
+          cEnd = _this$props2.cEnd,
+          size = _this$props2.size,
+          display = _this$props2.display;
+      var style = {
+        gridRowStart: "".concat(row),
+        gridColumnStart: "".concat(column),
+        gridRowEnd: "".concat(rEnd),
+        gridColumnEnd: "".concat(cEnd),
+        backgroundColor: "".concat(color),
+        borderRadius: "".concat(border, "%"),
+        clipPath: "".concat(clip),
+        scale: "".concat(this.state.scale),
+        width: "".concat(size, "px"),
+        height: "".concat(size, "px"),
+        display: "".concat(display),
+        rotate: "".concat(this.state.rotate, "deg")
+      };
+      return /*#__PURE__*/react.createElement("div", {
+        className: "A_Figure",
+        style: style,
+        onClick: this.handleBallClick
+      });
+    }
+  }]);
+
+  return A_Figure;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/modules/MOD_ContrastEditor.jsx
+function MOD_ContrastEditor_typeof(obj) { "@babel/helpers - typeof"; return MOD_ContrastEditor_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, MOD_ContrastEditor_typeof(obj); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { MOD_ContrastEditor_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function MOD_ContrastEditor_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function MOD_ContrastEditor_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function MOD_ContrastEditor_createClass(Constructor, protoProps, staticProps) { if (protoProps) MOD_ContrastEditor_defineProperties(Constructor.prototype, protoProps); if (staticProps) MOD_ContrastEditor_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function MOD_ContrastEditor_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) MOD_ContrastEditor_setPrototypeOf(subClass, superClass); }
+
+function MOD_ContrastEditor_setPrototypeOf(o, p) { MOD_ContrastEditor_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return MOD_ContrastEditor_setPrototypeOf(o, p); }
+
+function MOD_ContrastEditor_createSuper(Derived) { var hasNativeReflectConstruct = MOD_ContrastEditor_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = MOD_ContrastEditor_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = MOD_ContrastEditor_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return MOD_ContrastEditor_possibleConstructorReturn(this, result); }; }
+
+function MOD_ContrastEditor_possibleConstructorReturn(self, call) { if (call && (MOD_ContrastEditor_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return MOD_ContrastEditor_assertThisInitialized(self); }
+
+function MOD_ContrastEditor_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function MOD_ContrastEditor_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function MOD_ContrastEditor_getPrototypeOf(o) { MOD_ContrastEditor_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return MOD_ContrastEditor_getPrototypeOf(o); }
+
+function MOD_ContrastEditor_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+var MOD_ContrastEditor = /*#__PURE__*/function (_PureComponent) {
+  MOD_ContrastEditor_inherits(MOD_ContrastEditor, _PureComponent);
+
+  var _super = MOD_ContrastEditor_createSuper(MOD_ContrastEditor);
+
+  function MOD_ContrastEditor(props) {
+    var _this;
+
+    MOD_ContrastEditor_classCallCheck(this, MOD_ContrastEditor);
+
+    _this = _super.call(this, props);
+
+    MOD_ContrastEditor_defineProperty(MOD_ContrastEditor_assertThisInitialized(_this), "handleClick", function (type, selected) {
+      if (type === 'color' && selected === false) {
+        _this.setState({
+          colorSelected: true
+        });
+      } else if (type === 'color' && selected === true) {
+        _this.setState({
+          colorSelected: false
+        });
+      }
+
+      if (type === 'size' && selected === false) {
+        _this.setState({
+          sizeSelected: true
+        });
+      }
+
+      if (type === 'size' && selected === true) {
+        _this.setState({
+          sizeSelected: false
+        });
+      }
+
+      if (type === 'form' && selected === false) {
+        _this.setState({
+          formSelected: true
+        });
+      }
+
+      if (type === 'form' && selected === true) {
+        _this.setState({
+          formSelected: false
+        });
+      }
+    });
+
+    MOD_ContrastEditor_defineProperty(MOD_ContrastEditor_assertThisInitialized(_this), "handleBallClick", function (number) {
+      var _this$state = _this.state,
+          colorSelected = _this$state.colorSelected,
+          formSelected = _this$state.formSelected,
+          sizeSelected = _this$state.sizeSelected,
+          figures = _this$state.figures;
+      var _this$props = _this.props,
+          colors = _this$props.colors,
+          forms = _this$props.forms;
+
+      if (sizeSelected) {
+        var newCircle = figures.map(function (figure) {
+          // начало сектора ЛВ
+          if (number === figure.number && (number == 1 || number == 2 || number == 5 || number == 6)) {
+            if ( // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 1,
+                row: 1,
+                cEnd: 3,
+                rEnd: 3,
+                size: 184
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ЛВ
+          // начало сектора ЛН
+
+
+          if (number === figure.number && (number == 3 || number == 4 || number == 7 || number == 8)) {
+            if ( // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 1,
+                row: 3,
+                cEnd: 3,
+                rEnd: 5,
+                size: 184
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ЛН
+          // начало сектора ПВ
+
+
+          if (number === figure.number && (number == 9 || number == 10 || number == 13 || number == 14)) {
+            if ( // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 3,
+                row: 1,
+                cEnd: 5,
+                rEnd: 3,
+                size: 184
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ПВ
+          // начало сектора ПН
+
+
+          if (number === figure.number && (number == 11 || number == 12 || number == 15 || number == 16)) {
+            if ( // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 3,
+                row: 3,
+                cEnd: 5,
+                rEnd: 5,
+                size: 184
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ПН
+          else {
+            return figure;
+          }
+        });
+
+        _this.setState({
+          figures: newCircle
+        });
+      }
+
+      if (colorSelected) {
+        var _newCircle = figures.map(function (figure) {
+          if (number === figure.number) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              color: (0,composition/* sample */.U)(colors)
+            });
+          } else {
+            return figure;
+          }
+        });
+
+        _this.setState({
+          figures: _newCircle
+        });
+      }
+
+      if (formSelected) {
+        var _newCircle2 = figures.map(function (figure) {
+          if (number === figure.number) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              border: '0',
+              clip: (0,composition/* sample */.U)(forms)
+            });
+          } else {
+            return figure;
+          }
+        });
+
+        _this.setState({
+          figures: _newCircle2
+        });
+      }
+
+      if (colorSelected && formSelected) {
+        var _newCircle3 = figures.map(function (figure) {
+          if (number === figure.number) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              border: '0',
+              clip: (0,composition/* sample */.U)(forms),
+              color: (0,composition/* sample */.U)(colors)
+            });
+          } else {
+            return figure;
+          }
+        });
+
+        _this.setState({
+          figures: _newCircle3
+        });
+      }
+
+      if (colorSelected && sizeSelected) {
+        var _newCircle4 = figures.map(function (figure) {
+          // начало сектора ЛВ
+          if (number === figure.number && (number == 1 || number == 2 || number == 5 || number == 6)) {
+            if ( // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 1,
+                row: 1,
+                cEnd: 3,
+                rEnd: 3,
+                size: 184,
+                color: (0,composition/* sample */.U)(colors)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ЛВ
+          // начало сектора ЛН
+
+
+          if (number === figure.number && (number == 3 || number == 4 || number == 7 || number == 8)) {
+            if ( // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 1,
+                row: 3,
+                cEnd: 3,
+                rEnd: 5,
+                size: 184,
+                color: (0,composition/* sample */.U)(colors)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ЛН
+          // начало сектора ПВ
+
+
+          if (number === figure.number && (number == 9 || number == 10 || number == 13 || number == 14)) {
+            if ( // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 3,
+                row: 1,
+                cEnd: 5,
+                rEnd: 3,
+                size: 184,
+                color: (0,composition/* sample */.U)(colors)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ПВ
+          // начало сектора ПН
+
+
+          if (number === figure.number && (number == 11 || number == 12 || number == 15 || number == 16)) {
+            if ( // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 3,
+                row: 3,
+                cEnd: 5,
+                rEnd: 5,
+                size: 184,
+                color: (0,composition/* sample */.U)(colors)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ПН
+          else {
+            return figure;
+          }
+        });
+
+        _this.setState({
+          figures: _newCircle4
+        });
+      }
+
+      if (formSelected && sizeSelected) {
+        var _newCircle5 = figures.map(function (figure) {
+          // начало сектора ЛВ
+          if (number === figure.number && (number == 1 || number == 2 || number == 5 || number == 6)) {
+            if ( // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 1,
+                row: 1,
+                cEnd: 3,
+                rEnd: 3,
+                size: 184,
+                border: '0',
+                clip: (0,composition/* sample */.U)(forms)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ЛВ
+          // начало сектора ЛН
+
+
+          if (number === figure.number && (number == 3 || number == 4 || number == 7 || number == 8)) {
+            if ( // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 1,
+                row: 3,
+                cEnd: 3,
+                rEnd: 5,
+                size: 184,
+                border: '0',
+                clip: (0,composition/* sample */.U)(forms)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ЛН
+          // начало сектора ПВ
+
+
+          if (number === figure.number && (number == 9 || number == 10 || number == 13 || number == 14)) {
+            if ( // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 3,
+                row: 1,
+                cEnd: 5,
+                rEnd: 3,
+                size: 184,
+                border: '0',
+                clip: (0,composition/* sample */.U)(forms)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ПВ
+          // начало сектора ПН
+
+
+          if (number === figure.number && (number == 11 || number == 12 || number == 15 || number == 16)) {
+            if ( // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 3,
+                row: 3,
+                cEnd: 5,
+                rEnd: 5,
+                size: 184,
+                border: '0',
+                clip: (0,composition/* sample */.U)(forms)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ПН
+          else {
+            return figure;
+          }
+        });
+
+        _this.setState({
+          figures: _newCircle5
+        });
+      }
+
+      if (colorSelected && formSelected && sizeSelected) {
+        var _newCircle6 = figures.map(function (figure) {
+          // начало сектора ЛВ
+          if (number === figure.number && (number == 1 || number == 2 || number == 5 || number == 6)) {
+            if ( // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 1,
+                row: 1,
+                cEnd: 3,
+                rEnd: 3,
+                size: 184,
+                border: '0',
+                clip: (0,composition/* sample */.U)(forms),
+                color: (0,composition/* sample */.U)(colors)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ЛВ
+          // начало сектора ЛН
+
+
+          if (number === figure.number && (number == 3 || number == 4 || number == 7 || number == 8)) {
+            if ( // prettier-ignore
+            (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 1,
+                row: 3,
+                cEnd: 3,
+                rEnd: 5,
+                size: 184,
+                border: '0',
+                clip: (0,composition/* sample */.U)(forms),
+                color: (0,composition/* sample */.U)(colors)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ЛН
+          // начало сектора ПВ
+
+
+          if (number === figure.number && (number == 9 || number == 10 || number == 13 || number == 14)) {
+            if ( // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 3,
+                row: 1,
+                cEnd: 5,
+                rEnd: 3,
+                size: 184,
+                border: '0',
+                clip: (0,composition/* sample */.U)(forms),
+                color: (0,composition/* sample */.U)(colors)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ПВ
+          // начало сектора ПН
+
+
+          if (number === figure.number && (number == 11 || number == 12 || number == 15 || number == 16)) {
+            if ( // prettier-ignore
+            (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
+              return _objectSpread(_objectSpread({}, figure), {}, {
+                column: 3,
+                row: 3,
+                cEnd: 5,
+                rEnd: 5,
+                size: 184,
+                border: '0',
+                clip: (0,composition/* sample */.U)(forms),
+                color: (0,composition/* sample */.U)(colors)
+              });
+            }
+          }
+
+          if ( // prettier-ignore
+          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
+            return _objectSpread(_objectSpread({}, figure), {}, {
+              display: 'none'
+            });
+          } // конец сектора ПН
+          else {
+            return figure;
+          }
+        });
+
+        _this.setState({
+          figures: _newCircle6
+        });
+      }
+    });
+
+    MOD_ContrastEditor_defineProperty(MOD_ContrastEditor_assertThisInitialized(_this), "generateExercise", function () {
+      var figures = _this.state.figures;
+      var rounds = figures.map(function (figure) {
+        return /*#__PURE__*/react.createElement(A_Figure, {
+          row: figure.row,
+          column: figure.column,
+          number: figure.number,
+          key: figure.number,
+          color: figure.color,
+          border: figure.border,
+          clip: figure.clip,
+          cEnd: figure.cEnd,
+          rEnd: figure.rEnd,
+          size: figure.size,
+          display: figure.display,
+          handleBallClick: _this.handleBallClick
+        });
+      });
+      return /*#__PURE__*/react.createElement(M_GridBox, {
+        rounds: rounds,
+        handleClick: _this.handleClick
+      });
+    });
+
+    _this.state = {
+      size: 614,
+      figures: [],
+      colorSelected: false,
+      formSelected: false,
+      sizeSelected: false
+    };
+    return _this;
+  }
+
+  MOD_ContrastEditor_createClass(MOD_ContrastEditor, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.setState({
+        figures: this.props.figures
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var size = this.state.size;
+      var _this$props2 = this.props,
+          info = _this$props2.info,
+          figures = _this$props2.figures;
+      return /*#__PURE__*/react.createElement(M_ExerciseBox/* default */.Z, {
+        header: info[2].header,
+        text: info[2].text,
+        exercise: this.generateExercise(),
+        size: size
+      });
+    }
+  }]);
+
+  return MOD_ContrastEditor;
+}(react.PureComponent);
+
+
+
+/***/ }),
+
+/***/ 683:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* unused harmony export default */
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(294);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
+/* harmony import */ var _moleculas_M_ExerciseBox_M_ExerciseBox_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(398);
+/* harmony import */ var _organisms_O_FontGame_O_FontGame_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(483);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+var MOD_GuessTheFont = /*#__PURE__*/function (_PureComponent) {
+  _inherits(MOD_GuessTheFont, _PureComponent);
+
+  var _super = _createSuper(MOD_GuessTheFont);
+
+  function MOD_GuessTheFont(props) {
+    var _this;
+
+    _classCallCheck(this, MOD_GuessTheFont);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "generateExercise", function () {
+      var _this$props = _this.props,
+          bubbles = _this$props.bubbles,
+          fonts = _this$props.fonts;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_organisms_O_FontGame_O_FontGame_jsx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+        bubbles: bubbles,
+        fonts: fonts
+      });
+    });
+
+    _this.state = {
+      size: 521
+    };
+    return _this;
+  }
+
+  _createClass(MOD_GuessTheFont, [{
+    key: "render",
+    value: function render() {
+      var size = this.state.size;
+      var info = this.props.info;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_moleculas_M_ExerciseBox_M_ExerciseBox_jsx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+        header: info[5].header,
+        text: info[5].text,
+        exercise: this.generateExercise(),
+        size: size
+      });
+    }
+  }]);
+
+  return MOD_GuessTheFont;
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent);
+
+
+
+/***/ }),
+
+/***/ 398:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ M_ExerciseBox)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(294);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
+/* harmony import */ var _atoms_A_Text_A_Text_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(608);
+/* harmony import */ var _atoms_A_Frame_A_Frame_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(574);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+
+
+var M_ExerciseBox = /*#__PURE__*/function (_PureComponent) {
+  _inherits(M_ExerciseBox, _PureComponent);
+
+  var _super = _createSuper(M_ExerciseBox);
+
+  function M_ExerciseBox(props) {
+    _classCallCheck(this, M_ExerciseBox);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(M_ExerciseBox, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          header = _this$props.header,
+          text = _this$props.text,
+          size = _this$props.size,
+          exercise = _this$props.exercise,
+          squares = _this$props.squares;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "M_ExerciseBox"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_atoms_A_Text_A_Text_jsx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+        header: header,
+        text: text
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_atoms_A_Frame_A_Frame_jsx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+        content: squares,
+        exercise: exercise,
+        size: size
+      }));
+    }
+  }]);
+
+  return M_ExerciseBox;
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent);
+
+
+
+/***/ }),
+
+/***/ 319:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ M_MenuGroup)
+/* harmony export */ });
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(184);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(294);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(935);
+/* harmony import */ var _atoms_A_MenuItem_A_MenuItem_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(823);
+/* harmony import */ var _atoms_A_MenuSubItem_A_MenuSubItem_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(697);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+
+
+
+var M_MenuGroup = /*#__PURE__*/function (_PureComponent) {
+  _inherits(M_MenuGroup, _PureComponent);
+
+  var _super = _createSuper(M_MenuGroup);
+
+  function M_MenuGroup(props) {
+    var _this;
+
+    _classCallCheck(this, M_MenuGroup);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      subItems: []
+    };
+    return _this;
+  }
+
+  _createClass(M_MenuGroup, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var subItems = this.props.subItems;
+      this.setState({
+        subItems: subItems
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          main = _this$props.main,
+          url = _this$props.url,
+          active = _this$props.active;
+      var subItems = this.state.subItems;
+      var subs = subItems === null || subItems === void 0 ? void 0 : subItems.map(function (sub, i) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_atoms_A_MenuSubItem_A_MenuSubItem_jsx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+          key: i,
+          name: sub.name,
+          url: sub.url
+        });
+      }); // console.log(subItems)
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+        className: "M_MenuGroup"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_atoms_A_MenuItem_A_MenuItem_jsx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+        active: active,
+        name: main,
+        url: url
+      }), subs);
+    }
+  }]);
+
+  return M_MenuGroup;
+}(react__WEBPACK_IMPORTED_MODULE_1__.PureComponent);
+
+
+
+/***/ }),
+
+/***/ 483:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": () => (/* binding */ O_FontGame)
+});
+
+// EXTERNAL MODULE: ./node_modules/classnames/index.js
+var classnames = __webpack_require__(184);
+var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
+// EXTERNAL MODULE: ./src/composition.jsx + 21 modules
+var composition = __webpack_require__(180);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(294);
+// EXTERNAL MODULE: ./node_modules/react-dom/index.js
+var react_dom = __webpack_require__(935);
+;// CONCATENATED MODULE: ./src/components/atoms/A_Bubble/A_Bubble.jsx
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var A_Bubble = /*#__PURE__*/function (_PureComponent) {
+  _inherits(A_Bubble, _PureComponent);
+
+  var _super = _createSuper(A_Bubble);
+
+  function A_Bubble(props) {
+    _classCallCheck(this, A_Bubble);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(A_Bubble, [{
+    key: "render",
+    value: function render() {
+      var textCell = this.props.textCell;
+      return /*#__PURE__*/react.createElement("div", {
+        className: "A_Bubble"
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "head"
+      }, textCell), /*#__PURE__*/react.createElement("div", {
+        className: "leg"
+      }));
+    }
+  }]);
+
+  return A_Bubble;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/atoms/A_TextCell/A_TextCell.jsx
+function A_TextCell_typeof(obj) { "@babel/helpers - typeof"; return A_TextCell_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_TextCell_typeof(obj); }
+
+function A_TextCell_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function A_TextCell_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function A_TextCell_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_TextCell_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_TextCell_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function A_TextCell_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_TextCell_setPrototypeOf(subClass, superClass); }
+
+function A_TextCell_setPrototypeOf(o, p) { A_TextCell_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_TextCell_setPrototypeOf(o, p); }
+
+function A_TextCell_createSuper(Derived) { var hasNativeReflectConstruct = A_TextCell_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_TextCell_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_TextCell_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_TextCell_possibleConstructorReturn(this, result); }; }
+
+function A_TextCell_possibleConstructorReturn(self, call) { if (call && (A_TextCell_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_TextCell_assertThisInitialized(self); }
+
+function A_TextCell_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function A_TextCell_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function A_TextCell_getPrototypeOf(o) { A_TextCell_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_TextCell_getPrototypeOf(o); }
+
+
+
+
+
+var A_TextCell = /*#__PURE__*/function (_PureComponent) {
+  A_TextCell_inherits(A_TextCell, _PureComponent);
+
+  var _super = A_TextCell_createSuper(A_TextCell);
+
+  function A_TextCell(props) {
+    A_TextCell_classCallCheck(this, A_TextCell);
+
+    return _super.call(this, props);
+  }
+
+  A_TextCell_createClass(A_TextCell, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          innerRotate = _this$props.innerRotate,
+          font = _this$props.font;
+      var styles = {
+        rotate: "".concat(innerRotate, "deg")
+      };
+      var fontStyles = {
+        fontFamily: "".concat(font)
+      };
+      return /*#__PURE__*/react.createElement("div", {
+        className: "A_TextCell",
+        style: styles
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "row"
+      }, /*#__PURE__*/react.createElement("p", {
+        style: fontStyles
+      }, "Aa"), /*#__PURE__*/react.createElement("p", {
+        style: fontStyles
+      }, "Bb")), /*#__PURE__*/react.createElement("div", {
+        className: "row"
+      }, /*#__PURE__*/react.createElement("p", {
+        style: fontStyles
+      }, "Dd"), /*#__PURE__*/react.createElement("p", {
+        style: fontStyles
+      }, "Ee")));
+    }
+  }]);
+
+  return A_TextCell;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/moleculas/M_BubbleFilled/M_BubbleFilled.jsx
+function M_BubbleFilled_typeof(obj) { "@babel/helpers - typeof"; return M_BubbleFilled_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_BubbleFilled_typeof(obj); }
+
+function M_BubbleFilled_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function M_BubbleFilled_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function M_BubbleFilled_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_BubbleFilled_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_BubbleFilled_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function M_BubbleFilled_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_BubbleFilled_setPrototypeOf(subClass, superClass); }
+
+function M_BubbleFilled_setPrototypeOf(o, p) { M_BubbleFilled_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_BubbleFilled_setPrototypeOf(o, p); }
+
+function M_BubbleFilled_createSuper(Derived) { var hasNativeReflectConstruct = M_BubbleFilled_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_BubbleFilled_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_BubbleFilled_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_BubbleFilled_possibleConstructorReturn(this, result); }; }
+
+function M_BubbleFilled_possibleConstructorReturn(self, call) { if (call && (M_BubbleFilled_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_BubbleFilled_assertThisInitialized(self); }
+
+function M_BubbleFilled_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function M_BubbleFilled_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function M_BubbleFilled_getPrototypeOf(o) { M_BubbleFilled_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_BubbleFilled_getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+var M_BubbleFilled = /*#__PURE__*/function (_PureComponent) {
+  M_BubbleFilled_inherits(M_BubbleFilled, _PureComponent);
+
+  var _super = M_BubbleFilled_createSuper(M_BubbleFilled);
+
+  function M_BubbleFilled(props) {
+    var _this;
+
+    M_BubbleFilled_classCallCheck(this, M_BubbleFilled);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(M_BubbleFilled_assertThisInitialized(_this), "handleClick", function () {
+      var _this$props = _this.props,
+          handleClick = _this$props.handleClick,
+          font = _this$props.font,
+          answered = _this$props.answered,
+          originalFont = _this$props.originalFont;
+
+      if (answered == false) {
+        if (font == originalFont) {
+          _this.setState({
+            correct: true
+          });
+        } else {
+          _this.setState({
+            incorrect: true
+          });
+        }
+      }
+
+      handleClick();
+    });
+
+    _defineProperty(M_BubbleFilled_assertThisInitialized(_this), "generateTextCell", function () {
+      var _this$props2 = _this.props,
+          innerRotate = _this$props2.innerRotate,
+          font = _this$props2.font;
+      return /*#__PURE__*/react.createElement(A_TextCell, {
+        innerRotate: innerRotate,
+        font: font
+      });
+    });
+
+    _this.state = {
+      correct: false,
+      incorrect: false
+    };
+    return _this;
+  }
+
+  M_BubbleFilled_createClass(M_BubbleFilled, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var _this$props3 = this.props,
+          font = _this$props3.font,
+          answered = _this$props3.answered,
+          originalFont = _this$props3.originalFont;
+
+      if (answered == true && font == originalFont) {
+        this.setState({
+          correct: true
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props4 = this.props,
+          number = _this$props4.number,
+          transformX = _this$props4.transformX,
+          transformY = _this$props4.transformY,
+          rotate = _this$props4.rotate;
+      var _this$state = this.state,
+          correct = _this$state.correct,
+          incorrect = _this$state.incorrect;
+      var styles = {
+        transform: "translate(".concat(transformX, "px, ").concat(transformY, "px)"),
+        rotate: "".concat(rotate, "deg")
+      };
+      var classes = classnames_default()({
+        M_BubbleFilled: true,
+        correct: correct,
+        incorrect: incorrect
+      });
+      return /*#__PURE__*/react.createElement("div", {
+        className: classes,
+        style: styles,
+        onClick: this.handleClick
+      }, /*#__PURE__*/react.createElement(A_Bubble, {
+        textCell: this.generateTextCell()
+      }));
+    }
+  }]);
+
+  return M_BubbleFilled;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/atoms/A_OrginalFont/A_OrginalFont.jsx
+function A_OrginalFont_typeof(obj) { "@babel/helpers - typeof"; return A_OrginalFont_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_OrginalFont_typeof(obj); }
+
+function A_OrginalFont_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function A_OrginalFont_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function A_OrginalFont_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_OrginalFont_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_OrginalFont_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function A_OrginalFont_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_OrginalFont_setPrototypeOf(subClass, superClass); }
+
+function A_OrginalFont_setPrototypeOf(o, p) { A_OrginalFont_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_OrginalFont_setPrototypeOf(o, p); }
+
+function A_OrginalFont_createSuper(Derived) { var hasNativeReflectConstruct = A_OrginalFont_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_OrginalFont_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_OrginalFont_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_OrginalFont_possibleConstructorReturn(this, result); }; }
+
+function A_OrginalFont_possibleConstructorReturn(self, call) { if (call && (A_OrginalFont_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_OrginalFont_assertThisInitialized(self); }
+
+function A_OrginalFont_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function A_OrginalFont_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function A_OrginalFont_getPrototypeOf(o) { A_OrginalFont_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_OrginalFont_getPrototypeOf(o); }
+
+
+
+
+
+
+var A_OrginalFont = /*#__PURE__*/function (_PureComponent) {
+  A_OrginalFont_inherits(A_OrginalFont, _PureComponent);
+
+  var _super = A_OrginalFont_createSuper(A_OrginalFont);
+
+  function A_OrginalFont(props) {
+    var _this;
+
+    A_OrginalFont_classCallCheck(this, A_OrginalFont);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      correct: false
+    };
+    return _this;
+  }
+
+  A_OrginalFont_createClass(A_OrginalFont, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var answered = this.props.answered;
+
+      if (answered == true) {
+        this.setState({
+          correct: true
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var originalFont = this.props.originalFont;
+      var correct = this.state.correct;
+      var classes = classnames_default()({
+        A_OrginalFont: true,
+        correct: correct
+      });
+      var styles = {
+        fontFamily: "".concat(originalFont)
+      };
+      return /*#__PURE__*/react.createElement("div", {
+        className: classes
+      }, /*#__PURE__*/react.createElement("p", {
+        style: styles
+      }, originalFont));
+    }
+  }]);
+
+  return A_OrginalFont;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/organisms/O_FontGame/O_FontGame.jsx
+function O_FontGame_typeof(obj) { "@babel/helpers - typeof"; return O_FontGame_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, O_FontGame_typeof(obj); }
+
+function O_FontGame_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function O_FontGame_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function O_FontGame_createClass(Constructor, protoProps, staticProps) { if (protoProps) O_FontGame_defineProperties(Constructor.prototype, protoProps); if (staticProps) O_FontGame_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function O_FontGame_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) O_FontGame_setPrototypeOf(subClass, superClass); }
+
+function O_FontGame_setPrototypeOf(o, p) { O_FontGame_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return O_FontGame_setPrototypeOf(o, p); }
+
+function O_FontGame_createSuper(Derived) { var hasNativeReflectConstruct = O_FontGame_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = O_FontGame_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = O_FontGame_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return O_FontGame_possibleConstructorReturn(this, result); }; }
+
+function O_FontGame_possibleConstructorReturn(self, call) { if (call && (O_FontGame_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return O_FontGame_assertThisInitialized(self); }
+
+function O_FontGame_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function O_FontGame_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function O_FontGame_getPrototypeOf(o) { O_FontGame_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return O_FontGame_getPrototypeOf(o); }
+
+function O_FontGame_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+
+var O_FontGame = /*#__PURE__*/function (_PureComponent) {
+  O_FontGame_inherits(O_FontGame, _PureComponent);
+
+  var _super = O_FontGame_createSuper(O_FontGame);
+
+  function O_FontGame(props) {
+    var _this;
+
+    O_FontGame_classCallCheck(this, O_FontGame);
+
+    _this = _super.call(this, props);
+
+    O_FontGame_defineProperty(O_FontGame_assertThisInitialized(_this), "handleClick", function () {
+      var answered = _this.state.answered;
+
+      if (answered == false) {
+        _this.setState({
+          answered: true
+        });
+      }
+    });
+
+    _this.state = {
+      bubbles: [],
+      answered: false,
+      originalFont: ''
+    };
+    return _this;
+  }
+
+  O_FontGame_createClass(O_FontGame, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          bubbles = _this$props.bubbles,
+          fonts = _this$props.fonts;
+      this.setState({
+        bubbles: bubbles,
+        originalFont: (0,composition/* sample */.U)(fonts)
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$state = this.state,
+          bubbles = _this$state.bubbles,
+          originalFont = _this$state.originalFont,
+          answered = _this$state.answered;
+      var newBubbles = bubbles.map(function (bubble, i) {
+        return /*#__PURE__*/react.createElement(M_BubbleFilled, {
+          number: bubble.number,
+          transformX: bubble.transformX,
+          transformY: bubble.transformY,
+          rotate: bubble.rotate,
+          innerRotate: bubble.innerRotate,
+          font: bubble.font,
+          key: bubble.number,
+          handleClick: _this2.handleClick,
+          answered: answered,
+          originalFont: originalFont
+        });
+      });
+      return /*#__PURE__*/react.createElement("div", {
+        className: "O_FontGame"
+      }, newBubbles, /*#__PURE__*/react.createElement(A_OrginalFont, {
+        answered: answered,
+        originalFont: originalFont
+      }));
+    }
+  }]);
+
+  return O_FontGame;
+}(react.PureComponent);
+
+
+
+/***/ }),
+
+/***/ 5:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ O_SideBar)
+/* harmony export */ });
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(184);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(294);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(935);
+/* harmony import */ var _moleculas_M_MenuGroup_M_MenuGroup_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(319);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+
+
+var O_SideBar = /*#__PURE__*/function (_PureComponent) {
+  _inherits(O_SideBar, _PureComponent);
+
+  var _super = _createSuper(O_SideBar);
+
+  function O_SideBar(props) {
+    var _this;
+
+    _classCallCheck(this, O_SideBar);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      barItems: []
+    };
+    return _this;
+  }
+
+  _createClass(O_SideBar, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var barItems = this.props.barItems;
+      this.setState({
+        barItems: barItems
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var name = this.props.name;
+      var barItems = this.state.barItems;
+      var groups = barItems.map(function (bar, i) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_moleculas_M_MenuGroup_M_MenuGroup_jsx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+          key: i,
+          main: bar.main,
+          url: bar.url,
+          active: bar.active,
+          subItems: bar.subItems
+        });
+      });
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+        className: "O_Sidebar"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h4", {
+        id: "sidebarHeader"
+      }, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+        className: "pack"
+      }, groups));
+    }
+  }]);
+
+  return O_SideBar;
+}(react__WEBPACK_IMPORTED_MODULE_1__.PureComponent);
+
+
+
+/***/ }),
+
+/***/ 180:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "U": () => (/* binding */ sample)
+});
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(294);
+// EXTERNAL MODULE: ./node_modules/react-dom/index.js
+var react_dom = __webpack_require__(935);
+// EXTERNAL MODULE: ./node_modules/react-dom/client.js
+var client = __webpack_require__(745);
+// EXTERNAL MODULE: ./src/components/moleculas/M_ExerciseBox/M_ExerciseBox.jsx
+var M_ExerciseBox = __webpack_require__(398);
+// EXTERNAL MODULE: ./src/images/rangefinder.svg
+var rangefinder = __webpack_require__(505);
+// EXTERNAL MODULE: ./src/images/arrows.svg
+var arrows = __webpack_require__(536);
+;// CONCATENATED MODULE: ./src/components/atoms/A_SliderSpecial/A_SliderSpecial.jsx
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+var A_SliderSpecial = /*#__PURE__*/function (_PureComponent) {
+  _inherits(A_SliderSpecial, _PureComponent);
+
+  var _super = _createSuper(A_SliderSpecial);
+
+  function A_SliderSpecial(props) {
+    var _this;
+
+    _classCallCheck(this, A_SliderSpecial);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "handleMouseDown", function (e) {
+      var handleMouseDown = _this.props.handleMouseDown;
+      e.preventDefault();
+      handleMouseDown(e);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleMouseMove", function (e) {
+      var handleMouseMove = _this.props.handleMouseMove;
+      e.preventDefault();
+      handleMouseMove(e);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleMouseUp", function (e) {
+      var handleMouseUp = _this.props.handleMouseUp;
+      e.preventDefault();
+      handleMouseUp(e);
+    });
+
+    return _this;
+  }
+
+  _createClass(A_SliderSpecial, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.addEventListener('mouseup', this.handleMouseUp);
+      window.addEventListener('mousemove', this.handleMouseMove);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          coord = _this$props.coord,
+          id = _this$props.id,
+          signature = _this$props.signature,
+          display = _this$props.display;
+      var styles = {
+        transform: "translateX(".concat(coord, "px)")
+      };
+      var imageStyles = {
+        display: "".concat(display)
+      };
+      return /*#__PURE__*/react.createElement("div", {
+        className: "Slider-wrap"
+      }, /*#__PURE__*/react.createElement("img", {
+        src: rangefinder
+      }), /*#__PURE__*/react.createElement("div", {
+        className: "Slider-body"
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "Thumb",
+        onMouseDown: this.handleMouseDown,
+        onMouseMove: this.handleMouseMove,
+        onMouseUp: this.handleMouseUp,
+        style: styles
+      }, /*#__PURE__*/react.createElement("label", {
+        id: id
+      }, /*#__PURE__*/react.createElement("img", {
+        src: arrows,
+        style: imageStyles
+      }), " ", signature))));
+    }
+  }]);
+
+  return A_SliderSpecial;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/modules/MOD_Rangefinder.jsx
+function MOD_Rangefinder_typeof(obj) { "@babel/helpers - typeof"; return MOD_Rangefinder_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, MOD_Rangefinder_typeof(obj); }
+
+function MOD_Rangefinder_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function MOD_Rangefinder_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function MOD_Rangefinder_createClass(Constructor, protoProps, staticProps) { if (protoProps) MOD_Rangefinder_defineProperties(Constructor.prototype, protoProps); if (staticProps) MOD_Rangefinder_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function MOD_Rangefinder_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) MOD_Rangefinder_setPrototypeOf(subClass, superClass); }
+
+function MOD_Rangefinder_setPrototypeOf(o, p) { MOD_Rangefinder_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return MOD_Rangefinder_setPrototypeOf(o, p); }
+
+function MOD_Rangefinder_createSuper(Derived) { var hasNativeReflectConstruct = MOD_Rangefinder_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = MOD_Rangefinder_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = MOD_Rangefinder_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return MOD_Rangefinder_possibleConstructorReturn(this, result); }; }
+
+function MOD_Rangefinder_possibleConstructorReturn(self, call) { if (call && (MOD_Rangefinder_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return MOD_Rangefinder_assertThisInitialized(self); }
+
+function MOD_Rangefinder_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function MOD_Rangefinder_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function MOD_Rangefinder_getPrototypeOf(o) { MOD_Rangefinder_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return MOD_Rangefinder_getPrototypeOf(o); }
+
+function MOD_Rangefinder_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+var MOD_Rangefinder = /*#__PURE__*/function (_PureComponent) {
+  MOD_Rangefinder_inherits(MOD_Rangefinder, _PureComponent);
+
+  var _super = MOD_Rangefinder_createSuper(MOD_Rangefinder);
+
+  function MOD_Rangefinder(props) {
+    var _this;
+
+    MOD_Rangefinder_classCallCheck(this, MOD_Rangefinder);
+
+    _this = _super.call(this, props);
+
+    MOD_Rangefinder_defineProperty(MOD_Rangefinder_assertThisInitialized(_this), "handleMouseDown", function (e) {
+      e.preventDefault();
+      var cursorStart = _this.state.cursorStart;
+
+      _this.setState({
+        mouseDown: true,
+        cursorStart: e.screenX
+      });
+    });
+
+    MOD_Rangefinder_defineProperty(MOD_Rangefinder_assertThisInitialized(_this), "handleMouseMove", function (e) {
+      var _this$state = _this.state,
+          coord = _this$state.coord,
+          cursorStart = _this$state.cursorStart,
+          coordPrev = _this$state.coordPrev,
+          min = _this$state.min,
+          max = _this$state.max;
+
+      if (_this.state.mouseDown) {
+        _this.setState({
+          coord: coordPrev + e.screenX - cursorStart
+        });
+
+        if (coordPrev + e.screenX - cursorStart > max) {
+          _this.setState({
+            coord: max
+          });
+        }
+
+        if (coordPrev + e.screenX - cursorStart < min) {
+          _this.setState({
+            coord: min
+          });
+        }
+      }
+    });
+
+    MOD_Rangefinder_defineProperty(MOD_Rangefinder_assertThisInitialized(_this), "handleMouseUp", function (e) {
+      console.log('Up!');
+      e.preventDefault();
+      var _this$state2 = _this.state,
+          mouseDown = _this$state2.mouseDown,
+          coord = _this$state2.coord,
+          coordPrev = _this$state2.coordPrev;
+
+      if (mouseDown) {
+        _this.calcResult(coord);
+
+        _this.setState({
+          coordPrev: coord,
+          mouseDown: false
+        });
+      }
+    });
+
+    MOD_Rangefinder_defineProperty(MOD_Rangefinder_assertThisInitialized(_this), "calcResult", function (coord) {
+      var _this$state3 = _this.state,
+          id = _this$state3.id,
+          signature = _this$state3.signature,
+          display = _this$state3.display;
+
+      if (_this.state.coord >= 103 && _this.state.coord <= 113) {
+        _this.setState({
+          id: 'b',
+          signature: 'Правильно!',
+          display: 'none'
+        });
+      } else {
+        _this.setState({
+          id: 'c',
+          signature: 'Неправильно!',
+          display: 'none'
+        });
+      }
+    });
+
+    MOD_Rangefinder_defineProperty(MOD_Rangefinder_assertThisInitialized(_this), "generateExercise", function () {
+      var _this$state4 = _this.state,
+          coord = _this$state4.coord,
+          signature = _this$state4.signature,
+          display = _this$state4.display,
+          id = _this$state4.id;
+      return /*#__PURE__*/react.createElement(A_SliderSpecial, {
+        coord: coord,
+        handleMouseMove: _this.handleMouseMove,
+        handleMouseDown: _this.handleMouseDown,
+        handleMouseUp: _this.handleMouseUp,
+        signature: signature,
+        display: display,
+        id: id
+      });
+    });
+
+    _this.state = {
+      size: 220,
+      mouseDown: false,
+      coord: 0,
+      cursorStart: 0,
+      coordPrev: 0,
+      min: 0,
+      max: 200,
+      signature: '',
+      display: 'block',
+      id: 'a'
+    };
+    return _this;
+  }
+
+  MOD_Rangefinder_createClass(MOD_Rangefinder, [{
+    key: "render",
+    value: function render() {
+      var size = this.state.size;
+      var info = this.props.info;
+      return /*#__PURE__*/react.createElement(M_ExerciseBox/* default */.Z, {
+        header: info[0].header,
+        text: info[0].text,
+        exercise: this.generateExercise(),
+        size: size
+      });
+    }
+  }]);
+
+  return MOD_Rangefinder;
+}(react.PureComponent);
+
+
+// EXTERNAL MODULE: ./src/components/atoms/A_Text/A_Text.jsx
+var A_Text = __webpack_require__(608);
+;// CONCATENATED MODULE: ./src/components/atoms/A_Canvas/A_Canvas.jsx
+function A_Canvas_typeof(obj) { "@babel/helpers - typeof"; return A_Canvas_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Canvas_typeof(obj); }
+
+function A_Canvas_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function A_Canvas_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function A_Canvas_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Canvas_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Canvas_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function A_Canvas_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Canvas_setPrototypeOf(subClass, superClass); }
+
+function A_Canvas_setPrototypeOf(o, p) { A_Canvas_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Canvas_setPrototypeOf(o, p); }
+
+function A_Canvas_createSuper(Derived) { var hasNativeReflectConstruct = A_Canvas_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Canvas_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Canvas_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Canvas_possibleConstructorReturn(this, result); }; }
+
+function A_Canvas_possibleConstructorReturn(self, call) { if (call && (A_Canvas_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Canvas_assertThisInitialized(self); }
+
+function A_Canvas_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function A_Canvas_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function A_Canvas_getPrototypeOf(o) { A_Canvas_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Canvas_getPrototypeOf(o); }
+
+function A_Canvas_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+var A_Canvas = /*#__PURE__*/function (_PureComponent) {
+  A_Canvas_inherits(A_Canvas, _PureComponent);
+
+  var _super = A_Canvas_createSuper(A_Canvas);
+
+  function A_Canvas(props) {
+    var _this;
+
+    A_Canvas_classCallCheck(this, A_Canvas);
+
+    _this = _super.call(this, props);
+
+    A_Canvas_defineProperty(A_Canvas_assertThisInitialized(_this), "handleMouseDown", function (e) {
+      var handleMouseDown = _this.props.handleMouseDown;
+      e.preventDefault();
+      handleMouseDown(e);
+    });
+
+    A_Canvas_defineProperty(A_Canvas_assertThisInitialized(_this), "handleMouseMove", function (e) {
+      var handleMouseMove = _this.props.handleMouseMove;
+      e.preventDefault();
+      handleMouseMove(e);
+    });
+
+    A_Canvas_defineProperty(A_Canvas_assertThisInitialized(_this), "handleMouseUp", function (e) {
+      var handleMouseUp = _this.props.handleMouseUp;
+      e.preventDefault();
+      handleMouseUp(e);
+    });
+
+    A_Canvas_defineProperty(A_Canvas_assertThisInitialized(_this), "receiveCoord", function () {
+      var receiveCoord = _this.props.receiveCoord;
+      receiveCoord(_this.position.current.getBoundingClientRect());
+    });
+
+    _this.position = /*#__PURE__*/react.createRef();
+    return _this;
+  }
+
+  A_Canvas_createClass(A_Canvas, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.addEventListener('scroll', this.receiveCoord);
+      window.addEventListener('load', this.receiveCoord);
+      this.position.current.addEventListener('mousedown', this.props.handleMouseDown);
+      this.position.current.addEventListener('mouseup', this.props.handleMouseUp);
+      this.position.current.addEventListener('mousemove', this.props.handleMouseMove);
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var missionFailed = this.props.missionFailed;
+
+      if (missionFailed) {
+        this.position.current.removeEventListener('mousedown', this.props.handleMouseDown);
+        this.position.current.removeEventListener('mouseup', this.props.handleMouseUp);
+        this.position.current.removeEventListener('mousemove', this.props.handleMouseMove);
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          exercise = _this$props.exercise,
+          handleClick = _this$props.handleClick,
+          circles = _this$props.circles,
+          handleMouseUp = _this$props.handleMouseUp,
+          handleMouseDown = _this$props.handleMouseDown,
+          handleMouseMove = _this$props.handleMouseMove,
+          receiveCoord = _this$props.receiveCoord,
+          handleChange = _this$props.handleChange,
+          alert = _this$props.alert;
+      return /*#__PURE__*/react.createElement("div", {
+        className: "A_Canvas",
+        ref: this.position,
+        onMouseDown: handleMouseDown,
+        onMouseUp: handleMouseUp,
+        onMouseMove: handleMouseMove
+      }, circles, alert);
+    }
+  }]);
+
+  return A_Canvas;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/moleculas/M_CanvasBox/M_CanvasBox.jsx
+function M_CanvasBox_typeof(obj) { "@babel/helpers - typeof"; return M_CanvasBox_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_CanvasBox_typeof(obj); }
+
+function M_CanvasBox_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function M_CanvasBox_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function M_CanvasBox_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_CanvasBox_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_CanvasBox_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function M_CanvasBox_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_CanvasBox_setPrototypeOf(subClass, superClass); }
+
+function M_CanvasBox_setPrototypeOf(o, p) { M_CanvasBox_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_CanvasBox_setPrototypeOf(o, p); }
+
+function M_CanvasBox_createSuper(Derived) { var hasNativeReflectConstruct = M_CanvasBox_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_CanvasBox_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_CanvasBox_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_CanvasBox_possibleConstructorReturn(this, result); }; }
+
+function M_CanvasBox_possibleConstructorReturn(self, call) { if (call && (M_CanvasBox_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_CanvasBox_assertThisInitialized(self); }
+
+function M_CanvasBox_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function M_CanvasBox_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function M_CanvasBox_getPrototypeOf(o) { M_CanvasBox_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_CanvasBox_getPrototypeOf(o); }
+
+
+
+
+
+
+
+var M_CanvasBox = /*#__PURE__*/function (_PureComponent) {
+  M_CanvasBox_inherits(M_CanvasBox, _PureComponent);
+
+  var _super = M_CanvasBox_createSuper(M_CanvasBox);
+
+  function M_CanvasBox(props) {
+    M_CanvasBox_classCallCheck(this, M_CanvasBox);
+
+    return _super.call(this, props);
+  }
+
+  M_CanvasBox_createClass(M_CanvasBox, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          header = _this$props.header,
+          text = _this$props.text,
+          exercise = _this$props.exercise,
+          handleMouseUp = _this$props.handleMouseUp,
+          handleMouseDown = _this$props.handleMouseDown,
+          handleMouseMove = _this$props.handleMouseMove,
+          handleChange = _this$props.handleChange,
+          circles = _this$props.circles,
+          size = _this$props.size,
+          receiveCoord = _this$props.receiveCoord,
+          alert = _this$props.alert,
+          missionFailed = _this$props.missionFailed;
+      return /*#__PURE__*/react.createElement("div", {
+        className: "M_CanvasBox"
+      }, /*#__PURE__*/react.createElement(A_Text/* default */.Z, {
+        header: header,
+        text: text
+      }), /*#__PURE__*/react.createElement(A_Canvas, {
+        handleMouseUp: handleMouseUp,
+        handleMouseDown: handleMouseDown,
+        handleMouseMove: handleMouseMove,
+        handleChange: handleChange,
+        exercise: exercise,
+        circles: circles,
+        alert: alert,
+        receiveCoord: receiveCoord,
+        missionFailed: missionFailed
+      }));
+    }
+  }]);
+
+  return M_CanvasBox;
+}(react.PureComponent);
+
+
+// EXTERNAL MODULE: ./src/components/atoms/A_Button/A_Button.jsx
+var A_Button = __webpack_require__(564);
+;// CONCATENATED MODULE: ./src/components/moleculas/M_AlertBox/M_AlertBox.jsx
+function M_AlertBox_typeof(obj) { "@babel/helpers - typeof"; return M_AlertBox_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_AlertBox_typeof(obj); }
+
+function M_AlertBox_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function M_AlertBox_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function M_AlertBox_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_AlertBox_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_AlertBox_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function M_AlertBox_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_AlertBox_setPrototypeOf(subClass, superClass); }
+
+function M_AlertBox_setPrototypeOf(o, p) { M_AlertBox_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_AlertBox_setPrototypeOf(o, p); }
+
+function M_AlertBox_createSuper(Derived) { var hasNativeReflectConstruct = M_AlertBox_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_AlertBox_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_AlertBox_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_AlertBox_possibleConstructorReturn(this, result); }; }
+
+function M_AlertBox_possibleConstructorReturn(self, call) { if (call && (M_AlertBox_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_AlertBox_assertThisInitialized(self); }
+
+function M_AlertBox_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function M_AlertBox_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function M_AlertBox_getPrototypeOf(o) { M_AlertBox_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_AlertBox_getPrototypeOf(o); }
+
+function M_AlertBox_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+var M_AlertBox = /*#__PURE__*/function (_PureComponent) {
+  M_AlertBox_inherits(M_AlertBox, _PureComponent);
+
+  var _super = M_AlertBox_createSuper(M_AlertBox);
+
+  function M_AlertBox(props) {
+    var _this;
+
+    M_AlertBox_classCallCheck(this, M_AlertBox);
+
+    _this = _super.call(this, props);
+
+    M_AlertBox_defineProperty(M_AlertBox_assertThisInitialized(_this), "handleClick", function () {
+      window.location.reload();
+    });
+
+    return _this;
+  }
+
+  M_AlertBox_createClass(M_AlertBox, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          errorHeader = _this$props.errorHeader,
+          errorText = _this$props.errorText;
+      return /*#__PURE__*/react.createElement("div", {
+        className: "M_AlertBox"
+      }, /*#__PURE__*/react.createElement("h3", null, errorHeader), /*#__PURE__*/react.createElement("p", null, errorText), /*#__PURE__*/react.createElement(A_Button/* default */.Z, {
+        handleClick: this.handleClick,
+        text: "\u041D\u0430\u0447\u0430\u0442\u044C \u0441\u043D\u0430\u0447\u0430\u043B\u0430"
+      }));
+    }
+  }]);
+
+  return M_AlertBox;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/atoms/A_Circle/A_Circle.jsx
+function A_Circle_typeof(obj) { "@babel/helpers - typeof"; return A_Circle_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Circle_typeof(obj); }
+
+function A_Circle_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function A_Circle_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function A_Circle_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Circle_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Circle_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function A_Circle_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Circle_setPrototypeOf(subClass, superClass); }
+
+function A_Circle_setPrototypeOf(o, p) { A_Circle_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Circle_setPrototypeOf(o, p); }
+
+function A_Circle_createSuper(Derived) { var hasNativeReflectConstruct = A_Circle_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Circle_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Circle_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Circle_possibleConstructorReturn(this, result); }; }
+
+function A_Circle_possibleConstructorReturn(self, call) { if (call && (A_Circle_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Circle_assertThisInitialized(self); }
+
+function A_Circle_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function A_Circle_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function A_Circle_getPrototypeOf(o) { A_Circle_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Circle_getPrototypeOf(o); }
+
+
+
+
+
+var A_Circle = /*#__PURE__*/function (_PureComponent) {
+  A_Circle_inherits(A_Circle, _PureComponent);
+
+  var _super = A_Circle_createSuper(A_Circle);
+
+  function A_Circle(props) {
+    A_Circle_classCallCheck(this, A_Circle);
+
+    return _super.call(this, props);
+  }
+
+  A_Circle_createClass(A_Circle, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          size = _this$props.size,
+          xPosition = _this$props.xPosition,
+          yPosition = _this$props.yPosition;
+      var styles = {
+        width: "".concat(size, "px"),
+        height: "".concat(size, "px"),
+        transform: "translate(".concat(xPosition, "px, ").concat(yPosition, "px)")
+      };
+      return /*#__PURE__*/react.createElement("div", {
+        style: styles,
+        className: "A_Circle"
+      });
+    }
+  }]);
+
+  return A_Circle;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/modules/MOD_CircleGame.jsx
+function MOD_CircleGame_typeof(obj) { "@babel/helpers - typeof"; return MOD_CircleGame_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, MOD_CircleGame_typeof(obj); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { MOD_CircleGame_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function MOD_CircleGame_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function MOD_CircleGame_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function MOD_CircleGame_createClass(Constructor, protoProps, staticProps) { if (protoProps) MOD_CircleGame_defineProperties(Constructor.prototype, protoProps); if (staticProps) MOD_CircleGame_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function MOD_CircleGame_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) MOD_CircleGame_setPrototypeOf(subClass, superClass); }
+
+function MOD_CircleGame_setPrototypeOf(o, p) { MOD_CircleGame_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return MOD_CircleGame_setPrototypeOf(o, p); }
+
+function MOD_CircleGame_createSuper(Derived) { var hasNativeReflectConstruct = MOD_CircleGame_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = MOD_CircleGame_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = MOD_CircleGame_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return MOD_CircleGame_possibleConstructorReturn(this, result); }; }
+
+function MOD_CircleGame_possibleConstructorReturn(self, call) { if (call && (MOD_CircleGame_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return MOD_CircleGame_assertThisInitialized(self); }
+
+function MOD_CircleGame_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function MOD_CircleGame_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function MOD_CircleGame_getPrototypeOf(o) { MOD_CircleGame_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return MOD_CircleGame_getPrototypeOf(o); }
+
+function MOD_CircleGame_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+var MOD_CircleGameEx = /*#__PURE__*/function (_PureComponent) {
+  MOD_CircleGame_inherits(MOD_CircleGameEx, _PureComponent);
+
+  var _super = MOD_CircleGame_createSuper(MOD_CircleGameEx);
+
+  function MOD_CircleGameEx(props) {
+    var _this;
+
+    MOD_CircleGame_classCallCheck(this, MOD_CircleGameEx);
+
+    _this = _super.call(this, props);
+
+    MOD_CircleGame_defineProperty(MOD_CircleGame_assertThisInitialized(_this), "handleMouseDown", function (e) {
+      e.preventDefault();
+      var _this$state = _this.state,
+          objects = _this$state.objects,
+          circleCount = _this$state.circleCount,
+          cursorXStart = _this$state.cursorXStart,
+          cursorYStart = _this$state.cursorYStart,
+          x = _this$state.x,
+          y = _this$state.y,
+          size = _this$state.size,
+          xPosition = _this$state.xPosition,
+          yPosition = _this$state.yPosition;
+
+      _this.setState({
+        circleCount: circleCount + 1,
+        mouseDown: true,
+        cursorXStart: e.clientX,
+        cursorYStart: e.clientY,
+        xCoord: e.clientX - x,
+        yCoord: e.clientY - y,
+        size: 0,
+        xPosition: e.clientX - x,
+        yPosition: e.clientY - y,
+        objects: [].concat(_toConsumableArray(objects), [{
+          number: circleCount + 1,
+          size: 0,
+          xCoord: e.clientX - x,
+          yCoord: e.clientY - y,
+          cursorXStart: e.clientX,
+          cursorYStart: e.clientY
+        }])
+      });
+    });
+
+    MOD_CircleGame_defineProperty(MOD_CircleGame_assertThisInitialized(_this), "handleMouseMove", function (e) {
+      var _this$state2 = _this.state,
+          mouseDown = _this$state2.mouseDown,
+          cursorXStart = _this$state2.cursorXStart,
+          cursorYStart = _this$state2.cursorYStart,
+          x = _this$state2.x,
+          size = _this$state2.size,
+          objects = _this$state2.objects,
+          circleCount = _this$state2.circleCount,
+          xPosition = _this$state2.xPosition,
+          yPosition = _this$state2.yPosition,
+          maxSize = _this$state2.maxSize;
+
+      if (_this.state.mouseDown) {
+        var newCircle = objects.map(function (object) {
+          if (object.number === _this.state.circleCount) {
+            return _objectSpread(_objectSpread({}, object), {}, {
+              size: object.size * 0 + Math.max(e.clientX - cursorXStart, e.clientY - cursorYStart, (e.clientY - cursorYStart) * -1, (e.clientX - cursorXStart) * -1)
+            });
+          } else {
+            return object;
+          }
+        });
+
+        _this.setState({
+          objects: newCircle,
+          size: Math.max(e.clientX - cursorXStart, e.clientY - cursorYStart, (e.clientY - cursorYStart) * -1, (e.clientX - cursorXStart) * -1)
+        });
+
+        if (size > maxSize) {
+          _this.setState({
+            sizeFailed: true,
+            missionFailed: true
+          });
+        }
+      }
+    });
+
+    MOD_CircleGame_defineProperty(MOD_CircleGame_assertThisInitialized(_this), "handleMouseUp", function (e) {
+      e.preventDefault();
+      var _this$state3 = _this.state,
+          mouseDown = _this$state3.mouseDown,
+          objects = _this$state3.objects,
+          circleCount = _this$state3.circleCount,
+          cursorXStart = _this$state3.cursorXStart,
+          cursorYStart = _this$state3.cursorYStart,
+          size = _this$state3.size;
+
+      if (mouseDown) {
+        _this.setState({
+          mouseDown: false,
+          maxSize: size,
+          size: 0
+        });
+      }
+    });
+
+    MOD_CircleGame_defineProperty(MOD_CircleGame_assertThisInitialized(_this), "receiveCoord", function (result) {
+      _this.setState({
+        x: result.x,
+        y: result.y,
+        canvasWidth: result.width,
+        canvasHeight: result.height
+      });
+    });
+
+    _this.state = {
+      circleCount: 0,
+      objects: [],
+      cursorXStart: 0,
+      cursorYStart: 0,
+      mouseDown: false,
+      size: 0,
+      x: 0,
+      y: 0,
+      canvasWidth: 0,
+      canvasHeight: 0,
+      xPosition: 0,
+      yPosition: 0,
+      maxSize: 10000,
+      missionFailed: false,
+      sizeFailed: false,
+      borderFailed: false,
+      collisionFailed: false,
+      errorHeader: '',
+      errorText: '',
+      xCoord: 0,
+      yCoord: 0
+    };
+    return _this;
+  }
+
+  MOD_CircleGame_createClass(MOD_CircleGameEx, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var _this2 = this;
+
+      var newCircle = this.state.objects.map(function (object) {
+        if (object.size > _this2.state.canvasHeight - object.yCoord) {
+          _this2.setState({
+            borderFailed: true,
+            missionFailed: true
+          });
+        }
+
+        if (object.size > _this2.state.canvasWidth - object.xCoord) {
+          _this2.setState({
+            borderFailed: true,
+            missionFailed: true
+          });
+        } //
+        // if (this.state.xCoord < this.state.x) {
+        //   this.setState({
+        //     borderFailed: true,
+        //     missionFailed: true
+        //   })
+        // }
+        // if (this.state.yCoord > this.state.y) {
+        //   this.setState({
+        //     borderFailed: true,
+        //     missionFailed: true
+        //   })
+        // }
+
+
+        if (object.number != _this2.state.circleCount && _this2.state.xCoord + _this2.state.size > object.xCoord && _this2.state.yCoord + _this2.state.size > object.yCoord && _this2.state.xCoord < object.xCoord && _this2.state.yCoord < object.yCoord) {
+          _this2.setState({
+            collisionFailed: true,
+            missionFailed: true
+          });
+        }
+
+        if (object.number != _this2.state.circleCount && _this2.state.xCoord + _this2.state.size > object.xCoord && _this2.state.yCoord + _this2.state.size > object.yCoord && _this2.state.xCoord < object.xCoord && _this2.state.yCoord < object.yCoord) {
+          _this2.setState({
+            collisionFailed: true,
+            missionFailed: true
+          });
+        }
+
+        if (object.number != _this2.state.circleCount && object.xCoord + object.size > _this2.state.xCoord && _this2.state.yCoord + _this2.state.size > object.yCoord && _this2.state.xCoord > object.xCoord && _this2.state.yCoord < object.yCoord) {
+          _this2.setState({
+            collisionFailed: true,
+            missionFailed: true
+          });
+        }
+
+        if (object.number != _this2.state.circleCount && _this2.state.yCoord < object.yCoord + object.size && object.xCoord + object.size > _this2.state.xCoord && _this2.state.xCoord > object.xCoord && _this2.state.yCoord > object.yCoord) {
+          _this2.setState({
+            collisionFailed: true,
+            missionFailed: true
+          });
+        }
+
+        if (object.number != _this2.state.circleCount && object.yCoord + object.size > _this2.state.yCoord && object.xCoord < _this2.state.xCoord + _this2.state.size && _this2.state.xCoord < object.xCoord && _this2.state.yCoord > object.yCoord) {
+          _this2.setState({
+            collisionFailed: true,
+            missionFailed: true
+          });
+        }
+
+        if (_this2.state.sizeFailed == true) {
+          _this2.setState({
+            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0440\u0443\u0433\u043E\u0432"),
+            errorText: 'Ваш последний круг оказался больше предыдущего'
+          });
+        }
+
+        if (_this2.state.borderFailed == true) {
+          _this2.setState({
+            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0440\u0443\u0433\u043E\u0432"),
+            errorText: 'Ваш последний круг вышел за пределы холста'
+          });
+        }
+
+        if (_this2.state.collisionFailed == true) {
+          _this2.setState({
+            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0440\u0443\u0433\u043E\u0432"),
+            errorText: 'Ваш последний круг задел другой'
+          });
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var info = this.props.info;
+      var _this$state4 = this.state,
+          objects = _this$state4.objects,
+          cursorXStart = _this$state4.cursorXStart,
+          size = _this$state4.size,
+          circleCount = _this$state4.circleCount,
+          xPosition = _this$state4.xPosition,
+          yPosition = _this$state4.yPosition,
+          missionFailed = _this$state4.missionFailed;
+      var circles = objects.map(function (object) {
+        return /*#__PURE__*/react.createElement(A_Circle, {
+          number: object.number,
+          key: object.number,
+          size: object.size,
+          xPosition: object.xCoord,
+          yPosition: object.yCoord
+        });
+      });
+      var failCheck = this.state.missionFailed;
+      var alert;
+
+      if (failCheck) {
+        alert = /*#__PURE__*/react.createElement(M_AlertBox, {
+          errorHeader: this.state.errorHeader,
+          errorText: this.state.errorText
+        });
+      } else {}
+
+      return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(M_CanvasBox, {
+        header: info[1].header,
+        text: info[1].text,
+        handleMouseUp: this.handleMouseUp,
+        handleMouseDown: this.handleMouseDown,
+        handleMouseMove: this.handleMouseMove,
+        circles: circles,
+        alert: alert,
+        receiveCoord: this.receiveCoord,
+        compareCircles: this.compareCircles,
+        missionFailed: missionFailed
+      }));
+    }
+  }]);
+
+  return MOD_CircleGameEx;
+}(react.PureComponent);
+
+
+// EXTERNAL MODULE: ./src/components/modules/MOD_ContrastEditor.jsx + 3 modules
+var MOD_ContrastEditor = __webpack_require__(954);
+;// CONCATENATED MODULE: ./src/components/atoms/A_Slider/A_Slider.jsx
+function A_Slider_typeof(obj) { "@babel/helpers - typeof"; return A_Slider_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Slider_typeof(obj); }
+
+function A_Slider_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function A_Slider_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function A_Slider_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Slider_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Slider_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function A_Slider_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Slider_setPrototypeOf(subClass, superClass); }
+
+function A_Slider_setPrototypeOf(o, p) { A_Slider_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Slider_setPrototypeOf(o, p); }
+
+function A_Slider_createSuper(Derived) { var hasNativeReflectConstruct = A_Slider_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Slider_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Slider_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Slider_possibleConstructorReturn(this, result); }; }
+
+function A_Slider_possibleConstructorReturn(self, call) { if (call && (A_Slider_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Slider_assertThisInitialized(self); }
+
+function A_Slider_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function A_Slider_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function A_Slider_getPrototypeOf(o) { A_Slider_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Slider_getPrototypeOf(o); }
+
+function A_Slider_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+var A_Slider = /*#__PURE__*/function (_PureComponent) {
+  A_Slider_inherits(A_Slider, _PureComponent);
+
+  var _super = A_Slider_createSuper(A_Slider);
+
+  function A_Slider(props) {
+    var _this;
+
+    A_Slider_classCallCheck(this, A_Slider);
+
+    _this = _super.call(this, props);
+
+    A_Slider_defineProperty(A_Slider_assertThisInitialized(_this), "handleMouseDown", function (e) {
+      var handleMouseDown = _this.props.handleMouseDown;
+      e.preventDefault();
+      handleMouseDown(e);
+    });
+
+    A_Slider_defineProperty(A_Slider_assertThisInitialized(_this), "handleMouseMove", function (e) {
+      var handleMouseMove = _this.props.handleMouseMove;
+      e.preventDefault();
+      handleMouseMove(e);
+    });
+
+    A_Slider_defineProperty(A_Slider_assertThisInitialized(_this), "handleMouseUp", function (e) {
+      var handleMouseUp = _this.props.handleMouseUp;
+      e.preventDefault();
+      handleMouseUp(e);
+    });
+
+    return _this;
+  }
+
+  A_Slider_createClass(A_Slider, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {// window.addEventListener('mouseup', this.handleMouseUp)
+      // window.addEventListener('mousemove', this.handleMouseMove)
+      // window.addEventListener('mousedown', this.handleMouseDown)
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          coord = _this$props.coord,
+          sliderWidth = _this$props.sliderWidth;
+      var styles = {
+        transform: "translateX(".concat(coord, "px)")
+      };
+      var sliderStyles = {
+        width: "(".concat(sliderWidth, "px)")
+      };
+      return /*#__PURE__*/react.createElement("div", {
+        style: sliderStyles,
+        className: "A_Slider"
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "Thumb",
+        onMouseDown: this.handleMouseDown,
+        onMouseMove: this.handleMouseMove,
+        onMouseUp: this.handleMouseUp,
+        style: styles
+      }));
+    }
+  }]);
+
+  return A_Slider;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/modules/MOD_SizeBalance.jsx
+function MOD_SizeBalance_typeof(obj) { "@babel/helpers - typeof"; return MOD_SizeBalance_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, MOD_SizeBalance_typeof(obj); }
+
+function MOD_SizeBalance_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function MOD_SizeBalance_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function MOD_SizeBalance_createClass(Constructor, protoProps, staticProps) { if (protoProps) MOD_SizeBalance_defineProperties(Constructor.prototype, protoProps); if (staticProps) MOD_SizeBalance_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function MOD_SizeBalance_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) MOD_SizeBalance_setPrototypeOf(subClass, superClass); }
+
+function MOD_SizeBalance_setPrototypeOf(o, p) { MOD_SizeBalance_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return MOD_SizeBalance_setPrototypeOf(o, p); }
+
+function MOD_SizeBalance_createSuper(Derived) { var hasNativeReflectConstruct = MOD_SizeBalance_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = MOD_SizeBalance_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = MOD_SizeBalance_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return MOD_SizeBalance_possibleConstructorReturn(this, result); }; }
+
+function MOD_SizeBalance_possibleConstructorReturn(self, call) { if (call && (MOD_SizeBalance_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return MOD_SizeBalance_assertThisInitialized(self); }
+
+function MOD_SizeBalance_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function MOD_SizeBalance_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function MOD_SizeBalance_getPrototypeOf(o) { MOD_SizeBalance_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return MOD_SizeBalance_getPrototypeOf(o); }
+
+function MOD_SizeBalance_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+var MOD_SizeBalance = /*#__PURE__*/function (_PureComponent) {
+  MOD_SizeBalance_inherits(MOD_SizeBalance, _PureComponent);
+
+  var _super = MOD_SizeBalance_createSuper(MOD_SizeBalance);
+
+  function MOD_SizeBalance(props) {
+    var _this;
+
+    MOD_SizeBalance_classCallCheck(this, MOD_SizeBalance);
+
+    _this = _super.call(this, props);
+
+    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "generateExercise", function () {
+      var _this$state = _this.state,
+          coord = _this$state.coord,
+          sliderWidth = _this$state.sliderWidth;
+      return /*#__PURE__*/react.createElement(A_Slider, {
+        coord: coord,
+        handleMouseMove: _this.handleMouseMove,
+        handleMouseDown: _this.handleMouseDown,
+        handleMouseUp: _this.handleMouseUp,
+        sliderWidth: sliderWidth
+      });
+    });
+
+    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "squares", function () {
+      var _this$state2 = _this.state,
+          coord = _this$state2.coord,
+          text = _this$state2.text,
+          color = _this$state2.color,
+          semiColor = _this$state2.semiColor;
+      var styleOne = {
+        width: "100px",
+        height: "100px",
+        backgroundColor: "var(--dark)"
+      };
+
+      var styleTwo = MOD_SizeBalance_defineProperty({
+        width: "".concat(100 + coord, "px"),
+        height: "".concat(100 + coord, "px"),
+        backgroundColor: "var(--border)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        fontFamily: "Proxima Nova",
+        fontWeight: "600",
+        fontSize: "24px",
+        color: "".concat(color),
+        border: "4px dashed ".concat(color)
+      }, "backgroundColor", "".concat(semiColor));
+
+      var styleThree = {
+        width: "300px",
+        height: "300px",
+        backgroundColor: "var(--dark)"
+      };
+      var boxStyle = {
+        display: "flex",
+        justifyContent: "space-around",
+        width: "100%",
+        marginBottom: "25px",
+        alignItems: "flex-end",
+        paddingLeft: "50px",
+        paddingRight: "50px"
+      };
+      return /*#__PURE__*/react.createElement("div", {
+        className: "box",
+        style: boxStyle
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "Square-1",
+        style: styleOne
+      }), /*#__PURE__*/react.createElement("div", {
+        className: "Square-2",
+        style: styleTwo
+      }, text), /*#__PURE__*/react.createElement("div", {
+        className: "Square-3",
+        style: styleThree
+      }));
+    });
+
+    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "handleMouseDown", function (e) {
+      e.preventDefault();
+      var cursorStart = _this.state.cursorStart;
+
+      _this.setState({
+        mouseDown: true,
+        cursorStart: e.screenX
+      });
+    });
+
+    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "handleMouseMove", function (e) {
+      var _this$state3 = _this.state,
+          coord = _this$state3.coord,
+          cursorStart = _this$state3.cursorStart,
+          coordPrev = _this$state3.coordPrev,
+          min = _this$state3.min,
+          max = _this$state3.max;
+
+      if (_this.state.mouseDown) {
+        _this.setState({
+          coord: coordPrev + e.screenX - cursorStart
+        });
+
+        if (coordPrev + e.screenX - cursorStart > max) {
+          _this.setState({
+            coord: max
+          });
+        }
+
+        if (coordPrev + e.screenX - cursorStart < min) {
+          _this.setState({
+            coord: min
+          });
+        }
+      }
+    });
+
+    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "handleMouseUp", function (e) {
+      console.log('Up!');
+      e.preventDefault();
+      var _this$state4 = _this.state,
+          mouseDown = _this$state4.mouseDown,
+          coord = _this$state4.coord,
+          coordPrev = _this$state4.coordPrev;
+
+      if (mouseDown) {
+        _this.calcResult(coord);
+
+        _this.setState({
+          coordPrev: coord,
+          mouseDown: false
+        });
+      }
+    });
+
+    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "calcResult", function (coord) {
+      // const {} = this.state
+      if (_this.state.coord <= 105 && _this.state.coord >= 95) {
+        _this.setState({
+          text: 'Супер!',
+          color: '#08661D',
+          semiColor: '#DFFDE7'
+        });
+      }
+
+      if (_this.state.coord > 105) {
+        _this.setState({
+          text: 'Многовато!',
+          color: '#660808',
+          semiColor: '#FDDFDF'
+        });
+      }
+
+      if (_this.state.coord < 95) {
+        _this.setState({
+          text: 'Маловато!',
+          color: '#660808',
+          semiColor: '#FDDFDF'
+        });
+      }
+    });
+
+    _this.state = {
+      size: 436,
+      mouseDown: false,
+      coord: 0,
+      cursorStart: 0,
+      min: 0,
+      max: 120,
+      coordPrev: 0,
+      sliderWidth: 150,
+      signature: '',
+      display: 'block',
+      text: '',
+      color: 'var(--dark)',
+      semiColor: 'var(--border)'
+    };
+    return _this;
+  }
+
+  MOD_SizeBalance_createClass(MOD_SizeBalance, [{
+    key: "render",
+    value: function render() {
+      var size = this.state.size;
+      var info = this.props.info;
+      return /*#__PURE__*/react.createElement(M_ExerciseBox/* default */.Z, {
+        header: info[3].header,
+        text: info[3].text,
+        exercise: this.generateExercise(),
+        size: size,
+        squares: this.squares()
+      });
+    }
+  }]);
+
+  return MOD_SizeBalance;
+}(react.PureComponent);
+
+
+// EXTERNAL MODULE: ./node_modules/classnames/index.js
+var classnames = __webpack_require__(184);
+var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
+;// CONCATENATED MODULE: ./src/components/atoms/A_CheckBox/A_CheckBox.jsx
+function A_CheckBox_typeof(obj) { "@babel/helpers - typeof"; return A_CheckBox_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_CheckBox_typeof(obj); }
+
+function A_CheckBox_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function A_CheckBox_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function A_CheckBox_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_CheckBox_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_CheckBox_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function A_CheckBox_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_CheckBox_setPrototypeOf(subClass, superClass); }
+
+function A_CheckBox_setPrototypeOf(o, p) { A_CheckBox_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_CheckBox_setPrototypeOf(o, p); }
+
+function A_CheckBox_createSuper(Derived) { var hasNativeReflectConstruct = A_CheckBox_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_CheckBox_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_CheckBox_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_CheckBox_possibleConstructorReturn(this, result); }; }
+
+function A_CheckBox_possibleConstructorReturn(self, call) { if (call && (A_CheckBox_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_CheckBox_assertThisInitialized(self); }
+
+function A_CheckBox_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function A_CheckBox_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function A_CheckBox_getPrototypeOf(o) { A_CheckBox_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_CheckBox_getPrototypeOf(o); }
+
+function A_CheckBox_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+var A_CheckBox = /*#__PURE__*/function (_PureComponent) {
+  A_CheckBox_inherits(A_CheckBox, _PureComponent);
+
+  var _super = A_CheckBox_createSuper(A_CheckBox);
+
+  function A_CheckBox(props) {
+    var _this;
+
+    A_CheckBox_classCallCheck(this, A_CheckBox);
+
+    _this = _super.call(this, props);
+
+    A_CheckBox_defineProperty(A_CheckBox_assertThisInitialized(_this), "handleClick", function () {
+      var handleClick = _this.props.handleClick;
+      var checked = _this.state.checked;
+
+      _this.setState({
+        checked: true
+      });
+
+      if (checked) {
+        _this.setState({
+          checked: false
+        });
+      }
+
+      handleClick(checked);
+    });
+
+    _this.state = {
+      checked: false,
+      correct: false,
+      incorrect: false
+    };
+    return _this;
+  }
+
+  A_CheckBox_createClass(A_CheckBox, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var _this$props = this.props,
+          correct = _this$props.correct,
+          incorrect = _this$props.incorrect;
+
+      if (incorrect) {
+        this.setState({
+          incorrect: true,
+          checked: false
+        });
+      }
+
+      if (correct) {
+        this.setState({
+          correct: true,
+          checked: false
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$state = this.state,
+          checked = _this$state.checked,
+          correct = _this$state.correct,
+          incorrect = _this$state.incorrect;
+      var classes = classnames_default()({
+        A_CheckBox: true,
+        checked: checked,
+        correct: correct,
+        incorrect: incorrect
+      });
+      return /*#__PURE__*/react.createElement("div", {
+        className: classes,
+        onClick: this.handleClick
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "Q_Icon redCross"
+      }), /*#__PURE__*/react.createElement("div", {
+        className: "Q_Icon greenTick"
+      }), /*#__PURE__*/react.createElement("div", {
+        className: "Q_Icon neutralTick"
+      }));
+    }
+  }]);
+
+  return A_CheckBox;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/moleculas/M_CheckOptionWide/M_CheckOptionWide.jsx
+function M_CheckOptionWide_typeof(obj) { "@babel/helpers - typeof"; return M_CheckOptionWide_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_CheckOptionWide_typeof(obj); }
+
+function M_CheckOptionWide_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function M_CheckOptionWide_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function M_CheckOptionWide_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_CheckOptionWide_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_CheckOptionWide_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function M_CheckOptionWide_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_CheckOptionWide_setPrototypeOf(subClass, superClass); }
+
+function M_CheckOptionWide_setPrototypeOf(o, p) { M_CheckOptionWide_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_CheckOptionWide_setPrototypeOf(o, p); }
+
+function M_CheckOptionWide_createSuper(Derived) { var hasNativeReflectConstruct = M_CheckOptionWide_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_CheckOptionWide_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_CheckOptionWide_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_CheckOptionWide_possibleConstructorReturn(this, result); }; }
+
+function M_CheckOptionWide_possibleConstructorReturn(self, call) { if (call && (M_CheckOptionWide_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_CheckOptionWide_assertThisInitialized(self); }
+
+function M_CheckOptionWide_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function M_CheckOptionWide_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function M_CheckOptionWide_getPrototypeOf(o) { M_CheckOptionWide_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_CheckOptionWide_getPrototypeOf(o); }
+
+function M_CheckOptionWide_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+var M_CheckOptionWide = /*#__PURE__*/function (_PureComponent) {
+  M_CheckOptionWide_inherits(M_CheckOptionWide, _PureComponent);
+
+  var _super = M_CheckOptionWide_createSuper(M_CheckOptionWide);
+
+  function M_CheckOptionWide(props) {
+    var _this;
+
+    M_CheckOptionWide_classCallCheck(this, M_CheckOptionWide);
+
+    _this = _super.call(this, props);
+
+    M_CheckOptionWide_defineProperty(M_CheckOptionWide_assertThisInitialized(_this), "handleClick", function (checked) {
+      if (checked == false) {
+        _this.setState({
+          ticked: true
+        });
+      }
+
+      if (checked == true) {
+        _this.setState({
+          ticked: false
+        });
+      }
+    });
+
+    _this.state = {
+      correct: false,
+      incorrect: false,
+      ticked: false
+    };
+    return _this;
+  }
+
+  M_CheckOptionWide_createClass(M_CheckOptionWide, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var _this$props = this.props,
+          answered = _this$props.answered,
+          status = _this$props.status;
+
+      if (answered) {
+        if (status == 'correct') {
+          this.setState({
+            correct: true
+          });
+        }
+
+        if (status == 'incorrect') {
+          this.setState({
+            incorrect: true
+          });
+        }
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          body = _this$props2.body,
+          defenition = _this$props2.defenition,
+          status = _this$props2.status;
+      var _this$state = this.state,
+          correct = _this$state.correct,
+          incorrect = _this$state.incorrect,
+          ticked = _this$state.ticked;
+      var classes = classnames_default()({
+        M_CheckOptionWide: true,
+        correct: correct,
+        incorrect: incorrect,
+        ticked: ticked
+      });
+      return /*#__PURE__*/react.createElement("div", {
+        className: classes
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "inner"
+      }, /*#__PURE__*/react.createElement(A_CheckBox, {
+        correct: correct,
+        incorrect: incorrect,
+        handleClick: this.handleClick
+      }), /*#__PURE__*/react.createElement("p", null, body, /*#__PURE__*/react.createElement("p", {
+        className: "hidden"
+      }, defenition))));
+    }
+  }]);
+
+  return M_CheckOptionWide;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/organisms/O_CheckboxQuestion/O_CheckboxQuestion.jsx
+function O_CheckboxQuestion_typeof(obj) { "@babel/helpers - typeof"; return O_CheckboxQuestion_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, O_CheckboxQuestion_typeof(obj); }
+
+function O_CheckboxQuestion_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function O_CheckboxQuestion_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function O_CheckboxQuestion_createClass(Constructor, protoProps, staticProps) { if (protoProps) O_CheckboxQuestion_defineProperties(Constructor.prototype, protoProps); if (staticProps) O_CheckboxQuestion_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function O_CheckboxQuestion_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) O_CheckboxQuestion_setPrototypeOf(subClass, superClass); }
+
+function O_CheckboxQuestion_setPrototypeOf(o, p) { O_CheckboxQuestion_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return O_CheckboxQuestion_setPrototypeOf(o, p); }
+
+function O_CheckboxQuestion_createSuper(Derived) { var hasNativeReflectConstruct = O_CheckboxQuestion_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = O_CheckboxQuestion_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = O_CheckboxQuestion_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return O_CheckboxQuestion_possibleConstructorReturn(this, result); }; }
+
+function O_CheckboxQuestion_possibleConstructorReturn(self, call) { if (call && (O_CheckboxQuestion_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return O_CheckboxQuestion_assertThisInitialized(self); }
+
+function O_CheckboxQuestion_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function O_CheckboxQuestion_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function O_CheckboxQuestion_getPrototypeOf(o) { O_CheckboxQuestion_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return O_CheckboxQuestion_getPrototypeOf(o); }
+
+function O_CheckboxQuestion_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+var O_CheckboxQuestion = /*#__PURE__*/function (_PureComponent) {
+  O_CheckboxQuestion_inherits(O_CheckboxQuestion, _PureComponent);
+
+  var _super = O_CheckboxQuestion_createSuper(O_CheckboxQuestion);
+
+  function O_CheckboxQuestion(props) {
+    var _this;
+
+    O_CheckboxQuestion_classCallCheck(this, O_CheckboxQuestion);
+
+    _this = _super.call(this, props);
+
+    O_CheckboxQuestion_defineProperty(O_CheckboxQuestion_assertThisInitialized(_this), "handleClick", function () {
+      var answered = _this.state.answered;
+
+      _this.setState({
+        answered: true
+      });
+    });
+
+    _this.state = {
+      answered: false
+    };
+    return _this;
+  }
+
+  O_CheckboxQuestion_createClass(O_CheckboxQuestion, [{
+    key: "render",
+    value: function render() {
+      var answered = this.state.answered;
+      var _this$props = this.props,
+          answerOptions = _this$props.answerOptions,
+          name = _this$props.name;
+      var classes = classnames_default()({
+        O_CheckboxQuestion: true,
+        answered: answered
+      });
+      var options = answerOptions.map(function (option, i) {
+        return /*#__PURE__*/react.createElement(M_CheckOptionWide, {
+          body: option.body,
+          status: option.status,
+          defenition: option.defenition,
+          answered: answered,
+          key: i
+        });
+      });
+      return /*#__PURE__*/react.createElement("div", {
+        className: classes
+      }, /*#__PURE__*/react.createElement("h4", null, name), /*#__PURE__*/react.createElement("div", {
+        className: "pack"
+      }, options), /*#__PURE__*/react.createElement(A_Button/* default */.Z, {
+        text: "\u041E\u0442\u0432\u0435\u0442\u0438\u0442\u044C",
+        handleClick: this.handleClick
+      }));
+    }
+  }]);
+
+  return O_CheckboxQuestion;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/atoms/A_RadioButton/A_RadioButton.jsx
+function A_RadioButton_typeof(obj) { "@babel/helpers - typeof"; return A_RadioButton_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_RadioButton_typeof(obj); }
+
+function A_RadioButton_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function A_RadioButton_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function A_RadioButton_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_RadioButton_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_RadioButton_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function A_RadioButton_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_RadioButton_setPrototypeOf(subClass, superClass); }
+
+function A_RadioButton_setPrototypeOf(o, p) { A_RadioButton_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_RadioButton_setPrototypeOf(o, p); }
+
+function A_RadioButton_createSuper(Derived) { var hasNativeReflectConstruct = A_RadioButton_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_RadioButton_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_RadioButton_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_RadioButton_possibleConstructorReturn(this, result); }; }
+
+function A_RadioButton_possibleConstructorReturn(self, call) { if (call && (A_RadioButton_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_RadioButton_assertThisInitialized(self); }
+
+function A_RadioButton_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function A_RadioButton_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function A_RadioButton_getPrototypeOf(o) { A_RadioButton_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_RadioButton_getPrototypeOf(o); }
+
+function A_RadioButton_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+var A_RadioButton = /*#__PURE__*/function (_PureComponent) {
+  A_RadioButton_inherits(A_RadioButton, _PureComponent);
+
+  var _super = A_RadioButton_createSuper(A_RadioButton);
+
+  function A_RadioButton(props) {
+    var _this;
+
+    A_RadioButton_classCallCheck(this, A_RadioButton);
+
+    _this = _super.call(this, props);
+
+    A_RadioButton_defineProperty(A_RadioButton_assertThisInitialized(_this), "handleClick", function () {
+      var _this$props = _this.props,
+          handleClick = _this$props.handleClick,
+          answered = _this$props.answered;
+      var picked = _this.state.picked;
+
+      if (answered == false) {
+        _this.setState({
+          picked: true
+        });
+      }
+
+      handleClick(picked);
+    });
+
+    _this.state = {
+      correct: false,
+      incorrect: false,
+      picked: false
+    };
+    return _this;
+  }
+
+  A_RadioButton_createClass(A_RadioButton, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var _this$props2 = this.props,
+          status = _this$props2.status,
+          answered = _this$props2.answered;
+
+      if (answered) {
+        if (status == 'correct') {
+          this.setState({
+            correct: true
+          });
+        }
+
+        if (status == 'incorrect') {
+          this.setState({
+            incorrect: true
+          });
+        }
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$state = this.state,
+          picked = _this$state.picked,
+          correct = _this$state.correct,
+          incorrect = _this$state.incorrect;
+      var classes = classnames_default()({
+        A_RadioButton: true,
+        correct: correct,
+        incorrect: incorrect,
+        picked: picked
+      });
+      return /*#__PURE__*/react.createElement("div", {
+        className: classes,
+        onClick: this.handleClick
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "Q_Icon redCross"
+      }), /*#__PURE__*/react.createElement("div", {
+        className: "Q_Icon greenTick"
+      }));
+    }
+  }]);
+
+  return A_RadioButton;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/moleculas/M_RadioOptionWide/M_RadioOptionWide.jsx
+function M_RadioOptionWide_typeof(obj) { "@babel/helpers - typeof"; return M_RadioOptionWide_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_RadioOptionWide_typeof(obj); }
+
+function M_RadioOptionWide_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function M_RadioOptionWide_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function M_RadioOptionWide_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_RadioOptionWide_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_RadioOptionWide_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function M_RadioOptionWide_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_RadioOptionWide_setPrototypeOf(subClass, superClass); }
+
+function M_RadioOptionWide_setPrototypeOf(o, p) { M_RadioOptionWide_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_RadioOptionWide_setPrototypeOf(o, p); }
+
+function M_RadioOptionWide_createSuper(Derived) { var hasNativeReflectConstruct = M_RadioOptionWide_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_RadioOptionWide_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_RadioOptionWide_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_RadioOptionWide_possibleConstructorReturn(this, result); }; }
+
+function M_RadioOptionWide_possibleConstructorReturn(self, call) { if (call && (M_RadioOptionWide_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_RadioOptionWide_assertThisInitialized(self); }
+
+function M_RadioOptionWide_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function M_RadioOptionWide_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function M_RadioOptionWide_getPrototypeOf(o) { M_RadioOptionWide_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_RadioOptionWide_getPrototypeOf(o); }
+
+function M_RadioOptionWide_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+var M_RadioOptionWide = /*#__PURE__*/function (_PureComponent) {
+  M_RadioOptionWide_inherits(M_RadioOptionWide, _PureComponent);
+
+  var _super = M_RadioOptionWide_createSuper(M_RadioOptionWide);
+
+  function M_RadioOptionWide(props) {
+    var _this;
+
+    M_RadioOptionWide_classCallCheck(this, M_RadioOptionWide);
+
+    _this = _super.call(this, props);
+
+    M_RadioOptionWide_defineProperty(M_RadioOptionWide_assertThisInitialized(_this), "handleClick", function (picked) {
+      var answered = _this.props.answered;
+
+      if (answered == false) {
+        _this.setState({
+          ticked: true
+        });
+      }
+    });
+
+    _this.state = {
+      correct: false,
+      incorrect: false,
+      ticked: false
+    };
+    return _this;
+  }
+
+  M_RadioOptionWide_createClass(M_RadioOptionWide, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var _this$props = this.props,
+          answered = _this$props.answered,
+          status = _this$props.status;
+
+      if (answered) {
+        if (status == 'correct') {
+          this.setState({
+            correct: true
+          });
+        }
+
+        if (status == 'incorrect') {
+          this.setState({
+            incorrect: true
+          });
+        }
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          body = _this$props2.body,
+          defenition = _this$props2.defenition,
+          status = _this$props2.status,
+          handleClick = _this$props2.handleClick,
+          answered = _this$props2.answered;
+      var _this$state = this.state,
+          correct = _this$state.correct,
+          incorrect = _this$state.incorrect,
+          ticked = _this$state.ticked;
+      var classes = classnames_default()({
+        M_RadioOptionWide: true,
+        correct: correct,
+        incorrect: incorrect,
+        ticked: ticked
+      });
+      return /*#__PURE__*/react.createElement("div", {
+        className: classes,
+        onClick: this.handleClick
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "inner"
+      }, /*#__PURE__*/react.createElement(A_RadioButton, {
+        correct: correct,
+        incorrect: incorrect,
+        status: status,
+        handleClick: handleClick,
+        answered: answered
+      }), /*#__PURE__*/react.createElement("p", null, body, /*#__PURE__*/react.createElement("p", {
+        className: "hidden"
+      }, defenition))));
+    }
+  }]);
+
+  return M_RadioOptionWide;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/organisms/O_RadioQuestion/O_RadioQuestion.jsx
+function O_RadioQuestion_typeof(obj) { "@babel/helpers - typeof"; return O_RadioQuestion_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, O_RadioQuestion_typeof(obj); }
+
+function O_RadioQuestion_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function O_RadioQuestion_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function O_RadioQuestion_createClass(Constructor, protoProps, staticProps) { if (protoProps) O_RadioQuestion_defineProperties(Constructor.prototype, protoProps); if (staticProps) O_RadioQuestion_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function O_RadioQuestion_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) O_RadioQuestion_setPrototypeOf(subClass, superClass); }
+
+function O_RadioQuestion_setPrototypeOf(o, p) { O_RadioQuestion_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return O_RadioQuestion_setPrototypeOf(o, p); }
+
+function O_RadioQuestion_createSuper(Derived) { var hasNativeReflectConstruct = O_RadioQuestion_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = O_RadioQuestion_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = O_RadioQuestion_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return O_RadioQuestion_possibleConstructorReturn(this, result); }; }
+
+function O_RadioQuestion_possibleConstructorReturn(self, call) { if (call && (O_RadioQuestion_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return O_RadioQuestion_assertThisInitialized(self); }
+
+function O_RadioQuestion_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function O_RadioQuestion_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function O_RadioQuestion_getPrototypeOf(o) { O_RadioQuestion_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return O_RadioQuestion_getPrototypeOf(o); }
+
+function O_RadioQuestion_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+var O_RadioQuestion = /*#__PURE__*/function (_PureComponent) {
+  O_RadioQuestion_inherits(O_RadioQuestion, _PureComponent);
+
+  var _super = O_RadioQuestion_createSuper(O_RadioQuestion);
+
+  function O_RadioQuestion(props) {
+    var _this;
+
+    O_RadioQuestion_classCallCheck(this, O_RadioQuestion);
+
+    _this = _super.call(this, props);
+
+    O_RadioQuestion_defineProperty(O_RadioQuestion_assertThisInitialized(_this), "handleClick", function (picked) {
+      var answered = _this.state.answered;
+
+      if (answered == false) {
+        _this.setState({
+          answered: true
+        });
+      }
+    });
+
+    _this.state = {
+      answered: false
+    };
+    return _this;
+  }
+
+  O_RadioQuestion_createClass(O_RadioQuestion, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var answered = this.state.answered;
+      var _this$props = this.props,
+          answerOptions = _this$props.answerOptions,
+          name = _this$props.name;
+      var classes = classnames_default()({
+        O_RadioQuestion: true,
+        answered: answered
+      });
+      var options = answerOptions.map(function (option, i) {
+        return /*#__PURE__*/react.createElement(M_RadioOptionWide, {
+          body: option.body,
+          status: option.status,
+          defenition: option.defenition,
+          key: i,
+          answered: answered,
+          handleClick: _this2.handleClick
+        });
+      });
+      return /*#__PURE__*/react.createElement("div", {
+        className: classes
+      }, /*#__PURE__*/react.createElement("h4", null, name), /*#__PURE__*/react.createElement("div", {
+        className: "pack"
+      }, options));
+    }
+  }]);
+
+  return O_RadioQuestion;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/superorganisms/S_Quiz/S_Quiz.jsx
+function S_Quiz_typeof(obj) { "@babel/helpers - typeof"; return S_Quiz_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, S_Quiz_typeof(obj); }
+
+function S_Quiz_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function S_Quiz_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function S_Quiz_createClass(Constructor, protoProps, staticProps) { if (protoProps) S_Quiz_defineProperties(Constructor.prototype, protoProps); if (staticProps) S_Quiz_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function S_Quiz_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) S_Quiz_setPrototypeOf(subClass, superClass); }
+
+function S_Quiz_setPrototypeOf(o, p) { S_Quiz_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return S_Quiz_setPrototypeOf(o, p); }
+
+function S_Quiz_createSuper(Derived) { var hasNativeReflectConstruct = S_Quiz_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = S_Quiz_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = S_Quiz_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return S_Quiz_possibleConstructorReturn(this, result); }; }
+
+function S_Quiz_possibleConstructorReturn(self, call) { if (call && (S_Quiz_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return S_Quiz_assertThisInitialized(self); }
+
+function S_Quiz_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function S_Quiz_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function S_Quiz_getPrototypeOf(o) { S_Quiz_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return S_Quiz_getPrototypeOf(o); }
+
+
+
+
+
+
+
+var S_Quiz = /*#__PURE__*/function (_PureComponent) {
+  S_Quiz_inherits(S_Quiz, _PureComponent);
+
+  var _super = S_Quiz_createSuper(S_Quiz);
+
+  function S_Quiz(props) {
+    var _this;
+
+    S_Quiz_classCallCheck(this, S_Quiz);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      questionsList: []
+    };
+    return _this;
+  }
+
+  S_Quiz_createClass(S_Quiz, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var questions = this.props.questions;
+      this.setState({
+        questionsList: questions
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var questionsList = this.state.questionsList;
+      var questions = questionsList.map(function (question, i) {
+        if (question.type == 'Single') {
+          return /*#__PURE__*/react.createElement(O_RadioQuestion, {
+            name: question.name,
+            answerOptions: question.answerOptions,
+            key: i
+          });
+        }
+
+        if (question.type == 'Multiple') {
+          return /*#__PURE__*/react.createElement(O_CheckboxQuestion, {
+            name: question.name,
+            answerOptions: question.answerOptions,
+            key: i
+          });
+        }
+      });
+      return /*#__PURE__*/react.createElement("div", {
+        className: "S_Quiz"
+      }, /*#__PURE__*/react.createElement("h3", null, "\u0422\u0435\u0441\u0442 \u043D\u0430 \u0437\u043D\u0430\u043D\u0438\u0435 \u0442\u0438\u043F\u0433\u043E\u0440\u0430\u0444\u0438\u043A\u0438"), /*#__PURE__*/react.createElement("div", {
+        className: "pack"
+      }, questions));
+    }
+  }]);
+
+  return S_Quiz;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/atoms/A_AlternativeFrame/A_AlternativeFrame.jsx
+function A_AlternativeFrame_typeof(obj) { "@babel/helpers - typeof"; return A_AlternativeFrame_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_AlternativeFrame_typeof(obj); }
+
+function A_AlternativeFrame_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function A_AlternativeFrame_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function A_AlternativeFrame_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_AlternativeFrame_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_AlternativeFrame_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function A_AlternativeFrame_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_AlternativeFrame_setPrototypeOf(subClass, superClass); }
+
+function A_AlternativeFrame_setPrototypeOf(o, p) { A_AlternativeFrame_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_AlternativeFrame_setPrototypeOf(o, p); }
+
+function A_AlternativeFrame_createSuper(Derived) { var hasNativeReflectConstruct = A_AlternativeFrame_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_AlternativeFrame_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_AlternativeFrame_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_AlternativeFrame_possibleConstructorReturn(this, result); }; }
+
+function A_AlternativeFrame_possibleConstructorReturn(self, call) { if (call && (A_AlternativeFrame_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_AlternativeFrame_assertThisInitialized(self); }
+
+function A_AlternativeFrame_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function A_AlternativeFrame_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function A_AlternativeFrame_getPrototypeOf(o) { A_AlternativeFrame_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_AlternativeFrame_getPrototypeOf(o); }
+
+
+
+
+
+var A_AlternativeFrame = /*#__PURE__*/function (_PureComponent) {
+  A_AlternativeFrame_inherits(A_AlternativeFrame, _PureComponent);
+
+  var _super = A_AlternativeFrame_createSuper(A_AlternativeFrame);
+
+  function A_AlternativeFrame(props) {
+    A_AlternativeFrame_classCallCheck(this, A_AlternativeFrame);
+
+    return _super.call(this, props);
+  }
+
+  A_AlternativeFrame_createClass(A_AlternativeFrame, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          size = _this$props.size,
+          bricks = _this$props.bricks,
+          cellsShow = _this$props.cellsShow;
+      var style = {
+        height: "".concat(size, "px")
+      };
+      return /*#__PURE__*/react.createElement("div", {
+        className: "A_AlternativeFrame",
+        style: style
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "upper"
+      }, " ", cellsShow), /*#__PURE__*/react.createElement("div", {
+        className: "lower"
+      }, " ", bricks));
+    }
+  }]);
+
+  return A_AlternativeFrame;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/moleculas/M_AlternativeExerciseBox/M_AlternativeExerciseBox.jsx
+function M_AlternativeExerciseBox_typeof(obj) { "@babel/helpers - typeof"; return M_AlternativeExerciseBox_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_AlternativeExerciseBox_typeof(obj); }
+
+function M_AlternativeExerciseBox_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function M_AlternativeExerciseBox_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function M_AlternativeExerciseBox_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_AlternativeExerciseBox_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_AlternativeExerciseBox_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function M_AlternativeExerciseBox_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_AlternativeExerciseBox_setPrototypeOf(subClass, superClass); }
+
+function M_AlternativeExerciseBox_setPrototypeOf(o, p) { M_AlternativeExerciseBox_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_AlternativeExerciseBox_setPrototypeOf(o, p); }
+
+function M_AlternativeExerciseBox_createSuper(Derived) { var hasNativeReflectConstruct = M_AlternativeExerciseBox_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_AlternativeExerciseBox_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_AlternativeExerciseBox_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_AlternativeExerciseBox_possibleConstructorReturn(this, result); }; }
+
+function M_AlternativeExerciseBox_possibleConstructorReturn(self, call) { if (call && (M_AlternativeExerciseBox_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_AlternativeExerciseBox_assertThisInitialized(self); }
+
+function M_AlternativeExerciseBox_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function M_AlternativeExerciseBox_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function M_AlternativeExerciseBox_getPrototypeOf(o) { M_AlternativeExerciseBox_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_AlternativeExerciseBox_getPrototypeOf(o); }
+
+
+
+
+
+
+
+var M_AlternativeExerciseBox = /*#__PURE__*/function (_PureComponent) {
+  M_AlternativeExerciseBox_inherits(M_AlternativeExerciseBox, _PureComponent);
+
+  var _super = M_AlternativeExerciseBox_createSuper(M_AlternativeExerciseBox);
+
+  function M_AlternativeExerciseBox(props) {
+    M_AlternativeExerciseBox_classCallCheck(this, M_AlternativeExerciseBox);
+
+    return _super.call(this, props);
+  }
+
+  M_AlternativeExerciseBox_createClass(M_AlternativeExerciseBox, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          header = _this$props.header,
+          text = _this$props.text,
+          size = _this$props.size,
+          bricks = _this$props.bricks,
+          cellsShow = _this$props.cellsShow;
+      return /*#__PURE__*/react.createElement("div", {
+        className: "M_AlternativeExerciseBox"
+      }, /*#__PURE__*/react.createElement(A_Text/* default */.Z, {
+        header: header,
+        text: text
+      }), /*#__PURE__*/react.createElement(A_AlternativeFrame, {
+        size: size,
+        bricks: bricks,
+        cellsShow: cellsShow
+      }));
+    }
+  }]);
+
+  return M_AlternativeExerciseBox;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/atoms/A_ColorBrick/A_ColorBrick.jsx
+function A_ColorBrick_typeof(obj) { "@babel/helpers - typeof"; return A_ColorBrick_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_ColorBrick_typeof(obj); }
+
+function A_ColorBrick_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function A_ColorBrick_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function A_ColorBrick_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_ColorBrick_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_ColorBrick_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function A_ColorBrick_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_ColorBrick_setPrototypeOf(subClass, superClass); }
+
+function A_ColorBrick_setPrototypeOf(o, p) { A_ColorBrick_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_ColorBrick_setPrototypeOf(o, p); }
+
+function A_ColorBrick_createSuper(Derived) { var hasNativeReflectConstruct = A_ColorBrick_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_ColorBrick_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_ColorBrick_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_ColorBrick_possibleConstructorReturn(this, result); }; }
+
+function A_ColorBrick_possibleConstructorReturn(self, call) { if (call && (A_ColorBrick_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_ColorBrick_assertThisInitialized(self); }
+
+function A_ColorBrick_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function A_ColorBrick_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function A_ColorBrick_getPrototypeOf(o) { A_ColorBrick_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_ColorBrick_getPrototypeOf(o); }
+
+function A_ColorBrick_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+var A_ColorBrick = /*#__PURE__*/function (_PureComponent) {
+  A_ColorBrick_inherits(A_ColorBrick, _PureComponent);
+
+  var _super = A_ColorBrick_createSuper(A_ColorBrick);
+
+  function A_ColorBrick(props) {
+    var _this;
+
+    A_ColorBrick_classCallCheck(this, A_ColorBrick);
+
+    _this = _super.call(this, props);
+
+    A_ColorBrick_defineProperty(A_ColorBrick_assertThisInitialized(_this), "receiveCoord", function () {
+      var _this$props = _this.props,
+          receiveCoord = _this$props.receiveCoord,
+          number = _this$props.number;
+      var x = _this.state.x;
+
+      _this.position.current.getBoundingClientRect();
+
+      _this.setState({
+        x: _this.position.current.getBoundingClientRect().x,
+        y: _this.position.current.getBoundingClientRect().y
+      });
+
+      receiveCoord(x, number);
+    });
+
+    _this.position = /*#__PURE__*/react.createRef();
+    _this.state = {
+      x: 0,
+      y: 0
+    };
+    return _this;
+  }
+
+  A_ColorBrick_createClass(A_ColorBrick, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.addEventListener('load', this.receiveCoord); // window.addEventListener('scroll', this.receiveCoord)
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          color = _this$props2.color,
+          result = _this$props2.result;
+      var styles = {
+        backgroundColor: "".concat(color)
+      };
+      return /*#__PURE__*/react.createElement("div", {
+        className: "A_ColorBrick",
+        style: styles,
+        ref: this.position
+      }, /*#__PURE__*/react.createElement("h3", null));
+    }
+  }]);
+
+  return A_ColorBrick;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/atoms/A_Cell/A_Cell.jsx
+function A_Cell_typeof(obj) { "@babel/helpers - typeof"; return A_Cell_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Cell_typeof(obj); }
+
+function A_Cell_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function A_Cell_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function A_Cell_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Cell_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Cell_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function A_Cell_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Cell_setPrototypeOf(subClass, superClass); }
+
+function A_Cell_setPrototypeOf(o, p) { A_Cell_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Cell_setPrototypeOf(o, p); }
+
+function A_Cell_createSuper(Derived) { var hasNativeReflectConstruct = A_Cell_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Cell_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Cell_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Cell_possibleConstructorReturn(this, result); }; }
+
+function A_Cell_possibleConstructorReturn(self, call) { if (call && (A_Cell_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Cell_assertThisInitialized(self); }
+
+function A_Cell_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function A_Cell_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function A_Cell_getPrototypeOf(o) { A_Cell_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Cell_getPrototypeOf(o); }
+
+function A_Cell_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+var A_Cell = /*#__PURE__*/function (_PureComponent) {
+  A_Cell_inherits(A_Cell, _PureComponent);
+
+  var _super = A_Cell_createSuper(A_Cell);
+
+  function A_Cell(props) {
+    var _this;
+
+    A_Cell_classCallCheck(this, A_Cell);
+
+    _this = _super.call(this, props);
+
+    A_Cell_defineProperty(A_Cell_assertThisInitialized(_this), "handleMouseDown", function (e) {
+      var handleMouseDown = _this.props.handleMouseDown;
+      e.preventDefault();
+      handleMouseDown(e);
+    });
+
+    A_Cell_defineProperty(A_Cell_assertThisInitialized(_this), "handleMouseMove", function (e) {
+      var handleMouseMove = _this.props.handleMouseMove;
+      e.preventDefault();
+      handleMouseMove(e);
+    });
+
+    A_Cell_defineProperty(A_Cell_assertThisInitialized(_this), "handleMouseUp", function (e) {
+      var handleMouseUp = _this.props.handleMouseUp;
+      e.preventDefault();
+      handleMouseUp(e);
+    });
+
+    return _this;
+  }
+
+  A_Cell_createClass(A_Cell, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.addEventListener('mousedown', this.props.handleMouseDown);
+      window.addEventListener('mouseup', this.props.handleMouseUp);
+      window.addEventListener('mousemove', this.props.handleMouseMove);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          text = _this$props.text,
+          xPosition = _this$props.xPosition,
+          yPosition = _this$props.yPosition;
+      var styles = {
+        transform: "translate(".concat(xPosition, "px, ").concat(yPosition, "px)")
+      };
+      return /*#__PURE__*/react.createElement("div", {
+        className: "A_Cell",
+        style: styles
+      }, text);
+    }
+  }]);
+
+  return A_Cell;
+}(react.PureComponent);
+
+
+;// CONCATENATED MODULE: ./src/components/modules/MOD_ColorPick.jsx
+function MOD_ColorPick_typeof(obj) { "@babel/helpers - typeof"; return MOD_ColorPick_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, MOD_ColorPick_typeof(obj); }
+
+function MOD_ColorPick_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function MOD_ColorPick_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? MOD_ColorPick_ownKeys(Object(source), !0).forEach(function (key) { MOD_ColorPick_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : MOD_ColorPick_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function MOD_ColorPick_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function MOD_ColorPick_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function MOD_ColorPick_createClass(Constructor, protoProps, staticProps) { if (protoProps) MOD_ColorPick_defineProperties(Constructor.prototype, protoProps); if (staticProps) MOD_ColorPick_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function MOD_ColorPick_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) MOD_ColorPick_setPrototypeOf(subClass, superClass); }
+
+function MOD_ColorPick_setPrototypeOf(o, p) { MOD_ColorPick_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return MOD_ColorPick_setPrototypeOf(o, p); }
+
+function MOD_ColorPick_createSuper(Derived) { var hasNativeReflectConstruct = MOD_ColorPick_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = MOD_ColorPick_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = MOD_ColorPick_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return MOD_ColorPick_possibleConstructorReturn(this, result); }; }
+
+function MOD_ColorPick_possibleConstructorReturn(self, call) { if (call && (MOD_ColorPick_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return MOD_ColorPick_assertThisInitialized(self); }
+
+function MOD_ColorPick_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function MOD_ColorPick_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function MOD_ColorPick_getPrototypeOf(o) { MOD_ColorPick_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return MOD_ColorPick_getPrototypeOf(o); }
+
+function MOD_ColorPick_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+var MOD_ColorPick = /*#__PURE__*/function (_PureComponent) {
+  MOD_ColorPick_inherits(MOD_ColorPick, _PureComponent);
+
+  var _super = MOD_ColorPick_createSuper(MOD_ColorPick);
+
+  function MOD_ColorPick(props) {
+    var _this;
+
+    MOD_ColorPick_classCallCheck(this, MOD_ColorPick);
+
+    _this = _super.call(this, props);
+
+    MOD_ColorPick_defineProperty(MOD_ColorPick_assertThisInitialized(_this), "receiveCoord", function (x, number) {
+      var colors = _this.state.colors;
+      console.log(x, number);
+      var updatedColors = colors.map(function (color) {
+        if (number == color.number) {
+          return MOD_ColorPick_objectSpread(MOD_ColorPick_objectSpread({}, color), {}, {
+            x: x
+          });
+        } else {
+          return color;
+        }
+      });
+
+      _this.setState({
+        colors: updatedColors
+      });
+    });
+
+    _this.state = {
+      colors: [],
+      words: []
+    };
+    return _this;
+  } // handleMouseDown = (e) => {}
+  // handleMouseMove = (e) => {}
+  // handleMouseUp = (e) => {}
+
+
+  MOD_ColorPick_createClass(MOD_ColorPick, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          colorBricks = _this$props.colorBricks,
+          words = _this$props.words;
+      this.setState({
+        colors: colorBricks,
+        words: words
+      });
+      window.addEventListener('load', this.receiveCoord);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$props2 = this.props,
+          info = _this$props2.info,
+          words = _this$props2.words;
+      var _this$state = this.state,
+          size = _this$state.size,
+          colors = _this$state.colors,
+          display = _this$state.display,
+          flexDirection = _this$state.flexDirection,
+          flexWrap = _this$state.flexWrap;
+      var bricks = colors.map(function (brick, i) {
+        return /*#__PURE__*/react.createElement(A_ColorBrick, {
+          receiveCoord: _this2.receiveCoord,
+          color: brick.digital,
+          key: i,
+          number: brick.number
+        });
+      });
+      var cellsShow = words.map(function (cell, i) {
+        return /*#__PURE__*/react.createElement(A_Cell, {
+          text: cell.text,
+          key: i // handleMouseDown={handleMouseDown}
+          // handleMouseMove={handleMouseMove}
+          // handleMouseUp={handleMouseUp}
+
+        });
+      });
+      return /*#__PURE__*/react.createElement(M_AlternativeExerciseBox, {
+        header: info[4].header,
+        text: info[4].text,
+        bricks: bricks,
+        size: size,
+        cellsShow: cellsShow
+      });
+    }
+  }]);
+
+  return MOD_ColorPick;
+}(react.PureComponent);
+
+
+// EXTERNAL MODULE: ./src/components/modules/MOD_GuessTheFont.jsx
+var MOD_GuessTheFont = __webpack_require__(683);
+// EXTERNAL MODULE: ./src/components/organisms/O_FontGame/O_FontGame.jsx + 4 modules
+var O_FontGame = __webpack_require__(483);
+// EXTERNAL MODULE: ./src/components/organisms/O_SideBar/O_SideBar.jsx
+var O_SideBar = __webpack_require__(5);
+;// CONCATENATED MODULE: ./src/composition.jsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+var info = [{
+  header: "\u0423\u043F\u0440\u0430\u0436\u043D\u0435\u043D\u0438\u0435 \u043D\u0430\xA0\u043F\u043E\u0438\u0441\u043A \u043F\u0440\u043E\u043C\u0435\u0436\u0443\u0442\u043A\u0430",
+  text: "  \u041F\u0435\u0440\u0435\u0434 \u0432\u0430\u043C\u0438 5\xA0\u043A\u0440\u0443\u0433\u043E\u0432, 4\xA0\u0438\u0437\xA0\u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F\n    \u043D\u0430\xA0\u043E\u0434\u0438\u043D\u0430\u043A\u043E\u0432\u043E\u043C \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438. \u0421\xA0\u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043F\u043E\u043B\u0437\u0443\u043D\u043A\u0430 \u0440\u0430\u0441\u043F\u043E\u043B\u043E\u0436\u0438\u0442\u0435 \u043F\u044F\u0442\u044B\u0439\n    \u043A\u0440\u0443\u0433 \u043D\u0430\xA0\u0442\u0430\u043A\u043E\u0435 \u0436\u0435\xA0\u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0435."
+}, {
+  header: "\u0423\u043F\u0440\u0430\u0436\u043D\u0435\u043D\u0438\u0435 \u043D\u0430\xA0\u043F\u043E\u044D\u0442\u0430\u043F\u043D\u043E\u0435 \u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u0435",
+  text: "  \u041F\u0435\u0440\u0435\u0434 \u0432\u0430\u043C\u0438 \u043F\u0443\u0441\u0442\u043E\u0439 \u0445\u043E\u043B\u0441\u0442. \u0417\u0430\u0436\u043C\u0438\u0442\u0435 \u043B\u0435\u0432\u0443\u044E \u043A\u043D\u043E\u043F\u043A\u0443 \u043C\u044B\u0448\u0438\xA0\u0438, \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044F\xA0\u0435\u0451, \u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u0443\u0440\u0441\u043E\u0440 \u0432\u043D\u0438\u0437. \u041D\u0430\xA0\u0445\u043E\u043B\u0441\u0442\u0435 \u043F\u043E\u044F\u0432\u0438\u0442\u0441\u044F \u043A\u0432\u0430\u0434\u0440\u0430\u0442, \u0430\xA0\u043A\u0430\u043A \u0442\u043E\u043B\u044C\u043A\u043E \u0432\u044B\xA0\u043E\u0442\u043F\u0443\u0441\u0442\u0438\u0442\u0435 \u043A\u043D\u043E\u043F\u043A\u0443\xA0\u2014 \u043A\u0432\u0430\u0434\u0440\u0430\u0442 \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u043D\u0435\u0442 \u0440\u0430\u0441\u0442\u0438. \u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430\xA0\u2014 \u0443\u043C\u0435\u0441\u0442\u0438\u0442\u044C \u043D\u0430\xA0\u0445\u043E\u043B\u0441\u0442\u0435 \u043A\u0430\u043A \u043C\u043E\u0436\u043D\u043E \u0431\u043E\u043B\u044C\u0448\u0435 \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u043E\u0432, \u041D\u041E: \u0432\u044B\xA0\u043D\u0435\xA0\u043C\u043E\u0436\u0435\u0442\u0435 \u0432\u044B\u0445\u043E\u0434\u0438\u0442\u044C \u0437\u0430\xA0\u043F\u0440\u0435\u0434\u0435\u043B\u044B \u0445\u043E\u043B\u0441\u0442\u0430, \u043A\u0430\u0436\u0434\u044B\u0439 \u043D\u043E\u0432\u044B\u0439 \u043A\u0432\u0430\u0434\u0440\u0430\u0442 \u0434\u043E\u043B\u0436\u0435\u043D \u0431\u044B\u0442\u044C \u043C\u0435\u043D\u044C\u0448\u0435 \u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u0433\u043E, \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u044B \u043D\u0435\xA0\u0434\u043E\u043B\u0436\u043D\u044B \u0437\u0430\u0434\u0435\u0432\u0430\u0442\u044C \u0434\u0440\u0443\u0433-\u0434\u0440\u0443\u0433\u0430. \u0427\u0435\u043C \u0431\u043E\u043B\u044C\u0448\u0435 \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u043E\u0432 \u0432\u044B\xA0\u0443\u043C\u0435\u0441\u0442\u0438\u0442\u0435 \u043D\u0430\xA0\u0445\u043E\u043B\u0441\u0442\u0435\xA0\u2014 \u0442\u0435\u043C \u043B\u0443\u0447\u0448\u0435 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442!"
+}, {
+  header: "\u0421\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u043E\u0432",
+  text: "\u041A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u044B \u0431\u044B\u0432\u0430\u044E\u0442 \u0440\u0430\u0437\u043D\u044B\u0435 \u0438\xA0\u0438\u0445\xA0\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u043E \u043C\u043D\u043E\u0433\u043E (\u043C\u044B\xA0\u0433\u043E\u0432\u043E\u0440\u0438\u043B\u0438 \u043E\u0431\xA0\u044D\u0442\u043E\u043C \u0447\u0443\u0442\u044C \u0440\u0430\u043D\u0435\u0435). \u041F\u0435\u0440\u0435\u0434 \u0432\u0430\u043C\u0438 \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0439 \u043C\u0438\u043D\u0438-\u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440, \u0432\xA0\u043A\u043E\u0442\u043E\u0440\u043E\u043C \u0432\u044B\xA0\u043C\u043E\u0436\u0435\u0442\u0435 \u0432\u044B\u0431\u0438\u0440\u0430\u0442\u044C \u0442\u0438\u043F\u044B \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u043E\u0432 \u0438\xA0\u043F\u0440\u0438\u043C\u0435\u043D\u044F\u0442\u044C \u0438\u0445\xA0\u043A\xA0\u043A\u0440\u0443\u0433\u0430\u043C \u0432\u043D\u0443\u0442\u0440\u0438 \u043A\u0430\u0434\u0440\u0430 (\u043C\u043E\u0436\u043D\u043E \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u0441\u0440\u0430\u0437\u0443 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E). \u0412\xA0\u044D\u0442\u043E\u043C \u0437\u0430\u0434\u0430\u043D\u0438\u0438 \u043D\u0435\u0442 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E\u0433\u043E \u043E\u0442\u0432\u0435\u0442\u0430. \u0414\u0435\u043B\u0430\u0439\u0442\u0435 \u0432\u0441\u0451, \u0447\u0442\u043E \u0437\u0430\u0445\u043E\u0442\u0438\u0442\u0435!"
+}, {
+  header: "\u0423\u043F\u0440\u0430\u0436\u043D\u0435\u043D\u0438\u0435 \u043D\u0430\xA0\u0431\u0430\u043B\u0430\u043D\u0441\u0438\u0440\u043E\u0432\u043A\u0443 \u0440\u0430\u0437\u043C\u0435\u0440\u0430 ",
+  text: "\u041F\u0435\u0440\u0435\u0434 \u0432\u0430\u043C\u0438 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0442\u0440\u0438 \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u0430. \u0420\u0430\u0437\u043C\u0435\u0440 \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u0430 \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435 \u043C\u043E\u0436\u043D\u043E \u0440\u0435\u0433\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u043B\u0437\u0443\u043D\u043A\u043E\u043C \u043F\u043E\u0434 \u043D\u0438\u043C. \u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430: \u043E\u0442\u0440\u0435\u0433\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0435\u0433\u043E \u0442\u0430\u043A, \u0447\u0442\u043E\u0431\u044B \u0435\u0433\u043E \u0440\u0430\u0437\u043C\u0435\u0440 \u0431\u044B\u043B \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E \u0443\u0441\u0440\u0435\u0434\u043D\u0451\u043D\u044B\u043C "
+}, {
+  header: "\u0426\u0432\u0435\u0442\u043E\u0432\u044B\u0435 \u0430\u0441\u0441\u043E\u0446\u0438\u0430\u0446\u0438\u0438 ",
+  text: "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0442 \u043E\u0431\u0449\u0435\u043F\u0440\u0438\u043D\u044F\u0442\u044B\u0435 \u0430\u0441\u0441\u043E\u0446\u0438\u0430\u0446\u0438\u0438 \u0446\u0432\u0435\u0442\u043E\u0432 \u0441 \u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0430\u043C\u0438. \u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0438\u0445 \u0443\u0433\u0430\u0434\u0430\u0442\u044C \u2014 \u043F\u0435\u0440\u0435\u0442\u0430\u0449\u0438\u0442\u0435 \u0441\u043B\u043E\u0432\u0430 \u043A \u0446\u0432\u0435\u0442\u0430\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\u0435,\n\u043F\u043E-\u0432\u0430\u0448\u0435\u043C\u0443, \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0442 \u0441\u043E\u0431\u0449\u0435\u043F\u0440\u0438\u043D\u044F\u0442\u044B\u043C\u0438 \u0430\u0441\u0441\u043E\u0446\u0438\u0430\u0446\u0438\u044F\u043C\u0438 "
+}, {
+  header: "\u0423\u043F\u0440\u0430\u0436\u043D\u0435\u043D\u0438\u0435 \u043D\u0430\xA0\u0443\u0437\u043D\u0430\u0432\u0430\u043D\u0438\u0435 \u0448\u0440\u0438\u0444\u0442\u0430",
+  text: "\u041F\u0435\u0440\u0435\u0434 \u0432\u0430\u043C\u0438 \u2014 \u043E\u0431\u044A\u0435\u043A\u0442, \u0432\xA0\u0446\u0435\u043D\u0442\u0440\u0435 \u043A\u043E\u0442\u043E\u0440\u043E\u0433\u043E, \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u043E\u0434\u043D\u043E\u0433\u043E \u0438\u0437\xA0\u043F\u043E\u043F\u0443\u043B\u044F\u0440\u043D\u044B\u0445 \u0448\u0440\u0438\u0444\u0442\u043E\u0432. \u0412\xA0\u043A\u0430\u0436\u0434\u043E\u043C \u043E\u0442\u0432\u0435\u0442\u0432\u043B\u0435\u043D\u0438\u0438 \u2014 \u043D\u0430\u0431\u043E\u0440 \u0431\u0443\u043A\u0432, \u043D\u0430\u0431\u0440\u0430\u043D\u043D\u044B\u0445 \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u044B\u043C \u0448\u0440\u0438\u0444\u0442\u043E\u043C. \u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430 \u2014 \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043E\u0442\u0432\u0435\u0442\u0432\u043B\u0435\u043D\u0438\u0435, \u0432\xA0\u043A\u043E\u0442\u043E\u0440\u043E\u043C \u0431\u0443\u043A\u0432\u044B \u043D\u0430\u0431\u0440\u0430\u043D\u044B \u0442\u0435\u043C\xA0\u0436\u0435 \u0448\u0440\u0438\u0444\u0442\u043E\u043C, \u0447\u0442\u043E \u0438\xA0\u043F\u043E \u0446\u0435\u043D\u0442\u0440\u0443 "
+}];
+var barItems = [{
+  main: 'Построение композиции',
+  url: 'composition.html',
+  active: 'true',
+  subItems: [{
+    name: 'Что такое композиция?',
+    url: 'composition.html#defenition'
+  }, {
+    name: 'Якорные точки',
+    url: 'composition.html#ancor-text'
+  }, {
+    name: 'Другие способы',
+    url: 'composition.html#others'
+  }]
+}, {
+  main: 'Балансировка композиции',
+  url: 'balance.html',
+  active: 'false',
+  subItems: [{
+    name: 'Балансировка по весу',
+    url: 'balance.html#weight'
+  }, {
+    name: 'Ритм',
+    url: 'balance.html#ritm'
+  }, {
+    name: 'Правило близости',
+    url: 'balance.html#close-rule'
+  }]
+}, {
+  main: 'Работа с контрастами',
+  url: 'contrast.html',
+  active: 'false',
+  subItems: [{
+    name: 'Зачем нужны контрасты?',
+    url: 'contrast.html#need-contrast'
+  }, {
+    name: 'Виды контрастов',
+    url: 'contrast.html#kontrast-types'
+  }]
+}, {
+  main: 'Управление вниманием',
+  url: 'attention.html',
+  active: 'false',
+  subItems: [{
+    name: 'Паттерны чтения',
+    url: 'attention.html#patterns'
+  }, {
+    name: 'Z-паттерн',
+    url: 'attention.html#z'
+  }, {
+    name: 'F-паттерн',
+    url: 'attention.html#f'
+  }, {
+    name: 'Диаграмма Гутенберга',
+    url: 'attention.html#gutenberg'
+  }]
+}, {
+  main: 'Итог',
+  url: 'base-summary.html'
+}];
+var colorBricks = [{
+  digital: '#CD3838',
+  oral: 'red',
+  number: '1',
+  x: 0,
+  y: 0
+}, {
+  digital: '#CD7738',
+  oral: 'orange',
+  number: '2',
+  x: 0,
+  y: 0
+}, {
+  digital: '#EAED44',
+  oral: 'yellow',
+  number: '3',
+  x: 0,
+  y: 0
+}, {
+  digital: '#7ACD38',
+  oral: 'green',
+  number: '4',
+  x: 0,
+  y: 0
+}, {
+  digital: '#449CED',
+  oral: 'blue',
+  number: '5',
+  x: 0,
+  y: 0
+}, {
+  digital: '#9844ED',
+  oral: 'purple',
+  number: '6',
+  x: 0,
+  y: 0
+}];
+var words = [{
+  text: 'Дружелюбие'
+}, {
+  text: 'Опасность'
+}, {
+  text: 'Надёжность'
+}, {
+  text: 'Оптимизм'
+}, {
+  text: 'Творчество'
+}, {
+  text: 'Спокойствие'
+}];
+var colors = (/* unused pure expression or super */ null && (['#F6DA4B', '#4E4BF6', '#F64B4B']));
+var composition_forms = (/* unused pure expression or super */ null && (['unset', 'polygon(50% 31.7%, 50% 31.7%, 75% 75%, 25% 75%)', 'circle(50% at 50% 50%)']));
+
+function sample(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+
+var myID = document.getElementById('O_SideBarSpec');
+
+var myScrollFunc = function myScrollFunc() {
+  var y = window.scrollY;
+
+  if (y >= 450) {
+    myID.className = 'show';
+  } else {
+    myID.className = 'hide';
+  }
+};
+
+window.addEventListener('scroll', myScrollFunc);
+document.addEventListener('DOMContentLoaded', function () {
+  var sidebar = document.getElementById('O_SideBarSpec');
+  var barHolder = (0,client/* createRoot */.s)(sidebar); // prettier-ignore
+
+  barHolder.render( /*#__PURE__*/react.createElement(O_SideBar/* default */.Z, {
+    name: "\u041E\u0441\u043D\u043E\u0432\u044B \u0434\u0438\u0437\u0430\u0439\u043D\u0430",
+    barItems: barItems
+  }));
+  var circleGame = document.getElementById('circleGame');
+  var root1 = (0,client/* createRoot */.s)(circleGame);
+  root1.render( /*#__PURE__*/react.createElement(MOD_CircleGameEx, {
+    info: info
+  })); // const container3 = document.getElementById('container-3')
+  // const root3 = createRoot(container3)
+  // // prettier-ignore
+  // root3.render(<MOD_ContrastEditor info={info} figures={figures} colors={colors}forms={forms}/>)
+  // const container4 = document.getElementById('container-4')
+  // const root4 = createRoot(container4)
+  // root4.render(<MOD_SizeBalance info={info} />)
+  //
+  // const container5 = document.getElementById('container-5')
+  // const root5 = createRoot(container5)
+  // root5.render(<S_Quiz questions={questions} />)
+  // const container6 = document.getElementById('container-6')
+  // const root6 = createRoot(container6)
+  // root6.render(<MOD_GuessTheFont bubbles={bubbles} fonts={fonts} info={info} />)
+  // const container7 = document.getElementById('container-7')
+  // const root7 = createRoot(container7)
+  // // prettier-ignore
+  //
+  // root7.render(<MOD_ColorPick info={info} colorBricks={colorBricks} words={words} />)
+});
+
+/***/ }),
+
 /***/ 184:
 /***/ ((module, exports) => {
 
@@ -641,4586 +5455,11 @@ module.exports = __webpack_require__.p + "images/38b901d6041e227d79e9.svg";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
-(() => {
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "U": () => (/* binding */ sample)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(294);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(935);
-// EXTERNAL MODULE: ./node_modules/react-dom/client.js
-var client = __webpack_require__(745);
-;// CONCATENATED MODULE: ./src/components/atoms/A_Text/A_Text.jsx
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
-
-
-
-var A_Text = /*#__PURE__*/function (_PureComponent) {
-  _inherits(A_Text, _PureComponent);
-
-  var _super = _createSuper(A_Text);
-
-  function A_Text(props) {
-    _classCallCheck(this, A_Text);
-
-    return _super.call(this, props);
-  }
-
-  _createClass(A_Text, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          header = _this$props.header,
-          text = _this$props.text;
-      return /*#__PURE__*/react.createElement("div", {
-        className: "A_Text"
-      }, /*#__PURE__*/react.createElement("h3", null, " ", header), /*#__PURE__*/react.createElement("p", null, " ", text, " "));
-    }
-  }]);
-
-  return A_Text;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_Frame/A_Frame.jsx
-function A_Frame_typeof(obj) { "@babel/helpers - typeof"; return A_Frame_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Frame_typeof(obj); }
-
-function A_Frame_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_Frame_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_Frame_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Frame_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Frame_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_Frame_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Frame_setPrototypeOf(subClass, superClass); }
-
-function A_Frame_setPrototypeOf(o, p) { A_Frame_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Frame_setPrototypeOf(o, p); }
-
-function A_Frame_createSuper(Derived) { var hasNativeReflectConstruct = A_Frame_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Frame_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Frame_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Frame_possibleConstructorReturn(this, result); }; }
-
-function A_Frame_possibleConstructorReturn(self, call) { if (call && (A_Frame_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Frame_assertThisInitialized(self); }
-
-function A_Frame_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_Frame_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_Frame_getPrototypeOf(o) { A_Frame_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Frame_getPrototypeOf(o); }
-
-
-
-
-
-var A_Frame = /*#__PURE__*/function (_PureComponent) {
-  A_Frame_inherits(A_Frame, _PureComponent);
-
-  var _super = A_Frame_createSuper(A_Frame);
-
-  function A_Frame(props) {
-    A_Frame_classCallCheck(this, A_Frame);
-
-    return _super.call(this, props);
-  }
-
-  A_Frame_createClass(A_Frame, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          size = _this$props.size,
-          exercise = _this$props.exercise,
-          content = _this$props.content;
-      var style = {
-        height: "".concat(size, "px")
-      };
-      return /*#__PURE__*/react.createElement("div", {
-        className: "A_Frame",
-        style: style
-      }, content, exercise);
-    }
-  }]);
-
-  return A_Frame;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/moleculas/M_ExerciseBox/M_ExerciseBox.jsx
-function M_ExerciseBox_typeof(obj) { "@babel/helpers - typeof"; return M_ExerciseBox_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_ExerciseBox_typeof(obj); }
-
-function M_ExerciseBox_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function M_ExerciseBox_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function M_ExerciseBox_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_ExerciseBox_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_ExerciseBox_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function M_ExerciseBox_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_ExerciseBox_setPrototypeOf(subClass, superClass); }
-
-function M_ExerciseBox_setPrototypeOf(o, p) { M_ExerciseBox_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_ExerciseBox_setPrototypeOf(o, p); }
-
-function M_ExerciseBox_createSuper(Derived) { var hasNativeReflectConstruct = M_ExerciseBox_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_ExerciseBox_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_ExerciseBox_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_ExerciseBox_possibleConstructorReturn(this, result); }; }
-
-function M_ExerciseBox_possibleConstructorReturn(self, call) { if (call && (M_ExerciseBox_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_ExerciseBox_assertThisInitialized(self); }
-
-function M_ExerciseBox_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function M_ExerciseBox_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function M_ExerciseBox_getPrototypeOf(o) { M_ExerciseBox_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_ExerciseBox_getPrototypeOf(o); }
-
-
-
-
-
-
-
-var M_ExerciseBox = /*#__PURE__*/function (_PureComponent) {
-  M_ExerciseBox_inherits(M_ExerciseBox, _PureComponent);
-
-  var _super = M_ExerciseBox_createSuper(M_ExerciseBox);
-
-  function M_ExerciseBox(props) {
-    M_ExerciseBox_classCallCheck(this, M_ExerciseBox);
-
-    return _super.call(this, props);
-  }
-
-  M_ExerciseBox_createClass(M_ExerciseBox, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          header = _this$props.header,
-          text = _this$props.text,
-          size = _this$props.size,
-          exercise = _this$props.exercise,
-          squares = _this$props.squares;
-      return /*#__PURE__*/react.createElement("div", {
-        className: "M_ExerciseBox"
-      }, /*#__PURE__*/react.createElement(A_Text, {
-        header: header,
-        text: text
-      }), /*#__PURE__*/react.createElement(A_Frame, {
-        content: squares,
-        exercise: exercise,
-        size: size
-      }));
-    }
-  }]);
-
-  return M_ExerciseBox;
-}(react.PureComponent);
-
-
-// EXTERNAL MODULE: ./src/images/rangefinder.svg
-var rangefinder = __webpack_require__(505);
-// EXTERNAL MODULE: ./src/images/arrows.svg
-var arrows = __webpack_require__(536);
-;// CONCATENATED MODULE: ./src/components/atoms/A_SliderSpecial/A_SliderSpecial.jsx
-function A_SliderSpecial_typeof(obj) { "@babel/helpers - typeof"; return A_SliderSpecial_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_SliderSpecial_typeof(obj); }
-
-function A_SliderSpecial_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_SliderSpecial_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_SliderSpecial_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_SliderSpecial_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_SliderSpecial_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_SliderSpecial_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_SliderSpecial_setPrototypeOf(subClass, superClass); }
-
-function A_SliderSpecial_setPrototypeOf(o, p) { A_SliderSpecial_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_SliderSpecial_setPrototypeOf(o, p); }
-
-function A_SliderSpecial_createSuper(Derived) { var hasNativeReflectConstruct = A_SliderSpecial_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_SliderSpecial_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_SliderSpecial_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_SliderSpecial_possibleConstructorReturn(this, result); }; }
-
-function A_SliderSpecial_possibleConstructorReturn(self, call) { if (call && (A_SliderSpecial_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_SliderSpecial_assertThisInitialized(self); }
-
-function A_SliderSpecial_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_SliderSpecial_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_SliderSpecial_getPrototypeOf(o) { A_SliderSpecial_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_SliderSpecial_getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-var A_SliderSpecial = /*#__PURE__*/function (_PureComponent) {
-  A_SliderSpecial_inherits(A_SliderSpecial, _PureComponent);
-
-  var _super = A_SliderSpecial_createSuper(A_SliderSpecial);
-
-  function A_SliderSpecial(props) {
-    var _this;
-
-    A_SliderSpecial_classCallCheck(this, A_SliderSpecial);
-
-    _this = _super.call(this, props);
-
-    _defineProperty(A_SliderSpecial_assertThisInitialized(_this), "handleMouseDown", function (e) {
-      var handleMouseDown = _this.props.handleMouseDown;
-      e.preventDefault();
-      handleMouseDown(e);
-    });
-
-    _defineProperty(A_SliderSpecial_assertThisInitialized(_this), "handleMouseMove", function (e) {
-      var handleMouseMove = _this.props.handleMouseMove;
-      e.preventDefault();
-      handleMouseMove(e);
-    });
-
-    _defineProperty(A_SliderSpecial_assertThisInitialized(_this), "handleMouseUp", function (e) {
-      var handleMouseUp = _this.props.handleMouseUp;
-      e.preventDefault();
-      handleMouseUp(e);
-    });
-
-    return _this;
-  }
-
-  A_SliderSpecial_createClass(A_SliderSpecial, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      window.addEventListener('mouseup', this.handleMouseUp);
-      window.addEventListener('mousemove', this.handleMouseMove);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          coord = _this$props.coord,
-          id = _this$props.id,
-          signature = _this$props.signature,
-          display = _this$props.display;
-      var styles = {
-        transform: "translateX(".concat(coord, "px)")
-      };
-      var imageStyles = {
-        display: "".concat(display)
-      };
-      return /*#__PURE__*/react.createElement("div", {
-        className: "Slider-wrap"
-      }, /*#__PURE__*/react.createElement("img", {
-        src: rangefinder
-      }), /*#__PURE__*/react.createElement("div", {
-        className: "Slider-body"
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "Thumb",
-        onMouseDown: this.handleMouseDown,
-        onMouseMove: this.handleMouseMove,
-        onMouseUp: this.handleMouseUp,
-        style: styles
-      }, /*#__PURE__*/react.createElement("label", {
-        id: id
-      }, /*#__PURE__*/react.createElement("img", {
-        src: arrows,
-        style: imageStyles
-      }), " ", signature))));
-    }
-  }]);
-
-  return A_SliderSpecial;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/modules/MOD_Rangefinder.jsx
-function MOD_Rangefinder_typeof(obj) { "@babel/helpers - typeof"; return MOD_Rangefinder_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, MOD_Rangefinder_typeof(obj); }
-
-function MOD_Rangefinder_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function MOD_Rangefinder_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function MOD_Rangefinder_createClass(Constructor, protoProps, staticProps) { if (protoProps) MOD_Rangefinder_defineProperties(Constructor.prototype, protoProps); if (staticProps) MOD_Rangefinder_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function MOD_Rangefinder_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) MOD_Rangefinder_setPrototypeOf(subClass, superClass); }
-
-function MOD_Rangefinder_setPrototypeOf(o, p) { MOD_Rangefinder_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return MOD_Rangefinder_setPrototypeOf(o, p); }
-
-function MOD_Rangefinder_createSuper(Derived) { var hasNativeReflectConstruct = MOD_Rangefinder_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = MOD_Rangefinder_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = MOD_Rangefinder_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return MOD_Rangefinder_possibleConstructorReturn(this, result); }; }
-
-function MOD_Rangefinder_possibleConstructorReturn(self, call) { if (call && (MOD_Rangefinder_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return MOD_Rangefinder_assertThisInitialized(self); }
-
-function MOD_Rangefinder_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function MOD_Rangefinder_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function MOD_Rangefinder_getPrototypeOf(o) { MOD_Rangefinder_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return MOD_Rangefinder_getPrototypeOf(o); }
-
-function MOD_Rangefinder_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-var MOD_Rangefinder = /*#__PURE__*/function (_PureComponent) {
-  MOD_Rangefinder_inherits(MOD_Rangefinder, _PureComponent);
-
-  var _super = MOD_Rangefinder_createSuper(MOD_Rangefinder);
-
-  function MOD_Rangefinder(props) {
-    var _this;
-
-    MOD_Rangefinder_classCallCheck(this, MOD_Rangefinder);
-
-    _this = _super.call(this, props);
-
-    MOD_Rangefinder_defineProperty(MOD_Rangefinder_assertThisInitialized(_this), "handleMouseDown", function (e) {
-      e.preventDefault();
-      var cursorStart = _this.state.cursorStart;
-
-      _this.setState({
-        mouseDown: true,
-        cursorStart: e.screenX
-      });
-    });
-
-    MOD_Rangefinder_defineProperty(MOD_Rangefinder_assertThisInitialized(_this), "handleMouseMove", function (e) {
-      var _this$state = _this.state,
-          coord = _this$state.coord,
-          cursorStart = _this$state.cursorStart,
-          coordPrev = _this$state.coordPrev,
-          min = _this$state.min,
-          max = _this$state.max;
-
-      if (_this.state.mouseDown) {
-        _this.setState({
-          coord: coordPrev + e.screenX - cursorStart
-        });
-
-        if (coordPrev + e.screenX - cursorStart > max) {
-          _this.setState({
-            coord: max
-          });
-        }
-
-        if (coordPrev + e.screenX - cursorStart < min) {
-          _this.setState({
-            coord: min
-          });
-        }
-      }
-    });
-
-    MOD_Rangefinder_defineProperty(MOD_Rangefinder_assertThisInitialized(_this), "handleMouseUp", function (e) {
-      console.log('Up!');
-      e.preventDefault();
-      var _this$state2 = _this.state,
-          mouseDown = _this$state2.mouseDown,
-          coord = _this$state2.coord,
-          coordPrev = _this$state2.coordPrev;
-
-      if (mouseDown) {
-        _this.calcResult(coord);
-
-        _this.setState({
-          coordPrev: coord,
-          mouseDown: false
-        });
-      }
-    });
-
-    MOD_Rangefinder_defineProperty(MOD_Rangefinder_assertThisInitialized(_this), "calcResult", function (coord) {
-      var _this$state3 = _this.state,
-          id = _this$state3.id,
-          signature = _this$state3.signature,
-          display = _this$state3.display;
-
-      if (_this.state.coord >= 103 && _this.state.coord <= 113) {
-        _this.setState({
-          id: 'b',
-          signature: 'Правильно!',
-          display: 'none'
-        });
-      } else {
-        _this.setState({
-          id: 'c',
-          signature: 'Неправильно!',
-          display: 'none'
-        });
-      }
-    });
-
-    MOD_Rangefinder_defineProperty(MOD_Rangefinder_assertThisInitialized(_this), "generateExercise", function () {
-      var _this$state4 = _this.state,
-          coord = _this$state4.coord,
-          signature = _this$state4.signature,
-          display = _this$state4.display,
-          id = _this$state4.id;
-      return /*#__PURE__*/react.createElement(A_SliderSpecial, {
-        coord: coord,
-        handleMouseMove: _this.handleMouseMove,
-        handleMouseDown: _this.handleMouseDown,
-        handleMouseUp: _this.handleMouseUp,
-        signature: signature,
-        display: display,
-        id: id
-      });
-    });
-
-    _this.state = {
-      size: 220,
-      mouseDown: false,
-      coord: 0,
-      cursorStart: 0,
-      coordPrev: 0,
-      min: 0,
-      max: 200,
-      signature: '',
-      display: 'block',
-      id: 'a'
-    };
-    return _this;
-  }
-
-  MOD_Rangefinder_createClass(MOD_Rangefinder, [{
-    key: "render",
-    value: function render() {
-      var size = this.state.size;
-      var info = this.props.info;
-      return /*#__PURE__*/react.createElement(M_ExerciseBox, {
-        header: info[0].header,
-        text: info[0].text,
-        exercise: this.generateExercise(),
-        size: size
-      });
-    }
-  }]);
-
-  return MOD_Rangefinder;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_Canvas/A_Canvas.jsx
-function A_Canvas_typeof(obj) { "@babel/helpers - typeof"; return A_Canvas_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Canvas_typeof(obj); }
-
-function A_Canvas_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_Canvas_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_Canvas_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Canvas_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Canvas_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_Canvas_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Canvas_setPrototypeOf(subClass, superClass); }
-
-function A_Canvas_setPrototypeOf(o, p) { A_Canvas_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Canvas_setPrototypeOf(o, p); }
-
-function A_Canvas_createSuper(Derived) { var hasNativeReflectConstruct = A_Canvas_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Canvas_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Canvas_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Canvas_possibleConstructorReturn(this, result); }; }
-
-function A_Canvas_possibleConstructorReturn(self, call) { if (call && (A_Canvas_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Canvas_assertThisInitialized(self); }
-
-function A_Canvas_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_Canvas_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_Canvas_getPrototypeOf(o) { A_Canvas_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Canvas_getPrototypeOf(o); }
-
-function A_Canvas_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-var A_Canvas = /*#__PURE__*/function (_PureComponent) {
-  A_Canvas_inherits(A_Canvas, _PureComponent);
-
-  var _super = A_Canvas_createSuper(A_Canvas);
-
-  function A_Canvas(props) {
-    var _this;
-
-    A_Canvas_classCallCheck(this, A_Canvas);
-
-    _this = _super.call(this, props);
-
-    A_Canvas_defineProperty(A_Canvas_assertThisInitialized(_this), "handleMouseDown", function (e) {
-      var handleMouseDown = _this.props.handleMouseDown;
-      e.preventDefault();
-      handleMouseDown(e);
-    });
-
-    A_Canvas_defineProperty(A_Canvas_assertThisInitialized(_this), "handleMouseMove", function (e) {
-      var handleMouseMove = _this.props.handleMouseMove;
-      e.preventDefault();
-      handleMouseMove(e);
-    });
-
-    A_Canvas_defineProperty(A_Canvas_assertThisInitialized(_this), "handleMouseUp", function (e) {
-      var handleMouseUp = _this.props.handleMouseUp;
-      e.preventDefault();
-      handleMouseUp(e);
-    });
-
-    A_Canvas_defineProperty(A_Canvas_assertThisInitialized(_this), "receiveCoord", function () {
-      var receiveCoord = _this.props.receiveCoord;
-      receiveCoord(_this.position.current.getBoundingClientRect());
-    });
-
-    _this.position = /*#__PURE__*/react.createRef();
-    return _this;
-  }
-
-  A_Canvas_createClass(A_Canvas, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      window.addEventListener('scroll', this.receiveCoord);
-      window.addEventListener('load', this.receiveCoord);
-      window.addEventListener('mousedown', this.props.handleMouseDown);
-      window.addEventListener('mouseup', this.props.handleMouseUp);
-      window.addEventListener('mousemove', this.props.handleMouseMove);
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      var missionFailed = this.props.missionFailed;
-
-      if (missionFailed) {
-        window.removeEventListener('mousedown', this.props.handleMouseDown);
-        window.removeEventListener('mouseup', this.props.handleMouseUp);
-        window.removeEventListener('mousemove', this.props.handleMouseMove);
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          exercise = _this$props.exercise,
-          handleClick = _this$props.handleClick,
-          circles = _this$props.circles,
-          handleMouseUp = _this$props.handleMouseUp,
-          handleMouseDown = _this$props.handleMouseDown,
-          handleMouseMove = _this$props.handleMouseMove,
-          receiveCoord = _this$props.receiveCoord,
-          handleChange = _this$props.handleChange,
-          alert = _this$props.alert;
-      return /*#__PURE__*/react.createElement("div", {
-        className: "A_Canvas",
-        ref: this.position
-      }, circles, alert);
-    }
-  }]);
-
-  return A_Canvas;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/moleculas/M_CanvasBox/M_CanvasBox.jsx
-function M_CanvasBox_typeof(obj) { "@babel/helpers - typeof"; return M_CanvasBox_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_CanvasBox_typeof(obj); }
-
-function M_CanvasBox_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function M_CanvasBox_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function M_CanvasBox_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_CanvasBox_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_CanvasBox_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function M_CanvasBox_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_CanvasBox_setPrototypeOf(subClass, superClass); }
-
-function M_CanvasBox_setPrototypeOf(o, p) { M_CanvasBox_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_CanvasBox_setPrototypeOf(o, p); }
-
-function M_CanvasBox_createSuper(Derived) { var hasNativeReflectConstruct = M_CanvasBox_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_CanvasBox_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_CanvasBox_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_CanvasBox_possibleConstructorReturn(this, result); }; }
-
-function M_CanvasBox_possibleConstructorReturn(self, call) { if (call && (M_CanvasBox_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_CanvasBox_assertThisInitialized(self); }
-
-function M_CanvasBox_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function M_CanvasBox_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function M_CanvasBox_getPrototypeOf(o) { M_CanvasBox_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_CanvasBox_getPrototypeOf(o); }
-
-
-
-
-
-
-
-var M_CanvasBox = /*#__PURE__*/function (_PureComponent) {
-  M_CanvasBox_inherits(M_CanvasBox, _PureComponent);
-
-  var _super = M_CanvasBox_createSuper(M_CanvasBox);
-
-  function M_CanvasBox(props) {
-    M_CanvasBox_classCallCheck(this, M_CanvasBox);
-
-    return _super.call(this, props);
-  }
-
-  M_CanvasBox_createClass(M_CanvasBox, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          header = _this$props.header,
-          text = _this$props.text,
-          exercise = _this$props.exercise,
-          handleMouseUp = _this$props.handleMouseUp,
-          handleMouseDown = _this$props.handleMouseDown,
-          handleMouseMove = _this$props.handleMouseMove,
-          handleChange = _this$props.handleChange,
-          circles = _this$props.circles,
-          size = _this$props.size,
-          receiveCoord = _this$props.receiveCoord,
-          alert = _this$props.alert,
-          missionFailed = _this$props.missionFailed;
-      return /*#__PURE__*/react.createElement("div", {
-        className: "M_CanvasBox"
-      }, /*#__PURE__*/react.createElement(A_Text, {
-        header: header,
-        text: text
-      }), /*#__PURE__*/react.createElement(A_Canvas, {
-        handleMouseUp: handleMouseUp,
-        handleMouseDown: handleMouseDown,
-        handleMouseMove: handleMouseMove,
-        handleChange: handleChange,
-        exercise: exercise,
-        circles: circles,
-        alert: alert,
-        receiveCoord: receiveCoord,
-        missionFailed: missionFailed
-      }));
-    }
-  }]);
-
-  return M_CanvasBox;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_Button/A_Button.jsx
-function A_Button_typeof(obj) { "@babel/helpers - typeof"; return A_Button_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Button_typeof(obj); }
-
-function A_Button_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_Button_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_Button_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Button_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Button_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_Button_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Button_setPrototypeOf(subClass, superClass); }
-
-function A_Button_setPrototypeOf(o, p) { A_Button_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Button_setPrototypeOf(o, p); }
-
-function A_Button_createSuper(Derived) { var hasNativeReflectConstruct = A_Button_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Button_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Button_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Button_possibleConstructorReturn(this, result); }; }
-
-function A_Button_possibleConstructorReturn(self, call) { if (call && (A_Button_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Button_assertThisInitialized(self); }
-
-function A_Button_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_Button_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_Button_getPrototypeOf(o) { A_Button_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Button_getPrototypeOf(o); }
-
-
-
-
-
-var A_Button = /*#__PURE__*/function (_PureComponent) {
-  A_Button_inherits(A_Button, _PureComponent);
-
-  var _super = A_Button_createSuper(A_Button);
-
-  function A_Button(props) {
-    A_Button_classCallCheck(this, A_Button);
-
-    return _super.call(this, props);
-  }
-
-  A_Button_createClass(A_Button, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          text = _this$props.text,
-          handleClick = _this$props.handleClick;
-      return /*#__PURE__*/react.createElement("div", {
-        className: "A_Button",
-        onClick: handleClick
-      }, text);
-    }
-  }]);
-
-  return A_Button;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/moleculas/M_AlertBox/M_AlertBox.jsx
-function M_AlertBox_typeof(obj) { "@babel/helpers - typeof"; return M_AlertBox_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_AlertBox_typeof(obj); }
-
-function M_AlertBox_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function M_AlertBox_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function M_AlertBox_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_AlertBox_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_AlertBox_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function M_AlertBox_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_AlertBox_setPrototypeOf(subClass, superClass); }
-
-function M_AlertBox_setPrototypeOf(o, p) { M_AlertBox_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_AlertBox_setPrototypeOf(o, p); }
-
-function M_AlertBox_createSuper(Derived) { var hasNativeReflectConstruct = M_AlertBox_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_AlertBox_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_AlertBox_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_AlertBox_possibleConstructorReturn(this, result); }; }
-
-function M_AlertBox_possibleConstructorReturn(self, call) { if (call && (M_AlertBox_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_AlertBox_assertThisInitialized(self); }
-
-function M_AlertBox_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function M_AlertBox_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function M_AlertBox_getPrototypeOf(o) { M_AlertBox_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_AlertBox_getPrototypeOf(o); }
-
-function M_AlertBox_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-var M_AlertBox = /*#__PURE__*/function (_PureComponent) {
-  M_AlertBox_inherits(M_AlertBox, _PureComponent);
-
-  var _super = M_AlertBox_createSuper(M_AlertBox);
-
-  function M_AlertBox(props) {
-    var _this;
-
-    M_AlertBox_classCallCheck(this, M_AlertBox);
-
-    _this = _super.call(this, props);
-
-    M_AlertBox_defineProperty(M_AlertBox_assertThisInitialized(_this), "handleClick", function () {
-      window.location.reload();
-    });
-
-    return _this;
-  }
-
-  M_AlertBox_createClass(M_AlertBox, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          errorHeader = _this$props.errorHeader,
-          errorText = _this$props.errorText;
-      return /*#__PURE__*/react.createElement("div", {
-        className: "M_AlertBox"
-      }, /*#__PURE__*/react.createElement("h3", null, errorHeader), /*#__PURE__*/react.createElement("p", null, errorText), /*#__PURE__*/react.createElement(A_Button, {
-        handleClick: this.handleClick,
-        text: "\u041D\u0430\u0447\u0430\u0442\u044C \u0441\u043D\u0430\u0447\u0430\u043B\u0430"
-      }));
-    }
-  }]);
-
-  return M_AlertBox;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_Circle/A_Circle.jsx
-function A_Circle_typeof(obj) { "@babel/helpers - typeof"; return A_Circle_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Circle_typeof(obj); }
-
-function A_Circle_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_Circle_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_Circle_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Circle_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Circle_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_Circle_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Circle_setPrototypeOf(subClass, superClass); }
-
-function A_Circle_setPrototypeOf(o, p) { A_Circle_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Circle_setPrototypeOf(o, p); }
-
-function A_Circle_createSuper(Derived) { var hasNativeReflectConstruct = A_Circle_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Circle_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Circle_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Circle_possibleConstructorReturn(this, result); }; }
-
-function A_Circle_possibleConstructorReturn(self, call) { if (call && (A_Circle_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Circle_assertThisInitialized(self); }
-
-function A_Circle_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_Circle_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_Circle_getPrototypeOf(o) { A_Circle_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Circle_getPrototypeOf(o); }
-
-
-
-
-
-var A_Circle = /*#__PURE__*/function (_PureComponent) {
-  A_Circle_inherits(A_Circle, _PureComponent);
-
-  var _super = A_Circle_createSuper(A_Circle);
-
-  function A_Circle(props) {
-    A_Circle_classCallCheck(this, A_Circle);
-
-    return _super.call(this, props);
-  }
-
-  A_Circle_createClass(A_Circle, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          size = _this$props.size,
-          xPosition = _this$props.xPosition,
-          yPosition = _this$props.yPosition;
-      var styles = {
-        width: "".concat(size, "px"),
-        height: "".concat(size, "px"),
-        transform: "translate(".concat(xPosition, "px, ").concat(yPosition, "px)")
-      };
-      return /*#__PURE__*/react.createElement("div", {
-        style: styles,
-        className: "A_Circle"
-      });
-    }
-  }]);
-
-  return A_Circle;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/modules/MOD_CircleGame.jsx
-function MOD_CircleGame_typeof(obj) { "@babel/helpers - typeof"; return MOD_CircleGame_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, MOD_CircleGame_typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { MOD_CircleGame_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function MOD_CircleGame_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function MOD_CircleGame_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function MOD_CircleGame_createClass(Constructor, protoProps, staticProps) { if (protoProps) MOD_CircleGame_defineProperties(Constructor.prototype, protoProps); if (staticProps) MOD_CircleGame_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function MOD_CircleGame_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) MOD_CircleGame_setPrototypeOf(subClass, superClass); }
-
-function MOD_CircleGame_setPrototypeOf(o, p) { MOD_CircleGame_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return MOD_CircleGame_setPrototypeOf(o, p); }
-
-function MOD_CircleGame_createSuper(Derived) { var hasNativeReflectConstruct = MOD_CircleGame_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = MOD_CircleGame_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = MOD_CircleGame_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return MOD_CircleGame_possibleConstructorReturn(this, result); }; }
-
-function MOD_CircleGame_possibleConstructorReturn(self, call) { if (call && (MOD_CircleGame_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return MOD_CircleGame_assertThisInitialized(self); }
-
-function MOD_CircleGame_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function MOD_CircleGame_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function MOD_CircleGame_getPrototypeOf(o) { MOD_CircleGame_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return MOD_CircleGame_getPrototypeOf(o); }
-
-function MOD_CircleGame_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-var MOD_CircleGameEx = /*#__PURE__*/function (_PureComponent) {
-  MOD_CircleGame_inherits(MOD_CircleGameEx, _PureComponent);
-
-  var _super = MOD_CircleGame_createSuper(MOD_CircleGameEx);
-
-  function MOD_CircleGameEx(props) {
-    var _this;
-
-    MOD_CircleGame_classCallCheck(this, MOD_CircleGameEx);
-
-    _this = _super.call(this, props);
-
-    MOD_CircleGame_defineProperty(MOD_CircleGame_assertThisInitialized(_this), "handleMouseDown", function (e) {
-      e.preventDefault();
-      var _this$state = _this.state,
-          objects = _this$state.objects,
-          circleCount = _this$state.circleCount,
-          cursorXStart = _this$state.cursorXStart,
-          cursorYStart = _this$state.cursorYStart,
-          x = _this$state.x,
-          y = _this$state.y,
-          size = _this$state.size,
-          xPosition = _this$state.xPosition,
-          yPosition = _this$state.yPosition;
-
-      _this.setState({
-        circleCount: circleCount + 1,
-        mouseDown: true,
-        cursorXStart: e.clientX,
-        cursorYStart: e.clientY,
-        xCoord: e.clientX - x,
-        yCoord: e.clientY - y,
-        size: 0,
-        xPosition: e.clientX - x,
-        yPosition: e.clientY - y,
-        objects: [].concat(_toConsumableArray(objects), [{
-          number: circleCount + 1,
-          size: 0,
-          xCoord: e.clientX - x,
-          yCoord: e.clientY - y,
-          cursorXStart: e.clientX,
-          cursorYStart: e.clientY
-        }])
-      });
-    });
-
-    MOD_CircleGame_defineProperty(MOD_CircleGame_assertThisInitialized(_this), "handleMouseMove", function (e) {
-      var _this$state2 = _this.state,
-          mouseDown = _this$state2.mouseDown,
-          cursorXStart = _this$state2.cursorXStart,
-          cursorYStart = _this$state2.cursorYStart,
-          x = _this$state2.x,
-          size = _this$state2.size,
-          objects = _this$state2.objects,
-          circleCount = _this$state2.circleCount,
-          xPosition = _this$state2.xPosition,
-          yPosition = _this$state2.yPosition,
-          maxSize = _this$state2.maxSize;
-
-      if (_this.state.mouseDown) {
-        var newCircle = objects.map(function (object) {
-          if (object.number === _this.state.circleCount) {
-            return _objectSpread(_objectSpread({}, object), {}, {
-              size: object.size * 0 + Math.max(e.clientX - cursorXStart, e.clientY - cursorYStart, (e.clientY - cursorYStart) * -1, (e.clientX - cursorXStart) * -1)
-            });
-          } else {
-            return object;
-          }
-        });
-
-        _this.setState({
-          objects: newCircle,
-          size: Math.max(e.clientX - cursorXStart, e.clientY - cursorYStart, (e.clientY - cursorYStart) * -1, (e.clientX - cursorXStart) * -1)
-        });
-
-        if (size > maxSize) {
-          _this.setState({
-            sizeFailed: true,
-            missionFailed: true
-          });
-        }
-      }
-    });
-
-    MOD_CircleGame_defineProperty(MOD_CircleGame_assertThisInitialized(_this), "handleMouseUp", function (e) {
-      e.preventDefault();
-      var _this$state3 = _this.state,
-          mouseDown = _this$state3.mouseDown,
-          objects = _this$state3.objects,
-          circleCount = _this$state3.circleCount,
-          cursorXStart = _this$state3.cursorXStart,
-          cursorYStart = _this$state3.cursorYStart,
-          size = _this$state3.size;
-
-      if (mouseDown) {
-        _this.setState({
-          mouseDown: false,
-          maxSize: size,
-          size: 0
-        });
-      }
-    });
-
-    MOD_CircleGame_defineProperty(MOD_CircleGame_assertThisInitialized(_this), "receiveCoord", function (result) {
-      _this.setState({
-        x: result.x,
-        y: result.y,
-        canvasWidth: result.width,
-        canvasHeight: result.height
-      });
-    });
-
-    _this.state = {
-      circleCount: 0,
-      objects: [],
-      cursorXStart: 0,
-      cursorYStart: 0,
-      mouseDown: false,
-      size: 0,
-      x: 0,
-      y: 0,
-      canvasWidth: 0,
-      canvasHeight: 0,
-      xPosition: 0,
-      yPosition: 0,
-      maxSize: 10000,
-      missionFailed: false,
-      sizeFailed: false,
-      borderFailed: false,
-      collisionFailed: false,
-      errorHeader: '',
-      errorText: '',
-      xCoord: 0,
-      yCoord: 0
-    };
-    return _this;
-  }
-
-  MOD_CircleGame_createClass(MOD_CircleGameEx, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      var _this2 = this;
-
-      var newCircle = this.state.objects.map(function (object) {
-        if (object.size > _this2.state.canvasHeight - object.yCoord) {
-          _this2.setState({
-            borderFailed: true,
-            missionFailed: true
-          });
-        }
-
-        if (object.size > _this2.state.canvasWidth - object.xCoord) {
-          _this2.setState({
-            borderFailed: true,
-            missionFailed: true
-          });
-        } //
-        // if (this.state.xCoord < this.state.x) {
-        //   this.setState({
-        //     borderFailed: true,
-        //     missionFailed: true
-        //   })
-        // }
-        // if (this.state.yCoord > this.state.y) {
-        //   this.setState({
-        //     borderFailed: true,
-        //     missionFailed: true
-        //   })
-        // }
-
-
-        if (object.number != _this2.state.circleCount && _this2.state.xCoord + _this2.state.size > object.xCoord && _this2.state.yCoord + _this2.state.size > object.yCoord && _this2.state.xCoord < object.xCoord && _this2.state.yCoord < object.yCoord) {
-          _this2.setState({
-            collisionFailed: true,
-            missionFailed: true
-          });
-        }
-
-        if (object.number != _this2.state.circleCount && _this2.state.xCoord + _this2.state.size > object.xCoord && _this2.state.yCoord + _this2.state.size > object.yCoord && _this2.state.xCoord < object.xCoord && _this2.state.yCoord < object.yCoord) {
-          _this2.setState({
-            collisionFailed: true,
-            missionFailed: true
-          });
-        }
-
-        if (object.number != _this2.state.circleCount && object.xCoord + object.size > _this2.state.xCoord && _this2.state.yCoord + _this2.state.size > object.yCoord && _this2.state.xCoord > object.xCoord && _this2.state.yCoord < object.yCoord) {
-          _this2.setState({
-            collisionFailed: true,
-            missionFailed: true
-          });
-        }
-
-        if (object.number != _this2.state.circleCount && _this2.state.yCoord < object.yCoord + object.size && object.xCoord + object.size > _this2.state.xCoord && _this2.state.xCoord > object.xCoord && _this2.state.yCoord > object.yCoord) {
-          _this2.setState({
-            collisionFailed: true,
-            missionFailed: true
-          });
-        }
-
-        if (object.number != _this2.state.circleCount && object.yCoord + object.size > _this2.state.yCoord && object.xCoord < _this2.state.xCoord + _this2.state.size && _this2.state.xCoord < object.xCoord && _this2.state.yCoord > object.yCoord) {
-          _this2.setState({
-            collisionFailed: true,
-            missionFailed: true
-          });
-        }
-
-        if (_this2.state.sizeFailed == true) {
-          _this2.setState({
-            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0440\u0443\u0433\u043E\u0432"),
-            errorText: 'Ваш последний круг оказался больше предыдущего'
-          });
-        }
-
-        if (_this2.state.borderFailed == true) {
-          _this2.setState({
-            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0440\u0443\u0433\u043E\u0432"),
-            errorText: 'Ваш последний круг вышел за пределы холста'
-          });
-        }
-
-        if (_this2.state.collisionFailed == true) {
-          _this2.setState({
-            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0440\u0443\u0433\u043E\u0432"),
-            errorText: 'Ваш последний круг задел другой'
-          });
-        }
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var info = this.props.info;
-      var _this$state4 = this.state,
-          objects = _this$state4.objects,
-          cursorXStart = _this$state4.cursorXStart,
-          size = _this$state4.size,
-          circleCount = _this$state4.circleCount,
-          xPosition = _this$state4.xPosition,
-          yPosition = _this$state4.yPosition,
-          missionFailed = _this$state4.missionFailed;
-      var circles = objects.map(function (object) {
-        return /*#__PURE__*/react.createElement(A_Circle, {
-          number: object.number,
-          key: object.number,
-          size: object.size,
-          xPosition: object.xCoord,
-          yPosition: object.yCoord
-        });
-      });
-      var failCheck = this.state.missionFailed;
-      var alert;
-
-      if (failCheck) {
-        alert = /*#__PURE__*/react.createElement(M_AlertBox, {
-          errorHeader: this.state.errorHeader,
-          errorText: this.state.errorText
-        });
-      } else {}
-
-      return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(M_CanvasBox, {
-        header: info[1].header,
-        text: info[1].text,
-        handleMouseUp: this.handleMouseUp,
-        handleMouseDown: this.handleMouseDown,
-        handleMouseMove: this.handleMouseMove,
-        circles: circles,
-        alert: alert,
-        receiveCoord: this.receiveCoord,
-        compareCircles: this.compareCircles,
-        missionFailed: missionFailed
-      }));
-    }
-  }]);
-
-  return MOD_CircleGameEx;
-}(react.PureComponent);
-
-
-// EXTERNAL MODULE: ./node_modules/classnames/index.js
-var classnames = __webpack_require__(184);
-var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
-;// CONCATENATED MODULE: ./src/components/atoms/A_Chip/A_Chip.jsx
-function A_Chip_typeof(obj) { "@babel/helpers - typeof"; return A_Chip_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Chip_typeof(obj); }
-
-function A_Chip_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_Chip_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_Chip_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Chip_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Chip_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_Chip_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Chip_setPrototypeOf(subClass, superClass); }
-
-function A_Chip_setPrototypeOf(o, p) { A_Chip_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Chip_setPrototypeOf(o, p); }
-
-function A_Chip_createSuper(Derived) { var hasNativeReflectConstruct = A_Chip_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Chip_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Chip_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Chip_possibleConstructorReturn(this, result); }; }
-
-function A_Chip_possibleConstructorReturn(self, call) { if (call && (A_Chip_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Chip_assertThisInitialized(self); }
-
-function A_Chip_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_Chip_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_Chip_getPrototypeOf(o) { A_Chip_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Chip_getPrototypeOf(o); }
-
-function A_Chip_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-var A_Chip = /*#__PURE__*/function (_PureComponent) {
-  A_Chip_inherits(A_Chip, _PureComponent);
-
-  var _super = A_Chip_createSuper(A_Chip);
-
-  function A_Chip(props) {
-    var _this;
-
-    A_Chip_classCallCheck(this, A_Chip);
-
-    _this = _super.call(this, props);
-
-    A_Chip_defineProperty(A_Chip_assertThisInitialized(_this), "handleClick", function () {
-      var _this$props = _this.props,
-          type = _this$props.type,
-          handleClick = _this$props.handleClick;
-      var selected = _this.state.selected;
-
-      _this.setState({
-        selected: true
-      });
-
-      if (_this.state.selected) {
-        _this.setState({
-          selected: false
-        });
-      }
-
-      handleClick(type, selected);
-    });
-
-    _this.state = {
-      selected: false
-    };
-    return _this;
-  }
-
-  A_Chip_createClass(A_Chip, [{
-    key: "render",
-    value: function render() {
-      var text = this.props.text;
-      var selected = this.state.selected;
-      var classes = classnames_default()({
-        A_Chip: true,
-        selected: selected
-      });
-      return /*#__PURE__*/react.createElement("div", {
-        className: classes,
-        selected: selected,
-        onClick: this.handleClick
-      }, text);
-    }
-  }]);
-
-  return A_Chip;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/moleculas/M_GridBox/M_GridBox.jsx
-function M_GridBox_typeof(obj) { "@babel/helpers - typeof"; return M_GridBox_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_GridBox_typeof(obj); }
-
-function M_GridBox_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function M_GridBox_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function M_GridBox_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_GridBox_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_GridBox_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function M_GridBox_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_GridBox_setPrototypeOf(subClass, superClass); }
-
-function M_GridBox_setPrototypeOf(o, p) { M_GridBox_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_GridBox_setPrototypeOf(o, p); }
-
-function M_GridBox_createSuper(Derived) { var hasNativeReflectConstruct = M_GridBox_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_GridBox_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_GridBox_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_GridBox_possibleConstructorReturn(this, result); }; }
-
-function M_GridBox_possibleConstructorReturn(self, call) { if (call && (M_GridBox_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_GridBox_assertThisInitialized(self); }
-
-function M_GridBox_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function M_GridBox_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function M_GridBox_getPrototypeOf(o) { M_GridBox_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_GridBox_getPrototypeOf(o); }
-
-function M_GridBox_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-var M_GridBox = /*#__PURE__*/function (_PureComponent) {
-  M_GridBox_inherits(M_GridBox, _PureComponent);
-
-  var _super = M_GridBox_createSuper(M_GridBox);
-
-  function M_GridBox(props) {
-    var _this;
-
-    M_GridBox_classCallCheck(this, M_GridBox);
-
-    _this = _super.call(this, props);
-
-    M_GridBox_defineProperty(M_GridBox_assertThisInitialized(_this), "handleClick", function () {
-      window.location.reload();
-    });
-
-    return _this;
-  }
-
-  M_GridBox_createClass(M_GridBox, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          rounds = _this$props.rounds,
-          handleClick = _this$props.handleClick;
-      var type = ['color', 'form', 'size'];
-      return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-        className: "M_ChipBar"
-      }, /*#__PURE__*/react.createElement(A_Chip, {
-        handleClick: handleClick,
-        type: type[0],
-        text: "\u041A\u043E\u043D\u0442\u0440\u0430\u0441\u0442 \u043F\u043E \u0446\u0432\u0435\u0442\u0443"
-      }), /*#__PURE__*/react.createElement(A_Chip, {
-        handleClick: handleClick,
-        type: type[1],
-        text: "\u041A\u043E\u043D\u0442\u0440\u0430\u0441\u0442 \u043F\u043E \u0444\u043E\u0440\u043C\u0435"
-      }), /*#__PURE__*/react.createElement(A_Chip, {
-        handleClick: handleClick,
-        type: type[2],
-        text: "\u041A\u043E\u043D\u0442\u0440\u0430\u0441\u0442 \u043F\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0443"
-      })), /*#__PURE__*/react.createElement("div", {
-        className: "M_GridBox"
-      }, rounds), /*#__PURE__*/react.createElement(A_Button, {
-        handleClick: this.handleClick,
-        text: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0432\u0441\u0451"
-      }));
-    }
-  }]);
-
-  return M_GridBox;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_Figure/A_Figure.jsx
-function A_Figure_typeof(obj) { "@babel/helpers - typeof"; return A_Figure_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Figure_typeof(obj); }
-
-function A_Figure_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_Figure_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_Figure_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Figure_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Figure_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_Figure_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Figure_setPrototypeOf(subClass, superClass); }
-
-function A_Figure_setPrototypeOf(o, p) { A_Figure_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Figure_setPrototypeOf(o, p); }
-
-function A_Figure_createSuper(Derived) { var hasNativeReflectConstruct = A_Figure_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Figure_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Figure_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Figure_possibleConstructorReturn(this, result); }; }
-
-function A_Figure_possibleConstructorReturn(self, call) { if (call && (A_Figure_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Figure_assertThisInitialized(self); }
-
-function A_Figure_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_Figure_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_Figure_getPrototypeOf(o) { A_Figure_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Figure_getPrototypeOf(o); }
-
-function A_Figure_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-var A_Figure = /*#__PURE__*/function (_PureComponent) {
-  A_Figure_inherits(A_Figure, _PureComponent);
-
-  var _super = A_Figure_createSuper(A_Figure);
-
-  function A_Figure(props) {
-    var _this;
-
-    A_Figure_classCallCheck(this, A_Figure);
-
-    _this = _super.call(this, props);
-
-    A_Figure_defineProperty(A_Figure_assertThisInitialized(_this), "handleBallClick", function () {
-      var _this$props = _this.props,
-          number = _this$props.number,
-          handleBallClick = _this$props.handleBallClick;
-      handleBallClick(number);
-    });
-
-    _this.state = {
-      scale: 1,
-      degrees: [0, 90, -90, 180, -180],
-      rotate: 0
-    };
-    return _this;
-  }
-
-  A_Figure_createClass(A_Figure, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      var clip = this.props.clip;
-      var degrees = this.state.degrees;
-
-      if (clip == 'polygon(50% 31.7%, 50% 31.7%, 75% 75%, 25% 75%)') {
-        this.setState({
-          scale: 2,
-          rotate: sample(degrees)
-        });
-      }
-
-      if (clip == 'unset') {
-        this.setState({
-          scale: 1,
-          rotate: 0
-        });
-      }
-
-      if (clip == 'circle(50% at 50% 50%)') {
-        this.setState({
-          scale: 1,
-          rotate: 0
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props2 = this.props,
-          row = _this$props2.row,
-          column = _this$props2.column,
-          number = _this$props2.number,
-          color = _this$props2.color,
-          handleBallClick = _this$props2.handleBallClick,
-          border = _this$props2.border,
-          clip = _this$props2.clip,
-          rEnd = _this$props2.rEnd,
-          cEnd = _this$props2.cEnd,
-          size = _this$props2.size,
-          display = _this$props2.display;
-      var style = {
-        gridRowStart: "".concat(row),
-        gridColumnStart: "".concat(column),
-        gridRowEnd: "".concat(rEnd),
-        gridColumnEnd: "".concat(cEnd),
-        backgroundColor: "".concat(color),
-        borderRadius: "".concat(border, "%"),
-        clipPath: "".concat(clip),
-        scale: "".concat(this.state.scale),
-        width: "".concat(size, "px"),
-        height: "".concat(size, "px"),
-        display: "".concat(display),
-        rotate: "".concat(this.state.rotate, "deg")
-      };
-      return /*#__PURE__*/react.createElement("div", {
-        className: "A_Figure",
-        style: style,
-        onClick: this.handleBallClick
-      });
-    }
-  }]);
-
-  return A_Figure;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/modules/MOD_ContrastEditor.jsx
-function MOD_ContrastEditor_typeof(obj) { "@babel/helpers - typeof"; return MOD_ContrastEditor_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, MOD_ContrastEditor_typeof(obj); }
-
-function MOD_ContrastEditor_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function MOD_ContrastEditor_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? MOD_ContrastEditor_ownKeys(Object(source), !0).forEach(function (key) { MOD_ContrastEditor_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : MOD_ContrastEditor_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function MOD_ContrastEditor_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function MOD_ContrastEditor_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function MOD_ContrastEditor_createClass(Constructor, protoProps, staticProps) { if (protoProps) MOD_ContrastEditor_defineProperties(Constructor.prototype, protoProps); if (staticProps) MOD_ContrastEditor_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function MOD_ContrastEditor_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) MOD_ContrastEditor_setPrototypeOf(subClass, superClass); }
-
-function MOD_ContrastEditor_setPrototypeOf(o, p) { MOD_ContrastEditor_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return MOD_ContrastEditor_setPrototypeOf(o, p); }
-
-function MOD_ContrastEditor_createSuper(Derived) { var hasNativeReflectConstruct = MOD_ContrastEditor_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = MOD_ContrastEditor_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = MOD_ContrastEditor_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return MOD_ContrastEditor_possibleConstructorReturn(this, result); }; }
-
-function MOD_ContrastEditor_possibleConstructorReturn(self, call) { if (call && (MOD_ContrastEditor_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return MOD_ContrastEditor_assertThisInitialized(self); }
-
-function MOD_ContrastEditor_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function MOD_ContrastEditor_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function MOD_ContrastEditor_getPrototypeOf(o) { MOD_ContrastEditor_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return MOD_ContrastEditor_getPrototypeOf(o); }
-
-function MOD_ContrastEditor_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-
-var MOD_ContrastEditor = /*#__PURE__*/function (_PureComponent) {
-  MOD_ContrastEditor_inherits(MOD_ContrastEditor, _PureComponent);
-
-  var _super = MOD_ContrastEditor_createSuper(MOD_ContrastEditor);
-
-  function MOD_ContrastEditor(props) {
-    var _this;
-
-    MOD_ContrastEditor_classCallCheck(this, MOD_ContrastEditor);
-
-    _this = _super.call(this, props);
-
-    MOD_ContrastEditor_defineProperty(MOD_ContrastEditor_assertThisInitialized(_this), "handleClick", function (type, selected) {
-      if (type === 'color' && selected === false) {
-        _this.setState({
-          colorSelected: true
-        });
-      } else if (type === 'color' && selected === true) {
-        _this.setState({
-          colorSelected: false
-        });
-      }
-
-      if (type === 'size' && selected === false) {
-        _this.setState({
-          sizeSelected: true
-        });
-      }
-
-      if (type === 'size' && selected === true) {
-        _this.setState({
-          sizeSelected: false
-        });
-      }
-
-      if (type === 'form' && selected === false) {
-        _this.setState({
-          formSelected: true
-        });
-      }
-
-      if (type === 'form' && selected === true) {
-        _this.setState({
-          formSelected: false
-        });
-      }
-    });
-
-    MOD_ContrastEditor_defineProperty(MOD_ContrastEditor_assertThisInitialized(_this), "handleBallClick", function (number) {
-      var _this$state = _this.state,
-          colorSelected = _this$state.colorSelected,
-          formSelected = _this$state.formSelected,
-          sizeSelected = _this$state.sizeSelected,
-          figures = _this$state.figures;
-      var _this$props = _this.props,
-          colors = _this$props.colors,
-          forms = _this$props.forms;
-
-      if (sizeSelected) {
-        var newCircle = figures.map(function (figure) {
-          // начало сектора ЛВ
-          if (number === figure.number && (number == 1 || number == 2 || number == 5 || number == 6)) {
-            if ( // prettier-ignore
-            (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 1,
-                row: 1,
-                cEnd: 3,
-                rEnd: 3,
-                size: 184
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ЛВ
-          // начало сектора ЛН
-
-
-          if (number === figure.number && (number == 3 || number == 4 || number == 7 || number == 8)) {
-            if ( // prettier-ignore
-            (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 1,
-                row: 3,
-                cEnd: 3,
-                rEnd: 5,
-                size: 184
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ЛН
-          // начало сектора ПВ
-
-
-          if (number === figure.number && (number == 9 || number == 10 || number == 13 || number == 14)) {
-            if ( // prettier-ignore
-            (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 3,
-                row: 1,
-                cEnd: 5,
-                rEnd: 3,
-                size: 184
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ПВ
-          // начало сектора ПН
-
-
-          if (number === figure.number && (number == 11 || number == 12 || number == 15 || number == 16)) {
-            if ( // prettier-ignore
-            (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 3,
-                row: 3,
-                cEnd: 5,
-                rEnd: 5,
-                size: 184
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ПН
-          else {
-            return figure;
-          }
-        });
-
-        _this.setState({
-          figures: newCircle
-        });
-      }
-
-      if (colorSelected) {
-        var _newCircle = figures.map(function (figure) {
-          if (number === figure.number) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              color: sample(colors)
-            });
-          } else {
-            return figure;
-          }
-        });
-
-        _this.setState({
-          figures: _newCircle
-        });
-      }
-
-      if (formSelected) {
-        var _newCircle2 = figures.map(function (figure) {
-          if (number === figure.number) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              border: '0',
-              clip: sample(forms)
-            });
-          } else {
-            return figure;
-          }
-        });
-
-        _this.setState({
-          figures: _newCircle2
-        });
-      }
-
-      if (colorSelected && formSelected) {
-        var _newCircle3 = figures.map(function (figure) {
-          if (number === figure.number) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              border: '0',
-              clip: sample(forms),
-              color: sample(colors)
-            });
-          } else {
-            return figure;
-          }
-        });
-
-        _this.setState({
-          figures: _newCircle3
-        });
-      }
-
-      if (colorSelected && sizeSelected) {
-        var _newCircle4 = figures.map(function (figure) {
-          // начало сектора ЛВ
-          if (number === figure.number && (number == 1 || number == 2 || number == 5 || number == 6)) {
-            if ( // prettier-ignore
-            (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 1,
-                row: 1,
-                cEnd: 3,
-                rEnd: 3,
-                size: 184,
-                color: sample(colors)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ЛВ
-          // начало сектора ЛН
-
-
-          if (number === figure.number && (number == 3 || number == 4 || number == 7 || number == 8)) {
-            if ( // prettier-ignore
-            (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 1,
-                row: 3,
-                cEnd: 3,
-                rEnd: 5,
-                size: 184,
-                color: sample(colors)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ЛН
-          // начало сектора ПВ
-
-
-          if (number === figure.number && (number == 9 || number == 10 || number == 13 || number == 14)) {
-            if ( // prettier-ignore
-            (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 3,
-                row: 1,
-                cEnd: 5,
-                rEnd: 3,
-                size: 184,
-                color: sample(colors)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ПВ
-          // начало сектора ПН
-
-
-          if (number === figure.number && (number == 11 || number == 12 || number == 15 || number == 16)) {
-            if ( // prettier-ignore
-            (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 3,
-                row: 3,
-                cEnd: 5,
-                rEnd: 5,
-                size: 184,
-                color: sample(colors)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ПН
-          else {
-            return figure;
-          }
-        });
-
-        _this.setState({
-          figures: _newCircle4
-        });
-      }
-
-      if (formSelected && sizeSelected) {
-        var _newCircle5 = figures.map(function (figure) {
-          // начало сектора ЛВ
-          if (number === figure.number && (number == 1 || number == 2 || number == 5 || number == 6)) {
-            if ( // prettier-ignore
-            (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 1,
-                row: 1,
-                cEnd: 3,
-                rEnd: 3,
-                size: 184,
-                border: '0',
-                clip: sample(forms)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ЛВ
-          // начало сектора ЛН
-
-
-          if (number === figure.number && (number == 3 || number == 4 || number == 7 || number == 8)) {
-            if ( // prettier-ignore
-            (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 1,
-                row: 3,
-                cEnd: 3,
-                rEnd: 5,
-                size: 184,
-                border: '0',
-                clip: sample(forms)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ЛН
-          // начало сектора ПВ
-
-
-          if (number === figure.number && (number == 9 || number == 10 || number == 13 || number == 14)) {
-            if ( // prettier-ignore
-            (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 3,
-                row: 1,
-                cEnd: 5,
-                rEnd: 3,
-                size: 184,
-                border: '0',
-                clip: sample(forms)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ПВ
-          // начало сектора ПН
-
-
-          if (number === figure.number && (number == 11 || number == 12 || number == 15 || number == 16)) {
-            if ( // prettier-ignore
-            (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 3,
-                row: 3,
-                cEnd: 5,
-                rEnd: 5,
-                size: 184,
-                border: '0',
-                clip: sample(forms)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ПН
-          else {
-            return figure;
-          }
-        });
-
-        _this.setState({
-          figures: _newCircle5
-        });
-      }
-
-      if (colorSelected && formSelected && sizeSelected) {
-        var _newCircle6 = figures.map(function (figure) {
-          // начало сектора ЛВ
-          if (number === figure.number && (number == 1 || number == 2 || number == 5 || number == 6)) {
-            if ( // prettier-ignore
-            (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 1,
-                row: 1,
-                cEnd: 3,
-                rEnd: 3,
-                size: 184,
-                border: '0',
-                clip: sample(forms),
-                color: sample(colors)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 1 || number == 2 || number == 5 || number == 6) && (figure.column === 1 || figure.column === 2) && (figure.row === 1 || figure.row === 2)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ЛВ
-          // начало сектора ЛН
-
-
-          if (number === figure.number && (number == 3 || number == 4 || number == 7 || number == 8)) {
-            if ( // prettier-ignore
-            (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 1,
-                row: 3,
-                cEnd: 3,
-                rEnd: 5,
-                size: 184,
-                border: '0',
-                clip: sample(forms),
-                color: sample(colors)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 3 || number == 4 || number == 7 || number == 8) && (figure.column === 1 || figure.column === 2) && (figure.row === 3 || figure.row === 4)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ЛН
-          // начало сектора ПВ
-
-
-          if (number === figure.number && (number == 9 || number == 10 || number == 13 || number == 14)) {
-            if ( // prettier-ignore
-            (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 3,
-                row: 1,
-                cEnd: 5,
-                rEnd: 3,
-                size: 184,
-                border: '0',
-                clip: sample(forms),
-                color: sample(colors)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 9 || number == 10 || number == 13 || number == 14) && (figure.column === 3 || figure.column === 4) && (figure.row === 1 || figure.row === 2)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ПВ
-          // начало сектора ПН
-
-
-          if (number === figure.number && (number == 11 || number == 12 || number == 15 || number == 16)) {
-            if ( // prettier-ignore
-            (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
-              return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-                column: 3,
-                row: 3,
-                cEnd: 5,
-                rEnd: 5,
-                size: 184,
-                border: '0',
-                clip: sample(forms),
-                color: sample(colors)
-              });
-            }
-          }
-
-          if ( // prettier-ignore
-          number !== figure.number && (number == 11 || number == 12 || number == 15 || number == 16) && (figure.column === 3 || figure.column === 4) && (figure.row === 3 || figure.row === 4)) {
-            return MOD_ContrastEditor_objectSpread(MOD_ContrastEditor_objectSpread({}, figure), {}, {
-              display: 'none'
-            });
-          } // конец сектора ПН
-          else {
-            return figure;
-          }
-        });
-
-        _this.setState({
-          figures: _newCircle6
-        });
-      }
-    });
-
-    MOD_ContrastEditor_defineProperty(MOD_ContrastEditor_assertThisInitialized(_this), "generateExercise", function () {
-      var figures = _this.state.figures;
-      var rounds = figures.map(function (figure) {
-        return /*#__PURE__*/react.createElement(A_Figure, {
-          row: figure.row,
-          column: figure.column,
-          number: figure.number,
-          key: figure.number,
-          color: figure.color,
-          border: figure.border,
-          clip: figure.clip,
-          cEnd: figure.cEnd,
-          rEnd: figure.rEnd,
-          size: figure.size,
-          display: figure.display,
-          handleBallClick: _this.handleBallClick
-        });
-      });
-      return /*#__PURE__*/react.createElement(M_GridBox, {
-        rounds: rounds,
-        handleClick: _this.handleClick
-      });
-    });
-
-    _this.state = {
-      size: 614,
-      figures: [],
-      colorSelected: false,
-      formSelected: false,
-      sizeSelected: false
-    };
-    return _this;
-  }
-
-  MOD_ContrastEditor_createClass(MOD_ContrastEditor, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.setState({
-        figures: this.props.figures
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var size = this.state.size;
-      var _this$props2 = this.props,
-          info = _this$props2.info,
-          figures = _this$props2.figures;
-      return /*#__PURE__*/react.createElement(M_ExerciseBox, {
-        header: info[2].header,
-        text: info[2].text,
-        exercise: this.generateExercise(),
-        size: size
-      });
-    }
-  }]);
-
-  return MOD_ContrastEditor;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_Slider/A_Slider.jsx
-function A_Slider_typeof(obj) { "@babel/helpers - typeof"; return A_Slider_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Slider_typeof(obj); }
-
-function A_Slider_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_Slider_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_Slider_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Slider_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Slider_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_Slider_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Slider_setPrototypeOf(subClass, superClass); }
-
-function A_Slider_setPrototypeOf(o, p) { A_Slider_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Slider_setPrototypeOf(o, p); }
-
-function A_Slider_createSuper(Derived) { var hasNativeReflectConstruct = A_Slider_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Slider_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Slider_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Slider_possibleConstructorReturn(this, result); }; }
-
-function A_Slider_possibleConstructorReturn(self, call) { if (call && (A_Slider_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Slider_assertThisInitialized(self); }
-
-function A_Slider_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_Slider_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_Slider_getPrototypeOf(o) { A_Slider_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Slider_getPrototypeOf(o); }
-
-function A_Slider_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-var A_Slider = /*#__PURE__*/function (_PureComponent) {
-  A_Slider_inherits(A_Slider, _PureComponent);
-
-  var _super = A_Slider_createSuper(A_Slider);
-
-  function A_Slider(props) {
-    var _this;
-
-    A_Slider_classCallCheck(this, A_Slider);
-
-    _this = _super.call(this, props);
-
-    A_Slider_defineProperty(A_Slider_assertThisInitialized(_this), "handleMouseDown", function (e) {
-      var handleMouseDown = _this.props.handleMouseDown;
-      e.preventDefault();
-      handleMouseDown(e);
-    });
-
-    A_Slider_defineProperty(A_Slider_assertThisInitialized(_this), "handleMouseMove", function (e) {
-      var handleMouseMove = _this.props.handleMouseMove;
-      e.preventDefault();
-      handleMouseMove(e);
-    });
-
-    A_Slider_defineProperty(A_Slider_assertThisInitialized(_this), "handleMouseUp", function (e) {
-      var handleMouseUp = _this.props.handleMouseUp;
-      e.preventDefault();
-      handleMouseUp(e);
-    });
-
-    return _this;
-  }
-
-  A_Slider_createClass(A_Slider, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      window.addEventListener('mouseup', this.handleMouseUp);
-      window.addEventListener('mousemove', this.handleMouseMove);
-      window.addEventListener('mousedown', this.handleMouseDown);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          coord = _this$props.coord,
-          sliderWidth = _this$props.sliderWidth;
-      var styles = {
-        transform: "translateX(".concat(coord, "px)")
-      };
-      var sliderStyles = {
-        width: "(".concat(sliderWidth, "px)")
-      };
-      return /*#__PURE__*/react.createElement("div", {
-        style: sliderStyles,
-        className: "A_Slider"
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "Thumb",
-        onMouseDown: this.handleMouseDown,
-        onMouseMove: this.handleMouseMove,
-        onMouseUp: this.handleMouseUp,
-        style: styles
-      }));
-    }
-  }]);
-
-  return A_Slider;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/modules/MOD_SizeBalance.jsx
-function MOD_SizeBalance_typeof(obj) { "@babel/helpers - typeof"; return MOD_SizeBalance_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, MOD_SizeBalance_typeof(obj); }
-
-function MOD_SizeBalance_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function MOD_SizeBalance_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function MOD_SizeBalance_createClass(Constructor, protoProps, staticProps) { if (protoProps) MOD_SizeBalance_defineProperties(Constructor.prototype, protoProps); if (staticProps) MOD_SizeBalance_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function MOD_SizeBalance_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) MOD_SizeBalance_setPrototypeOf(subClass, superClass); }
-
-function MOD_SizeBalance_setPrototypeOf(o, p) { MOD_SizeBalance_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return MOD_SizeBalance_setPrototypeOf(o, p); }
-
-function MOD_SizeBalance_createSuper(Derived) { var hasNativeReflectConstruct = MOD_SizeBalance_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = MOD_SizeBalance_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = MOD_SizeBalance_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return MOD_SizeBalance_possibleConstructorReturn(this, result); }; }
-
-function MOD_SizeBalance_possibleConstructorReturn(self, call) { if (call && (MOD_SizeBalance_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return MOD_SizeBalance_assertThisInitialized(self); }
-
-function MOD_SizeBalance_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function MOD_SizeBalance_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function MOD_SizeBalance_getPrototypeOf(o) { MOD_SizeBalance_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return MOD_SizeBalance_getPrototypeOf(o); }
-
-function MOD_SizeBalance_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-var MOD_SizeBalance = /*#__PURE__*/function (_PureComponent) {
-  MOD_SizeBalance_inherits(MOD_SizeBalance, _PureComponent);
-
-  var _super = MOD_SizeBalance_createSuper(MOD_SizeBalance);
-
-  function MOD_SizeBalance(props) {
-    var _this;
-
-    MOD_SizeBalance_classCallCheck(this, MOD_SizeBalance);
-
-    _this = _super.call(this, props);
-
-    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "generateExercise", function () {
-      var _this$state = _this.state,
-          coord = _this$state.coord,
-          sliderWidth = _this$state.sliderWidth;
-      return /*#__PURE__*/react.createElement(A_Slider, {
-        coord: coord,
-        handleMouseMove: _this.handleMouseMove,
-        handleMouseDown: _this.handleMouseDown,
-        handleMouseUp: _this.handleMouseUp,
-        sliderWidth: sliderWidth
-      });
-    });
-
-    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "squares", function () {
-      var _this$state2 = _this.state,
-          coord = _this$state2.coord,
-          text = _this$state2.text,
-          color = _this$state2.color,
-          semiColor = _this$state2.semiColor;
-      var styleOne = {
-        width: "100px",
-        height: "100px",
-        backgroundColor: "var(--dark)"
-      };
-
-      var styleTwo = MOD_SizeBalance_defineProperty({
-        width: "".concat(100 + coord, "px"),
-        height: "".concat(100 + coord, "px"),
-        backgroundColor: "var(--border)",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        fontFamily: "Proxima Nova",
-        fontWeight: "600",
-        fontSize: "24px",
-        color: "".concat(color),
-        border: "4px dashed ".concat(color)
-      }, "backgroundColor", "".concat(semiColor));
-
-      var styleThree = {
-        width: "300px",
-        height: "300px",
-        backgroundColor: "var(--dark)"
-      };
-      var boxStyle = {
-        display: "flex",
-        justifyContent: "space-around",
-        width: "100%",
-        marginBottom: "25px",
-        alignItems: "flex-end",
-        paddingLeft: "50px",
-        paddingRight: "50px"
-      };
-      return /*#__PURE__*/react.createElement("div", {
-        className: "box",
-        style: boxStyle
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "Square-1",
-        style: styleOne
-      }), /*#__PURE__*/react.createElement("div", {
-        className: "Square-2",
-        style: styleTwo
-      }, text), /*#__PURE__*/react.createElement("div", {
-        className: "Square-3",
-        style: styleThree
-      }));
-    });
-
-    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "handleMouseDown", function (e) {
-      e.preventDefault();
-      var cursorStart = _this.state.cursorStart;
-
-      _this.setState({
-        mouseDown: true,
-        cursorStart: e.screenX
-      });
-    });
-
-    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "handleMouseMove", function (e) {
-      var _this$state3 = _this.state,
-          coord = _this$state3.coord,
-          cursorStart = _this$state3.cursorStart,
-          coordPrev = _this$state3.coordPrev,
-          min = _this$state3.min,
-          max = _this$state3.max;
-
-      if (_this.state.mouseDown) {
-        _this.setState({
-          coord: coordPrev + e.screenX - cursorStart
-        });
-
-        if (coordPrev + e.screenX - cursorStart > max) {
-          _this.setState({
-            coord: max
-          });
-        }
-
-        if (coordPrev + e.screenX - cursorStart < min) {
-          _this.setState({
-            coord: min
-          });
-        }
-      }
-    });
-
-    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "handleMouseUp", function (e) {
-      console.log('Up!');
-      e.preventDefault();
-      var _this$state4 = _this.state,
-          mouseDown = _this$state4.mouseDown,
-          coord = _this$state4.coord,
-          coordPrev = _this$state4.coordPrev;
-
-      if (mouseDown) {
-        _this.calcResult(coord);
-
-        _this.setState({
-          coordPrev: coord,
-          mouseDown: false
-        });
-      }
-    });
-
-    MOD_SizeBalance_defineProperty(MOD_SizeBalance_assertThisInitialized(_this), "calcResult", function (coord) {
-      // const {} = this.state
-      if (_this.state.coord <= 105 && _this.state.coord >= 95) {
-        _this.setState({
-          text: 'Супер!',
-          color: '#08661D',
-          semiColor: '#DFFDE7'
-        });
-      }
-
-      if (_this.state.coord > 105) {
-        _this.setState({
-          text: 'Многовато!',
-          color: '#660808',
-          semiColor: '#FDDFDF'
-        });
-      }
-
-      if (_this.state.coord < 95) {
-        _this.setState({
-          text: 'Маловато!',
-          color: '#660808',
-          semiColor: '#FDDFDF'
-        });
-      }
-    });
-
-    _this.state = {
-      size: 436,
-      mouseDown: false,
-      coord: 0,
-      cursorStart: 0,
-      min: 0,
-      max: 120,
-      coordPrev: 0,
-      sliderWidth: 150,
-      signature: '',
-      display: 'block',
-      text: '',
-      color: 'var(--dark)',
-      semiColor: 'var(--border)'
-    };
-    return _this;
-  }
-
-  MOD_SizeBalance_createClass(MOD_SizeBalance, [{
-    key: "render",
-    value: function render() {
-      var size = this.state.size;
-      var info = this.props.info;
-      return /*#__PURE__*/react.createElement(M_ExerciseBox, {
-        header: info[0].header,
-        text: info[0].text,
-        exercise: this.generateExercise(),
-        size: size,
-        squares: this.squares()
-      });
-    }
-  }]);
-
-  return MOD_SizeBalance;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_CheckBox/A_CheckBox.jsx
-function A_CheckBox_typeof(obj) { "@babel/helpers - typeof"; return A_CheckBox_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_CheckBox_typeof(obj); }
-
-function A_CheckBox_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_CheckBox_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_CheckBox_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_CheckBox_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_CheckBox_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_CheckBox_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_CheckBox_setPrototypeOf(subClass, superClass); }
-
-function A_CheckBox_setPrototypeOf(o, p) { A_CheckBox_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_CheckBox_setPrototypeOf(o, p); }
-
-function A_CheckBox_createSuper(Derived) { var hasNativeReflectConstruct = A_CheckBox_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_CheckBox_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_CheckBox_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_CheckBox_possibleConstructorReturn(this, result); }; }
-
-function A_CheckBox_possibleConstructorReturn(self, call) { if (call && (A_CheckBox_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_CheckBox_assertThisInitialized(self); }
-
-function A_CheckBox_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_CheckBox_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_CheckBox_getPrototypeOf(o) { A_CheckBox_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_CheckBox_getPrototypeOf(o); }
-
-function A_CheckBox_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-var A_CheckBox = /*#__PURE__*/function (_PureComponent) {
-  A_CheckBox_inherits(A_CheckBox, _PureComponent);
-
-  var _super = A_CheckBox_createSuper(A_CheckBox);
-
-  function A_CheckBox(props) {
-    var _this;
-
-    A_CheckBox_classCallCheck(this, A_CheckBox);
-
-    _this = _super.call(this, props);
-
-    A_CheckBox_defineProperty(A_CheckBox_assertThisInitialized(_this), "handleClick", function () {
-      var handleClick = _this.props.handleClick;
-      var checked = _this.state.checked;
-
-      _this.setState({
-        checked: true
-      });
-
-      if (checked) {
-        _this.setState({
-          checked: false
-        });
-      }
-
-      handleClick(checked);
-    });
-
-    _this.state = {
-      checked: false,
-      correct: false,
-      incorrect: false
-    };
-    return _this;
-  }
-
-  A_CheckBox_createClass(A_CheckBox, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      var _this$props = this.props,
-          correct = _this$props.correct,
-          incorrect = _this$props.incorrect;
-
-      if (incorrect) {
-        this.setState({
-          incorrect: true,
-          checked: false
-        });
-      }
-
-      if (correct) {
-        this.setState({
-          correct: true,
-          checked: false
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$state = this.state,
-          checked = _this$state.checked,
-          correct = _this$state.correct,
-          incorrect = _this$state.incorrect;
-      var classes = classnames_default()({
-        A_CheckBox: true,
-        checked: checked,
-        correct: correct,
-        incorrect: incorrect
-      });
-      return /*#__PURE__*/react.createElement("div", {
-        className: classes,
-        onClick: this.handleClick
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "Q_Icon redCross"
-      }), /*#__PURE__*/react.createElement("div", {
-        className: "Q_Icon greenTick"
-      }), /*#__PURE__*/react.createElement("div", {
-        className: "Q_Icon neutralTick"
-      }));
-    }
-  }]);
-
-  return A_CheckBox;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/moleculas/M_CheckOptionWide/M_CheckOptionWide.jsx
-function M_CheckOptionWide_typeof(obj) { "@babel/helpers - typeof"; return M_CheckOptionWide_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_CheckOptionWide_typeof(obj); }
-
-function M_CheckOptionWide_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function M_CheckOptionWide_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function M_CheckOptionWide_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_CheckOptionWide_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_CheckOptionWide_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function M_CheckOptionWide_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_CheckOptionWide_setPrototypeOf(subClass, superClass); }
-
-function M_CheckOptionWide_setPrototypeOf(o, p) { M_CheckOptionWide_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_CheckOptionWide_setPrototypeOf(o, p); }
-
-function M_CheckOptionWide_createSuper(Derived) { var hasNativeReflectConstruct = M_CheckOptionWide_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_CheckOptionWide_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_CheckOptionWide_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_CheckOptionWide_possibleConstructorReturn(this, result); }; }
-
-function M_CheckOptionWide_possibleConstructorReturn(self, call) { if (call && (M_CheckOptionWide_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_CheckOptionWide_assertThisInitialized(self); }
-
-function M_CheckOptionWide_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function M_CheckOptionWide_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function M_CheckOptionWide_getPrototypeOf(o) { M_CheckOptionWide_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_CheckOptionWide_getPrototypeOf(o); }
-
-function M_CheckOptionWide_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-var M_CheckOptionWide = /*#__PURE__*/function (_PureComponent) {
-  M_CheckOptionWide_inherits(M_CheckOptionWide, _PureComponent);
-
-  var _super = M_CheckOptionWide_createSuper(M_CheckOptionWide);
-
-  function M_CheckOptionWide(props) {
-    var _this;
-
-    M_CheckOptionWide_classCallCheck(this, M_CheckOptionWide);
-
-    _this = _super.call(this, props);
-
-    M_CheckOptionWide_defineProperty(M_CheckOptionWide_assertThisInitialized(_this), "handleClick", function (checked) {
-      if (checked == false) {
-        _this.setState({
-          ticked: true
-        });
-      }
-
-      if (checked == true) {
-        _this.setState({
-          ticked: false
-        });
-      }
-    });
-
-    _this.state = {
-      correct: false,
-      incorrect: false,
-      ticked: false
-    };
-    return _this;
-  }
-
-  M_CheckOptionWide_createClass(M_CheckOptionWide, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      var _this$props = this.props,
-          answered = _this$props.answered,
-          status = _this$props.status;
-
-      if (answered) {
-        if (status == 'correct') {
-          this.setState({
-            correct: true
-          });
-        }
-
-        if (status == 'incorrect') {
-          this.setState({
-            incorrect: true
-          });
-        }
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props2 = this.props,
-          body = _this$props2.body,
-          defenition = _this$props2.defenition,
-          status = _this$props2.status;
-      var _this$state = this.state,
-          correct = _this$state.correct,
-          incorrect = _this$state.incorrect,
-          ticked = _this$state.ticked;
-      var classes = classnames_default()({
-        M_CheckOptionWide: true,
-        correct: correct,
-        incorrect: incorrect,
-        ticked: ticked
-      });
-      return /*#__PURE__*/react.createElement("div", {
-        className: classes
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "inner"
-      }, /*#__PURE__*/react.createElement(A_CheckBox, {
-        correct: correct,
-        incorrect: incorrect,
-        handleClick: this.handleClick
-      }), /*#__PURE__*/react.createElement("p", null, body, /*#__PURE__*/react.createElement("p", {
-        className: "hidden"
-      }, defenition))));
-    }
-  }]);
-
-  return M_CheckOptionWide;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/organisms/O_CheckboxQuestion/O_CheckboxQuestion.jsx
-function O_CheckboxQuestion_typeof(obj) { "@babel/helpers - typeof"; return O_CheckboxQuestion_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, O_CheckboxQuestion_typeof(obj); }
-
-function O_CheckboxQuestion_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function O_CheckboxQuestion_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function O_CheckboxQuestion_createClass(Constructor, protoProps, staticProps) { if (protoProps) O_CheckboxQuestion_defineProperties(Constructor.prototype, protoProps); if (staticProps) O_CheckboxQuestion_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function O_CheckboxQuestion_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) O_CheckboxQuestion_setPrototypeOf(subClass, superClass); }
-
-function O_CheckboxQuestion_setPrototypeOf(o, p) { O_CheckboxQuestion_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return O_CheckboxQuestion_setPrototypeOf(o, p); }
-
-function O_CheckboxQuestion_createSuper(Derived) { var hasNativeReflectConstruct = O_CheckboxQuestion_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = O_CheckboxQuestion_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = O_CheckboxQuestion_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return O_CheckboxQuestion_possibleConstructorReturn(this, result); }; }
-
-function O_CheckboxQuestion_possibleConstructorReturn(self, call) { if (call && (O_CheckboxQuestion_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return O_CheckboxQuestion_assertThisInitialized(self); }
-
-function O_CheckboxQuestion_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function O_CheckboxQuestion_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function O_CheckboxQuestion_getPrototypeOf(o) { O_CheckboxQuestion_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return O_CheckboxQuestion_getPrototypeOf(o); }
-
-function O_CheckboxQuestion_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-
-var O_CheckboxQuestion = /*#__PURE__*/function (_PureComponent) {
-  O_CheckboxQuestion_inherits(O_CheckboxQuestion, _PureComponent);
-
-  var _super = O_CheckboxQuestion_createSuper(O_CheckboxQuestion);
-
-  function O_CheckboxQuestion(props) {
-    var _this;
-
-    O_CheckboxQuestion_classCallCheck(this, O_CheckboxQuestion);
-
-    _this = _super.call(this, props);
-
-    O_CheckboxQuestion_defineProperty(O_CheckboxQuestion_assertThisInitialized(_this), "handleClick", function () {
-      var answered = _this.state.answered;
-
-      _this.setState({
-        answered: true
-      });
-    });
-
-    _this.state = {
-      answered: false
-    };
-    return _this;
-  }
-
-  O_CheckboxQuestion_createClass(O_CheckboxQuestion, [{
-    key: "render",
-    value: function render() {
-      var answered = this.state.answered;
-      var _this$props = this.props,
-          answerOptions = _this$props.answerOptions,
-          name = _this$props.name;
-      var classes = classnames_default()({
-        O_CheckboxQuestion: true,
-        answered: answered
-      });
-      var options = answerOptions.map(function (option, i) {
-        return /*#__PURE__*/react.createElement(M_CheckOptionWide, {
-          body: option.body,
-          status: option.status,
-          defenition: option.defenition,
-          answered: answered,
-          key: i
-        });
-      });
-      return /*#__PURE__*/react.createElement("div", {
-        className: classes
-      }, /*#__PURE__*/react.createElement("h4", null, name), /*#__PURE__*/react.createElement("div", {
-        className: "pack"
-      }, options), /*#__PURE__*/react.createElement(A_Button, {
-        text: "\u041E\u0442\u0432\u0435\u0442\u0438\u0442\u044C",
-        handleClick: this.handleClick
-      }));
-    }
-  }]);
-
-  return O_CheckboxQuestion;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_RadioButton/A_RadioButton.jsx
-function A_RadioButton_typeof(obj) { "@babel/helpers - typeof"; return A_RadioButton_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_RadioButton_typeof(obj); }
-
-function A_RadioButton_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_RadioButton_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_RadioButton_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_RadioButton_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_RadioButton_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_RadioButton_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_RadioButton_setPrototypeOf(subClass, superClass); }
-
-function A_RadioButton_setPrototypeOf(o, p) { A_RadioButton_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_RadioButton_setPrototypeOf(o, p); }
-
-function A_RadioButton_createSuper(Derived) { var hasNativeReflectConstruct = A_RadioButton_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_RadioButton_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_RadioButton_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_RadioButton_possibleConstructorReturn(this, result); }; }
-
-function A_RadioButton_possibleConstructorReturn(self, call) { if (call && (A_RadioButton_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_RadioButton_assertThisInitialized(self); }
-
-function A_RadioButton_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_RadioButton_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_RadioButton_getPrototypeOf(o) { A_RadioButton_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_RadioButton_getPrototypeOf(o); }
-
-function A_RadioButton_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-var A_RadioButton = /*#__PURE__*/function (_PureComponent) {
-  A_RadioButton_inherits(A_RadioButton, _PureComponent);
-
-  var _super = A_RadioButton_createSuper(A_RadioButton);
-
-  function A_RadioButton(props) {
-    var _this;
-
-    A_RadioButton_classCallCheck(this, A_RadioButton);
-
-    _this = _super.call(this, props);
-
-    A_RadioButton_defineProperty(A_RadioButton_assertThisInitialized(_this), "handleClick", function () {
-      var _this$props = _this.props,
-          handleClick = _this$props.handleClick,
-          answered = _this$props.answered;
-      var picked = _this.state.picked;
-
-      if (answered == false) {
-        _this.setState({
-          picked: true
-        });
-      }
-
-      handleClick(picked);
-    });
-
-    _this.state = {
-      correct: false,
-      incorrect: false,
-      picked: false
-    };
-    return _this;
-  }
-
-  A_RadioButton_createClass(A_RadioButton, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      var _this$props2 = this.props,
-          status = _this$props2.status,
-          answered = _this$props2.answered;
-
-      if (answered) {
-        if (status == 'correct') {
-          this.setState({
-            correct: true
-          });
-        }
-
-        if (status == 'incorrect') {
-          this.setState({
-            incorrect: true
-          });
-        }
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$state = this.state,
-          picked = _this$state.picked,
-          correct = _this$state.correct,
-          incorrect = _this$state.incorrect;
-      var classes = classnames_default()({
-        A_RadioButton: true,
-        correct: correct,
-        incorrect: incorrect,
-        picked: picked
-      });
-      return /*#__PURE__*/react.createElement("div", {
-        className: classes,
-        onClick: this.handleClick
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "Q_Icon redCross"
-      }), /*#__PURE__*/react.createElement("div", {
-        className: "Q_Icon greenTick"
-      }));
-    }
-  }]);
-
-  return A_RadioButton;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/moleculas/M_RadioOptionWide/M_RadioOptionWide.jsx
-function M_RadioOptionWide_typeof(obj) { "@babel/helpers - typeof"; return M_RadioOptionWide_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_RadioOptionWide_typeof(obj); }
-
-function M_RadioOptionWide_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function M_RadioOptionWide_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function M_RadioOptionWide_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_RadioOptionWide_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_RadioOptionWide_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function M_RadioOptionWide_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_RadioOptionWide_setPrototypeOf(subClass, superClass); }
-
-function M_RadioOptionWide_setPrototypeOf(o, p) { M_RadioOptionWide_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_RadioOptionWide_setPrototypeOf(o, p); }
-
-function M_RadioOptionWide_createSuper(Derived) { var hasNativeReflectConstruct = M_RadioOptionWide_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_RadioOptionWide_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_RadioOptionWide_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_RadioOptionWide_possibleConstructorReturn(this, result); }; }
-
-function M_RadioOptionWide_possibleConstructorReturn(self, call) { if (call && (M_RadioOptionWide_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_RadioOptionWide_assertThisInitialized(self); }
-
-function M_RadioOptionWide_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function M_RadioOptionWide_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function M_RadioOptionWide_getPrototypeOf(o) { M_RadioOptionWide_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_RadioOptionWide_getPrototypeOf(o); }
-
-function M_RadioOptionWide_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-var M_RadioOptionWide = /*#__PURE__*/function (_PureComponent) {
-  M_RadioOptionWide_inherits(M_RadioOptionWide, _PureComponent);
-
-  var _super = M_RadioOptionWide_createSuper(M_RadioOptionWide);
-
-  function M_RadioOptionWide(props) {
-    var _this;
-
-    M_RadioOptionWide_classCallCheck(this, M_RadioOptionWide);
-
-    _this = _super.call(this, props);
-
-    M_RadioOptionWide_defineProperty(M_RadioOptionWide_assertThisInitialized(_this), "handleClick", function (picked) {
-      var answered = _this.props.answered;
-
-      if (answered == false) {
-        _this.setState({
-          ticked: true
-        });
-      }
-    });
-
-    _this.state = {
-      correct: false,
-      incorrect: false,
-      ticked: false
-    };
-    return _this;
-  }
-
-  M_RadioOptionWide_createClass(M_RadioOptionWide, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      var _this$props = this.props,
-          answered = _this$props.answered,
-          status = _this$props.status;
-
-      if (answered) {
-        if (status == 'correct') {
-          this.setState({
-            correct: true
-          });
-        }
-
-        if (status == 'incorrect') {
-          this.setState({
-            incorrect: true
-          });
-        }
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props2 = this.props,
-          body = _this$props2.body,
-          defenition = _this$props2.defenition,
-          status = _this$props2.status,
-          handleClick = _this$props2.handleClick,
-          answered = _this$props2.answered;
-      var _this$state = this.state,
-          correct = _this$state.correct,
-          incorrect = _this$state.incorrect,
-          ticked = _this$state.ticked;
-      var classes = classnames_default()({
-        M_RadioOptionWide: true,
-        correct: correct,
-        incorrect: incorrect,
-        ticked: ticked
-      });
-      return /*#__PURE__*/react.createElement("div", {
-        className: classes,
-        onClick: this.handleClick
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "inner"
-      }, /*#__PURE__*/react.createElement(A_RadioButton, {
-        correct: correct,
-        incorrect: incorrect,
-        status: status,
-        handleClick: handleClick,
-        answered: answered
-      }), /*#__PURE__*/react.createElement("p", null, body, /*#__PURE__*/react.createElement("p", {
-        className: "hidden"
-      }, defenition))));
-    }
-  }]);
-
-  return M_RadioOptionWide;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/organisms/O_RadioQuestion/O_RadioQuestion.jsx
-function O_RadioQuestion_typeof(obj) { "@babel/helpers - typeof"; return O_RadioQuestion_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, O_RadioQuestion_typeof(obj); }
-
-function O_RadioQuestion_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function O_RadioQuestion_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function O_RadioQuestion_createClass(Constructor, protoProps, staticProps) { if (protoProps) O_RadioQuestion_defineProperties(Constructor.prototype, protoProps); if (staticProps) O_RadioQuestion_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function O_RadioQuestion_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) O_RadioQuestion_setPrototypeOf(subClass, superClass); }
-
-function O_RadioQuestion_setPrototypeOf(o, p) { O_RadioQuestion_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return O_RadioQuestion_setPrototypeOf(o, p); }
-
-function O_RadioQuestion_createSuper(Derived) { var hasNativeReflectConstruct = O_RadioQuestion_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = O_RadioQuestion_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = O_RadioQuestion_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return O_RadioQuestion_possibleConstructorReturn(this, result); }; }
-
-function O_RadioQuestion_possibleConstructorReturn(self, call) { if (call && (O_RadioQuestion_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return O_RadioQuestion_assertThisInitialized(self); }
-
-function O_RadioQuestion_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function O_RadioQuestion_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function O_RadioQuestion_getPrototypeOf(o) { O_RadioQuestion_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return O_RadioQuestion_getPrototypeOf(o); }
-
-function O_RadioQuestion_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-var O_RadioQuestion = /*#__PURE__*/function (_PureComponent) {
-  O_RadioQuestion_inherits(O_RadioQuestion, _PureComponent);
-
-  var _super = O_RadioQuestion_createSuper(O_RadioQuestion);
-
-  function O_RadioQuestion(props) {
-    var _this;
-
-    O_RadioQuestion_classCallCheck(this, O_RadioQuestion);
-
-    _this = _super.call(this, props);
-
-    O_RadioQuestion_defineProperty(O_RadioQuestion_assertThisInitialized(_this), "handleClick", function (picked) {
-      var answered = _this.state.answered;
-
-      if (answered == false) {
-        _this.setState({
-          answered: true
-        });
-      }
-    });
-
-    _this.state = {
-      answered: false
-    };
-    return _this;
-  }
-
-  O_RadioQuestion_createClass(O_RadioQuestion, [{
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var answered = this.state.answered;
-      var _this$props = this.props,
-          answerOptions = _this$props.answerOptions,
-          name = _this$props.name;
-      var classes = classnames_default()({
-        O_RadioQuestion: true,
-        answered: answered
-      });
-      var options = answerOptions.map(function (option, i) {
-        return /*#__PURE__*/react.createElement(M_RadioOptionWide, {
-          body: option.body,
-          status: option.status,
-          defenition: option.defenition,
-          key: i,
-          answered: answered,
-          handleClick: _this2.handleClick
-        });
-      });
-      return /*#__PURE__*/react.createElement("div", {
-        className: classes
-      }, /*#__PURE__*/react.createElement("h4", null, name), /*#__PURE__*/react.createElement("div", {
-        className: "pack"
-      }, options));
-    }
-  }]);
-
-  return O_RadioQuestion;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/superorganisms/S_Quiz/S_Quiz.jsx
-function S_Quiz_typeof(obj) { "@babel/helpers - typeof"; return S_Quiz_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, S_Quiz_typeof(obj); }
-
-function S_Quiz_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function S_Quiz_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function S_Quiz_createClass(Constructor, protoProps, staticProps) { if (protoProps) S_Quiz_defineProperties(Constructor.prototype, protoProps); if (staticProps) S_Quiz_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function S_Quiz_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) S_Quiz_setPrototypeOf(subClass, superClass); }
-
-function S_Quiz_setPrototypeOf(o, p) { S_Quiz_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return S_Quiz_setPrototypeOf(o, p); }
-
-function S_Quiz_createSuper(Derived) { var hasNativeReflectConstruct = S_Quiz_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = S_Quiz_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = S_Quiz_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return S_Quiz_possibleConstructorReturn(this, result); }; }
-
-function S_Quiz_possibleConstructorReturn(self, call) { if (call && (S_Quiz_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return S_Quiz_assertThisInitialized(self); }
-
-function S_Quiz_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function S_Quiz_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function S_Quiz_getPrototypeOf(o) { S_Quiz_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return S_Quiz_getPrototypeOf(o); }
-
-
-
-
-
-
-
-var S_Quiz = /*#__PURE__*/function (_PureComponent) {
-  S_Quiz_inherits(S_Quiz, _PureComponent);
-
-  var _super = S_Quiz_createSuper(S_Quiz);
-
-  function S_Quiz(props) {
-    var _this;
-
-    S_Quiz_classCallCheck(this, S_Quiz);
-
-    _this = _super.call(this, props);
-    _this.state = {
-      questionsList: []
-    };
-    return _this;
-  }
-
-  S_Quiz_createClass(S_Quiz, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var questions = this.props.questions;
-      this.setState({
-        questionsList: questions
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var questionsList = this.state.questionsList;
-      var questions = questionsList.map(function (question, i) {
-        if (question.type == 'Single') {
-          return /*#__PURE__*/react.createElement(O_RadioQuestion, {
-            name: question.name,
-            answerOptions: question.answerOptions,
-            key: i
-          });
-        }
-
-        if (question.type == 'Multiple') {
-          return /*#__PURE__*/react.createElement(O_CheckboxQuestion, {
-            name: question.name,
-            answerOptions: question.answerOptions,
-            key: i
-          });
-        }
-      });
-      return /*#__PURE__*/react.createElement("div", {
-        className: "S_Quiz"
-      }, /*#__PURE__*/react.createElement("h3", null, "\u0422\u0435\u0441\u0442 \u043D\u0430 \u0437\u043D\u0430\u043D\u0438\u0435 \u0442\u0438\u043F\u0433\u043E\u0440\u0430\u0444\u0438\u043A\u0438"), /*#__PURE__*/react.createElement("div", {
-        className: "pack"
-      }, questions));
-    }
-  }]);
-
-  return S_Quiz;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_AlternativeFrame/A_AlternativeFrame.jsx
-function A_AlternativeFrame_typeof(obj) { "@babel/helpers - typeof"; return A_AlternativeFrame_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_AlternativeFrame_typeof(obj); }
-
-function A_AlternativeFrame_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_AlternativeFrame_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_AlternativeFrame_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_AlternativeFrame_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_AlternativeFrame_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_AlternativeFrame_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_AlternativeFrame_setPrototypeOf(subClass, superClass); }
-
-function A_AlternativeFrame_setPrototypeOf(o, p) { A_AlternativeFrame_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_AlternativeFrame_setPrototypeOf(o, p); }
-
-function A_AlternativeFrame_createSuper(Derived) { var hasNativeReflectConstruct = A_AlternativeFrame_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_AlternativeFrame_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_AlternativeFrame_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_AlternativeFrame_possibleConstructorReturn(this, result); }; }
-
-function A_AlternativeFrame_possibleConstructorReturn(self, call) { if (call && (A_AlternativeFrame_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_AlternativeFrame_assertThisInitialized(self); }
-
-function A_AlternativeFrame_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_AlternativeFrame_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_AlternativeFrame_getPrototypeOf(o) { A_AlternativeFrame_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_AlternativeFrame_getPrototypeOf(o); }
-
-
-
-
-
-var A_AlternativeFrame = /*#__PURE__*/function (_PureComponent) {
-  A_AlternativeFrame_inherits(A_AlternativeFrame, _PureComponent);
-
-  var _super = A_AlternativeFrame_createSuper(A_AlternativeFrame);
-
-  function A_AlternativeFrame(props) {
-    A_AlternativeFrame_classCallCheck(this, A_AlternativeFrame);
-
-    return _super.call(this, props);
-  }
-
-  A_AlternativeFrame_createClass(A_AlternativeFrame, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          size = _this$props.size,
-          bricks = _this$props.bricks,
-          cellsShow = _this$props.cellsShow;
-      var style = {
-        height: "".concat(size, "px")
-      };
-      return /*#__PURE__*/react.createElement("div", {
-        className: "A_AlternativeFrame",
-        style: style
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "upper"
-      }, " ", cellsShow), /*#__PURE__*/react.createElement("div", {
-        className: "lower"
-      }, " ", bricks));
-    }
-  }]);
-
-  return A_AlternativeFrame;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/moleculas/M_AlternativeExerciseBox/M_AlternativeExerciseBox.jsx
-function M_AlternativeExerciseBox_typeof(obj) { "@babel/helpers - typeof"; return M_AlternativeExerciseBox_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_AlternativeExerciseBox_typeof(obj); }
-
-function M_AlternativeExerciseBox_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function M_AlternativeExerciseBox_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function M_AlternativeExerciseBox_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_AlternativeExerciseBox_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_AlternativeExerciseBox_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function M_AlternativeExerciseBox_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_AlternativeExerciseBox_setPrototypeOf(subClass, superClass); }
-
-function M_AlternativeExerciseBox_setPrototypeOf(o, p) { M_AlternativeExerciseBox_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_AlternativeExerciseBox_setPrototypeOf(o, p); }
-
-function M_AlternativeExerciseBox_createSuper(Derived) { var hasNativeReflectConstruct = M_AlternativeExerciseBox_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_AlternativeExerciseBox_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_AlternativeExerciseBox_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_AlternativeExerciseBox_possibleConstructorReturn(this, result); }; }
-
-function M_AlternativeExerciseBox_possibleConstructorReturn(self, call) { if (call && (M_AlternativeExerciseBox_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_AlternativeExerciseBox_assertThisInitialized(self); }
-
-function M_AlternativeExerciseBox_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function M_AlternativeExerciseBox_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function M_AlternativeExerciseBox_getPrototypeOf(o) { M_AlternativeExerciseBox_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_AlternativeExerciseBox_getPrototypeOf(o); }
-
-
-
-
-
-
-
-var M_AlternativeExerciseBox = /*#__PURE__*/function (_PureComponent) {
-  M_AlternativeExerciseBox_inherits(M_AlternativeExerciseBox, _PureComponent);
-
-  var _super = M_AlternativeExerciseBox_createSuper(M_AlternativeExerciseBox);
-
-  function M_AlternativeExerciseBox(props) {
-    M_AlternativeExerciseBox_classCallCheck(this, M_AlternativeExerciseBox);
-
-    return _super.call(this, props);
-  }
-
-  M_AlternativeExerciseBox_createClass(M_AlternativeExerciseBox, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          header = _this$props.header,
-          text = _this$props.text,
-          size = _this$props.size,
-          bricks = _this$props.bricks,
-          cellsShow = _this$props.cellsShow;
-      return /*#__PURE__*/react.createElement("div", {
-        className: "M_AlternativeExerciseBox"
-      }, /*#__PURE__*/react.createElement(A_Text, {
-        header: header,
-        text: text
-      }), /*#__PURE__*/react.createElement(A_AlternativeFrame, {
-        size: size,
-        bricks: bricks,
-        cellsShow: cellsShow
-      }));
-    }
-  }]);
-
-  return M_AlternativeExerciseBox;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_ColorBrick/A_ColorBrick.jsx
-function A_ColorBrick_typeof(obj) { "@babel/helpers - typeof"; return A_ColorBrick_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_ColorBrick_typeof(obj); }
-
-function A_ColorBrick_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_ColorBrick_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_ColorBrick_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_ColorBrick_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_ColorBrick_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_ColorBrick_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_ColorBrick_setPrototypeOf(subClass, superClass); }
-
-function A_ColorBrick_setPrototypeOf(o, p) { A_ColorBrick_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_ColorBrick_setPrototypeOf(o, p); }
-
-function A_ColorBrick_createSuper(Derived) { var hasNativeReflectConstruct = A_ColorBrick_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_ColorBrick_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_ColorBrick_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_ColorBrick_possibleConstructorReturn(this, result); }; }
-
-function A_ColorBrick_possibleConstructorReturn(self, call) { if (call && (A_ColorBrick_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_ColorBrick_assertThisInitialized(self); }
-
-function A_ColorBrick_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_ColorBrick_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_ColorBrick_getPrototypeOf(o) { A_ColorBrick_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_ColorBrick_getPrototypeOf(o); }
-
-function A_ColorBrick_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-var A_ColorBrick = /*#__PURE__*/function (_PureComponent) {
-  A_ColorBrick_inherits(A_ColorBrick, _PureComponent);
-
-  var _super = A_ColorBrick_createSuper(A_ColorBrick);
-
-  function A_ColorBrick(props) {
-    var _this;
-
-    A_ColorBrick_classCallCheck(this, A_ColorBrick);
-
-    _this = _super.call(this, props);
-
-    A_ColorBrick_defineProperty(A_ColorBrick_assertThisInitialized(_this), "receiveCoord", function () {
-      var _this$props = _this.props,
-          receiveCoord = _this$props.receiveCoord,
-          number = _this$props.number;
-      var x = _this.state.x;
-
-      _this.position.current.getBoundingClientRect();
-
-      _this.setState({
-        x: _this.position.current.getBoundingClientRect().x,
-        y: _this.position.current.getBoundingClientRect().y
-      });
-
-      receiveCoord(x, number);
-    });
-
-    _this.position = /*#__PURE__*/react.createRef();
-    _this.state = {
-      x: 0,
-      y: 0
-    };
-    return _this;
-  }
-
-  A_ColorBrick_createClass(A_ColorBrick, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      window.addEventListener('load', this.receiveCoord); // window.addEventListener('scroll', this.receiveCoord)
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props2 = this.props,
-          color = _this$props2.color,
-          result = _this$props2.result;
-      var styles = {
-        backgroundColor: "".concat(color)
-      };
-      return /*#__PURE__*/react.createElement("div", {
-        className: "A_ColorBrick",
-        style: styles,
-        ref: this.position
-      }, /*#__PURE__*/react.createElement("h3", null));
-    }
-  }]);
-
-  return A_ColorBrick;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_Cell/A_Cell.jsx
-function A_Cell_typeof(obj) { "@babel/helpers - typeof"; return A_Cell_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Cell_typeof(obj); }
-
-function A_Cell_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_Cell_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_Cell_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Cell_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Cell_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_Cell_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Cell_setPrototypeOf(subClass, superClass); }
-
-function A_Cell_setPrototypeOf(o, p) { A_Cell_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Cell_setPrototypeOf(o, p); }
-
-function A_Cell_createSuper(Derived) { var hasNativeReflectConstruct = A_Cell_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Cell_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Cell_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Cell_possibleConstructorReturn(this, result); }; }
-
-function A_Cell_possibleConstructorReturn(self, call) { if (call && (A_Cell_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Cell_assertThisInitialized(self); }
-
-function A_Cell_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_Cell_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_Cell_getPrototypeOf(o) { A_Cell_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Cell_getPrototypeOf(o); }
-
-function A_Cell_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-var A_Cell = /*#__PURE__*/function (_PureComponent) {
-  A_Cell_inherits(A_Cell, _PureComponent);
-
-  var _super = A_Cell_createSuper(A_Cell);
-
-  function A_Cell(props) {
-    var _this;
-
-    A_Cell_classCallCheck(this, A_Cell);
-
-    _this = _super.call(this, props);
-
-    A_Cell_defineProperty(A_Cell_assertThisInitialized(_this), "handleMouseDown", function (e) {
-      var handleMouseDown = _this.props.handleMouseDown;
-      e.preventDefault();
-      handleMouseDown(e);
-    });
-
-    A_Cell_defineProperty(A_Cell_assertThisInitialized(_this), "handleMouseMove", function (e) {
-      var handleMouseMove = _this.props.handleMouseMove;
-      e.preventDefault();
-      handleMouseMove(e);
-    });
-
-    A_Cell_defineProperty(A_Cell_assertThisInitialized(_this), "handleMouseUp", function (e) {
-      var handleMouseUp = _this.props.handleMouseUp;
-      e.preventDefault();
-      handleMouseUp(e);
-    });
-
-    return _this;
-  }
-
-  A_Cell_createClass(A_Cell, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      window.addEventListener('mousedown', this.props.handleMouseDown);
-      window.addEventListener('mouseup', this.props.handleMouseUp);
-      window.addEventListener('mousemove', this.props.handleMouseMove);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          text = _this$props.text,
-          xPosition = _this$props.xPosition,
-          yPosition = _this$props.yPosition;
-      var styles = {
-        transform: "translate(".concat(xPosition, "px, ").concat(yPosition, "px)")
-      };
-      return /*#__PURE__*/react.createElement("div", {
-        className: "A_Cell",
-        style: styles
-      }, text);
-    }
-  }]);
-
-  return A_Cell;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/modules/MOD_ColorPick.jsx
-function MOD_ColorPick_typeof(obj) { "@babel/helpers - typeof"; return MOD_ColorPick_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, MOD_ColorPick_typeof(obj); }
-
-function MOD_ColorPick_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function MOD_ColorPick_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? MOD_ColorPick_ownKeys(Object(source), !0).forEach(function (key) { MOD_ColorPick_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : MOD_ColorPick_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function MOD_ColorPick_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function MOD_ColorPick_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function MOD_ColorPick_createClass(Constructor, protoProps, staticProps) { if (protoProps) MOD_ColorPick_defineProperties(Constructor.prototype, protoProps); if (staticProps) MOD_ColorPick_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function MOD_ColorPick_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) MOD_ColorPick_setPrototypeOf(subClass, superClass); }
-
-function MOD_ColorPick_setPrototypeOf(o, p) { MOD_ColorPick_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return MOD_ColorPick_setPrototypeOf(o, p); }
-
-function MOD_ColorPick_createSuper(Derived) { var hasNativeReflectConstruct = MOD_ColorPick_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = MOD_ColorPick_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = MOD_ColorPick_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return MOD_ColorPick_possibleConstructorReturn(this, result); }; }
-
-function MOD_ColorPick_possibleConstructorReturn(self, call) { if (call && (MOD_ColorPick_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return MOD_ColorPick_assertThisInitialized(self); }
-
-function MOD_ColorPick_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function MOD_ColorPick_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function MOD_ColorPick_getPrototypeOf(o) { MOD_ColorPick_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return MOD_ColorPick_getPrototypeOf(o); }
-
-function MOD_ColorPick_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-var MOD_ColorPick = /*#__PURE__*/function (_PureComponent) {
-  MOD_ColorPick_inherits(MOD_ColorPick, _PureComponent);
-
-  var _super = MOD_ColorPick_createSuper(MOD_ColorPick);
-
-  function MOD_ColorPick(props) {
-    var _this;
-
-    MOD_ColorPick_classCallCheck(this, MOD_ColorPick);
-
-    _this = _super.call(this, props);
-
-    MOD_ColorPick_defineProperty(MOD_ColorPick_assertThisInitialized(_this), "receiveCoord", function (x, number) {
-      var colors = _this.state.colors;
-      console.log(x, number);
-      var updatedColors = colors.map(function (color) {
-        if (number == color.number) {
-          return MOD_ColorPick_objectSpread(MOD_ColorPick_objectSpread({}, color), {}, {
-            x: x
-          });
-        } else {
-          return color;
-        }
-      });
-
-      _this.setState({
-        colors: updatedColors
-      });
-    });
-
-    _this.state = {
-      colors: [],
-      words: []
-    };
-    return _this;
-  } // handleMouseDown = (e) => {}
-  // handleMouseMove = (e) => {}
-  // handleMouseUp = (e) => {}
-
-
-  MOD_ColorPick_createClass(MOD_ColorPick, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this$props = this.props,
-          colorBricks = _this$props.colorBricks,
-          words = _this$props.words;
-      this.setState({
-        colors: colorBricks,
-        words: words
-      });
-      window.addEventListener('load', this.receiveCoord);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var _this$props2 = this.props,
-          info = _this$props2.info,
-          words = _this$props2.words;
-      var _this$state = this.state,
-          size = _this$state.size,
-          colors = _this$state.colors,
-          display = _this$state.display,
-          flexDirection = _this$state.flexDirection,
-          flexWrap = _this$state.flexWrap;
-      var bricks = colors.map(function (brick, i) {
-        return /*#__PURE__*/react.createElement(A_ColorBrick, {
-          receiveCoord: _this2.receiveCoord,
-          color: brick.digital,
-          key: i,
-          number: brick.number
-        });
-      });
-      var cellsShow = words.map(function (cell, i) {
-        return /*#__PURE__*/react.createElement(A_Cell, {
-          text: cell.text,
-          key: i // handleMouseDown={handleMouseDown}
-          // handleMouseMove={handleMouseMove}
-          // handleMouseUp={handleMouseUp}
-
-        });
-      });
-      return /*#__PURE__*/react.createElement(M_AlternativeExerciseBox, {
-        header: info[4].header,
-        text: info[4].text,
-        bricks: bricks,
-        size: size,
-        cellsShow: cellsShow
-      });
-    }
-  }]);
-
-  return MOD_ColorPick;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_Bubble/A_Bubble.jsx
-function A_Bubble_typeof(obj) { "@babel/helpers - typeof"; return A_Bubble_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_Bubble_typeof(obj); }
-
-function A_Bubble_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_Bubble_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_Bubble_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_Bubble_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_Bubble_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_Bubble_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_Bubble_setPrototypeOf(subClass, superClass); }
-
-function A_Bubble_setPrototypeOf(o, p) { A_Bubble_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_Bubble_setPrototypeOf(o, p); }
-
-function A_Bubble_createSuper(Derived) { var hasNativeReflectConstruct = A_Bubble_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_Bubble_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_Bubble_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_Bubble_possibleConstructorReturn(this, result); }; }
-
-function A_Bubble_possibleConstructorReturn(self, call) { if (call && (A_Bubble_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_Bubble_assertThisInitialized(self); }
-
-function A_Bubble_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_Bubble_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_Bubble_getPrototypeOf(o) { A_Bubble_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_Bubble_getPrototypeOf(o); }
-
-
-
-
-
-var A_Bubble = /*#__PURE__*/function (_PureComponent) {
-  A_Bubble_inherits(A_Bubble, _PureComponent);
-
-  var _super = A_Bubble_createSuper(A_Bubble);
-
-  function A_Bubble(props) {
-    A_Bubble_classCallCheck(this, A_Bubble);
-
-    return _super.call(this, props);
-  }
-
-  A_Bubble_createClass(A_Bubble, [{
-    key: "render",
-    value: function render() {
-      var textCell = this.props.textCell;
-      return /*#__PURE__*/react.createElement("div", {
-        className: "A_Bubble"
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "head"
-      }, textCell), /*#__PURE__*/react.createElement("div", {
-        className: "leg"
-      }));
-    }
-  }]);
-
-  return A_Bubble;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_TextCell/A_TextCell.jsx
-function A_TextCell_typeof(obj) { "@babel/helpers - typeof"; return A_TextCell_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_TextCell_typeof(obj); }
-
-function A_TextCell_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_TextCell_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_TextCell_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_TextCell_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_TextCell_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_TextCell_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_TextCell_setPrototypeOf(subClass, superClass); }
-
-function A_TextCell_setPrototypeOf(o, p) { A_TextCell_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_TextCell_setPrototypeOf(o, p); }
-
-function A_TextCell_createSuper(Derived) { var hasNativeReflectConstruct = A_TextCell_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_TextCell_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_TextCell_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_TextCell_possibleConstructorReturn(this, result); }; }
-
-function A_TextCell_possibleConstructorReturn(self, call) { if (call && (A_TextCell_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_TextCell_assertThisInitialized(self); }
-
-function A_TextCell_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_TextCell_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_TextCell_getPrototypeOf(o) { A_TextCell_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_TextCell_getPrototypeOf(o); }
-
-
-
-
-
-var A_TextCell = /*#__PURE__*/function (_PureComponent) {
-  A_TextCell_inherits(A_TextCell, _PureComponent);
-
-  var _super = A_TextCell_createSuper(A_TextCell);
-
-  function A_TextCell(props) {
-    A_TextCell_classCallCheck(this, A_TextCell);
-
-    return _super.call(this, props);
-  }
-
-  A_TextCell_createClass(A_TextCell, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          innerRotate = _this$props.innerRotate,
-          font = _this$props.font;
-      var styles = {
-        rotate: "".concat(innerRotate, "deg")
-      };
-      var fontStyles = {
-        fontFamily: "".concat(font)
-      };
-      return /*#__PURE__*/react.createElement("div", {
-        className: "A_TextCell",
-        style: styles
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "row"
-      }, /*#__PURE__*/react.createElement("p", {
-        style: fontStyles
-      }, "Aa"), /*#__PURE__*/react.createElement("p", {
-        style: fontStyles
-      }, "Bb")), /*#__PURE__*/react.createElement("div", {
-        className: "row"
-      }, /*#__PURE__*/react.createElement("p", {
-        style: fontStyles
-      }, "Dd"), /*#__PURE__*/react.createElement("p", {
-        style: fontStyles
-      }, "Ee")));
-    }
-  }]);
-
-  return A_TextCell;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/moleculas/M_BubbleFilled/M_BubbleFilled.jsx
-function M_BubbleFilled_typeof(obj) { "@babel/helpers - typeof"; return M_BubbleFilled_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, M_BubbleFilled_typeof(obj); }
-
-function M_BubbleFilled_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function M_BubbleFilled_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function M_BubbleFilled_createClass(Constructor, protoProps, staticProps) { if (protoProps) M_BubbleFilled_defineProperties(Constructor.prototype, protoProps); if (staticProps) M_BubbleFilled_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function M_BubbleFilled_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) M_BubbleFilled_setPrototypeOf(subClass, superClass); }
-
-function M_BubbleFilled_setPrototypeOf(o, p) { M_BubbleFilled_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return M_BubbleFilled_setPrototypeOf(o, p); }
-
-function M_BubbleFilled_createSuper(Derived) { var hasNativeReflectConstruct = M_BubbleFilled_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = M_BubbleFilled_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = M_BubbleFilled_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return M_BubbleFilled_possibleConstructorReturn(this, result); }; }
-
-function M_BubbleFilled_possibleConstructorReturn(self, call) { if (call && (M_BubbleFilled_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return M_BubbleFilled_assertThisInitialized(self); }
-
-function M_BubbleFilled_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function M_BubbleFilled_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function M_BubbleFilled_getPrototypeOf(o) { M_BubbleFilled_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return M_BubbleFilled_getPrototypeOf(o); }
-
-function M_BubbleFilled_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-
-var M_BubbleFilled = /*#__PURE__*/function (_PureComponent) {
-  M_BubbleFilled_inherits(M_BubbleFilled, _PureComponent);
-
-  var _super = M_BubbleFilled_createSuper(M_BubbleFilled);
-
-  function M_BubbleFilled(props) {
-    var _this;
-
-    M_BubbleFilled_classCallCheck(this, M_BubbleFilled);
-
-    _this = _super.call(this, props);
-
-    M_BubbleFilled_defineProperty(M_BubbleFilled_assertThisInitialized(_this), "handleClick", function () {
-      var _this$props = _this.props,
-          handleClick = _this$props.handleClick,
-          font = _this$props.font,
-          answered = _this$props.answered,
-          originalFont = _this$props.originalFont;
-
-      if (answered == false) {
-        if (font == originalFont) {
-          _this.setState({
-            correct: true
-          });
-        } else {
-          _this.setState({
-            incorrect: true
-          });
-        }
-      }
-
-      handleClick();
-    });
-
-    M_BubbleFilled_defineProperty(M_BubbleFilled_assertThisInitialized(_this), "generateTextCell", function () {
-      var _this$props2 = _this.props,
-          innerRotate = _this$props2.innerRotate,
-          font = _this$props2.font;
-      return /*#__PURE__*/react.createElement(A_TextCell, {
-        innerRotate: innerRotate,
-        font: font
-      });
-    });
-
-    _this.state = {
-      correct: false,
-      incorrect: false
-    };
-    return _this;
-  }
-
-  M_BubbleFilled_createClass(M_BubbleFilled, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      var _this$props3 = this.props,
-          font = _this$props3.font,
-          answered = _this$props3.answered,
-          originalFont = _this$props3.originalFont;
-
-      if (answered == true && font == originalFont) {
-        this.setState({
-          correct: true
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props4 = this.props,
-          number = _this$props4.number,
-          transformX = _this$props4.transformX,
-          transformY = _this$props4.transformY,
-          rotate = _this$props4.rotate;
-      var _this$state = this.state,
-          correct = _this$state.correct,
-          incorrect = _this$state.incorrect;
-      var styles = {
-        transform: "translate(".concat(transformX, "px, ").concat(transformY, "px)"),
-        rotate: "".concat(rotate, "deg")
-      };
-      var classes = classnames_default()({
-        M_BubbleFilled: true,
-        correct: correct,
-        incorrect: incorrect
-      });
-      return /*#__PURE__*/react.createElement("div", {
-        className: classes,
-        style: styles,
-        onClick: this.handleClick
-      }, /*#__PURE__*/react.createElement(A_Bubble, {
-        textCell: this.generateTextCell()
-      }));
-    }
-  }]);
-
-  return M_BubbleFilled;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/atoms/A_OrginalFont/A_OrginalFont.jsx
-function A_OrginalFont_typeof(obj) { "@babel/helpers - typeof"; return A_OrginalFont_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, A_OrginalFont_typeof(obj); }
-
-function A_OrginalFont_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function A_OrginalFont_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function A_OrginalFont_createClass(Constructor, protoProps, staticProps) { if (protoProps) A_OrginalFont_defineProperties(Constructor.prototype, protoProps); if (staticProps) A_OrginalFont_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function A_OrginalFont_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) A_OrginalFont_setPrototypeOf(subClass, superClass); }
-
-function A_OrginalFont_setPrototypeOf(o, p) { A_OrginalFont_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return A_OrginalFont_setPrototypeOf(o, p); }
-
-function A_OrginalFont_createSuper(Derived) { var hasNativeReflectConstruct = A_OrginalFont_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = A_OrginalFont_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = A_OrginalFont_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return A_OrginalFont_possibleConstructorReturn(this, result); }; }
-
-function A_OrginalFont_possibleConstructorReturn(self, call) { if (call && (A_OrginalFont_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return A_OrginalFont_assertThisInitialized(self); }
-
-function A_OrginalFont_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function A_OrginalFont_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function A_OrginalFont_getPrototypeOf(o) { A_OrginalFont_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return A_OrginalFont_getPrototypeOf(o); }
-
-
-
-
-
-
-var A_OrginalFont = /*#__PURE__*/function (_PureComponent) {
-  A_OrginalFont_inherits(A_OrginalFont, _PureComponent);
-
-  var _super = A_OrginalFont_createSuper(A_OrginalFont);
-
-  function A_OrginalFont(props) {
-    var _this;
-
-    A_OrginalFont_classCallCheck(this, A_OrginalFont);
-
-    _this = _super.call(this, props);
-    _this.state = {
-      correct: false
-    };
-    return _this;
-  }
-
-  A_OrginalFont_createClass(A_OrginalFont, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      var answered = this.props.answered;
-
-      if (answered == true) {
-        this.setState({
-          correct: true
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var originalFont = this.props.originalFont;
-      var correct = this.state.correct;
-      var classes = classnames_default()({
-        A_OrginalFont: true,
-        correct: correct
-      });
-      var styles = {
-        fontFamily: "".concat(originalFont)
-      };
-      return /*#__PURE__*/react.createElement("div", {
-        className: classes
-      }, /*#__PURE__*/react.createElement("p", {
-        style: styles
-      }, originalFont));
-    }
-  }]);
-
-  return A_OrginalFont;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/organisms/O_FontGame/O_FontGame.jsx
-function O_FontGame_typeof(obj) { "@babel/helpers - typeof"; return O_FontGame_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, O_FontGame_typeof(obj); }
-
-function O_FontGame_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function O_FontGame_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function O_FontGame_createClass(Constructor, protoProps, staticProps) { if (protoProps) O_FontGame_defineProperties(Constructor.prototype, protoProps); if (staticProps) O_FontGame_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function O_FontGame_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) O_FontGame_setPrototypeOf(subClass, superClass); }
-
-function O_FontGame_setPrototypeOf(o, p) { O_FontGame_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return O_FontGame_setPrototypeOf(o, p); }
-
-function O_FontGame_createSuper(Derived) { var hasNativeReflectConstruct = O_FontGame_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = O_FontGame_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = O_FontGame_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return O_FontGame_possibleConstructorReturn(this, result); }; }
-
-function O_FontGame_possibleConstructorReturn(self, call) { if (call && (O_FontGame_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return O_FontGame_assertThisInitialized(self); }
-
-function O_FontGame_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function O_FontGame_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function O_FontGame_getPrototypeOf(o) { O_FontGame_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return O_FontGame_getPrototypeOf(o); }
-
-function O_FontGame_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-
-
-var O_FontGame = /*#__PURE__*/function (_PureComponent) {
-  O_FontGame_inherits(O_FontGame, _PureComponent);
-
-  var _super = O_FontGame_createSuper(O_FontGame);
-
-  function O_FontGame(props) {
-    var _this;
-
-    O_FontGame_classCallCheck(this, O_FontGame);
-
-    _this = _super.call(this, props);
-
-    O_FontGame_defineProperty(O_FontGame_assertThisInitialized(_this), "handleClick", function () {
-      var answered = _this.state.answered;
-
-      if (answered == false) {
-        _this.setState({
-          answered: true
-        });
-      }
-    });
-
-    _this.state = {
-      bubbles: [],
-      answered: false,
-      originalFont: ''
-    };
-    return _this;
-  }
-
-  O_FontGame_createClass(O_FontGame, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this$props = this.props,
-          bubbles = _this$props.bubbles,
-          fonts = _this$props.fonts;
-      this.setState({
-        bubbles: bubbles,
-        originalFont: sample(fonts)
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var _this$state = this.state,
-          bubbles = _this$state.bubbles,
-          originalFont = _this$state.originalFont,
-          answered = _this$state.answered;
-      var newBubbles = bubbles.map(function (bubble, i) {
-        return /*#__PURE__*/react.createElement(M_BubbleFilled, {
-          number: bubble.number,
-          transformX: bubble.transformX,
-          transformY: bubble.transformY,
-          rotate: bubble.rotate,
-          innerRotate: bubble.innerRotate,
-          font: bubble.font,
-          key: bubble.number,
-          handleClick: _this2.handleClick,
-          answered: answered,
-          originalFont: originalFont
-        });
-      });
-      return /*#__PURE__*/react.createElement("div", {
-        className: "O_FontGame"
-      }, newBubbles, /*#__PURE__*/react.createElement(A_OrginalFont, {
-        answered: answered,
-        originalFont: originalFont
-      }));
-    }
-  }]);
-
-  return O_FontGame;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/components/modules/MOD_GuessTheFont.jsx
-function MOD_GuessTheFont_typeof(obj) { "@babel/helpers - typeof"; return MOD_GuessTheFont_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, MOD_GuessTheFont_typeof(obj); }
-
-function MOD_GuessTheFont_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function MOD_GuessTheFont_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function MOD_GuessTheFont_createClass(Constructor, protoProps, staticProps) { if (protoProps) MOD_GuessTheFont_defineProperties(Constructor.prototype, protoProps); if (staticProps) MOD_GuessTheFont_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function MOD_GuessTheFont_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) MOD_GuessTheFont_setPrototypeOf(subClass, superClass); }
-
-function MOD_GuessTheFont_setPrototypeOf(o, p) { MOD_GuessTheFont_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return MOD_GuessTheFont_setPrototypeOf(o, p); }
-
-function MOD_GuessTheFont_createSuper(Derived) { var hasNativeReflectConstruct = MOD_GuessTheFont_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = MOD_GuessTheFont_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = MOD_GuessTheFont_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return MOD_GuessTheFont_possibleConstructorReturn(this, result); }; }
-
-function MOD_GuessTheFont_possibleConstructorReturn(self, call) { if (call && (MOD_GuessTheFont_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return MOD_GuessTheFont_assertThisInitialized(self); }
-
-function MOD_GuessTheFont_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function MOD_GuessTheFont_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function MOD_GuessTheFont_getPrototypeOf(o) { MOD_GuessTheFont_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return MOD_GuessTheFont_getPrototypeOf(o); }
-
-function MOD_GuessTheFont_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-var MOD_GuessTheFont = /*#__PURE__*/function (_PureComponent) {
-  MOD_GuessTheFont_inherits(MOD_GuessTheFont, _PureComponent);
-
-  var _super = MOD_GuessTheFont_createSuper(MOD_GuessTheFont);
-
-  function MOD_GuessTheFont(props) {
-    var _this;
-
-    MOD_GuessTheFont_classCallCheck(this, MOD_GuessTheFont);
-
-    _this = _super.call(this, props);
-
-    MOD_GuessTheFont_defineProperty(MOD_GuessTheFont_assertThisInitialized(_this), "generateExercise", function () {
-      var _this$props = _this.props,
-          bubbles = _this$props.bubbles,
-          fonts = _this$props.fonts;
-      return /*#__PURE__*/react.createElement(O_FontGame, {
-        bubbles: bubbles,
-        fonts: fonts
-      });
-    });
-
-    _this.state = {
-      size: 521
-    };
-    return _this;
-  }
-
-  MOD_GuessTheFont_createClass(MOD_GuessTheFont, [{
-    key: "render",
-    value: function render() {
-      var size = this.state.size;
-      var info = this.props.info;
-      return /*#__PURE__*/react.createElement(M_ExerciseBox, {
-        header: info[5].header,
-        text: info[5].text,
-        exercise: this.generateExercise(),
-        size: size
-      });
-    }
-  }]);
-
-  return MOD_GuessTheFont;
-}(react.PureComponent);
-
-
-;// CONCATENATED MODULE: ./src/composition.jsx
-function composition_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-
-
-
-
-
-var info = [{
-  header: "\u0423\u043F\u0440\u0430\u0436\u043D\u0435\u043D\u0438\u0435 \u043D\u0430\xA0\u043F\u043E\u0438\u0441\u043A \u043F\u0440\u043E\u043C\u0435\u0436\u0443\u0442\u043A\u0430",
-  text: "  \u041F\u0435\u0440\u0435\u0434 \u0432\u0430\u043C\u0438 5\xA0\u043A\u0440\u0443\u0433\u043E\u0432, 4\xA0\u0438\u0437\xA0\u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F\n    \u043D\u0430\xA0\u043E\u0434\u0438\u043D\u0430\u043A\u043E\u0432\u043E\u043C \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438. \u0421\xA0\u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043F\u043E\u043B\u0437\u0443\u043D\u043A\u0430 \u0440\u0430\u0441\u043F\u043E\u043B\u043E\u0436\u0438\u0442\u0435 \u043F\u044F\u0442\u044B\u0439\n    \u043A\u0440\u0443\u0433 \u043D\u0430\xA0\u0442\u0430\u043A\u043E\u0435 \u0436\u0435\xA0\u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0435."
-}, {
-  header: "\u0423\u043F\u0440\u0430\u0436\u043D\u0435\u043D\u0438\u0435 \u043D\u0430\xA0\u043F\u043E\u044D\u0442\u0430\u043F\u043D\u043E\u0435 \u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u0435",
-  text: "  \u041F\u0435\u0440\u0435\u0434 \u0432\u0430\u043C\u0438 \u043F\u0443\u0441\u0442\u043E\u0439 \u0445\u043E\u043B\u0441\u0442. \u0417\u0430\u0436\u043C\u0438\u0442\u0435 \u043B\u0435\u0432\u0443\u044E \u043A\u043D\u043E\u043F\u043A\u0443 \u043C\u044B\u0448\u0438\xA0\u0438, \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044F\xA0\u0435\u0451, \u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u0443\u0440\u0441\u043E\u0440 \u0432\u043D\u0438\u0437. \u041D\u0430\xA0\u0445\u043E\u043B\u0441\u0442\u0435 \u043F\u043E\u044F\u0432\u0438\u0442\u0441\u044F \u043A\u0432\u0430\u0434\u0440\u0430\u0442, \u0430\xA0\u043A\u0430\u043A \u0442\u043E\u043B\u044C\u043A\u043E \u0432\u044B\xA0\u043E\u0442\u043F\u0443\u0441\u0442\u0438\u0442\u0435 \u043A\u043D\u043E\u043F\u043A\u0443\xA0\u2014 \u043A\u0432\u0430\u0434\u0440\u0430\u0442 \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u043D\u0435\u0442 \u0440\u0430\u0441\u0442\u0438. \u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430\xA0\u2014 \u0443\u043C\u0435\u0441\u0442\u0438\u0442\u044C \u043D\u0430\xA0\u0445\u043E\u043B\u0441\u0442\u0435 \u043A\u0430\u043A \u043C\u043E\u0436\u043D\u043E \u0431\u043E\u043B\u044C\u0448\u0435 \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u043E\u0432, \u041D\u041E: \u0432\u044B\xA0\u043D\u0435\xA0\u043C\u043E\u0436\u0435\u0442\u0435 \u0432\u044B\u0445\u043E\u0434\u0438\u0442\u044C \u0437\u0430\xA0\u043F\u0440\u0435\u0434\u0435\u043B\u044B \u0445\u043E\u043B\u0441\u0442\u0430, \u043A\u0430\u0436\u0434\u044B\u0439 \u043D\u043E\u0432\u044B\u0439 \u043A\u0432\u0430\u0434\u0440\u0430\u0442 \u0434\u043E\u043B\u0436\u0435\u043D \u0431\u044B\u0442\u044C \u043C\u0435\u043D\u044C\u0448\u0435 \u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u0433\u043E, \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u044B \u043D\u0435\xA0\u0434\u043E\u043B\u0436\u043D\u044B \u0437\u0430\u0434\u0435\u0432\u0430\u0442\u044C \u0434\u0440\u0443\u0433-\u0434\u0440\u0443\u0433\u0430. \u0427\u0435\u043C \u0431\u043E\u043B\u044C\u0448\u0435 \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u043E\u0432 \u0432\u044B\xA0\u0443\u043C\u0435\u0441\u0442\u0438\u0442\u0435 \u043D\u0430\xA0\u0445\u043E\u043B\u0441\u0442\u0435\xA0\u2014 \u0442\u0435\u043C \u043B\u0443\u0447\u0448\u0435 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442!"
-}, {
-  header: "\u0421\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u043E\u0432",
-  text: "\u041A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u044B \u0431\u044B\u0432\u0430\u044E\u0442 \u0440\u0430\u0437\u043D\u044B\u0435 \u0438\xA0\u0438\u0445\xA0\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u043E \u043C\u043D\u043E\u0433\u043E (\u043C\u044B\xA0\u0433\u043E\u0432\u043E\u0440\u0438\u043B\u0438 \u043E\u0431\xA0\u044D\u0442\u043E\u043C \u0447\u0443\u0442\u044C \u0440\u0430\u043D\u0435\u0435). \u041F\u0435\u0440\u0435\u0434 \u0432\u0430\u043C\u0438 \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0439 \u043C\u0438\u043D\u0438-\u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440, \u0432\xA0\u043A\u043E\u0442\u043E\u0440\u043E\u043C \u0432\u044B\xA0\u043C\u043E\u0436\u0435\u0442\u0435 \u0432\u044B\u0431\u0438\u0440\u0430\u0442\u044C \u0442\u0438\u043F\u044B \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u043E\u0432 \u0438\xA0\u043F\u0440\u0438\u043C\u0435\u043D\u044F\u0442\u044C \u0438\u0445\xA0\u043A\xA0\u043A\u0440\u0443\u0433\u0430\u043C \u0432\u043D\u0443\u0442\u0440\u0438 \u043A\u0430\u0434\u0440\u0430 (\u043C\u043E\u0436\u043D\u043E \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u0441\u0440\u0430\u0437\u0443 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E). \u0412\xA0\u044D\u0442\u043E\u043C \u0437\u0430\u0434\u0430\u043D\u0438\u0438 \u043D\u0435\u0442 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E\u0433\u043E \u043E\u0442\u0432\u0435\u0442\u0430. \u0414\u0435\u043B\u0430\u0439\u0442\u0435 \u0432\u0441\u0451, \u0447\u0442\u043E \u0437\u0430\u0445\u043E\u0442\u0438\u0442\u0435!"
-}, {
-  header: "\u0423\u043F\u0440\u0430\u0436\u043D\u0435\u043D\u0438\u0435 \u043D\u0430\xA0\u0431\u0430\u043B\u0430\u043D\u0441\u0438\u0440\u043E\u0432\u043A\u0443 \u0440\u0430\u0437\u043C\u0435\u0440\u0430 ",
-  text: "\u041F\u0435\u0440\u0435\u0434 \u0432\u0430\u043C\u0438 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0442\u0440\u0438 \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u0430. \u0420\u0430\u0437\u043C\u0435\u0440 \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u0430 \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435 \u043C\u043E\u0436\u043D\u043E \u0440\u0435\u0433\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u043B\u0437\u0443\u043D\u043A\u043E\u043C \u043F\u043E\u0434 \u043D\u0438\u043C. \u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430: \u043E\u0442\u0440\u0435\u0433\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0435\u0433\u043E \u0442\u0430\u043A, \u0447\u0442\u043E\u0431\u044B \u0435\u0433\u043E \u0440\u0430\u0437\u043C\u0435\u0440 \u0431\u044B\u043B \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E \u0443\u0441\u0440\u0435\u0434\u043D\u0451\u043D\u044B\u043C "
-}, {
-  header: "\u0426\u0432\u0435\u0442\u043E\u0432\u044B\u0435 \u0430\u0441\u0441\u043E\u0446\u0438\u0430\u0446\u0438\u0438 ",
-  text: "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0442 \u043E\u0431\u0449\u0435\u043F\u0440\u0438\u043D\u044F\u0442\u044B\u0435 \u0430\u0441\u0441\u043E\u0446\u0438\u0430\u0446\u0438\u0438 \u0446\u0432\u0435\u0442\u043E\u0432 \u0441 \u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0430\u043C\u0438. \u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0438\u0445 \u0443\u0433\u0430\u0434\u0430\u0442\u044C \u2014 \u043F\u0435\u0440\u0435\u0442\u0430\u0449\u0438\u0442\u0435 \u0441\u043B\u043E\u0432\u0430 \u043A \u0446\u0432\u0435\u0442\u0430\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\u0435,\n\u043F\u043E-\u0432\u0430\u0448\u0435\u043C\u0443, \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0442 \u0441\u043E\u0431\u0449\u0435\u043F\u0440\u0438\u043D\u044F\u0442\u044B\u043C\u0438 \u0430\u0441\u0441\u043E\u0446\u0438\u0430\u0446\u0438\u044F\u043C\u0438 "
-}, {
-  header: "\u0423\u043F\u0440\u0430\u0436\u043D\u0435\u043D\u0438\u0435 \u043D\u0430\xA0\u0443\u0437\u043D\u0430\u0432\u0430\u043D\u0438\u0435 \u0448\u0440\u0438\u0444\u0442\u0430",
-  text: "\u041F\u0435\u0440\u0435\u0434 \u0432\u0430\u043C\u0438 \u2014 \u043E\u0431\u044A\u0435\u043A\u0442, \u0432\xA0\u0446\u0435\u043D\u0442\u0440\u0435 \u043A\u043E\u0442\u043E\u0440\u043E\u0433\u043E, \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u043E\u0434\u043D\u043E\u0433\u043E \u0438\u0437\xA0\u043F\u043E\u043F\u0443\u043B\u044F\u0440\u043D\u044B\u0445 \u0448\u0440\u0438\u0444\u0442\u043E\u0432. \u0412\xA0\u043A\u0430\u0436\u0434\u043E\u043C \u043E\u0442\u0432\u0435\u0442\u0432\u043B\u0435\u043D\u0438\u0438 \u2014 \u043D\u0430\u0431\u043E\u0440 \u0431\u0443\u043A\u0432, \u043D\u0430\u0431\u0440\u0430\u043D\u043D\u044B\u0445 \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u044B\u043C \u0448\u0440\u0438\u0444\u0442\u043E\u043C. \u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430 \u2014 \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043E\u0442\u0432\u0435\u0442\u0432\u043B\u0435\u043D\u0438\u0435, \u0432\xA0\u043A\u043E\u0442\u043E\u0440\u043E\u043C \u0431\u0443\u043A\u0432\u044B \u043D\u0430\u0431\u0440\u0430\u043D\u044B \u0442\u0435\u043C\xA0\u0436\u0435 \u0448\u0440\u0438\u0444\u0442\u043E\u043C, \u0447\u0442\u043E \u0438\xA0\u043F\u043E \u0446\u0435\u043D\u0442\u0440\u0443 "
-}];
-var bubbles = [composition_defineProperty({
-  number: 1,
-  font: '',
-  transformX: 160,
-  transformY: 0,
-  rotate: 0,
-  innerRotate: 0
-}, "font", 'Bodoni-Moda'), composition_defineProperty({
-  number: 2,
-  font: '',
-  transformX: 314,
-  transformY: 0,
-  rotate: 0,
-  innerRotate: 0
-}, "font", 'EB-Garamond'), composition_defineProperty({
-  number: 3,
-  font: '',
-  transformX: 467,
-  transformY: 0,
-  rotate: 0,
-  innerRotate: 0
-}, "font", 'Merriweather'), composition_defineProperty({
-  number: 4,
-  font: '',
-  transformX: -160,
-  transformY: -280,
-  rotate: 180,
-  innerRotate: -180
-}, "font", 'Noto-Serif'), composition_defineProperty({
-  number: 5,
-  font: '',
-  transformX: -314,
-  transformY: -280,
-  rotate: 180,
-  innerRotate: -180
-}, "font", 'Old-Standart-TT'), composition_defineProperty({
-  number: 6,
-  font: '',
-  transformX: -467,
-  transformY: -280,
-  rotate: 180,
-  innerRotate: -180
-}, "font", 'PT-Serif'), composition_defineProperty({
-  number: 7,
-  font: '',
-  transformX: -140,
-  transformY: 20,
-  rotate: -90,
-  innerRotate: 90
-}, "font", 'Roboto-Slab'), composition_defineProperty({
-  number: 8,
-  font: '',
-  transformX: 140,
-  transformY: -606,
-  rotate: 90,
-  innerRotate: -90
-}, "font", 'Vollkorn')];
-var fonts = ['Bodoni-Moda', 'EB-Garamond', 'Merriweather', 'Noto-Serif', 'Old-Standart-TT', 'PT-Serif', 'Roboto-Slab', 'Vollkorn'];
-var figures = [{
-  column: 1,
-  row: 1,
-  cEnd: '',
-  rEnd: '',
-  number: 1,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 1,
-  row: 2,
-  cEnd: '',
-  rEnd: '',
-  number: 2,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 1,
-  row: 3,
-  cEnd: '',
-  rEnd: '',
-  number: 3,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 1,
-  row: 4,
-  cEnd: '',
-  rEnd: '',
-  number: 4,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 2,
-  row: 1,
-  cEnd: '',
-  rEnd: '',
-  number: 5,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 2,
-  row: 2,
-  cEnd: '',
-  rEnd: '',
-  number: 6,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 2,
-  row: 3,
-  cEnd: '',
-  rEnd: '',
-  number: 7,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 2,
-  row: 4,
-  cEnd: '',
-  rEnd: '',
-  number: 8,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 3,
-  row: 1,
-  cEnd: '',
-  rEnd: '',
-  number: 9,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 3,
-  row: 2,
-  cEnd: '',
-  rEnd: '',
-  number: 10,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 3,
-  row: 3,
-  cEnd: '',
-  rEnd: '',
-  number: 11,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 3,
-  row: 4,
-  cEnd: '',
-  rEnd: '',
-  number: 12,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 4,
-  row: 1,
-  cEnd: '',
-  rEnd: '',
-  number: 13,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 4,
-  row: 2,
-  cEnd: '',
-  rEnd: '',
-  number: 14,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 4,
-  row: 3,
-  cEnd: '',
-  rEnd: '',
-  number: 15,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}, {
-  column: 4,
-  row: 4,
-  cEnd: '',
-  rEnd: '',
-  number: 16,
-  color: '#313131',
-  border: '100',
-  clip: '1',
-  size: 81,
-  display: 'inherit'
-}];
-var colorBricks = [{
-  digital: '#CD3838',
-  oral: 'red',
-  number: '1',
-  x: 0,
-  y: 0
-}, {
-  digital: '#CD7738',
-  oral: 'orange',
-  number: '2',
-  x: 0,
-  y: 0
-}, {
-  digital: '#EAED44',
-  oral: 'yellow',
-  number: '3',
-  x: 0,
-  y: 0
-}, {
-  digital: '#7ACD38',
-  oral: 'green',
-  number: '4',
-  x: 0,
-  y: 0
-}, {
-  digital: '#449CED',
-  oral: 'blue',
-  number: '5',
-  x: 0,
-  y: 0
-}, {
-  digital: '#9844ED',
-  oral: 'purple',
-  number: '6',
-  x: 0,
-  y: 0
-}];
-var words = [{
-  text: 'Дружелюбие'
-}, {
-  text: 'Опасность'
-}, {
-  text: 'Надёжность'
-}, {
-  text: 'Оптимизм'
-}, {
-  text: 'Творчество'
-}, {
-  text: 'Спокойствие'
-}];
-var questions = [{
-  name: 'Что такое антиква?',
-  type: 'Single',
-  answerOptions: [{
-    body: 'Шрифт с засечкой',
-    status: 'correct',
-    defenition: 'Именно!!'
-  }, {
-    body: 'Шрифт без засечек',
-    status: 'incorrect',
-    defenition: 'Нет! Шрифт без засечек называется гротеск'
-  }, {
-    body: 'Так называют рукописные шрифты',
-    status: 'incorrect',
-    defenition: 'Нет! Рукописные шрифты не имеют какого-то дополнительного названия. Просто рукописные!'
-  }, {
-    body: 'Шрифты, которые придумали и использовали в античные времена',
-    status: 'incorrect',
-    defenition: 'Вот вы и попались! Хоть слова антиква и античность созвучны, ничего общего между ними нет'
-  }]
-}, {
-  name: 'Что такое рубленный шрифт?',
-  type: 'Single',
-  answerOptions: [{
-    body: 'Так иногда называют антикву — шрифты с засечками',
-    status: 'incorrect',
-    defenition: 'Не-а! Антиква — это антиква. А рубленными иногда называют гротески'
-  }, {
-    body: 'Это шрифт, в котором все знаки имеют одинаковую ширину',
-    status: 'incorrect',
-    defenition: 'Нет! Такие знаки называются моноширинными'
-  }, {
-    body: 'Так иногда называют гротески — шрифты без засечек',
-    status: 'correct',
-    defenition: 'Совершенно верно!'
-  }, {
-    body: 'Это всё выдумка! Рубленных шрифтов не существует!',
-    status: 'incorrect',
-    defenition: 'А вот и нет! Понятие «Рубленные шрифты» действительно существует. Так иногда называют гротески — шрифты в которых отсутствуют засечки'
-  }]
-}, {
-  name: 'Ниже приведены разные виды шрифтов. Однако, не все из них реально существуют. Выберите те виды, которые не выдуманны',
-  type: 'Multiple',
-  answerOptions: [{
-    body: 'Антиква',
-    status: 'correct',
-    defenition: 'Так называют шрифты с засечками'
-  }, {
-    body: 'Italic',
-    status: 'incorrect',
-    defenition: 'А вот и уловка! Да, понятие italic действительно встречается в типографике. Вот только это не отдельный вид шрифта, а лишь одно из начертаний '
-  }, {
-    body: 'Фрактура',
-    status: 'correct',
-    defenition: 'Так называют позднюю разновидность готического письма. Понятие фрактура используется для шрифтов, которые стилизованы под эту разновидность письма'
-  }, {
-    body: 'Гротеск',
-    status: 'correct',
-    defenition: 'Гротески — шрифты в которых отсутствуют засечки'
-  }, {
-    body: 'Романика',
-    status: 'incorrect',
-    defenition: 'Романика — название стиля в искусстве доготических времён, но никак не разновидности шрифта '
-  }]
-}];
-var colors = ['#F6DA4B', '#4E4BF6', '#F64B4B'];
-var composition_forms = ['unset', 'polygon(50% 31.7%, 50% 31.7%, 75% 75%, 25% 75%)', 'circle(50% at 50% 50%)'];
-
-function sample(array) {
-  return array[Math.floor(Math.random() * array.length)];
-}
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  var container1 = document.getElementById('container-1');
-  var root1 = (0,client/* createRoot */.s)(container1);
-  root1.render( /*#__PURE__*/react.createElement(MOD_Rangefinder, {
-    info: info
-  }));
-  var container2 = document.getElementById('container-2');
-  var root2 = (0,client/* createRoot */.s)(container2);
-  root2.render( /*#__PURE__*/react.createElement(MOD_CircleGameEx, {
-    info: info
-  }));
-  var container3 = document.getElementById('container-3');
-  var root3 = (0,client/* createRoot */.s)(container3); // prettier-ignore
-
-  root3.render( /*#__PURE__*/react.createElement(MOD_ContrastEditor, {
-    info: info,
-    figures: figures,
-    colors: colors,
-    forms: composition_forms
-  }));
-  var container4 = document.getElementById('container-4');
-  var root4 = (0,client/* createRoot */.s)(container4);
-  root4.render( /*#__PURE__*/react.createElement(MOD_SizeBalance, {
-    info: info
-  }));
-  var container5 = document.getElementById('container-5');
-  var root5 = (0,client/* createRoot */.s)(container5);
-  root5.render( /*#__PURE__*/react.createElement(S_Quiz, {
-    questions: questions
-  }));
-  var container6 = document.getElementById('container-6');
-  var root6 = (0,client/* createRoot */.s)(container6);
-  root6.render( /*#__PURE__*/react.createElement(MOD_GuessTheFont, {
-    bubbles: bubbles,
-    fonts: fonts,
-    info: info
-  }));
-  var container7 = document.getElementById('container-7');
-  var root7 = (0,client/* createRoot */.s)(container7); // prettier-ignore
-
-  root7.render( /*#__PURE__*/react.createElement(MOD_ColorPick, {
-    info: info,
-    colorBricks: colorBricks,
-    words: words
-  }));
-});
-})();
-
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = __webpack_require__(180);
+/******/ 	
 /******/ })()
 ;

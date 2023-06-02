@@ -3,21 +3,8 @@ import ReactDOM from 'react-dom'
 import { createRoot } from 'react-dom/client'
 import './index.scss'
 
-import MOD_Rangefinder from './components/modules/MOD_Rangefinder.jsx'
-
-import MOD_CircleGame from './components/modules/MOD_CircleGame.jsx'
-
-import MOD_ContrastEditor from './components/modules/MOD_ContrastEditor.jsx'
-
-import MOD_SizeBalance from './components/modules/MOD_SizeBalance.jsx'
-
-import S_Quiz from './components/superorganisms/S_Quiz/S_Quiz.jsx'
-
-import MOD_ColorPick from './components/modules/MOD_ColorPick.jsx'
-
 import MOD_GuessTheFont from './components/modules/MOD_GuessTheFont.jsx'
-
-import O_FontGame from './components/organisms/O_FontGame/O_FontGame.jsx'
+import O_SideBar from './components/organisms/O_SideBar/O_SideBar.jsx'
 
 const info = [
   {
@@ -47,6 +34,51 @@ const info = [
   {
     header: `Упражнение на\u00A0узнавание шрифта`,
     text: `Перед вами \u2014 объект, в\u00A0центре которого, находится название одного из\u00A0популярных шрифтов. В\u00A0каждом ответвлении \u2014 набор букв, набранных случайным шрифтом. Ваша задача \u2014 выбрать ответвление, в\u00A0котором буквы набраны тем\u00A0же шрифтом, что и\u00A0по центру `
+  }
+]
+
+const barItems = [
+  {
+    main: 'Основы',
+    url: 'base.html',
+    active: 'true',
+    subItems: [
+      {
+        name: 'Основные понятия',
+        url: 'base.html#termins'
+      },
+      {
+        name: 'Виды шрифтов',
+        url: 'base.html#types'
+      }
+    ]
+  },
+  {
+    main: 'Сочетание шрифтов',
+    url: 'harmony.html',
+    active: 'false',
+    subItems: [
+      {
+        name: 'Как подобрать шрифтовую пару?',
+        url: 'harmony.html#matching'
+      },
+      {
+        name: 'Что нельзя делать при подборе шрифтовых пар?',
+        url: 'harmony.html#rectrictions'
+      },
+      {
+        name: 'Где можно найти хорошие шрифтовые пары?',
+        url: 'harmony.html#searchPlace'
+      }
+    ]
+  },
+  {
+    main: 'Правила типографики',
+    url: 'rules.html'
+  },
+  {
+    main: 'Итог',
+    url: 'typography-summary.html'
   }
 ]
 
@@ -136,6 +168,19 @@ const fonts = [
   'Vollkorn'
 ]
 
+const myID = document.getElementById('O_SideBarSpec')
+
+var myScrollFunc = function () {
+  var y = window.scrollY
+  if (y >= 450) {
+    myID.className = 'show'
+  } else {
+    myID.className = 'hide'
+  }
+}
+
+window.addEventListener('scroll', myScrollFunc)
+
 function sample(array) {
   return array[Math.floor(Math.random() * array.length)]
 }
@@ -143,6 +188,11 @@ function sample(array) {
 export { sample }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const typo = document.getElementById('O_SideBarSpec')
+  const typoBarHolder = createRoot(typo)
+  // prettier-ignore
+  typoBarHolder.render(<O_SideBar name="Типографика" barItems={barItems} />)
+
   const container6 = document.getElementById('container-6')
   const root6 = createRoot(container6)
   root6.render(<MOD_GuessTheFont bubbles={bubbles} fonts={fonts} info={info} />)
