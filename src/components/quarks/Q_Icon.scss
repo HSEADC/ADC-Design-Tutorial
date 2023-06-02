@@ -14,6 +14,16 @@
     width: 12px;
     height: 12px;
   }
+  &.arrow-left {
+    background-image: url('../../images/Q_ArrowLeft.svg');
+    width: 14px;
+    height: 26px;
+  }
+  &.arrow-right {
+    background-image: url('../../images/Q_ArrowRight.svg');
+    width: 14px;
+    height: 26px;
+  }
 }
 
 .Q_Icon.redCross {

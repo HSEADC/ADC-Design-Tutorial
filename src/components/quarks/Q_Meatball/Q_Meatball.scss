@@ -1,0 +1,11 @@
+.Q_MeatBall {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--dark);
+  border-radius: 100%;
+  margin-left: 6px;
+}
+
+.Q_MeatBall_selected {
+  background-color: var(--dark);
+}

@@ -26,7 +26,7 @@ nav {
   align-items: center;
   position: fixed;
   z-index: 100;
-  background: linear-gradient(180deg, #083a66 0%, #063055 100%);
+  background: linear-gradient(180deg, #105694 0%, #063055 100%);
 
   .logo {
     height: 70px;
@@ -116,6 +116,10 @@ p {
 
   h1 {
     margin-bottom: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: var(--medium);
   }
 }
 
@@ -299,6 +303,10 @@ aside {
   }
 }
 
+.padding {
+  padding: 50px;
+}
+
 .gap-save {
   display: flex;
   flex-direction: column;
@@ -335,6 +343,8 @@ figcaption {
   grid-column: 5 / 12;
   background-color: var(--halflight);
   border-radius: 10px;
+  margin-bottom: 100px;
+
   height: 200px;
   width: 278px;
   background-size: 84%;
@@ -387,6 +397,14 @@ figcaption {
 
 #grid {
   background-image: url(images/welcome/grid1.png);
+}
+
+#usage {
+  background-image: url(images/welcome/grid2.png);
+}
+
+#gridSummary {
+  background-image: url(images/welcome/grid3.png);
 }
 
 #big-color {

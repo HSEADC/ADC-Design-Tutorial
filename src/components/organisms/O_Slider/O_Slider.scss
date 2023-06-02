@@ -1,0 +1,24 @@
+.O_Slider {
+  margin: 10% auto;
+  position: relative;
+  width: 760px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.O_Slider .W_SliderFrame {
+  width: 760px;
+  border-radius: 12px;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.O_Slider .C_SliderRail {
+  display: flex;
+  transition: transform 0.3s;
+}
+
+.O_Slider .Q_SliderImage {
+  width: 760px;
+}

@@ -15,7 +15,8 @@ module.exports = {
     baseSummary: './src/baseSummary.jsx',
     colorSummary: './src/colorSummary.jsx',
     typography: './src/typography.jsx',
-    typographySummary: './src/typographySummary.jsx'
+    typographySummary: './src/typographySummary.jsx',
+    colorSelection: './src/colorSelection.jsx'
   },
 
   output: {
@@ -144,7 +145,8 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: './src/color/selection.html',
-      filename: './color/selection.html'
+      filename: './color/selection.html',
+      chunks: ['colorSelection']
     }),
 
     new HtmlWebpackPlugin({
@@ -170,6 +172,24 @@ module.exports = {
       template: './src/typography/typography-summary.html',
       filename: './typography/typography-summary.html',
       chunks: ['typographySummary']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/grid/base.html',
+      filename: './grid/base.html'
+      // chunks: ['typographySummary']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/grid/usage.html',
+      filename: './grid/usage.html'
+      // chunks: ['typographySummary']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/grid/gridSummary.html',
+      filename: './grid/gridSummary.html'
+      // chunks: ['typographySummary']
     }),
 
     // Partials
