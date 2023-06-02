@@ -1,15 +1,14 @@
 .O_Slider {
-  margin: 10% auto;
   position: relative;
-  width: 760px;
+  width: 700px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
 .O_Slider .W_SliderFrame {
-  width: 760px;
-  border-radius: 12px;
+  width: 700px;
+  border: 1px solid var(--border);
   overflow: hidden;
   transform: translate3d(0, 0, 0);
 }
@@ -20,5 +19,5 @@
 }
 
 .O_Slider .Q_SliderImage {
-  width: 760px;
+  width: 700px;
 }

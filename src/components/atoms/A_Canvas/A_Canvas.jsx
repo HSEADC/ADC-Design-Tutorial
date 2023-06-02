@@ -36,18 +36,33 @@ export default class A_Canvas extends PureComponent {
     window.addEventListener('scroll', this.receiveCoord)
 
     window.addEventListener('load', this.receiveCoord)
-    // window.addEventListener('mousedown', this.props.handleMouseDown)
-    // window.addEventListener('mouseup', this.props.handleMouseUp)
-    // window.addEventListener('mousemove', this.props.handleMouseMove)
+    this.position.current.addEventListener(
+      'mousedown',
+      this.props.handleMouseDown
+    )
+    this.position.current.addEventListener('mouseup', this.props.handleMouseUp)
+    this.position.current.addEventListener(
+      'mousemove',
+      this.props.handleMouseMove
+    )
   }
 
   componentDidUpdate() {
     const { missionFailed } = this.props
 
     if (missionFailed) {
-      window.removeEventListener('mousedown', this.props.handleMouseDown)
-      window.removeEventListener('mouseup', this.props.handleMouseUp)
-      window.removeEventListener('mousemove', this.props.handleMouseMove)
+      this.position.current.removeEventListener(
+        'mousedown',
+        this.props.handleMouseDown
+      )
+      this.position.current.removeEventListener(
+        'mouseup',
+        this.props.handleMouseUp
+      )
+      this.position.current.removeEventListener(
+        'mousemove',
+        this.props.handleMouseMove
+      )
     }
   }
 

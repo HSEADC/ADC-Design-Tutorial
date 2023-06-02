@@ -1,0 +1,15 @@
+.M_MenuGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  a {
+    text-decoration: none;
+  }
+}
+//
+// .M_MenuGroup :nth-child(1) {
+//   margin-bottom: 5px;
+// }

@@ -16,7 +16,9 @@ module.exports = {
     colorSummary: './src/colorSummary.jsx',
     typography: './src/typography.jsx',
     typographySummary: './src/typographySummary.jsx',
-    colorSelection: './src/colorSelection.jsx'
+    colorSelection: './src/colorSelection.jsx',
+    colorChoice: './src/colorChoice.jsx',
+    attention: './src/attention.jsx'
   },
 
   output: {
@@ -124,7 +126,8 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: './src/basics/attention.html',
-      filename: './basics/attention.html'
+      filename: './basics/attention.html',
+      chunks: ['attention']
     }),
 
     new HtmlWebpackPlugin({
@@ -140,7 +143,8 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: './src/color/choice.html',
-      filename: './color/choice.html'
+      filename: './color/choice.html',
+      chunks: ['colorChoice']
     }),
 
     new HtmlWebpackPlugin({

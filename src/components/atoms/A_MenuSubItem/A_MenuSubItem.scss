@@ -1,0 +1,21 @@
+.A_MenuSubItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 11px 26px 11px 25px;
+  width: 250px;
+  height: 38px;
+  font-family: Proxima Nova;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 0px 8px 8px 0px;
+  color: #3e3e3e;
+  a {
+    text-decoration: none;
+  }
+}
+
+.A_MenuSubItem:hover {
+  background: #ececec;
+}

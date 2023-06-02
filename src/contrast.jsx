@@ -3,21 +3,8 @@ import ReactDOM from 'react-dom'
 import { createRoot } from 'react-dom/client'
 import './index.scss'
 
-import MOD_Rangefinder from './components/modules/MOD_Rangefinder.jsx'
-
-import MOD_CircleGame from './components/modules/MOD_CircleGame.jsx'
-
 import MOD_ContrastEditor from './components/modules/MOD_ContrastEditor.jsx'
-
-import MOD_SizeBalance from './components/modules/MOD_SizeBalance.jsx'
-
-import S_Quiz from './components/superorganisms/S_Quiz/S_Quiz.jsx'
-
-import MOD_ColorPick from './components/modules/MOD_ColorPick.jsx'
-
-import MOD_GuessTheFont from './components/modules/MOD_GuessTheFont.jsx'
-
-import O_FontGame from './components/organisms/O_FontGame/O_FontGame.jsx'
+import O_SideBar from './components/organisms/O_SideBar/O_SideBar.jsx'
 
 const info = [
   {
@@ -252,6 +239,89 @@ const forms = [
   'circle(50% at 50% 50%)'
 ]
 
+const barItems = [
+  {
+    main: 'Построение композиции',
+    url: 'composition.html',
+    active: 'false',
+    subItems: [
+      {
+        name: 'Что такое композиция?',
+        url: 'composition.html#defenition'
+      },
+      {
+        name: 'Якорные точки',
+        url: 'composition.html#ancor-text'
+      },
+      {
+        name: 'Другие способы',
+        url: 'composition.html#others'
+      }
+    ]
+  },
+  {
+    main: 'Балансировка композиции',
+    url: 'balance.html',
+    active: 'false',
+    subItems: [
+      {
+        name: 'Балансировка по весу',
+        url: 'balance.html#weight'
+      },
+      {
+        name: 'Ритм',
+        url: 'balance.html#ritm'
+      },
+      {
+        name: 'Правило близости',
+        url: 'balance.html#close-rule'
+      }
+    ]
+  },
+  {
+    main: 'Работа с контрастами',
+    url: 'contrast.html',
+    active: 'true',
+    subItems: [
+      {
+        name: 'Зачем нужны контрасты?',
+        url: 'contrast.html#need-contrast'
+      },
+      {
+        name: 'Виды контрастов',
+        url: 'contrast.html#kontrast-types'
+      }
+    ]
+  },
+  {
+    main: 'Управление вниманием',
+    url: 'attention.html',
+    active: 'false',
+    subItems: [
+      {
+        name: 'Паттерны чтения',
+        url: 'attention.html#patterns'
+      },
+      {
+        name: 'Z-паттерн',
+        url: 'attention.html#z'
+      },
+      {
+        name: 'F-паттерн',
+        url: 'attention.html#f'
+      },
+      {
+        name: 'Диаграмма Гутенберга',
+        url: 'attention.html#gutenberg'
+      }
+    ]
+  },
+  {
+    main: 'Итог',
+    url: 'base-summary.html'
+  }
+]
+
 function sample(array) {
   return array[Math.floor(Math.random() * array.length)]
 }
@@ -259,6 +329,11 @@ function sample(array) {
 export { sample }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const sidebar = document.getElementById('O_SideBar')
+  const root = createRoot(sidebar)
+  // prettier-ignore
+  root.render(<O_SideBar name="Основы дизайна" barItems={barItems} />)
+
   const container3 = document.getElementById('container-3')
   const root3 = createRoot(container3)
   // prettier-ignore

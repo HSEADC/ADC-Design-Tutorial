@@ -1,0 +1,26 @@
+.A_MenuItem {
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  // align-items: center;
+  padding: 10px 15px;
+  width: 250px;
+  font-family: Proxima Nova;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3e3e3e;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.A_MenuItem.selected {
+  background: var(--halflight);
+  color: var(--dark);
+}
+
+.A_MenuItem:hover {
+  background: #ececec;
+  color: #3e3e3e;
+}

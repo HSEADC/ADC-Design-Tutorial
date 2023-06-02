@@ -1,0 +1,12 @@
+.O_SideBar {
+  .pack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+#sidebarHeader {
+  margin-left: 16px;
+  margin-bottom: 10px;
+}

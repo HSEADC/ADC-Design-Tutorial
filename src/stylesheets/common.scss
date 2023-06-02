@@ -15,6 +15,13 @@ body {
   align-items: flex-start;
 }
 
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
 nav {
   padding: 0 50px 0 25px;
   height: 70px;
@@ -174,34 +181,8 @@ li {
 }
 
 aside {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  height: fit-content;
   position: fixed;
   margin-top: 100px;
-  width: 300px;
-  a {
-    color: black;
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    text-decoration: none;
-    margin-top: 5px;
-    font-size: 16px;
-
-    h4 {
-      font-weight: 700;
-      margin-top: 20px;
-      margin-bottom: 5px;
-      font-size: 22px;
-    }
-
-    .first {
-      margin-top: 0px;
-    }
-  }
 }
 
 .A_Text {
