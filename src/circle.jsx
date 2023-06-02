@@ -2,10 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { createRoot } from 'react-dom/client'
 
-import O_Slider from './components/organisms/O_Slider/O_Slider.jsx'
-import SlideOne from './images/color/choice/coloors1.png'
-import SlideTwo from './images/color/choice/coloors2.png'
-
 import O_SideBar from './components/organisms/O_SideBar/O_SideBar.jsx'
 
 import './index.scss'
@@ -14,7 +10,7 @@ const barItems = [
   {
     main: 'Основы цвета',
     url: 'circle.html',
-    active: 'false',
+    active: 'true',
     subItems: [
       {
         name: 'Использование цветового круга',
@@ -29,7 +25,7 @@ const barItems = [
   {
     main: 'Выбор цвета для нового проекта',
     url: 'choice.html',
-    active: 'true',
+    active: 'false',
     subItems: [
       {
         name: 'Сервисы для сбора цветовой палитры',
@@ -67,15 +63,22 @@ const barItems = [
   }
 ]
 
-const imageUrls = [SlideOne, SlideTwo]
+const myID = document.getElementById('O_SideBarSpecColor')
+
+var myScrollFunc = function () {
+  var y = window.scrollY
+  if (y >= 450) {
+    myID.className = 'show'
+  } else {
+    myID.className = 'hide'
+  }
+}
+
+window.addEventListener('scroll', myScrollFunc)
 
 document.addEventListener('DOMContentLoaded', () => {
-  const sidebar = document.getElementById('O_SideBar')
+  const sidebar = document.getElementById('O_SideBarSpecColor')
   const barHolder = createRoot(sidebar)
   // prettier-ignore
   barHolder.render(<O_SideBar name="Основы цвета" barItems={barItems} />)
-
-  const imageSlider = document.getElementById('imageSlider')
-  const root = createRoot(imageSlider)
-  root.render(<O_Slider imageUrls={imageUrls} />)
 })

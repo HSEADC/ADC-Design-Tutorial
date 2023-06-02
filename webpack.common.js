@@ -18,6 +18,7 @@ module.exports = {
     typographySummary: './src/typographySummary.jsx',
     colorSelection: './src/colorSelection.jsx',
     colorChoice: './src/colorChoice.jsx',
+    circle: './src/circle.jsx',
     attention: './src/attention.jsx'
   },
 
@@ -138,7 +139,8 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: './src/color/circle.html',
-      filename: './color/circle.html'
+      filename: './color/circle.html',
+      chunks: ['circle']
     }),
 
     new HtmlWebpackPlugin({
