@@ -14,7 +14,7 @@ const barItems = [
     subItems: [
       {
         name: 'Использование цветового круга',
-        url: 'composition.html#usage'
+        url: 'circle.html#usage'
       },
       {
         name: 'Применение цветового круга',

@@ -9,6 +9,7 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
+    welcome: './src/welcome.js',
     composition: './src/composition.jsx',
     balance: './src/balance.jsx',
     contrast: './src/contrast.jsx',
@@ -103,7 +104,8 @@ module.exports = {
     // Index
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      chunks: ['welcome']
     }),
 
     // Article

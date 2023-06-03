@@ -35,34 +35,23 @@ export default class A_Canvas extends PureComponent {
   componentDidMount() {
     window.addEventListener('scroll', this.receiveCoord)
 
+    const element = document.getElementById('A_Canvas')
+
     window.addEventListener('load', this.receiveCoord)
-    this.position.current.addEventListener(
-      'mousedown',
-      this.props.handleMouseDown
-    )
-    this.position.current.addEventListener('mouseup', this.props.handleMouseUp)
-    this.position.current.addEventListener(
-      'mousemove',
-      this.props.handleMouseMove
-    )
+    element.addEventListener('mousedown', this.props.handleMouseDown)
+    element.addEventListener('mouseup', this.props.handleMouseUp)
+    element.addEventListener('mousemove', this.props.handleMouseMove)
   }
 
   componentDidUpdate() {
     const { missionFailed } = this.props
 
+    const element = document.getElementById('A_Canvas')
+
     if (missionFailed) {
-      this.position.current.removeEventListener(
-        'mousedown',
-        this.props.handleMouseDown
-      )
-      this.position.current.removeEventListener(
-        'mouseup',
-        this.props.handleMouseUp
-      )
-      this.position.current.removeEventListener(
-        'mousemove',
-        this.props.handleMouseMove
-      )
+      element.removeEventListener('mousedown', this.props.handleMouseDown)
+      element.removeEventListener('mouseup', this.props.handleMouseUp)
+      element.removeEventListener('mousemove', this.props.handleMouseMove)
     }
   }
 
@@ -82,10 +71,11 @@ export default class A_Canvas extends PureComponent {
     return (
       <div
         className="A_Canvas"
+        id="A_Canvas"
         ref={this.position}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onMouseMove={handleMouseMove}
+        // onMouseDown={handleMouseDown}
+        // onMouseUp={handleMouseUp}
+        // onMouseMove={handleMouseMove}
       >
         {circles}
         {alert}

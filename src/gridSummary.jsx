@@ -136,7 +136,7 @@ const barItems = [
   {
     active: 'true',
     main: 'Итог',
-    url: 'grid-summary.html'
+    url: 'gridSummary.html'
   }
 ]
 
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const typo = document.getElementById('O_SideBar')
   const typoBarHolder = createRoot(typo)
   // prettier-ignore
-  typoBarHolder.render(<O_SideBar name="Типографика" barItems={barItems} />)
+  typoBarHolder.render(<O_SideBar name="Сетки" barItems={barItems} />)
 
   const quiz = document.getElementById('S_Quiz')
   const root5 = createRoot(quiz)

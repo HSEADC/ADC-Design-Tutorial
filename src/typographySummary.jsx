@@ -6,6 +6,8 @@ import './index.scss'
 import S_Quiz from './components/superorganisms/S_Quiz/S_Quiz.jsx'
 import O_SideBar from './components/organisms/O_SideBar/O_SideBar.jsx'
 
+const quizName = 'Тест на знание типографики'
+
 const barItems = [
   {
     main: 'Основы',
@@ -156,5 +158,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const container10 = document.getElementById('container-10')
   const root5 = createRoot(container10)
-  root5.render(<S_Quiz questions={questions} />)
+  root5.render(<S_Quiz questions={questions} quizName={quizName} />)
 })

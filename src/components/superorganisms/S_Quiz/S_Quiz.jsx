@@ -21,6 +21,7 @@ export default class S_Quiz extends PureComponent {
   }
 
   render() {
+    const { quizName } = this.props
     const { questionsList } = this.state
     const questions = questionsList.map((question, i) => {
       if (question.type == 'Single') {
@@ -45,7 +46,7 @@ export default class S_Quiz extends PureComponent {
 
     return (
       <div className="S_Quiz">
-        <h3>Тест на знание типгорафики</h3>
+        <h3>{quizName}</h3>
         <div className="pack">{questions}</div>
       </div>
     )

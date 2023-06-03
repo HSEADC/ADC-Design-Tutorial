@@ -43,7 +43,7 @@ const barItems = [
 
   {
     main: 'Итог',
-    url: 'grid-summary.html'
+    url: 'gridSummary.html'
   }
 ]
 
