@@ -304,6 +304,15 @@ figcaption {
   line-height: 120%;
 }
 
+.super-teaser-img {
+  grid-column: 5/ 21;
+}
+.super-teaser-right {
+  grid-column: 5/ 21;
+}
+.super-teaser-text {
+}
+
 .teaser-right {
   margin-top: 60px;
   grid-column: 12 / 22;
