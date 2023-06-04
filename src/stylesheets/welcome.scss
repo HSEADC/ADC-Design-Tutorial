@@ -359,9 +359,9 @@ body.welcome {
           font-size: 28px;
         }
         h4 {
-          font-size: 22px;
+          font-size: 20px;
         }
-        width: 250px;
+        width: 222px;
       }
     }
 
@@ -377,6 +377,9 @@ body.welcome {
     ul {
       li {
         margin-bottom: 5px;
+        a {
+          font-size: 16px;
+        }
       }
 
       li:first-child {
