@@ -8,12 +8,6 @@ export default class A_Slider extends PureComponent {
     super(props)
   }
 
-  componentDidMount() {
-    // window.addEventListener('mouseup', this.handleMouseUp)
-    // window.addEventListener('mousemove', this.handleMouseMove)
-    // window.addEventListener('mousedown', this.handleMouseDown)
-  }
-
   handleMouseDown = (e) => {
     const { handleMouseDown } = this.props
     e.preventDefault()

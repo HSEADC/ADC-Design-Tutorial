@@ -531,6 +531,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
   gap: 25px;
 
   .navigator {
@@ -569,8 +570,8 @@ footer {
     }
 
     h4 {
-      margin-top: 20px;
-      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-bottom: 5px;
       a {
         font-weight: bold;
       }

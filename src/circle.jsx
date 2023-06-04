@@ -65,15 +65,16 @@ const barItems = [
 
 const myID = document.getElementById('O_SideBarSpecColor')
 
-var myScrollFunc = function () {
-  var y = window.scrollY
-  if (y >= 450) {
+const myScrollFunc = function () {
+  const y = window.scrollY
+  if (y >= 600 || y < 6181) {
     myID.className = 'show'
-  } else {
+  }
+  if (y <= 600 || y > 6181) {
     myID.className = 'hide'
   }
+  console.log(y)
 }
-
 window.addEventListener('scroll', myScrollFunc)
 
 document.addEventListener('DOMContentLoaded', () => {

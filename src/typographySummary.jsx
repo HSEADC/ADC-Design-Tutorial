@@ -148,6 +148,20 @@ function sample(array) {
   return array[Math.floor(Math.random() * array.length)]
 }
 
+const myID = document.getElementById('O_SideBar')
+
+var myScrollFunc = function () {
+  var y = window.scrollY
+  if (y <= 2200) {
+    myID.className = 'show'
+  } else {
+    myID.className = 'hide'
+  }
+  console.log(y)
+}
+
+window.addEventListener('scroll', myScrollFunc)
+
 export { sample }
 
 document.addEventListener('DOMContentLoaded', () => {

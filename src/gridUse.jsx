@@ -53,6 +53,20 @@ const barItems = [
   }
 ]
 
+const myID = document.getElementById('O_SideBar')
+
+var myScrollFunc = function () {
+  var y = window.scrollY
+  if (y <= 9400) {
+    myID.className = 'show'
+  } else {
+    myID.className = 'hide'
+  }
+  console.log(y)
+}
+
+window.addEventListener('scroll', myScrollFunc)
+
 document.addEventListener('DOMContentLoaded', () => {
   const typo = document.getElementById('O_SideBar')
   const typoBarHolder = createRoot(typo)

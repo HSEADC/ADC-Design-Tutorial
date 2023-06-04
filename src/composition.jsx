@@ -214,17 +214,21 @@ function sample(array) {
 
 export { sample }
 
+const footer = document.querySelector('footer')
+
+const coords = footer.getBoundingClientRect()
+
 const myID = document.getElementById('O_SideBarSpec')
 
-var myScrollFunc = function () {
-  var y = window.scrollY
-  if (y >= 450) {
+const myScrollFunc = function () {
+  const y = window.scrollY
+  if (y >= 600 || y < 6000) {
     myID.className = 'show'
-  } else {
+  }
+  if (y <= 600 || y > 6000) {
     myID.className = 'hide'
   }
 }
-
 window.addEventListener('scroll', myScrollFunc)
 
 document.addEventListener('DOMContentLoaded', () => {

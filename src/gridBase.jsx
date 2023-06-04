@@ -47,17 +47,19 @@ const barItems = [
   }
 ]
 
-const myIDGrid = document.getElementById('O_SideBarSpec')
+const myID = document.getElementById('O_SideBarSpec')
 
-var myScrollFunc = function () {
-  var y = window.scrollY
-  if (y >= 450) {
-    myIDGrid.className = 'show'
-  } else {
-    myIDGrid.className = 'hide'
+const myScrollFunc = function () {
+  const y = window.scrollY
+  if (y >= 600 || y < 2100) {
+    myID.className = 'show'
   }
+  if (y <= 600 || y > 2100) {
+    myID.className = 'hide'
+  }
+  console.log(y)
 }
-
+window.addEventListener('scroll', myScrollFunc)
 window.addEventListener('scroll', myScrollFunc)
 
 document.addEventListener('DOMContentLoaded', () => {

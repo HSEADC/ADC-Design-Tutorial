@@ -69,6 +69,24 @@ const barItems = [
   }
 ]
 
+const footer = document.querySelector('footer')
+
+const coords = footer.getBoundingClientRect()
+
+const myIDGrid = document.getElementById('O_SideBar')
+
+var myScrollFunc = function () {
+  var y = window.scrollY
+  if (y <= 1900) {
+    myIDGrid.className = 'show'
+  } else {
+    myIDGrid.className = 'hide'
+  }
+  console.log(y)
+}
+
+window.addEventListener('scroll', myScrollFunc, console.log(coords))
+
 const imageUrls = [SlideOne, SlideTwo, SlideThree, SlideFour, SlideFive]
 
 document.addEventListener('DOMContentLoaded', () => {

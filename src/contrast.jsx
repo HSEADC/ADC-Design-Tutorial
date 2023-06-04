@@ -322,22 +322,18 @@ const barItems = [
   }
 ]
 
-const footer = document.querySelector('footer')
-
-const coords = footer.getBoundingClientRect()
-
-const myIDGrid = document.getElementById('O_SideBar')
+const myID = document.getElementById('O_SideBar')
 
 var myScrollFunc = function () {
   var y = window.scrollY
-  if (y <= coords.bottom - 300) {
-    myIDGrid.className = 'show'
+  if (y <= 4000) {
+    myID.className = 'show'
   } else {
-    myIDGrid.className = 'hide'
+    myID.className = 'hide'
   }
 }
 
-window.addEventListener('scroll', myScrollFunc, console.log(coords))
+window.addEventListener('scroll', myScrollFunc)
 
 function sample(array) {
   return array[Math.floor(Math.random() * array.length)]

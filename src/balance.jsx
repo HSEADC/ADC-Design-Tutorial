@@ -129,11 +129,12 @@ const myIDGrid = document.getElementById('O_SideBar')
 
 var myScrollFunc = function () {
   var y = window.scrollY
-  if (y <= coords.bottom - 300) {
+  if (y <= 9360) {
     myIDGrid.className = 'show'
   } else {
     myIDGrid.className = 'hide'
   }
+  console.log(y)
 }
 
 window.addEventListener('scroll', myScrollFunc, console.log(coords))

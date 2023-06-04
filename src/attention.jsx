@@ -90,6 +90,26 @@ const barItems = [
   }
 ]
 
+const footer = document.querySelector('footer')
+
+const coords = footer.getBoundingClientRect()
+
+const myIDGrid = document.getElementById('O_SideBar')
+
+var myScrollFunc = function () {
+  var y = window.scrollY
+  if (y <= 2800) {
+    myIDGrid.className = 'show'
+  } else {
+    myIDGrid.className = 'hide'
+  }
+  console.log(y)
+}
+
+console.log(window.scrollY)
+
+window.addEventListener('scroll', myScrollFunc, console.log(coords.top))
+
 document.addEventListener('DOMContentLoaded', () => {
   const sidebar = document.getElementById('O_SideBar')
   const barHolder = createRoot(sidebar)
