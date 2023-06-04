@@ -1383,6 +1383,7 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
   }, {
     key: "render",
     value: function render() {
+      var quizName = this.props.quizName;
       var questionsList = this.state.questionsList;
       var questions = questionsList.map(function (question, i) {
         if (question.type == 'Single') {
@@ -1403,7 +1404,7 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
       });
       return /*#__PURE__*/react.createElement("div", {
         className: "S_Quiz"
-      }, /*#__PURE__*/react.createElement("h3", null, "\u0422\u0435\u0441\u0442 \u043D\u0430 \u0437\u043D\u0430\u043D\u0438\u0435 \u0442\u0438\u043F\u0433\u043E\u0440\u0430\u0444\u0438\u043A\u0438"), /*#__PURE__*/react.createElement("div", {
+      }, /*#__PURE__*/react.createElement("h3", null, quizName), /*#__PURE__*/react.createElement("div", {
         className: "pack"
       }, questions));
     }
@@ -1723,68 +1724,84 @@ var O_SideBar = /*#__PURE__*/function (_PureComponent) {
 
 
 var questions = [{
-  name: 'Что такое антиква?',
-  type: 'Single',
+  name: 'Чего можно достичь благодаря хорошей композиции? ',
+  type: 'Multiple',
   answerOptions: [{
-    body: 'Шрифт с засечкой',
+    body: 'Удобочитаемости контента',
     status: 'correct',
-    defenition: 'Именно!!'
+    defenition: 'Верно!'
   }, {
-    body: 'Шрифт без засечек',
+    body: 'Получить готовые стилевые шаблоны',
     status: 'incorrect',
-    defenition: 'Нет! Шрифт без засечек называется гротеск'
+    defenition: 'Нет! Для того, чтобы создать стилевые шаблоны, нужно задать их в графическом редакторе'
   }, {
-    body: 'Так называют рукописные шрифты',
-    status: 'incorrect',
-    defenition: 'Нет! Рукописные шрифты не имеют какого-то дополнительного названия. Просто рукописные!'
-  }, {
-    body: 'Шрифты, которые придумали и использовали в античные времена',
-    status: 'incorrect',
-    defenition: 'Вот вы и попались! Хоть слова антиква и античность созвучны, ничего общего между ними нет'
-  }]
-}, {
-  name: 'Что такое рубленный шрифт?',
-  type: 'Single',
-  answerOptions: [{
-    body: 'Так иногда называют антикву — шрифты с засечками',
-    status: 'incorrect',
-    defenition: 'Не-а! Антиква — это антиква. А рубленными иногда называют гротески'
-  }, {
-    body: 'Это шрифт, в котором все знаки имеют одинаковую ширину',
-    status: 'incorrect',
-    defenition: 'Нет! Такие знаки называются моноширинными'
-  }, {
-    body: 'Так иногда называют гротески — шрифты без засечек',
+    body: 'Сформировать у зрителя хорошее первое впечатление о вашей работе',
     status: 'correct',
     defenition: 'Совершенно верно!'
   }, {
-    body: 'Это всё выдумка! Рубленных шрифтов не существует!',
+    body: 'Рубрикацию текстового контента',
     status: 'incorrect',
-    defenition: 'А вот и нет! Понятие «Рубленные шрифты» действительно существует. Так иногда называют гротески — шрифты в которых отсутствуют засечки'
+    defenition: 'Нет, для этого нужно применять стилевые шаблоны к текстовым блокам'
   }]
 }, {
-  name: 'Ниже приведены разные виды шрифтов. Однако, не все из них реально существуют. Выберите те виды, которые не выдуманны',
-  type: 'Multiple',
+  name: 'Какой метод поможет вам построить композицию на старте?',
+  type: 'Single',
   answerOptions: [{
-    body: 'Антиква',
-    status: 'correct',
-    defenition: 'Так называют шрифты с засечками'
-  }, {
-    body: 'Italic',
+    body: 'Правило близости',
     status: 'incorrect',
-    defenition: 'А вот и уловка! Да, понятие italic действительно встречается в типографике. Вот только это не отдельный вид шрифта, а лишь одно из начертаний '
+    defenition: 'Не совсем. Правило близости поможет построить связи между блоками контента, но никак не построить композицию'
   }, {
-    body: 'Фрактура',
+    body: 'Якорные точки',
     status: 'correct',
-    defenition: 'Так называют позднюю разновидность готического письма. Понятие фрактура используется для шрифтов, которые стилизованы под эту разновидность письма'
+    defenition: 'Совершенно верно!'
   }, {
-    body: 'Гротеск',
-    status: 'correct',
-    defenition: 'Гротески — шрифты в которых отсутствуют засечки'
-  }, {
-    body: 'Романика',
+    body: 'Выбор цветового сочетания',
     status: 'incorrect',
-    defenition: 'Романика — название стиля в искусстве доготических времён, но никак не разновидности шрифта '
+    defenition: 'Ну что вы. Конечно нет, сочетания цветов на композицию никак не повлияют'
+  }, {
+    body: 'Компонентный подход',
+    status: 'incorrect',
+    defenition: 'Нет. Компонентный подход применяется в другой сфере дизайна и никак не связан с построением композиции'
+  }]
+}, {
+  name: 'У нас есть группа объектов, расстояние между ними 20 пикселей. Какое расстояние должно быть до другой такой же группы?',
+  type: 'Single',
+  answerOptions: [{
+    body: '20 пикселей',
+    status: 'incorrect',
+    defenition: 'Не верно. Такое расстояние создаст не две отдельные группы, а одну целую'
+  }, {
+    body: '10 пикселей',
+    status: 'incorrect',
+    defenition: 'Нет! Это расстояние меньше, чем расстояние между элементами в группе'
+  }, {
+    body: '40 пикселей',
+    status: 'correct',
+    defenition: 'Правильно!'
+  }, {
+    body: '5 пикселей',
+    status: 'incorrect',
+    defenition: 'Нет! Это расстояние меньше, чем расстояние между элементами в группе'
+  }]
+}, {
+  name: 'В чём ключевое различие Z и F паттернов?',
+  type: 'Single',
+  answerOptions: [{
+    body: 'Z паттерна не существует!',
+    status: 'incorrect',
+    defenition: 'Ещё как существует!'
+  }, {
+    body: 'F паттерна не существует!',
+    status: 'incorrect',
+    defenition: 'Ещё как существует!'
+  }, {
+    body: 'Z паттерн описывает поведение пользователя при чтении небольших блоков, а F паттерн — при чтении больших кусков текста',
+    status: 'correct',
+    defenition: 'Совершенно верно!'
+  }, {
+    body: 'F паттерн описывает поведение пользователя при чтении небольших блоков, а Z паттерн — при чтении больших кусков текста',
+    status: 'incorrect',
+    defenition: 'Почти так, только наоборот'
   }]
 }];
 var barItems = [{
@@ -1853,6 +1870,24 @@ function sample(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
+var footer = document.querySelector('footer');
+var coords = footer.getBoundingClientRect();
+var myIDGrid = document.getElementById('O_SideBar');
+
+var myScrollFunc = function myScrollFunc() {
+  var y = window.scrollY;
+
+  if (y <= 2300) {
+    myIDGrid.className = 'show';
+  } else {
+    myIDGrid.className = 'hide';
+  }
+
+  console.log(y);
+};
+
+var quizName = 'Тест на знание основ дизайна';
+window.addEventListener('scroll', myScrollFunc, console.log(coords));
 
 document.addEventListener('DOMContentLoaded', function () {
   var sidebar = document.getElementById('O_SideBar');
@@ -1865,7 +1900,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var container5 = document.getElementById('container-5');
   var root5 = (0,client/* createRoot */.s)(container5);
   root5.render( /*#__PURE__*/react.createElement(S_Quiz, {
-    questions: questions
+    name: "nt",
+    questions: questions,
+    quizName: quizName
   }));
 });
 })();

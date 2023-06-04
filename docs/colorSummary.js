@@ -1685,6 +1685,7 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
   }, {
     key: "render",
     value: function render() {
+      var quizName = this.props.quizName;
       var questionsList = this.state.questionsList;
       var questions = questionsList.map(function (question, i) {
         if (question.type == 'Single') {
@@ -1705,7 +1706,7 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
       });
       return /*#__PURE__*/react.createElement("div", {
         className: "S_Quiz"
-      }, /*#__PURE__*/react.createElement("h3", null, "\u0422\u0435\u0441\u0442 \u043D\u0430 \u0437\u043D\u0430\u043D\u0438\u0435 \u0442\u0438\u043F\u0433\u043E\u0440\u0430\u0444\u0438\u043A\u0438"), /*#__PURE__*/react.createElement("div", {
+      }, /*#__PURE__*/react.createElement("h3", null, quizName), /*#__PURE__*/react.createElement("div", {
         className: "pack"
       }, questions));
     }
@@ -1722,69 +1723,86 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
 
 
 
+var quizName = 'Тест на знание основ цвета';
 var questions = [{
-  name: 'Что такое антиква?',
+  name: 'Сколько групп цветов выделяют в цветовом круге Иттена?',
   type: 'Single',
   answerOptions: [{
-    body: 'Шрифт с засечкой',
+    body: '2',
+    status: 'incorrect',
+    defenition: 'Нет, их 3. Первичная: синий, жёлтый и красный. Вторчиная: зелёный, оранжевый и фиолетовый. Третичная: все остальные цвета и оттенки'
+  }, {
+    body: '3',
     status: 'correct',
-    defenition: 'Именно!!'
+    defenition: 'Правильно! '
   }, {
-    body: 'Шрифт без засечек',
+    body: '10',
     status: 'incorrect',
-    defenition: 'Нет! Шрифт без засечек называется гротеск'
+    defenition: 'Как-то многовато. На самом деле, их 3. Первичная: синий, жёлтый и красный. Вторчиная: зелёный, оранжевый и фиолетовый. Третичная: все остальные цвета и оттенки'
   }, {
-    body: 'Так называют рукописные шрифты',
+    body: '7',
     status: 'incorrect',
-    defenition: 'Нет! Рукописные шрифты не имеют какого-то дополнительного названия. Просто рукописные!'
-  }, {
-    body: 'Шрифты, которые придумали и использовали в античные времена',
-    status: 'incorrect',
-    defenition: 'Вот вы и попались! Хоть слова антиква и античность созвучны, ничего общего между ними нет'
+    defenition: 'Это число взято с потолка. На самом деле, их 3. Первичная: синий, жёлтый и красный. Вторчиная: зелёный, оранжевый и фиолетовый. Третичная: все остальные цвета и оттенки'
   }]
 }, {
-  name: 'Что такое рубленный шрифт?',
+  name: 'Как называется цветовая схема, в которой берутся цвета, которые расположены в противоположных друг другу направлениях на цветовом круге?',
   type: 'Single',
   answerOptions: [{
-    body: 'Так иногда называют антикву — шрифты с засечками',
-    status: 'incorrect',
-    defenition: 'Не-а! Антиква — это антиква. А рубленными иногда называют гротески'
-  }, {
-    body: 'Это шрифт, в котором все знаки имеют одинаковую ширину',
-    status: 'incorrect',
-    defenition: 'Нет! Такие знаки называются моноширинными'
-  }, {
-    body: 'Так иногда называют гротески — шрифты без засечек',
+    body: 'Комплементарная',
     status: 'correct',
-    defenition: 'Совершенно верно!'
+    defenition: 'Так точно!'
   }, {
-    body: 'Это всё выдумка! Рубленных шрифтов не существует!',
+    body: 'Триада',
     status: 'incorrect',
-    defenition: 'А вот и нет! Понятие «Рубленные шрифты» действительно существует. Так иногда называют гротески — шрифты в которых отсутствуют засечки'
+    defenition: 'Нет! Триада — это когда берутся три цвета на углах равностороннего треугольника, наложенного на цветовой круг'
+  }, {
+    body: 'Аналогово-комплементарная',
+    status: 'incorrect',
+    defenition: 'Не верно'
+  }, {
+    body: 'Аналоговая',
+    status: 'incorrect',
+    defenition: 'А вот и нет! В аналоговой цветовой схеме берут три цвета, которые находятся рядом друг с другом'
   }]
 }, {
-  name: 'Ниже приведены разные виды шрифтов. Однако, не все из них реально существуют. Выберите те виды, которые не выдуманны',
+  name: 'Итак, у нас есть новый проект и нам нужно подумать о выборе цветов. Что будем делать?',
   type: 'Multiple',
   answerOptions: [{
-    body: 'Антиква',
+    body: 'Можно воспользоваться сервисом по подбору цветовой палитры.',
     status: 'correct',
-    defenition: 'Так называют шрифты с засечками'
+    defenition: 'Можно поступить и так. Но лучше использовать такое решение в качестве крайней меры'
   }, {
-    body: 'Italic',
+    body: 'Можно взять палитру из чужого проекта, который мне понравился',
     status: 'incorrect',
-    defenition: 'А вот и уловка! Да, понятие italic действительно встречается в типографике. Вот только это не отдельный вид шрифта, а лишь одно из начертаний '
+    defenition: 'Воровать в нехорошо (вдохновляться — можно)!'
   }, {
-    body: 'Фрактура',
+    body: 'Можно начать с общепринятых цветовых ассоциаций',
     status: 'correct',
-    defenition: 'Так называют позднюю разновидность готического письма. Понятие фрактура используется для шрифтов, которые стилизованы под эту разновидность письма'
+    defenition: 'Хорошее решение, а главное — результат будет обоснован!'
   }, {
-    body: 'Гротеск',
+    body: 'Можно отложить выбор цветов на потом, а до этого работать без цвета',
     status: 'correct',
-    defenition: 'Гротески — шрифты в которых отсутствуют засечки'
-  }, {
-    body: 'Романика',
+    defenition: 'Тоже вариант. Лучше так, чем сидеть в творческом ступоре'
+  }]
+}, {
+  name: 'Что символизирует синий цвет в логотипе компании Phizer?',
+  type: 'Single',
+  answerOptions: [{
+    body: 'Профессионализм',
     status: 'incorrect',
-    defenition: 'Романика — название стиля в искусстве доготических времён, но никак не разновидности шрифта '
+    defenition: 'Звучит логично, но это не так'
+  }, {
+    body: 'Чистоту',
+    status: 'correct',
+    defenition: 'Именно!'
+  }, {
+    body: 'Технологичность',
+    status: 'incorrect',
+    defenition: 'Было бы логично, но здесь заложен другой смысл'
+  }, {
+    body: 'Качество',
+    status: 'incorrect',
+    defenition: 'Могло бы быть так, но нет'
   }]
 }];
 var barItems = [{
@@ -1828,6 +1846,23 @@ var barItems = [{
   url: 'color-summary.html',
   active: 'true'
 }];
+var footer = document.querySelector('footer');
+var coords = footer.getBoundingClientRect();
+var myIDGrid = document.getElementById('O_SideBar');
+
+var myScrollFunc = function myScrollFunc() {
+  var y = window.scrollY;
+
+  if (y <= 2200) {
+    myIDGrid.className = 'show';
+  } else {
+    myIDGrid.className = 'hide';
+  }
+
+  console.log(y);
+};
+
+window.addEventListener('scroll', myScrollFunc, console.log(coords));
 
 function sample(array) {
   return array[Math.floor(Math.random() * array.length)];
@@ -1845,6 +1880,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var container5 = document.getElementById('container-5');
   var root5 = (0,client/* createRoot */.s)(container5);
   root5.render( /*#__PURE__*/react.createElement(S_Quiz, {
+    quizName: quizName,
     questions: questions
   }));
 });

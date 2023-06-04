@@ -948,6 +948,21 @@ var barItems = [{
   main: 'Итог',
   url: 'typography-summary.html'
 }];
+var myID = document.getElementById('O_SideBar');
+
+var myScrollFunc = function myScrollFunc() {
+  var y = window.scrollY;
+
+  if (y <= 4700) {
+    myID.className = 'show';
+  } else {
+    myID.className = 'hide';
+  }
+
+  console.log(y);
+};
+
+window.addEventListener('scroll', myScrollFunc);
 document.addEventListener('DOMContentLoaded', function () {
   var typo = document.getElementById('O_SideBar');
   var typoBarHolder = (0,client/* createRoot */.s)(typo); // prettier-ignore

@@ -948,6 +948,21 @@ var barItems = [{
   url: 'typography-summary.html'
 }];
 var fonts = (/* unused pure expression or super */ null && (['Bodoni-Moda', 'EB-Garamond', 'Merriweather', 'Noto-Serif', 'Old-Standart-TT', 'PT-Serif', 'Roboto-Slab', 'Vollkorn']));
+var myID = document.getElementById('O_SideBar');
+
+var myScrollFunc = function myScrollFunc() {
+  var y = window.scrollY;
+
+  if (y <= 3223) {
+    myID.className = 'show';
+  } else {
+    myID.className = 'hide';
+  }
+
+  console.log(y);
+};
+
+window.addEventListener('scroll', myScrollFunc);
 document.addEventListener('DOMContentLoaded', function () {
   var typo = document.getElementById('O_SideBar');
   var typoBarHolder = (0,client/* createRoot */.s)(typo); // prettier-ignore

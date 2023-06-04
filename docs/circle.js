@@ -921,7 +921,7 @@ var barItems = [{
   active: 'true',
   subItems: [{
     name: 'Использование цветового круга',
-    url: 'composition.html#usage'
+    url: 'circle.html#usage'
   }, {
     name: 'Применение цветового круга',
     url: 'circle.html#action'
@@ -960,11 +960,15 @@ var myID = document.getElementById('O_SideBarSpecColor');
 var myScrollFunc = function myScrollFunc() {
   var y = window.scrollY;
 
-  if (y >= 450) {
+  if (y >= 600 || y < 6181) {
     myID.className = 'show';
-  } else {
+  }
+
+  if (y <= 600 || y > 6181) {
     myID.className = 'hide';
   }
+
+  console.log(y);
 };
 
 window.addEventListener('scroll', myScrollFunc);

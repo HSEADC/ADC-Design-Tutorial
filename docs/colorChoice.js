@@ -1234,6 +1234,23 @@ var barItems = [{
   main: 'Итог',
   url: 'color-summary.html'
 }];
+var footer = document.querySelector('footer');
+var coords = footer.getBoundingClientRect();
+var myIDGrid = document.getElementById('O_SideBar');
+
+var myScrollFunc = function myScrollFunc() {
+  var y = window.scrollY;
+
+  if (y <= 3791) {
+    myIDGrid.className = 'show';
+  } else {
+    myIDGrid.className = 'hide';
+  }
+
+  console.log(y);
+};
+
+window.addEventListener('scroll', myScrollFunc, console.log(coords));
 var imageUrls = [coloors1, coloors2];
 document.addEventListener('DOMContentLoaded', function () {
   var sidebar = document.getElementById('O_SideBar');

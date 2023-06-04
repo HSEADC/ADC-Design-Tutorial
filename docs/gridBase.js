@@ -942,20 +942,25 @@ var barItems = [{
   }]
 }, {
   main: 'Итог',
-  url: 'grid-summary.html'
+  url: 'gridSummary.html'
 }];
-var myIDGrid = document.getElementById('O_SideBarSpec');
+var myID = document.getElementById('O_SideBarSpec');
 
 var myScrollFunc = function myScrollFunc() {
   var y = window.scrollY;
 
-  if (y >= 450) {
-    myIDGrid.className = 'show';
-  } else {
-    myIDGrid.className = 'hide';
+  if (y >= 600 || y < 2100) {
+    myID.className = 'show';
   }
+
+  if (y <= 600 || y > 2100) {
+    myID.className = 'hide';
+  }
+
+  console.log(y);
 };
 
+window.addEventListener('scroll', myScrollFunc);
 window.addEventListener('scroll', myScrollFunc);
 document.addEventListener('DOMContentLoaded', function () {
   var grid = document.getElementById('O_SideBarSpec');

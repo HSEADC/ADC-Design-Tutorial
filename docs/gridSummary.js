@@ -1683,6 +1683,7 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
   }, {
     key: "render",
     value: function render() {
+      var quizName = this.props.quizName;
       var questionsList = this.state.questionsList;
       var questions = questionsList.map(function (question, i) {
         if (question.type == 'Single') {
@@ -1703,7 +1704,7 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
       });
       return /*#__PURE__*/react.createElement("div", {
         className: "S_Quiz"
-      }, /*#__PURE__*/react.createElement("h3", null, "\u0422\u0435\u0441\u0442 \u043D\u0430 \u0437\u043D\u0430\u043D\u0438\u0435 \u0442\u0438\u043F\u0433\u043E\u0440\u0430\u0444\u0438\u043A\u0438"), /*#__PURE__*/react.createElement("div", {
+      }, /*#__PURE__*/react.createElement("h3", null, quizName), /*#__PURE__*/react.createElement("div", {
         className: "pack"
       }, questions));
     }
@@ -1721,68 +1722,104 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
 
 
 var questions = [{
-  name: 'Что такое антиква?',
+  name: 'При вёрстке носителей с ограниченной высотой и шириной мы применяем…',
   type: 'Single',
   answerOptions: [{
-    body: 'Шрифт с засечкой',
+    body: 'Сетку только с колонками',
+    status: 'incorrect',
+    defenition: 'Нет. Всё таки мы знаем и конечную высоту носителя, а значит только колонками тут не обойтись '
+  }, {
+    body: 'Сетку только с рядами',
+    status: 'incorrect',
+    defenition: 'Нет!'
+  }, {
+    body: 'Сетку с колонками и рядами (модульная сетка)',
     status: 'correct',
-    defenition: 'Именно!!'
+    defenition: 'Именно! Так мы сможем систематизировать расположение контента и по горизонтали, и по вертикали'
   }, {
-    body: 'Шрифт без засечек',
+    body: 'Мульти-адаптивная сетка',
     status: 'incorrect',
-    defenition: 'Нет! Шрифт без засечек называется гротеск'
-  }, {
-    body: 'Так называют рукописные шрифты',
-    status: 'incorrect',
-    defenition: 'Нет! Рукописные шрифты не имеют какого-то дополнительного названия. Просто рукописные!'
-  }, {
-    body: 'Шрифты, которые придумали и использовали в античные времена',
-    status: 'incorrect',
-    defenition: 'Вот вы и попались! Хоть слова антиква и античность созвучны, ничего общего между ними нет'
+    defenition: 'А такая вообще бывает?'
   }]
 }, {
-  name: 'Что такое рубленный шрифт?',
+  name: 'При вёрстке носителей, ограниченных только по ширине мы применяем…',
   type: 'Single',
   answerOptions: [{
-    body: 'Так иногда называют антикву — шрифты с засечками',
+    body: 'Сетку только с колонками',
     status: 'incorrect',
-    defenition: 'Не-а! Антиква — это антиква. А рубленными иногда называют гротески'
-  }, {
-    body: 'Это шрифт, в котором все знаки имеют одинаковую ширину',
-    status: 'incorrect',
-    defenition: 'Нет! Такие знаки называются моноширинными'
-  }, {
-    body: 'Так иногда называют гротески — шрифты без засечек',
-    status: 'correct',
     defenition: 'Совершенно верно!'
   }, {
-    body: 'Это всё выдумка! Рубленных шрифтов не существует!',
+    body: 'Сетку только с рядами',
     status: 'incorrect',
-    defenition: 'А вот и нет! Понятие «Рубленные шрифты» действительно существует. Так иногда называют гротески — шрифты в которых отсутствуют засечки'
+    defenition: 'Нет!'
+  }, {
+    body: 'Сетку с колонками и рядами (модульная сетка)',
+    status: 'incorrect',
+    defenition: 'Нет. Модульную сетку не получится построить, если мы не знаем конечной высоты носителя'
+  }, {
+    body: 'Двойная сетка',
+    status: 'incorrect',
+    defenition: 'Опять выдумка автора! И опять на том же месте'
   }]
 }, {
-  name: 'Ниже приведены разные виды шрифтов. Однако, не все из них реально существуют. Выберите те виды, которые не выдуманны',
+  name: 'Что в сетке обозначает параметр Gutter?',
+  type: 'Single',
+  answerOptions: [{
+    body: 'Внешние отступы',
+    status: 'incorrect',
+    defenition: 'Не совсем'
+  }, {
+    body: 'Внутренние отступы',
+    status: 'correct',
+    defenition: 'Совершенно верно! Это отступы между колонками, или между рядами'
+  }, {
+    body: 'Размер колонки',
+    status: 'incorrect',
+    defenition: 'Не совсем'
+  }, {
+    body: 'Количество колонок',
+    status: 'incorrect',
+    defenition: 'Не совсем'
+  }]
+}, {
+  name: 'Что в сетке обозначает параметр Margin?',
+  type: 'Single',
+  answerOptions: [{
+    body: 'Внешние отступы',
+    status: 'correct',
+    defenition: 'Совершенно верно. Это отступы от сетки до границ носителя.'
+  }, {
+    body: 'Внутренние отступы',
+    status: 'incorrect',
+    defenition: 'Нет, это Gutter'
+  }, {
+    body: 'Размер колонки',
+    status: 'incorrect',
+    defenition: 'Нет, такой параметр называется Size'
+  }, {
+    body: 'Количество колонок',
+    status: 'incorrect',
+    defenition: 'Не совсем. Это count'
+  }]
+}, {
+  name: 'Что в сетке обозначает параметр Margin?',
   type: 'Multiple',
   answerOptions: [{
-    body: 'Антиква',
+    body: 'Пропорциональные элементы',
     status: 'correct',
-    defenition: 'Так называют шрифты с засечками'
+    defenition: 'Совершенно верно'
   }, {
-    body: 'Italic',
-    status: 'incorrect',
-    defenition: 'А вот и уловка! Да, понятие italic действительно встречается в типографике. Вот только это не отдельный вид шрифта, а лишь одно из начертаний '
-  }, {
-    body: 'Фрактура',
+    body: 'Крепко построенная композиция',
     status: 'correct',
-    defenition: 'Так называют позднюю разновидность готического письма. Понятие фрактура используется для шрифтов, которые стилизованы под эту разновидность письма'
+    defenition: 'Да, это тоже результат использования сетки'
   }, {
-    body: 'Гротеск',
+    body: 'Выровненный контент',
     status: 'correct',
-    defenition: 'Гротески — шрифты в которых отсутствуют засечки'
+    defenition: 'Да, это действительно так'
   }, {
-    body: 'Романика',
-    status: 'incorrect',
-    defenition: 'Романика — название стиля в искусстве доготических времён, но никак не разновидности шрифта '
+    body: 'Экономия времени',
+    status: 'correct',
+    defenition: 'Вы даже представить себе не можете, насколько много вы сэкономите!'
   }]
 }];
 var barItems = [{
@@ -1813,14 +1850,29 @@ var barItems = [{
 }, {
   active: 'true',
   main: 'Итог',
-  url: 'grid-summary.html'
+  url: 'gridSummary.html'
 }];
+var myID = document.getElementById('O_SideBar');
+
+var myScrollFunc = function myScrollFunc() {
+  var y = window.scrollY;
+
+  if (y <= 2200) {
+    myID.className = 'show';
+  } else {
+    myID.className = 'hide';
+  }
+
+  console.log(y);
+};
+
+window.addEventListener('scroll', myScrollFunc);
 document.addEventListener('DOMContentLoaded', function () {
   var typo = document.getElementById('O_SideBar');
   var typoBarHolder = (0,client/* createRoot */.s)(typo); // prettier-ignore
 
   typoBarHolder.render( /*#__PURE__*/react.createElement(O_SideBar, {
-    name: "\u0422\u0438\u043F\u043E\u0433\u0440\u0430\u0444\u0438\u043A\u0430",
+    name: "\u0421\u0435\u0442\u043A\u0438",
     barItems: barItems
   }));
   var quiz = document.getElementById('S_Quiz');

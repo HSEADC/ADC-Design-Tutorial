@@ -750,14 +750,15 @@ var A_Frame = /*#__PURE__*/function (_PureComponent) {
       var _this$props = this.props,
           size = _this$props.size,
           exercise = _this$props.exercise,
-          content = _this$props.content;
+          content = _this$props.content,
+          button = _this$props.button;
       var style = {
         height: "".concat(size, "px")
       };
       return /*#__PURE__*/react.createElement("div", {
         className: "A_Frame",
         style: style
-      }, content, exercise);
+      }, content, exercise, button);
     }
   }]);
 
@@ -813,7 +814,8 @@ var M_ExerciseBox = /*#__PURE__*/function (_PureComponent) {
           text = _this$props.text,
           size = _this$props.size,
           exercise = _this$props.exercise,
-          squares = _this$props.squares;
+          squares = _this$props.squares,
+          content = _this$props.content;
       return /*#__PURE__*/react.createElement("div", {
         className: "M_ExerciseBox"
       }, /*#__PURE__*/react.createElement(A_Text, {
@@ -822,7 +824,8 @@ var M_ExerciseBox = /*#__PURE__*/function (_PureComponent) {
       }), /*#__PURE__*/react.createElement(A_Frame, {
         content: squares,
         exercise: exercise,
-        size: size
+        size: size,
+        button: content
       }));
     }
   }]);
@@ -894,12 +897,6 @@ var A_Slider = /*#__PURE__*/function (_PureComponent) {
   }
 
   A_Slider_createClass(A_Slider, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {// window.addEventListener('mouseup', this.handleMouseUp)
-      // window.addEventListener('mousemove', this.handleMouseMove)
-      // window.addEventListener('mousedown', this.handleMouseDown)
-    }
-  }, {
     key: "render",
     value: function render() {
       var _this$props = this.props,
@@ -1830,6 +1827,23 @@ var barItems = [{
   main: 'Итог',
   url: 'base-summary.html'
 }];
+var footer = document.querySelector('footer');
+var coords = footer.getBoundingClientRect();
+var myIDGrid = document.getElementById('O_SideBar');
+
+var myScrollFunc = function myScrollFunc() {
+  var y = window.scrollY;
+
+  if (y <= 9360) {
+    myIDGrid.className = 'show';
+  } else {
+    myIDGrid.className = 'hide';
+  }
+
+  console.log(y);
+};
+
+window.addEventListener('scroll', myScrollFunc, console.log(coords));
 document.addEventListener('DOMContentLoaded', function () {
   var sidebar = document.getElementById('O_SideBar');
   var barHolder = (0,client/* createRoot */.s)(sidebar); // prettier-ignore

@@ -119,14 +119,15 @@ var A_Frame = /*#__PURE__*/function (_PureComponent) {
       var _this$props = this.props,
           size = _this$props.size,
           exercise = _this$props.exercise,
-          content = _this$props.content;
+          content = _this$props.content,
+          button = _this$props.button;
       var style = {
         height: "".concat(size, "px")
       };
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "A_Frame",
         style: style
-      }, content, exercise);
+      }, content, exercise, button);
     }
   }]);
 
@@ -1314,6 +1315,7 @@ var MOD_ContrastEditor = /*#__PURE__*/function (_PureComponent) {
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
 /* harmony import */ var _moleculas_M_ExerciseBox_M_ExerciseBox_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(398);
 /* harmony import */ var _organisms_O_FontGame_O_FontGame_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(483);
+/* harmony import */ var _atoms_A_Button_A_Button_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(564);
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1343,6 +1345,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 var MOD_GuessTheFont = /*#__PURE__*/function (_PureComponent) {
   _inherits(MOD_GuessTheFont, _PureComponent);
 
@@ -1355,6 +1358,17 @@ var MOD_GuessTheFont = /*#__PURE__*/function (_PureComponent) {
 
     _this = _super.call(this, props);
 
+    _defineProperty(_assertThisInitialized(_this), "handleClick", function () {
+      window.location.reload();
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "generateButton", function () {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_atoms_A_Button_A_Button_jsx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+        handleClick: _this.handleClick,
+        text: "\u041F\u043E\u043F\u0440\u043E\u0431\u043E\u0432\u0430\u0442\u044C \u0435\u0449\u0451 \u0440\u0430\u0437"
+      });
+    });
+
     _defineProperty(_assertThisInitialized(_this), "generateExercise", function () {
       var _this$props = _this.props,
           bubbles = _this$props.bubbles,
@@ -1366,7 +1380,7 @@ var MOD_GuessTheFont = /*#__PURE__*/function (_PureComponent) {
     });
 
     _this.state = {
-      size: 521
+      size: 567
     };
     return _this;
   }
@@ -1380,7 +1394,8 @@ var MOD_GuessTheFont = /*#__PURE__*/function (_PureComponent) {
         header: info[5].header,
         text: info[5].text,
         exercise: this.generateExercise(),
-        size: size
+        size: size,
+        content: this.generateButton()
       });
     }
   }]);
@@ -1450,7 +1465,8 @@ var M_ExerciseBox = /*#__PURE__*/function (_PureComponent) {
           text = _this$props.text,
           size = _this$props.size,
           exercise = _this$props.exercise,
-          squares = _this$props.squares;
+          squares = _this$props.squares,
+          content = _this$props.content;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "M_ExerciseBox"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_atoms_A_Text_A_Text_jsx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
@@ -1459,7 +1475,8 @@ var M_ExerciseBox = /*#__PURE__*/function (_PureComponent) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_atoms_A_Frame_A_Frame_jsx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
         content: squares,
         exercise: exercise,
-        size: size
+        size: size,
+        button: content
       }));
     }
   }]);
@@ -2512,20 +2529,22 @@ var A_Canvas = /*#__PURE__*/function (_PureComponent) {
     key: "componentDidMount",
     value: function componentDidMount() {
       window.addEventListener('scroll', this.receiveCoord);
+      var element = document.getElementById('A_Canvas');
       window.addEventListener('load', this.receiveCoord);
-      this.position.current.addEventListener('mousedown', this.props.handleMouseDown);
-      this.position.current.addEventListener('mouseup', this.props.handleMouseUp);
-      this.position.current.addEventListener('mousemove', this.props.handleMouseMove);
+      element.addEventListener('mousedown', this.props.handleMouseDown);
+      element.addEventListener('mouseup', this.props.handleMouseUp);
+      element.addEventListener('mousemove', this.props.handleMouseMove);
     }
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate() {
       var missionFailed = this.props.missionFailed;
+      var element = document.getElementById('A_Canvas');
 
       if (missionFailed) {
-        this.position.current.removeEventListener('mousedown', this.props.handleMouseDown);
-        this.position.current.removeEventListener('mouseup', this.props.handleMouseUp);
-        this.position.current.removeEventListener('mousemove', this.props.handleMouseMove);
+        element.removeEventListener('mousedown', this.props.handleMouseDown);
+        element.removeEventListener('mouseup', this.props.handleMouseUp);
+        element.removeEventListener('mousemove', this.props.handleMouseMove);
       }
     }
   }, {
@@ -2543,10 +2562,11 @@ var A_Canvas = /*#__PURE__*/function (_PureComponent) {
           alert = _this$props.alert;
       return /*#__PURE__*/react.createElement("div", {
         className: "A_Canvas",
-        ref: this.position,
-        onMouseDown: handleMouseDown,
-        onMouseUp: handleMouseUp,
-        onMouseMove: handleMouseMove
+        id: "A_Canvas",
+        ref: this.position // onMouseDown={handleMouseDown}
+        // onMouseUp={handleMouseUp}
+        // onMouseMove={handleMouseMove}
+
       }, circles, alert);
     }
   }]);
@@ -3155,12 +3175,6 @@ var A_Slider = /*#__PURE__*/function (_PureComponent) {
   }
 
   A_Slider_createClass(A_Slider, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {// window.addEventListener('mouseup', this.handleMouseUp)
-      // window.addEventListener('mousemove', this.handleMouseMove)
-      // window.addEventListener('mousedown', this.handleMouseDown)
-    }
-  }, {
     key: "render",
     value: function render() {
       var _this$props = this.props,
@@ -4140,6 +4154,7 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
   }, {
     key: "render",
     value: function render() {
+      var quizName = this.props.quizName;
       var questionsList = this.state.questionsList;
       var questions = questionsList.map(function (question, i) {
         if (question.type == 'Single') {
@@ -4160,7 +4175,7 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
       });
       return /*#__PURE__*/react.createElement("div", {
         className: "S_Quiz"
-      }, /*#__PURE__*/react.createElement("h3", null, "\u0422\u0435\u0441\u0442 \u043D\u0430 \u0437\u043D\u0430\u043D\u0438\u0435 \u0442\u0438\u043F\u0433\u043E\u0440\u0430\u0444\u0438\u043A\u0438"), /*#__PURE__*/react.createElement("div", {
+      }, /*#__PURE__*/react.createElement("h3", null, quizName), /*#__PURE__*/react.createElement("div", {
         className: "pack"
       }, questions));
     }
@@ -4769,14 +4784,18 @@ function sample(array) {
 }
 
 
+var footer = document.querySelector('footer');
+var coords = footer.getBoundingClientRect();
 var myID = document.getElementById('O_SideBarSpec');
 
 var myScrollFunc = function myScrollFunc() {
   var y = window.scrollY;
 
-  if (y >= 450) {
+  if (y >= 600 || y < 6000) {
     myID.className = 'show';
-  } else {
+  }
+
+  if (y <= 600 || y > 6000) {
     myID.className = 'hide';
   }
 };
@@ -5589,11 +5608,15 @@ var myID = document.getElementById('O_SideBarSpec');
 var myScrollFunc = function myScrollFunc() {
   var y = window.scrollY;
 
-  if (y >= 450) {
+  if (y >= 600 || y < 8995) {
     myID.className = 'show';
-  } else {
+  }
+
+  if (y <= 600 || y > 8995) {
     myID.className = 'hide';
   }
+
+  console.log(y);
 };
 
 window.addEventListener('scroll', myScrollFunc);

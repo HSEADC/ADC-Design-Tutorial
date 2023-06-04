@@ -1383,6 +1383,7 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
   }, {
     key: "render",
     value: function render() {
+      var quizName = this.props.quizName;
       var questionsList = this.state.questionsList;
       var questions = questionsList.map(function (question, i) {
         if (question.type == 'Single') {
@@ -1403,7 +1404,7 @@ var S_Quiz = /*#__PURE__*/function (_PureComponent) {
       });
       return /*#__PURE__*/react.createElement("div", {
         className: "S_Quiz"
-      }, /*#__PURE__*/react.createElement("h3", null, "\u0422\u0435\u0441\u0442 \u043D\u0430 \u0437\u043D\u0430\u043D\u0438\u0435 \u0442\u0438\u043F\u0433\u043E\u0440\u0430\u0444\u0438\u043A\u0438"), /*#__PURE__*/react.createElement("div", {
+      }, /*#__PURE__*/react.createElement("h3", null, quizName), /*#__PURE__*/react.createElement("div", {
         className: "pack"
       }, questions));
     }
@@ -1722,6 +1723,7 @@ var O_SideBar = /*#__PURE__*/function (_PureComponent) {
 
 
 
+var quizName = 'Тест на знание типографики';
 var barItems = [{
   main: 'Основы',
   url: 'base.html',
@@ -1759,7 +1761,7 @@ var questions = [{
   name: 'Что такое антиква?',
   type: 'Single',
   answerOptions: [{
-    body: 'Шрифт с засечкой',
+    body: 'Шрифт с засечками',
     status: 'correct',
     defenition: 'Именно!!'
   }, {
@@ -1825,6 +1827,21 @@ function sample(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
+var myID = document.getElementById('O_SideBar');
+
+var myScrollFunc = function myScrollFunc() {
+  var y = window.scrollY;
+
+  if (y <= 2200) {
+    myID.className = 'show';
+  } else {
+    myID.className = 'hide';
+  }
+
+  console.log(y);
+};
+
+window.addEventListener('scroll', myScrollFunc);
 
 document.addEventListener('DOMContentLoaded', function () {
   var typo = document.getElementById('O_SideBar');
@@ -1837,7 +1854,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var container10 = document.getElementById('container-10');
   var root5 = (0,client/* createRoot */.s)(container10);
   root5.render( /*#__PURE__*/react.createElement(S_Quiz, {
-    questions: questions
+    questions: questions,
+    quizName: quizName
   }));
 });
 })();
