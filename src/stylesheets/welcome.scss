@@ -47,7 +47,7 @@ nav {
     margin-left: -25px;
     img {
       height: 70px;
-      margin-left: 12px;
+      margin-left: 5px;
       width: auto;
     }
   }
@@ -374,17 +374,24 @@ body.welcome {
       margin-bottom: 10px;
     }
 
-    li {
-      margin-top: 5px;
-    }
+    ul {
+      li {
+        margin-bottom: 5px;
+      }
 
-    li:first-child {
-      margin-top: 0px;
+      li:first-child {
+        margin-top: 0px;
+      }
     }
 
     a {
       text-decoration: none;
       color: black;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: var(--medium);
     }
 
     .release,

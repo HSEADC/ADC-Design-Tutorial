@@ -12,12 +12,17 @@ export default class M_ExerciseBox extends PureComponent {
   }
 
   render() {
-    const { header, text, size, exercise, squares } = this.props
+    const { header, text, size, exercise, squares, content } = this.props
 
     return (
       <div className="M_ExerciseBox">
         <A_Text header={header} text={text} />
-        <A_Frame content={squares} exercise={exercise} size={size} />
+        <A_Frame
+          content={squares}
+          exercise={exercise}
+          size={size}
+          button={content}
+        />
       </div>
     )
   }

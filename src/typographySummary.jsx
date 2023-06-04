@@ -59,7 +59,7 @@ const questions = [
     name: 'Что такое антиква?',
     type: 'Single',
     answerOptions: [
-      { body: 'Шрифт с засечкой', status: 'correct', defenition: 'Именно!!' },
+      { body: 'Шрифт с засечками', status: 'correct', defenition: 'Именно!!' },
       {
         body: 'Шрифт без засечек',
         status: 'incorrect',
