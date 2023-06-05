@@ -249,20 +249,20 @@ export default class MOD_CircleGameEx extends PureComponent {
 
       if (this.state.sizeFailed == true) {
         this.setState({
-          errorHeader: `Вы уместили ${this.state.circleCount} кругов`,
-          errorText: 'Ваш последний круг оказался больше предыдущего'
+          errorHeader: `Вы уместили ${this.state.circleCount} квадратов`,
+          errorText: 'Ваш последний квадрат оказался больше предыдущего'
         })
       }
       if (this.state.borderFailed == true) {
         this.setState({
-          errorHeader: `Вы уместили ${this.state.circleCount} кругов`,
-          errorText: 'Ваш последний круг вышел за пределы холста'
+          errorHeader: `Вы уместили ${this.state.circleCount} квадратов`,
+          errorText: 'Ваш последний квадрат вышел за пределы холста'
         })
       }
       if (this.state.collisionFailed == true) {
         this.setState({
-          errorHeader: `Вы уместили ${this.state.circleCount} кругов`,
-          errorText: 'Ваш последний круг задел другой'
+          errorHeader: `Вы уместили ${this.state.circleCount} квадратов`,
+          errorText: 'Ваш последний квадрат задел другой'
         })
       }
     })

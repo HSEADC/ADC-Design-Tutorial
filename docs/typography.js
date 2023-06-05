@@ -3040,22 +3040,22 @@ var MOD_CircleGameEx = /*#__PURE__*/function (_PureComponent) {
 
         if (_this2.state.sizeFailed == true) {
           _this2.setState({
-            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0440\u0443\u0433\u043E\u0432"),
-            errorText: 'Ваш последний круг оказался больше предыдущего'
+            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u043E\u0432"),
+            errorText: 'Ваш последний квадрат оказался больше предыдущего'
           });
         }
 
         if (_this2.state.borderFailed == true) {
           _this2.setState({
-            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0440\u0443\u0433\u043E\u0432"),
-            errorText: 'Ваш последний круг вышел за пределы холста'
+            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u043E\u0432"),
+            errorText: 'Ваш последний квадрат вышел за пределы холста'
           });
         }
 
         if (_this2.state.collisionFailed == true) {
           _this2.setState({
-            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0440\u0443\u0433\u043E\u0432"),
-            errorText: 'Ваш последний круг задел другой'
+            errorHeader: "\u0412\u044B \u0443\u043C\u0435\u0441\u0442\u0438\u043B\u0438 ".concat(_this2.state.circleCount, " \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u043E\u0432"),
+            errorText: 'Ваш последний квадрат задел другой'
           });
         }
       });
